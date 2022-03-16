@@ -1,0 +1,17 @@
+@import "color";
+
+@mixin test($fg) {
+    display: $fg;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    background-color: $var1;
+    @include test(flex); 
+    .home2{
+        background-color: white;
+    @include test(grid); 
+
+    }
+}
