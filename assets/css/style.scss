@@ -10,7 +10,7 @@
     background-color: $var1;
     @include test(flex); 
     .home2{
-        background-color: white;
+        background-color: $var2;
     @include test(grid); 
 
     }
