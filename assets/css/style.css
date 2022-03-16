@@ -1,25 +1,62 @@
-.home {
-  background-color: #810606;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Audiowide", cursive;
 }
 
-.home .home2 {
-  background-color: #02eeff;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+html {
+  font-size: 62.5%;
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+input {
+  padding: 0.8rem;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.48rem;
+  background: linear-gradient(113.54deg, #D912DD 34.86%, rgba(91, 26, 134, 0.75) 74.74%);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(301.44deg, #D912DD 23.61%, rgba(91, 26, 134, 0.75) 69.04%);
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+i {
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
