@@ -68,7 +68,7 @@ i {
 }
 .maincontainer {
   .home {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -84,6 +84,7 @@ i {
       background-color: $transparentBack;
       position: absolute;
       top: 0;
+      user-select: none;
       .text {
         text-align: center;
         h4 {
@@ -116,6 +117,17 @@ i {
           }
         }
       }
+      .explore{
+        @include centerByFlex();
+        margin-top: 7rem;
+        button{
+          width: 11rem;
+        }
+      }
     }
+  }
+  .about{
+    min-height: 100vh;
+    background: $abtBack;
   }
 }

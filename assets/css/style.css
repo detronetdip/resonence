@@ -61,7 +61,7 @@ i {
 }
 
 .maincontainer .home {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -81,6 +81,10 @@ i {
   background-color: rgba(0, 0, 0, 0.76);
   position: absolute;
   top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .maincontainer .home .topcover .text {
@@ -139,5 +143,27 @@ i {
 .maincontainer .home .topcover .counter .sgbox .name {
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.maincontainer .home .topcover .explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7rem;
+}
+
+.maincontainer .home .topcover .explore button {
+  width: 11rem;
+}
+
+.maincontainer .about {
+  min-height: 100vh;
+  background: linear-gradient(0.94deg, #030a1b 51.2%, #311250 73.95%, #010710 95.7%);
 }
 /*# sourceMappingURL=style.css.map */
