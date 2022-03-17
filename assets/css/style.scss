@@ -133,16 +133,15 @@ i {
     background: $abtBack;
     @include centerByFlex();
     .resonancexi{
+      position: absolute;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: -60rem;
       height: 30rem;
       width: 40rem;
       padding: 2rem;
       border-radius: 2rem;
-      z-index: 1000;
       background: $resonance;
       #rex{
         margin-top: -5rem;

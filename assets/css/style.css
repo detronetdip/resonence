@@ -179,6 +179,7 @@ i {
 }
 
 .maincontainer .about .resonancexi {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,12 +193,10 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -60rem;
   height: 30rem;
   width: 40rem;
   padding: 2rem;
   border-radius: 2rem;
-  z-index: 1000;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144E), to(#1F153C));
   background: linear-gradient(180deg, #23144E 0%, #1F153C 100%);
 }
