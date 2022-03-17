@@ -1,5 +1,20 @@
-$var1: rgb(129, 6, 6);
-$var2: #02eeff;
-$defaultButton: linear-gradient(113.54deg, #D912DD 34.86%, rgba(91, 26, 134, 0.75) 74.74%);
-$defaultButtonHover: linear-gradient(301.44deg, #D912DD 23.61%, rgba(91, 26, 134, 0.75) 69.04%);
+$defaultButton: linear-gradient(
+  113.54deg,
+  #d912dd 34.86%,
+  rgba(91, 26, 134, 0.75) 74.74%
+);
+$defaultButtonHover: linear-gradient(
+  301.44deg,
+  #d912dd 23.61%,
+  rgba(91, 26, 134, 0.75) 69.04%
+);
 $white: #fff;
+$black: #000;
+$transparentBack: rgba(0, 0, 0, 0.137);
+$gradientFont: linear-gradient(
+  79.06deg,
+  #f400f8 13.83%,
+  #00ffff 94.43%,
+  rgba(0, 96, 239, 0.84) 94.44%,
+  rgba(255, 255, 255, 0) 94.45%
+); ;
