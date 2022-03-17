@@ -165,5 +165,56 @@ i {
 .maincontainer .about {
   min-height: 100vh;
   background: linear-gradient(0.94deg, #030a1b 51.2%, #311250 73.95%, #010710 95.7%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maincontainer .about .resonancexi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#23144E), to(#1F153C));
+  background: linear-gradient(180deg, #23144E 0%, #1F153C 100%);
+}
+
+.maincontainer .about .resonancexi #rex {
+  font-size: 3.5rem;
+  background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding: 0 2rem;
+}
+
+.maincontainer .about .resonancexi #start {
+  font-size: 1.5rem;
+  color: #00E0FF;
+}
+
+.maincontainer .about .resonancexi #text {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

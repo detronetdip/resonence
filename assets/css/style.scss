@@ -129,5 +129,31 @@ i {
   .about{
     min-height: 100vh;
     background: $abtBack;
+    @include centerByFlex();
+    .resonancexi{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 30rem;
+      width: 40rem;
+      padding: 2rem;
+      border-radius: 2rem;
+      background: $resonance;
+      #rex{
+        font-size: 3.5rem;
+        @include gradientFontType1();
+        padding: 0 2rem;
+      }
+      #start{
+        font-size: 1.5rem;
+        color: $lightblue;
+      }
+      #text{
+        font-size: 1.3rem;
+        color: $white;
+        text-align: center;
+      }
+    }
   }
 }
