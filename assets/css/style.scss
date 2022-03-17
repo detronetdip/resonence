@@ -1,12 +1,18 @@
 @import "color";
 @mixin centerByFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@mixin centerByGrid{
-    display: grid;
-    place-items: center;
+@mixin gradientFontType1 {
+  background: $gradientFont;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@mixin centerByGrid {
+  display: grid;
+  place-items: center;
 }
 * {
   margin: 0;
@@ -43,8 +49,8 @@ button {
   background: $defaultButton;
   color: $white;
   cursor: pointer;
-  &:hover{
-      background: $defaultButtonHover;
+  &:hover {
+    background: $defaultButtonHover;
   }
 }
 a {
@@ -60,33 +66,54 @@ i {
   font-size: 1.8rem;
   cursor: pointer;
 }
-.maincontainer{
-  .home{
+.maincontainer {
+  .home {
     height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
-    .bgv{
+    .bgv {
       width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: initial;
+      height: 100%;
+      max-height: 100%;
+      object-fit: initial;
     }
-    .topcover{
+    .topcover {
       height: 100%;
       width: 100%;
       background-color: $transparentBack;
       position: absolute;
       top: 0;
-      .text{
+      .text {
         text-align: center;
-        h4{
+        h4 {
           margin-top: 4rem;
           font-size: 6rem;
-          background: $gradientFont;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
+          @include gradientFontType1();
+        }
+      }
+      .counter{
+        @include centerByFlex();
+        margin-top: calc(100vh - 70vh);
+        .sgbox{
+          color: $white;
+          margin: 0.2rem 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background:$counterBackground;
+          padding: 1rem;
+          height: 8rem;
+          width: 8rem;
+          border-radius: 10px;
+          #days,#hours,#mins,#secs{
+            font-size: 2.8rem;
+          }
+          .name{
+            font-size: 1.3rem;
+            font-weight: 400;
+          }
         }
       }
     }

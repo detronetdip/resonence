@@ -10,11 +10,16 @@ $defaultButtonHover: linear-gradient(
 );
 $white: #fff;
 $black: #000;
-$transparentBack: rgba(0, 0, 0, 0.137);
+$transparentBack: rgba(0, 0, 0, 0.76);
 $gradientFont: linear-gradient(
-  79.06deg,
-  #f400f8 13.83%,
+  89.06deg,
+  #f400f8 28.83%,
   #00ffff 94.43%,
   rgba(0, 96, 239, 0.84) 94.44%,
   rgba(255, 255, 255, 0) 94.45%
-); ;
+);
+$counterBackground: radial-gradient(
+  100% 128.85% at 0% 6.31%,
+  #c051bf 0%,
+  rgba(11, 7, 157, 0.9) 100%
+);
