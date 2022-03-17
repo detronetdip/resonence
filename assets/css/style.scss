@@ -119,9 +119,11 @@ i {
       }
       .explore{
         @include centerByFlex();
-        margin-top: 7rem;
+        margin-top: 8rem;
         button{
-          width: 11rem;
+          width: 14rem;
+          height: 4rem;
+          font-size: 1.5rem;
         }
       }
     }

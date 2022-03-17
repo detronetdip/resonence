@@ -155,11 +155,13 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .maincontainer .home .topcover .explore button {
-  width: 11rem;
+  width: 14rem;
+  height: 4rem;
+  font-size: 1.5rem;
 }
 
 .maincontainer .about {
