@@ -190,15 +190,18 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -60rem;
   height: 30rem;
   width: 40rem;
   padding: 2rem;
   border-radius: 2rem;
+  z-index: 1000;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144E), to(#1F153C));
   background: linear-gradient(180deg, #23144E 0%, #1F153C 100%);
 }
 
 .maincontainer .about .resonancexi #rex {
+  margin-top: -5rem;
   font-size: 3.5rem;
   background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
@@ -208,11 +211,13 @@ i {
 }
 
 .maincontainer .about .resonancexi #start {
+  margin-top: -1rem;
   font-size: 1.5rem;
   color: #00E0FF;
 }
 
 .maincontainer .about .resonancexi #text {
+  margin-top: 2rem;
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
