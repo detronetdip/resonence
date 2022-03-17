@@ -10,8 +10,4 @@ var x = setInterval(function () {
   document.getElementById("hours").innerHTML =hours;
   document.getElementById("mins").innerHTML =minutes;
   document.getElementById("secs").innerHTML =seconds;
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
 }, 1000);
