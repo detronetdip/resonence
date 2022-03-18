@@ -137,10 +137,10 @@ i {
     .resonancexi {
       position: relative;
       @include centerByFlex();
+      height: 2rem;
       .bcx {
         position: absolute;
-        top: 0%;
-        margin-top: -3rem;
+        top: -110%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
