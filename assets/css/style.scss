@@ -10,6 +10,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+@mixin reversegradientFontType1 {
+  background: $reversegradientFont;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 @mixin centerByGrid {
   display: grid;
   place-items: center;
@@ -130,7 +136,9 @@ i {
   }
   .about{
     min-height: 100vh;
+    min-width: 100%;
     background: $abtBack;
+    position: absolute;
     @include centerByFlex();
     .resonancexi{
       position: absolute;
@@ -138,6 +146,7 @@ i {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: -60rem;
       height: 30rem;
       width: 40rem;
       padding: 2rem;
@@ -159,6 +168,21 @@ i {
         font-size: 1.3rem;
         color: $white;
         text-align: center;
+      }
+    }
+    .qoute1{
+      position: absolute;
+      height: 5rem;
+      width: 65rem;
+      color: $white;
+      h4{
+        font-size: 3.5rem;
+      }
+      #tech,#posible{
+        @include reversegradientFontType1();
+      }
+      #meta{
+        @include gradientFontType1();
       }
     }
   }

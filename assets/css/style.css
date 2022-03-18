@@ -166,7 +166,9 @@ i {
 
 .maincontainer .about {
   min-height: 100vh;
+  min-width: 100%;
   background: linear-gradient(0.94deg, #030a1b 51.2%, #311250 73.95%, #010710 95.7%);
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +195,7 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -60rem;
   height: 30rem;
   width: 40rem;
   padding: 2rem;
@@ -222,5 +225,30 @@ i {
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
+}
+
+.maincontainer .about .qoute1 {
+  position: absolute;
+  height: 5rem;
+  width: 65rem;
+  color: #fff;
+}
+
+.maincontainer .about .qoute1 h4 {
+  font-size: 3.5rem;
+}
+
+.maincontainer .about .qoute1 #tech, .maincontainer .about .qoute1 #posible {
+  background: linear-gradient(272.56deg, #F751FB 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.maincontainer .about .qoute1 #meta {
+  background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 /*# sourceMappingURL=style.css.map */
