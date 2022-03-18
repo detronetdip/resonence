@@ -31,3 +31,16 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+@mixin eor {
+  background: linear-gradient(
+    265.95deg,
+    #f751fb 31.57%,
+    #00ffff 98.37%,
+    rgba(0, 96, 239, 0.84) 98.38%,
+    rgba(255, 255, 255, 0) 98.38%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

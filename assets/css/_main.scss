@@ -133,5 +133,16 @@
         }
       }
     }
+    .events{
+      min-height: 100vh;
+      background:$bg2;
+      position: relative;
+      h4{
+        text-align: center;
+        @include eor;
+        font-size: 4rem;
+        padding-top: 7rem;
+      }
+    }
   }
   

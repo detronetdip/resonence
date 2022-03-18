@@ -10,7 +10,7 @@ $defaultButtonHover: linear-gradient(
 );
 $white: #fff;
 $black: #000;
-$lightblue: #00E0FF;
+$lightblue: #00e0ff;
 $transparentBack: rgba(0, 0, 0, 0.76);
 $gradientFont: linear-gradient(
   89.06deg,
@@ -19,7 +19,11 @@ $gradientFont: linear-gradient(
   rgba(0, 96, 239, 0.84) 94.44%,
   rgba(255, 255, 255, 0) 94.45%
 );
-$reversegradientFont: linear-gradient(272.56deg, #F751FB 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+$reversegradientFont: linear-gradient(
+  272.56deg,
+  #f751fb 15.04%,
+  rgba(0, 255, 255, 0.89) 60.67%
+);
 $counterBackground: radial-gradient(
   100% 128.85% at 0% 6.31%,
   #c051bf 0%,
@@ -31,5 +35,15 @@ $abtBack: linear-gradient(
   #311250 73.95%,
   #010710 95.7%
 );
-$resonance: linear-gradient(92.17deg, #F716E0 12.4%, rgba(0, 224, 255, 0.99) 98.77%);
-$resonanceCard: linear-gradient(180deg, #23144E 0%, #1F153C 100%);
+$bg2: linear-gradient(
+  359.99deg,
+  #2d1044 -0.48%,
+  #130855 -0.47%,
+  #030a1b 50.54%
+);
+$resonance: linear-gradient(
+  92.17deg,
+  #f716e0 12.4%,
+  rgba(0, 224, 255, 0.99) 98.77%
+);
+$resonanceCard: linear-gradient(180deg, #23144e 0%, #1f153c 100%);
