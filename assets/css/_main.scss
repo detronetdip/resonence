@@ -105,23 +105,31 @@
             text-align: center;
           }
         }
-        .myth{
-          width: 100%;
-          margin-top: 68rem;
-          @include centerByFlex();
-          p{
-            font-size: 3rem;
-            width: 50%;
-            max-width: 60rem;
-            text-align: center;
-            color: $white;
-           .ty1{
-             @include ty1();
-           }
-           .ty2{
-            @include ty2();
-          }
-          }
+      }
+      .myth{
+        width: 100%;
+        margin-top: 30rem;
+        @include centerByFlex();
+        p{
+          font-size: 3rem;
+          width: 50%;
+          max-width: 60rem;
+          text-align: center;
+          color: $white;
+         .ty1{
+           @include ty1();
+         }
+         .ty2{
+          @include ty2();
+        }
+        }
+      }
+      .lgo{
+        margin-top: 10rem;
+        @include centerByFlex();
+        img{
+          height: 29rem;
+          width: 29rem;
         }
       }
     }

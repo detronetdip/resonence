@@ -232,9 +232,9 @@ i {
   text-align: center;
 }
 
-.maincontainer .about .resonancexi .myth {
+.maincontainer .about .myth {
   width: 100%;
-  margin-top: 68rem;
+  margin-top: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +246,7 @@ i {
           justify-content: center;
 }
 
-.maincontainer .about .resonancexi .myth p {
+.maincontainer .about .myth p {
   font-size: 3rem;
   width: 50%;
   max-width: 60rem;
@@ -254,7 +254,7 @@ i {
   color: #fff;
 }
 
-.maincontainer .about .resonancexi .myth p .ty1 {
+.maincontainer .about .myth p .ty1 {
   background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -262,11 +262,29 @@ i {
   text-fill-color: transparent;
 }
 
-.maincontainer .about .resonancexi .myth p .ty2 {
+.maincontainer .about .myth p .ty2 {
   background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.maincontainer .about .lgo {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maincontainer .about .lgo img {
+  height: 29rem;
+  width: 29rem;
 }
 /*# sourceMappingURL=style.css.map */
