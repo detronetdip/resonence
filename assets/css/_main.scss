@@ -105,6 +105,24 @@
             text-align: center;
           }
         }
+        .myth{
+          width: 100%;
+          margin-top: 68rem;
+          @include centerByFlex();
+          p{
+            font-size: 3rem;
+            width: 50%;
+            max-width: 60rem;
+            text-align: center;
+            color: $white;
+           .ty1{
+             @include ty1();
+           }
+           .ty2{
+            @include ty2();
+          }
+          }
+        }
       }
     }
   }

@@ -1,15 +1,33 @@
 @mixin centerByFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @mixin gradientFontType1 {
-    background: $gradientFont;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  @mixin centerByGrid {
-    display: grid;
-    place-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin gradientFontType1 {
+  background: $gradientFont;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@mixin centerByGrid {
+  display: grid;
+  place-items: center;
+}
+@mixin ty1 {
+  background: linear-gradient(
+    272.56deg,
+    #f751fb 15.04%,
+    rgba(0, 255, 255, 0.89) 60.67%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@mixin ty2 {
+  background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
