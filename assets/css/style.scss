@@ -93,34 +93,37 @@ i {
           @include gradientFontType1();
         }
       }
-      .counter{
+      .counter {
         @include centerByFlex();
         margin-top: calc(100vh - 70vh);
-        .sgbox{
+        .sgbox {
           color: $white;
           margin: 0.2rem 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background:$counterBackground;
+          background: $counterBackground;
           padding: 1rem;
           height: 8rem;
           width: 8rem;
           border-radius: 10px;
-          #days,#hours,#mins,#secs{
+          #days,
+          #hours,
+          #mins,
+          #secs {
             font-size: 2.8rem;
           }
-          .name{
+          .name {
             font-size: 1.3rem;
             font-weight: 400;
           }
         }
       }
-      .explore{
+      .explore {
         @include centerByFlex();
         margin-top: 8rem;
-        button{
+        button {
           width: 14rem;
           height: 4rem;
           font-size: 1.5rem;
@@ -128,37 +131,47 @@ i {
       }
     }
   }
-  .about{
+  .about {
     min-height: 100vh;
     background: $abtBack;
-    @include centerByFlex();
-    .resonancexi{
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 30rem;
-      width: 40rem;
-      padding: 2rem;
-      border-radius: 2rem;
-      background: $resonance;
-      #rex{
-        margin-top: -5rem;
-        font-size: 3.5rem;
-        @include gradientFontType1();
-        padding: 0 2rem;
-      }
-      #start{
-        margin-top: -1rem;
-        font-size: 1.5rem;
-        color: $lightblue;
-      }
-      #text{
-        margin-top: 2rem;
-        font-size: 1.3rem;
-        color: $white;
-        text-align: center;
+    .resonancexi {
+      position: relative;
+      @include centerByFlex();
+      .bcx {
+        position: absolute;
+        top: 0%;
+        margin-top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 45rem;
+        box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 3.8rem 1.5rem;
+        background: $resonanceCard;
+        #rex {
+          text-align: center;
+          span {
+            font-size: 3.5rem;
+            @include gradientFontType1();
+            background: $resonance;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          }
+        }
+        #start {
+          margin-top: 0.5rem;
+          font-size: 1.5rem;
+          color: $lightblue;
+          text-align: center;
+        }
+        #text {
+          font-size: 1.3rem;
+          color: $white;
+          text-align: center;
+          text-align: center;
+        }
       }
     }
   }

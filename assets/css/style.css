@@ -136,7 +136,10 @@ i {
   border-radius: 10px;
 }
 
-.maincontainer .home .topcover .counter .sgbox #days, .maincontainer .home .topcover .counter .sgbox #hours, .maincontainer .home .topcover .counter .sgbox #mins, .maincontainer .home .topcover .counter .sgbox #secs {
+.maincontainer .home .topcover .counter .sgbox #days,
+.maincontainer .home .topcover .counter .sgbox #hours,
+.maincontainer .home .topcover .counter .sgbox #mins,
+.maincontainer .home .topcover .counter .sgbox #secs {
   font-size: 2.8rem;
 }
 
@@ -167,6 +170,10 @@ i {
 .maincontainer .about {
   min-height: 100vh;
   background: linear-gradient(0.94deg, #030a1b 51.2%, #311250 73.95%, #010710 95.7%);
+}
+
+.maincontainer .about .resonancexi {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,49 +185,50 @@ i {
           justify-content: center;
 }
 
-.maincontainer .about .resonancexi {
+.maincontainer .about .resonancexi .bcx {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 30rem;
-  width: 40rem;
-  padding: 2rem;
-  border-radius: 2rem;
+  top: 0%;
+  margin-top: -3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  max-width: 45rem;
+  -webkit-box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 3.8rem 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144E), to(#1F153C));
   background: linear-gradient(180deg, #23144E 0%, #1F153C 100%);
 }
 
-.maincontainer .about .resonancexi #rex {
-  margin-top: -5rem;
+.maincontainer .about .resonancexi .bcx #rex {
+  text-align: center;
+}
+
+.maincontainer .about .resonancexi .bcx #rex span {
   font-size: 3.5rem;
   background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  padding: 0 2rem;
+  background: linear-gradient(92.17deg, #F716E0 12.4%, rgba(0, 224, 255, 0.99) 98.77%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.maincontainer .about .resonancexi #start {
-  margin-top: -1rem;
+.maincontainer .about .resonancexi .bcx #start {
+  margin-top: 0.5rem;
   font-size: 1.5rem;
   color: #00E0FF;
+  text-align: center;
 }
 
-.maincontainer .about .resonancexi #text {
-  margin-top: 2rem;
+.maincontainer .about .resonancexi .bcx #text {
   font-size: 1.3rem;
   color: #fff;
+  text-align: center;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
