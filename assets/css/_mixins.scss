@@ -1,0 +1,15 @@
+@mixin centerByFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin gradientFontType1 {
+    background: $gradientFont;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  @mixin centerByGrid {
+    display: grid;
+    place-items: center;
+  }
