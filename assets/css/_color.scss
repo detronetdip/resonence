@@ -47,3 +47,12 @@ $resonance: linear-gradient(
   rgba(0, 224, 255, 0.99) 98.77%
 );
 $resonanceCard: linear-gradient(180deg, #23144e 0%, #1f153c 100%);
+$conic: conic-gradient(
+  from 246.09deg at 31.55% 56.66%,
+  #130855 -33.64deg,
+  #bc0e6c 48.04deg,
+  #130855 79.59deg,
+  #130855 159.19deg,
+  #130855 326.36deg,
+  #bc0e6c 408.04deg
+);
