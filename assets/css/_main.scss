@@ -149,7 +149,7 @@
       justify-content: space-around;
       margin-top: 8rem;
       .scardcontainer {
-        height: 30rem;
+        height: 27rem;
         width: 29rem;
         background: rgba(113, 69, 205, 0.17);
         margin: 1rem;
@@ -169,8 +169,39 @@
           @include centerByFlex();
           margin-top: 3rem;
           img{
-            height: 13rem;
-            width: 13rem;
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-around;
+      .scardcontainer {
+        height: 27rem;
+        width: 29rem;
+        background: rgba(113, 69, 205, 0.17);
+        margin: 1rem;
+        border-radius: 15px;
+        padding: 2rem;
+        h4{
+          padding-top: 0;
+          @include cardTitle();
+          font-size: 3rem;
+          font-weight: 400;
+        }
+        .btndiv{
+          @include centerByFlex();
+          margin-top: 3rem;
+        }
+        .imgdiv{
+          @include centerByFlex();
+          margin-top: 3rem;
+          img{
+            height: 10rem;
+            width: 10rem;
           }
         }
       }
