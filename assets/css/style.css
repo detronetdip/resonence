@@ -304,4 +304,47 @@ i {
   font-size: 4rem;
   padding-top: 7rem;
 }
+
+.maincontainer .events .cardcontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 8rem;
+}
+
+.maincontainer .events .cardcontainer .scardcontainer {
+  height: 30rem;
+  width: 29rem;
+  background: rgba(113, 69, 205, 0.17);
+  margin: 1rem;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.maincontainer .events .cardcontainer .scardcontainer h4 {
+  padding-top: 0;
+  background: linear-gradient(265.95deg, #fb36ff 48.57%, #9299fc 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.maincontainer .events .cardcontainer .scardcontainer .btndiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
