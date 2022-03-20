@@ -59,3 +59,14 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+@mixin assemble {
+  background: linear-gradient(
+    93.31deg,
+    #e939cd 39.76%,
+    rgba(0, 255, 255, 0.89) 73.34%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

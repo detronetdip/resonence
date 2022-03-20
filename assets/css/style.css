@@ -94,6 +94,7 @@ i {
 .maincontainer .home .topcover .text h4 {
   margin-top: 4rem;
   font-size: 6rem;
+  font-weight: 500;
   background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -431,5 +432,27 @@ i {
   background: conic-gradient(from 246.09deg at 31.55% 56.66%, #130855 -33.64deg, #bc0e6c 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #bc0e6c 408.04deg);
   position: relative;
   padding-top: 12rem;
+}
+
+.maincontainer .ladies h4 {
+  position: absolute;
+  right: 9%;
+  top: 25%;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.maincontainer .ladies h4 .asmb {
+  background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.maincontainer .ladies h4 .dsmb {
+  color: #00ffff;
 }
 /*# sourceMappingURL=style.css.map */
