@@ -11,3 +11,12 @@ var x = setInterval(function () {
   document.getElementById("mins").innerHTML =minutes;
   document.getElementById("secs").innerHTML =seconds;
 }, 1000);
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+  loop:true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
