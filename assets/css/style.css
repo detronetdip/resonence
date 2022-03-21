@@ -198,7 +198,7 @@ i {
   -webkit-box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
           box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
   border-radius: 10px;
-  padding: 3.8rem 1.5rem;
+  padding: 2rem 1.5rem 3rem 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144e), to(#1f153c));
   background: linear-gradient(180deg, #23144e 0%, #1f153c 100%);
 }
@@ -220,6 +220,7 @@ i {
 }
 
 .maincontainer .about .resonancexi .bcx #start {
+  padding-bottom: 2rem;
   margin-top: 0.5rem;
   font-size: 1.5rem;
   color: #00e0ff;
@@ -431,7 +432,7 @@ i {
 .maincontainer .ladies {
   background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
   position: relative;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
 .maincontainer .ladies h4 {
