@@ -98,6 +98,7 @@
           padding-bottom: 2rem;
           margin-top: 0.5rem;
           font-size: 1.5rem;
+          font-weight: 500;
           color: $lightblue;
           text-align: center;
         }
@@ -147,9 +148,9 @@
       padding-top: 7rem;
     }
     .cardcontainer {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      justify-content: space-evenly;
+      display: flex;
+      //grid-template-columns: auto auto auto;
+      justify-content: center;
       margin-top: 8rem;
       .scardcontainer {
         height: 27rem;
@@ -179,9 +180,9 @@
       }
     }
     .cardcontainer2 {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: space-around;
+      display: flex;
+      //grid-template-columns: auto;
+      justify-content: center;
       .scardcontainer {
         height: 27rem;
         width: 29rem;
