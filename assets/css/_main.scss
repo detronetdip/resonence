@@ -141,6 +141,48 @@
     min-height: 100vh;
     background: $bg2;
     position: relative;
+    .motion{
+      position: absolute;
+      left: 35%;
+      top: 30%;
+      justify-content: center;
+      align-content: center;
+      height: 40rem;
+      width: 40rem;
+      span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: rotate(calc(36deg * var(--i)));
+      }
+      span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 4px solid #00ffff;
+        box-shadow: 0 0 20px #00ffff,
+        100px 100px 0px #00ffff,
+        100px 100px 20px #00ffff,
+        -100px 100px 0px #00ffff,
+        -100px 100px 20px #00ffff,
+        100px -100px 0px #00ffff,
+        100px -100px 20px #00ffff,
+        -100px -100px 0px #00ffff,
+        -100px -100px 20px #00ffff;
+        animation: animate 5s linear infinite;
+        transform-origin: 25rem;
+        animation-delay: calc(-0.25s * var(--i));
+      }
+      
+    }
     h4 {
       text-align: center;
       @include eor;
@@ -155,32 +197,10 @@
       .scardcontainer {
         height: 27rem;
         width: 29rem;
+        background: rgba(113, 69, 205, 0.17);
         margin: 1rem;
-        position: relative; border-radius: 15px;
-        z-index: 1;
-        overflow: hidden;
-        &::after{
-          content: '';
-          position: absolute;
-          height: 10rem;
-          width: 10rem;
-          top: -5%;
-          left: -10%;
-          background-color: rgb(255, 251, 0);
-          z-index: -1;
-          border-radius: 50%;
-          
-        }
-        .test{
-          z-index: 9;
-          border-radius: 15px;
-          padding: 2rem;
-          background: rgba( 113, 69, 205, 0.25 );
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-          backdrop-filter: blur( 7.5px );
-          -webkit-backdrop-filter: blur( 7.5px );
-          border-radius: 10px;
-        }
+        border-radius: 15px;
+        padding: 2rem;
         h4 {
           padding-top: 0;
           @include cardTitle();
@@ -286,4 +306,14 @@
 
    
   }
+}
+@keyframes animate {
+      0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+      }
 }
