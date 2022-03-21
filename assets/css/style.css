@@ -429,9 +429,9 @@ i {
 }
 
 .maincontainer .ladies {
-  background: conic-gradient(from 246.09deg at 31.55% 56.66%, #130855 -33.64deg, #bc0e6c 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #bc0e6c 408.04deg);
+  background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
   position: relative;
-  padding-top: 12rem;
+  padding-top: 20rem;
 }
 
 .maincontainer .ladies h4 {
