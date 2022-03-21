@@ -70,15 +70,16 @@
     .resonancexi {
       position: relative;
       @include centerByFlex();
-      height: 2rem;
+      height: 4rem;
       .bcx {
         position: absolute;
         top: -110%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
-        max-width: 45rem;
-        box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+        max-width: 40rem;
+        box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45),
+                  inset 0px -5px 10px rgba(255, 255, 255, 0.15);
         border-radius: 10px;
         padding: 3.8rem 1.5rem;
         background: $resonanceCard;

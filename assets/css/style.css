@@ -184,7 +184,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 2rem;
+  height: 4rem;
 }
 
 .maincontainer .about .resonancexi .bcx {
@@ -194,9 +194,9 @@ i {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 90%;
-  max-width: 45rem;
-  -webkit-box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+  max-width: 40rem;
+  -webkit-box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
+          box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   padding: 3.8rem 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144e), to(#1f153c));
@@ -328,7 +328,7 @@ i {
 
 .maincontainer .events .cardcontainer .scardcontainer h4 {
   padding-top: 0;
-  background: linear-gradient(205.95deg, #fb36ff 48.57%, #9299fc 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+  background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -388,7 +388,7 @@ i {
 
 .maincontainer .events .cardcontainer2 .scardcontainer h4 {
   padding-top: 0;
-  background: linear-gradient(205.95deg, #fb36ff 48.57%, #9299fc 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+  background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

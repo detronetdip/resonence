@@ -45,15 +45,7 @@
   text-fill-color: transparent;
 }
 @mixin cardTitle {
-  background: linear-gradient(
-    205.95deg,
-    #fb36ff 48.57%,
-    #9299fc 51.75%,
-    rgba(0, 235, 255, 0.96) 98.36%,
-    #00ffff 98.37%,
-    rgba(0, 96, 239, 0.84) 98.38%,
-    rgba(255, 255, 255, 0) 98.38%
-  );
+  background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
