@@ -155,10 +155,32 @@
       .scardcontainer {
         height: 27rem;
         width: 29rem;
-        background: rgba(113, 69, 205, 0.17);
         margin: 1rem;
-        border-radius: 15px;
-        padding: 2rem;
+        position: relative; border-radius: 15px;
+        z-index: 1;
+        overflow: hidden;
+        &::after{
+          content: '';
+          position: absolute;
+          height: 10rem;
+          width: 10rem;
+          top: -5%;
+          left: -10%;
+          background-color: rgb(255, 251, 0);
+          z-index: -1;
+          border-radius: 50%;
+          
+        }
+        .test{
+          z-index: 9;
+          border-radius: 15px;
+          padding: 2rem;
+          background: rgba( 113, 69, 205, 0.25 );
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 7.5px );
+          -webkit-backdrop-filter: blur( 7.5px );
+          border-radius: 10px;
+        }
         h4 {
           padding-top: 0;
           @include cardTitle();
