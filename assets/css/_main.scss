@@ -141,6 +141,7 @@
     min-height: 100vh;
     background: $bg2;
     position: relative;
+      
     h4 {
       text-align: center;
       @include eor;
@@ -161,7 +162,7 @@
         border-radius: 15px;
         padding: 2rem;
         z-index: 100;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(2px);
         h4 {
           padding-top: 0;
           @include cardTitle();
