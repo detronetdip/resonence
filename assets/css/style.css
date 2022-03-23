@@ -78,7 +78,7 @@ i {
 .maincontainer .home .topcover {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
   -webkit-user-select: none;
