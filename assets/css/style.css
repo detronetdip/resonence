@@ -523,7 +523,7 @@ i {
     height: 80vh;
   }
   .maincontainer .home .topcover .text h4 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .maincontainer .home .topcover .counter {
     display: -webkit-box;
@@ -539,26 +539,191 @@ i {
   }
   .maincontainer .home .topcover .counter .sgbox {
     padding: 1rem;
-    height: 7.8rem;
-    width: 7.8rem;
+    height: 7.6rem;
+    width: 7.6rem;
   }
   .maincontainer .home .topcover .counter .sgbox #days,
   .maincontainer .home .topcover .counter .sgbox #hours,
   .maincontainer .home .topcover .counter .sgbox #mins,
   .maincontainer .home .topcover .counter .sgbox #secs {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   .maincontainer .home .topcover .counter .sgbox .name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .maincontainer .home .topcover .explore {
-    margin-top: 6rem;
+    margin-top: 4rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 }
 
-@media only screen and (max-width: 831px) {
+@media only screen and (max-width: 911px) {
+  .maincontainer .home {
+    height: 80vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 4rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 75vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    padding: 1rem;
+    height: 7.6rem;
+    width: 7.6rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 2.4rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 1.1rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 4rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .maincontainer .home {
+    height: 80vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 4rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 79vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    height: 7.4rem;
+    width: 7.4rem;
+    margin: 0.2rem 1.2rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 2.2rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 1rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 3rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 712px) {
   .maincontainer .home {
     height: 70vh;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 85vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    height: 6.4rem;
+    width: 6.4rem;
+    margin: 0.2rem 1rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 2rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 0.9rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 3rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 10rem;
+    height: 3.8rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  .maincontainer .home {
+    height: 60vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 3.5rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 89vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    height: 5.4rem;
+    width: 5.4rem;
+    margin: 0.2rem 0.8rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 1.72rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 2.8rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 8rem;
+    height: 3.3rem;
+    font-size: 1.1rem;
   }
 }
 
