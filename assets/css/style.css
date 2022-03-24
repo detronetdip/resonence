@@ -516,6 +516,24 @@ i {
   .maincontainer .home {
     height: 100vh;
   }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 79vh);
+  }
+  .maincontainer .about .resonancexi {
+    height: 6rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -70%;
+  }
 }
 
 @media only screen and (max-width: 1028px) {
@@ -535,7 +553,7 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: calc(100vh - 75vh);
+    margin-top: calc(100vh - 79vh);
   }
   .maincontainer .home .topcover .counter .sgbox {
     padding: 1rem;
@@ -558,6 +576,12 @@ i {
     width: 13rem;
     height: 4rem;
     font-size: 1.4rem;
+  }
+  .maincontainer .about .resonancexi {
+    height: 6rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -60%;
   }
 }
 
@@ -581,7 +605,7 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: calc(100vh - 75vh);
+    margin-top: calc(100vh - 79vh);
   }
   .maincontainer .home .topcover .counter .sgbox {
     padding: 1rem;
@@ -604,6 +628,52 @@ i {
     width: 13rem;
     height: 4rem;
     font-size: 1.4rem;
+  }
+  .maincontainer .about .resonancexi {
+    height: 6rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -50%;
+    max-width: 35rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 3rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 
