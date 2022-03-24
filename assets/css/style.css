@@ -198,7 +198,7 @@ i {
   -webkit-box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
           box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45), inset 0px -5px 10px rgba(255, 255, 255, 0.15);
   border-radius: 10px;
-  padding: 2rem 1.5rem 3rem 1.5rem;
+  padding: 2rem 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#23144e), to(#1f153c));
   background: linear-gradient(180deg, #23144e 0%, #1f153c 100%);
 }
@@ -634,7 +634,7 @@ i {
   }
   .maincontainer .about .resonancexi .bcx {
     top: -50%;
-    max-width: 35rem;
+    max-width: 30rem;
   }
   .maincontainer .about .resonancexi .bcx #rex span {
     font-size: 3rem;
@@ -849,6 +849,58 @@ i {
     height: 2.8rem;
     font-size: 1rem;
   }
+  .maincontainer .about .resonancexi {
+    height: 6rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -50%;
+    max-width: 35rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -868,7 +920,7 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: calc(100vh - 92vh);
+    margin-top: calc(100vh - 95vh);
   }
   .maincontainer .home .topcover .counter .sgbox {
     height: 4rem;
@@ -904,6 +956,58 @@ i {
     height: 2.8rem;
     font-size: 0.8rem;
     font-weight: 500;
+  }
+  .maincontainer .about .resonancexi {
+    height: 6rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -50%;
+    max-width: 30rem;
+    padding: 1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 
