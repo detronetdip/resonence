@@ -469,3 +469,85 @@
     }
   }
 }
+@media only screen and (max-width: 495px) {
+  .maincontainer {
+    .home {
+      height: 50vh;
+      .topcover {
+        .text{
+          h4{
+            font-size: 2.8rem
+          }
+        }
+        .counter {
+          @include centerByFlex();
+          margin-top: calc(100vh - 92vh);
+          .sgbox {
+            height: 4.4rem;
+            width: 4.4rem;
+            margin: 0.2rem 0.5rem;
+            border-radius: 3px;
+            #days,
+            #hours,
+            #mins,
+            #secs {
+              font-size: 1rem;
+            }
+          }
+        }
+        .explore {
+          margin-top: 2.4rem;
+          button {
+            width: 6rem;
+            @include centerByFlex();
+            padding: 0;
+            height: 2.8rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 399px) {
+  .maincontainer {
+    .home {
+      height: 45vh;
+      .topcover {
+        .text{
+          h4{
+            font-size: 2.4rem
+          }
+        }
+        .counter {
+          @include centerByFlex();
+          margin-top: calc(100vh - 92vh);
+          .sgbox {
+            height: 4.4rem;
+            width: 4.4rem;
+            margin: 0.2rem 0.5rem;
+            border-radius: 3px;
+            #days,
+            #hours,
+            #mins,
+            #secs {
+              font-size: 1rem;
+            }
+          }
+        }
+        .explore {
+          margin-top: 2.4rem;
+          button {
+            width: 6rem;
+            @include centerByFlex();
+            padding: 0;
+            border-radius: 4px;
+            height: 2.8rem;
+            font-size: 1rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
