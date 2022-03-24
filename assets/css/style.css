@@ -798,16 +798,19 @@ i {
     margin-top: calc(100vh - 92vh);
   }
   .maincontainer .home .topcover .counter .sgbox {
-    height: 4.4rem;
-    width: 4.4rem;
-    margin: 0.2rem 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    margin: 0.2rem 0.3rem;
     border-radius: 3px;
   }
   .maincontainer .home .topcover .counter .sgbox #days,
   .maincontainer .home .topcover .counter .sgbox #hours,
   .maincontainer .home .topcover .counter .sgbox #mins,
   .maincontainer .home .topcover .counter .sgbox #secs {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 0.7rem;
   }
   .maincontainer .home .topcover .explore {
     margin-top: 2.4rem;

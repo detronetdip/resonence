@@ -523,15 +523,18 @@
           @include centerByFlex();
           margin-top: calc(100vh - 92vh);
           .sgbox {
-            height: 4.4rem;
-            width: 4.4rem;
-            margin: 0.2rem 0.5rem;
+            height: 4rem;
+            width: 4rem;
+            margin: 0.2rem 0.3rem;
             border-radius: 3px;
             #days,
             #hours,
             #mins,
             #secs {
-              font-size: 1rem;
+              font-size: 0.9rem;
+            }
+            .name{
+              font-size: 0.7rem;
             }
           }
         }
