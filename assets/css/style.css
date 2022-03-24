@@ -512,6 +512,56 @@ i {
   background-size: cover;
 }
 
+@media only screen and (max-width: 1373px) {
+  .maincontainer .home {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  .maincontainer .home {
+    height: 80vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 5rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 75vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    padding: 1rem;
+    height: 7.8rem;
+    width: 7.8rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 2.5rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 1.2rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+  .maincontainer .home {
+    height: 70vh;
+  }
+}
+
 #stars {
   width: 1px;
   height: 1px;

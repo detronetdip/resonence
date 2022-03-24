@@ -79,7 +79,7 @@
         width: 90%;
         max-width: 40rem;
         box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.45),
-                  inset 0px -5px 10px rgba(255, 255, 255, 0.15);
+          inset 0px -5px 10px rgba(255, 255, 255, 0.15);
         border-radius: 10px;
         padding: 2rem 1.5rem 3rem 1.5rem;
         background: $resonanceCard;
@@ -141,7 +141,7 @@
     min-height: 100vh;
     background: $bg2;
     position: relative;
-      
+
     h4 {
       text-align: center;
       @include eor;
@@ -195,7 +195,7 @@
         margin: 1rem;
         border-radius: 15px;
         padding: 2rem;
-        
+
         backdrop-filter: blur(10px);
         h4 {
           padding-top: 0;
@@ -238,13 +238,13 @@
       }
     }
   }
-  .slider{
+  .slider {
     height: 200vh;
     padding-top: 15rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-    .sliderrow{
+    .sliderrow {
       @include centerByFlex();
-      .sliderwindow{
+      .sliderwindow {
         height: 400px;
         width: 350px;
       }
@@ -264,11 +264,58 @@
       color: #fff;
     }
 
-    .swiper-slide{
-     background-image: url(./../images/bg.png);
-     background-size: cover;
+    .swiper-slide {
+      background-image: url(./../images/bg.png);
+      background-size: cover;
     }
-
-   
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .maincontainer {
+    .home {
+      height: 100vh;
+    }
+  }
+}
+@media only screen and (max-width: 1028px) {
+  .maincontainer {
+    .home {
+      height: 80vh;
+      .topcover {
+        .text {
+          h4 {
+            font-size: 5rem;
+          }
+        }
+        .counter {
+          @include centerByFlex();
+          margin-top: calc(100vh - 75vh);
+          .sgbox {
+            padding: 1rem;
+            height: 7.8rem;
+            width: 7.8rem;
+            #days,
+            #hours,
+            #mins,
+            #secs {
+              font-size: 2.5rem;
+            }
+            .name {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .explore {
+          margin-top: 6rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 831px) {
+  .maincontainer {
+    .home {
+      height: 70vh;
+    }
   }
 }
