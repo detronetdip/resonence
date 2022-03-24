@@ -322,6 +322,7 @@
     .home {
       height: 80vh;
       .topcover {
+        background-color: $transparentBack2;
         .text {
           h4 {
             font-size: 4rem;
@@ -546,7 +547,7 @@
             padding: 0;
             border-radius: 4px;
             height: 2.8rem;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 500;
           }
         }

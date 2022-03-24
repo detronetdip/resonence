@@ -565,6 +565,9 @@ i {
   .maincontainer .home {
     height: 80vh;
   }
+  .maincontainer .home .topcover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   .maincontainer .home .topcover .text h4 {
     font-size: 4rem;
   }
@@ -829,7 +832,7 @@ i {
     padding: 0;
     border-radius: 4px;
     height: 2.8rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
   }
 }
