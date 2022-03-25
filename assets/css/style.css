@@ -925,7 +925,7 @@ i {
   .maincontainer .home .topcover .counter .sgbox {
     height: 4rem;
     width: 4rem;
-    margin: 1.3rem 0.3rem;
+    margin: 2rem 0.3rem;
     border-radius: 3px;
   }
   .maincontainer .home .topcover .counter .sgbox #days,
@@ -978,7 +978,7 @@ i {
   }
   .maincontainer .about .myth {
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 20.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

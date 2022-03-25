@@ -624,7 +624,7 @@
           .sgbox {
             height: 4rem;
             width: 4rem;
-            margin: 1.3rem 0.3rem;
+            margin: 2rem 0.3rem;
             border-radius: 3px;
             #days,
             #hours,
@@ -676,7 +676,7 @@
       }
       .myth {
         width: 100%;
-        margin-top: 20rem;
+        margin-top: 20.5rem;
         @include centerByFlex();
         p {
           font-size: 2rem;
