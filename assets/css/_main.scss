@@ -571,10 +571,10 @@
         .bcx {
           top: -50%;
           max-width: 28rem; 
-          padding: 1rem 1.5rem 3rem 1.5rem;
+          padding: 1rem 1.5rem 2rem 1.5rem;
           #rex {
             span {
-              font-size: 2rem;
+              font-size: 2.4rem;
             }
           }
           #text {
@@ -590,7 +590,7 @@
       }
       .myth {
         width: 100%;
-        margin-top: 25rem;
+        margin-top: 20rem;
         @include centerByFlex();
         p {
           font-size: 2rem;
@@ -624,7 +624,7 @@
           .sgbox {
             height: 4rem;
             width: 4rem;
-            margin: 0.9rem 0.3rem;
+            margin: 1.3rem 0.3rem;
             border-radius: 3px;
             #days,
             #hours,

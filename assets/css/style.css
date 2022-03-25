@@ -855,10 +855,10 @@ i {
   .maincontainer .about .resonancexi .bcx {
     top: -50%;
     max-width: 28rem;
-    padding: 1rem 1.5rem 3rem 1.5rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
   }
   .maincontainer .about .resonancexi .bcx #rex span {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .maincontainer .about .resonancexi .bcx #text {
     font-size: 1rem;
@@ -870,7 +870,7 @@ i {
   }
   .maincontainer .about .myth {
     width: 100%;
-    margin-top: 25rem;
+    margin-top: 20rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -925,7 +925,7 @@ i {
   .maincontainer .home .topcover .counter .sgbox {
     height: 4rem;
     width: 4rem;
-    margin: 0.9rem 0.3rem;
+    margin: 1.3rem 0.3rem;
     border-radius: 3px;
   }
   .maincontainer .home .topcover .counter .sgbox #days,
