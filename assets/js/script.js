@@ -20,4 +20,4 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   }, 
 });
-//alert("All of you are asked to open this in your desktop")
+alert(screen.width + "*" + screen.height)
