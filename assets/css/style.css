@@ -1024,6 +1024,127 @@ i {
   }
 }
 
+@media only screen and (max-width: 499px), screen and (max-height: 1064px) {
+  .maincontainer .home {
+    height: 35vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 2.4rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 95vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    height: 4rem;
+    width: 4rem;
+    margin: 3rem 0.3rem;
+    border-radius: 3px;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 0.9rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 0.7rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 1rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    border-radius: 4px;
+    height: 2.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -28%;
+    max-width: 28rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2.4rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 20.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2rem;
+    width: 75%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
 #stars {
   width: 1px;
   height: 1px;

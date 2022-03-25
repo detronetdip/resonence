@@ -701,3 +701,96 @@
     }
   }
 }
+@media only screen and (max-width: 499px),screen and (max-height: 1064px) {
+  .maincontainer {
+    .home {
+      height: 35vh;
+      .topcover {
+        .text{
+          h4{
+            font-size: 2.4rem
+          }
+        }
+        .counter {
+          @include centerByFlex();
+          margin-top: calc(100vh - 95vh);
+          .sgbox {
+            height: 4rem;
+            width: 4rem;
+            margin: 3rem 0.3rem;
+            border-radius: 3px;
+            #days,
+            #hours,
+            #mins,
+            #secs {
+              font-size: 0.9rem;
+            }
+            .name{
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .explore {
+          margin-top: 1rem;
+          button {
+            width: 6rem;
+            @include centerByFlex();
+            padding: 0;
+            border-radius: 4px;
+            height: 2.8rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .about {
+      .resonancexi {
+        .bcx {
+          top: -28%;
+          max-width: 28rem; 
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 2.4rem;
+            }
+          }
+          #text {
+            font-size: 1rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+          }
+        }
+
+      }
+      .myth {
+        width: 100%;
+        margin-top: 20.5rem;
+        @include centerByFlex();
+        p {
+          font-size: 2rem;
+          width: 75%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
+          }
+        }
+      }
+      .lgo {
+        margin-top: 5rem;
+        @include centerByFlex();
+        img {
+          height: 20rem;
+          width: 20rem;
+        }
+      }
+    }
+  }
+}

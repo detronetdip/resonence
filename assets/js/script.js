@@ -20,4 +20,4 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   }, 
 });
-alert(screen.width + "*" + screen.height)
+//alert(screen.width + "*" + screen.height)
