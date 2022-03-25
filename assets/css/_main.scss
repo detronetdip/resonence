@@ -679,7 +679,7 @@
         @include centerByFlex();
         p {
           font-size: 2rem;
-          width: 70%;
+          width: 75%;
           text-align: center;
           color: $white;
           .ty1 {
@@ -688,6 +688,14 @@
           .ty2 {
             @include ty2();
           }
+        }
+      }
+      .lgo {
+        margin-top: 5rem;
+        @include centerByFlex();
+        img {
+          height: 20rem;
+          width: 20rem;
         }
       }
     }
