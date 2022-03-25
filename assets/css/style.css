@@ -590,7 +590,7 @@ i {
     height: 80vh;
   }
   .maincontainer .home .topcover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .maincontainer .home .topcover .text h4 {
     font-size: 4rem;
@@ -938,7 +938,7 @@ i {
     font-size: 0.7rem;
   }
   .maincontainer .home .topcover .explore {
-    margin-top: 1.4rem;
+    margin-top: 1rem;
   }
   .maincontainer .home .topcover .explore button {
     width: 6rem;
