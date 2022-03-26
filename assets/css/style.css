@@ -1043,9 +1043,9 @@ i {
   }
   .maincontainer .events .cardcontainer .scardcontainer {
     height: 26rem;
-    width: 22rem;
+    width: 23rem;
     background: rgba(255, 255, 255, 0.05);
-    margin: 3rem auto;
+    margin: 4rem auto;
     border-radius: 15px;
     padding: 2rem;
     z-index: 100;
@@ -1100,7 +1100,7 @@ i {
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 26rem;
-    width: 22rem;
+    width: 23rem;
     background: rgba(255, 255, 255, 0.05);
     margin: 0 auto;
     border-radius: 15px;
