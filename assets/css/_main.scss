@@ -778,5 +778,25 @@
       }
     }
   }
+  .ladies {
+    background: $conic;
+    position: relative;
+    padding-top: 10rem;
+    h4 {
+      position: absolute;
+      right: 3%;
+      top: 30%;
+      font-size: 2.3rem;
+      text-align: center;
+      color: $white;
+      font-weight: 500;
+      .asmb {
+        @include assemble();
+      }
+      .dsmb {
+        color: #00ffff;
+      }
+    }
+  }
   }
 }
