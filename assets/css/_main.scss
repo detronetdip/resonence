@@ -699,5 +699,84 @@
         }
       }
     }
+    .events {
+    min-height: 50vh;
+    background: $bg2;
+    position: relative;
+
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 2.8rem;
+      padding: 3rem 5rem;;
+    }
+    .cardcontainer {
+      display:list-item;
+
+      margin-top: 8rem;
+      .scardcontainer {
+        height: 26rem;
+        width: 22rem;
+        background: rgba(255, 255, 255, 0.05);
+
+        margin: 3rem auto;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 7rem;
+            width: 7rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2 {
+      display: flex;
+      //grid-template-columns: auto;
+      justify-content: center;
+      .scardcontainer {
+        height: 26rem;
+        width: 22rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 2rem;
+
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 7rem;
+            width: 7rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
