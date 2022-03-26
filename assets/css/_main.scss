@@ -608,227 +608,227 @@
     }
   }
 }
-@media only screen and (max-width: 399px) {
-  .maincontainer {
-    .home {
-      height: 45vh;
-      .topcover {
-        .text{
-          h4{
-            font-size: 2.4rem
-          }
-        }
-        .counter {
-          @include centerByFlex();
-          margin-top: calc(100vh - 95vh);
-          .sgbox {
-            height: 4rem;
-            width: 4rem;
-            margin: 2rem 0.3rem;
-            border-radius: 3px;
-            #days,
-            #hours,
-            #mins,
-            #secs {
-              font-size: 0.9rem;
-            }
-            .name{
-              font-size: 0.7rem;
-            }
-          }
-        }
-        .explore {
-          margin-top: 1rem;
-          button {
-            width: 6rem;
-            @include centerByFlex();
-            padding: 0;
-            border-radius: 4px;
-            height: 2.8rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-    .about {
-      .resonancexi {
-        .bcx {
-          top: -18%;
-          max-width: 28rem; 
-          padding: 1.5rem;
-          #rex {
-            span {
-              font-size: 2.4rem;
-            }
-          }
-          #text {
-            font-size: 1rem;
-          }
-          #start {
-            padding-bottom: 1rem;
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
-          }
-        }
+// @media only screen and (max-width: 399px) {
+//   .maincontainer {
+//     .home {
+//       height: 45vh;
+//       .topcover {
+//         .text{
+//           h4{
+//             font-size: 2.4rem
+//           }
+//         }
+//         .counter {
+//           @include centerByFlex();
+//           margin-top: calc(100vh - 95vh);
+//           .sgbox {
+//             height: 4rem;
+//             width: 4rem;
+//             margin: 2rem 0.3rem;
+//             border-radius: 3px;
+//             #days,
+//             #hours,
+//             #mins,
+//             #secs {
+//               font-size: 0.9rem;
+//             }
+//             .name{
+//               font-size: 0.7rem;
+//             }
+//           }
+//         }
+//         .explore {
+//           margin-top: 1rem;
+//           button {
+//             width: 6rem;
+//             @include centerByFlex();
+//             padding: 0;
+//             border-radius: 4px;
+//             height: 2.8rem;
+//             font-size: 0.8rem;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//     .about {
+//       .resonancexi {
+//         .bcx {
+//           top: -18%;
+//           max-width: 28rem; 
+//           padding: 1.5rem;
+//           #rex {
+//             span {
+//               font-size: 2.4rem;
+//             }
+//           }
+//           #text {
+//             font-size: 1rem;
+//           }
+//           #start {
+//             padding-bottom: 1rem;
+//             margin-top: 0.5rem;
+//             font-size: 1.2rem;
+//           }
+//         }
 
-      }
-      .myth {
-        width: 100%;
-        margin-top: 20.5rem;
-        @include centerByFlex();
-        p {
-          font-size: 2rem;
-          width: 75%;
-          text-align: center;
-          color: $white;
-          .ty1 {
-            @include ty1();
-          }
-          .ty2 {
-            @include ty2();
-          }
-        }
-      }
-      .lgo {
-        margin-top: 5rem;
-        @include centerByFlex();
-        img {
-          height: 20rem;
-          width: 20rem;
-        }
-      }
-    }
-    .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+//       }
+//       .myth {
+//         width: 100%;
+//         margin-top: 20.5rem;
+//         @include centerByFlex();
+//         p {
+//           font-size: 2rem;
+//           width: 75%;
+//           text-align: center;
+//           color: $white;
+//           .ty1 {
+//             @include ty1();
+//           }
+//           .ty2 {
+//             @include ty2();
+//           }
+//         }
+//       }
+//       .lgo {
+//         margin-top: 5rem;
+//         @include centerByFlex();
+//         img {
+//           height: 20rem;
+//           width: 20rem;
+//         }
+//       }
+//     }
+//     .events {
+//     min-height: 50vh;
+//     background: $bg2;
+//     position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 2.8rem;
-      padding: 2rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto;
+//     h4 {
+//       text-align: center;
+//       @include eor;
+//       font-size: 2.8rem;
+//       padding: 2rem 5rem;
+//       font-weight: 500;
+//     }
+//     .cardcontainer {
+//       grid-template-columns: auto;
 
-      margin-top: 1rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 23rem;
-        background: rgba(255, 255, 255, 0.05);
+//       margin-top: 1rem;
+//       .scardcontainer {
+//         height: 26rem;
+//         width: 23rem;
+//         background: rgba(255, 255, 255, 0.05);
 
-        margin: 4rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.2rem;
-          font-weight: 400;
-        }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 7rem;
-            width: 7rem;
-          }
-        }
-      }
-    }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 4rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 23rem;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
+//         margin: 4rem auto;
+//         border-radius: 15px;
+//         padding: 2rem;
+//         z-index: 100;
+//         backdrop-filter: blur(2px);
+//         h4 {
+//           padding: 0 1rem;
+//           @include cardTitle();
+//           font-size: 2.2rem;
+//           font-weight: 400;
+//         }
+//         .btndiv {
+//           @include centerByFlex();
+//           margin-top: 4rem;
+//         }
+//         .imgdiv {
+//           @include centerByFlex();
+//           margin-top: 4rem;
+//           img {
+//             height: 7rem;
+//             width: 7rem;
+//           }
+//         }
+//       }
+//     }
+//     .cardcontainer2 {
+//       grid-template-columns: auto;
+//       justify-content: center;
+//       margin-top: 4rem;
+//       .scardcontainer {
+//         height: 26rem;
+//         width: 23rem;
+//         background: rgba(255, 255, 255, 0.05);
+//         margin: 0 auto;
+//         border-radius: 15px;
+//         padding: 2rem;
 
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.2rem;
-          font-weight: 400;
-        }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 7rem;
-            width: 7rem;
-          }
-        }
-      }
-    }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 3%;
-      top: 35%;
-      font-size: 2.2rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
-      }
-      .dsmb {
-        color: #00ffff;
-      }
-    }
-  }
-  .slider {
-    height: 200vh;
-    padding-top: 10rem;
-    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-    .sliderrow {
-      @include centerByFlex();
-      .sliderwindow {
-        height: 30rem;
-        width: 20rem;
-      }
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+//         backdrop-filter: blur(2px);
+//         h4 {
+//           padding: 0 1rem;
+//           @include cardTitle();
+//           font-size: 2.2rem;
+//           font-weight: 400;
+//         }
+//         .btndiv {
+//           @include centerByFlex();
+//           margin-top: 4rem;
+//         }
+//         .imgdiv {
+//           @include centerByFlex();
+//           margin-top: 4rem;
+//           img {
+//             height: 7rem;
+//             width: 7rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .ladies {
+//     background: $conic;
+//     position: relative;
+//     padding-top: 10rem;
+//     h4 {
+//       position: absolute;
+//       right: 3%;
+//       top: 35%;
+//       font-size: 2.2rem;
+//       text-align: center;
+//       color: $white;
+//       font-weight: 500;
+//       .asmb {
+//         @include assemble();
+//       }
+//       .dsmb {
+//         color: #00ffff;
+//       }
+//     }
+//   }
+//   .slider {
+//     height: 200vh;
+//     padding-top: 10rem;
+//     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+//     .sliderrow {
+//       @include centerByFlex();
+//       .sliderwindow {
+//         height: 30rem;
+//         width: 20rem;
+//       }
+//     }
+//     .swiper {
+//       width: 100%;
+//       height: 100%;
+//     }
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 1.5rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-    }
+//     .swiper-slide {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 1.5rem;
+//       font-size: 2rem;
+//       font-weight: bold;
+//       color: #fff;
+//     }
 
-    .swiper-slide {
-      background-image: url(./../images/bg.png);
-      background-size: cover;
-    }
-  }
-  }
-}
+//     .swiper-slide {
+//       background-image: url(./../images/bg.png);
+//       background-size: cover;
+//     }
+//   }
+//   }
+// }
