@@ -1035,11 +1035,11 @@ i {
     background-clip: text;
     text-fill-color: transparent;
     font-size: 2.8rem;
-    padding: 3rem 5rem;
+    padding: 2rem 5rem;
   }
   .maincontainer .events .cardcontainer {
     display: list-item;
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
   .maincontainer .events .cardcontainer .scardcontainer {
     height: 26rem;
