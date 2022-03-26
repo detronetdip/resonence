@@ -712,9 +712,9 @@
       font-weight: 500;
     }
     .cardcontainer {
-      display:list-item;
+      grid-template-columns: auto;
 
-      margin-top: 2rem;
+      margin-top: 1rem;
       .scardcontainer {
         height: 26rem;
         width: 23rem;

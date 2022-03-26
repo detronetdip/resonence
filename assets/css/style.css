@@ -1039,8 +1039,9 @@ i {
     font-weight: 500;
   }
   .maincontainer .events .cardcontainer {
-    display: list-item;
-    margin-top: 2rem;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-top: 1rem;
   }
   .maincontainer .events .cardcontainer .scardcontainer {
     height: 26rem;
