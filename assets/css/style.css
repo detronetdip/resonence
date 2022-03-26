@@ -904,6 +904,11 @@ i {
 }
 
 @media only screen and (max-width: 399px) {
+  .maincontainer {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+  }
   .maincontainer .home {
     height: 45vh;
   }
@@ -1212,6 +1217,9 @@ i {
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
     background-size: cover;
+  }
+  .maincontainer::-webkit-scrollbar {
+    display: none;
   }
 }
 
