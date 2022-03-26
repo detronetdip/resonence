@@ -374,9 +374,10 @@ i {
 }
 
 .maincontainer .events .cardcontainer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1093,12 +1094,12 @@ i {
     width: 7rem;
   }
   .maincontainer .events .cardcontainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 4rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 26rem;

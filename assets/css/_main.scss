@@ -185,8 +185,8 @@
       }
     }
     .cardcontainer2 {
-      display: flex;
-      //grid-template-columns: auto;
+      display: grid;
+      grid-template-columns: auto;
       justify-content: center;
       .scardcontainer {
         height: 27rem;
@@ -746,9 +746,9 @@
       }
     }
     .cardcontainer2 {
-      display: flex;
-      //grid-template-columns: auto;
+      grid-template-columns: auto;
       justify-content: center;
+      margin-top: 4rem;
       .scardcontainer {
         height: 26rem;
         width: 23rem;
