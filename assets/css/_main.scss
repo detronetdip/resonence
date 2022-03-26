@@ -708,7 +708,8 @@
       text-align: center;
       @include eor;
       font-size: 2.8rem;
-      padding: 2rem 5rem;;
+      padding: 2rem 5rem;
+      font-weight: 500;
     }
     .cardcontainer {
       display:list-item;

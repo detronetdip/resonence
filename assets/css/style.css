@@ -1036,6 +1036,7 @@ i {
     text-fill-color: transparent;
     font-size: 2.8rem;
     padding: 2rem 5rem;
+    font-weight: 500;
   }
   .maincontainer .events .cardcontainer {
     display: list-item;
