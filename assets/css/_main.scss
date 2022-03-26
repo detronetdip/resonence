@@ -610,9 +610,6 @@
 }
 @media only screen and (max-width: 399px) {
   .maincontainer {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
     .home {
       height: 45vh;
       .topcover {
@@ -832,8 +829,5 @@
       background-size: cover;
     }
   }
-  }
-  .maincontainer::-webkit-scrollbar{
-    display: none;
   }
 }
