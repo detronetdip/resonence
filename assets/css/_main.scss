@@ -196,7 +196,7 @@
         border-radius: 15px;
         padding: 2rem;
 
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(2px);
         h4 {
           padding-top: 0;
           @include cardTitle();
