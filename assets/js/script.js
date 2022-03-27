@@ -20,4 +20,8 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   }, 
 });
+VanillaTilt.init(document.querySelectorAll(".scardcontainer"), {
+  max: 25,
+  speed: 400
+});
 //alert(screen.width + "*" + screen.height)
