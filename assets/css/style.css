@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 input,
@@ -974,6 +975,7 @@ i {
     height: 26rem;
     width: 24rem;
     background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
     margin: 2.5rem auto;
     border-radius: 15px;
     padding: 2rem;
