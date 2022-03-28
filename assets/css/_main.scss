@@ -158,9 +158,10 @@
         height: 30rem;
         width: 28rem;
         background: rgba(255, 255, 255, 0.05);
-
+        backdrop-filter: blur(2px);transform: perspective(5000px);transform-style: preserve-3d;
         margin: 3rem auto;
         border-radius: 15px;
+        cursor: pointer;
         padding: 2rem;
         z-index: 100;
         backdrop-filter: blur(2px);
@@ -169,6 +170,7 @@
           @include cardTitle();
           font-size: 3rem;
           font-weight: 400;
+          transform: translateZ(20px);
         }
         .btndiv {
           @include centerByFlex();
@@ -191,6 +193,7 @@
       padding-bottom: 3rem;
       .scardcontainer {
         height: 30rem;
+        cursor: pointer;
         width: 28rem;
         background: rgba(255, 255, 255, 0.05);
         margin-top: 3rem;
@@ -627,7 +630,6 @@
         border-radius: 15px;
         padding: 2rem;
         z-index: 100;
-        backdrop-filter: blur(2px);
         h4 {
           padding: 0 1rem;
           @include cardTitle();

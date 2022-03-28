@@ -324,12 +324,18 @@ i {
   height: 30rem;
   width: 28rem;
   background: rgba(255, 255, 255, 0.05);
-  margin: 3rem auto;
-  border-radius: 15px;
-  padding: 2rem;
-  z-index: 100;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  -webkit-transform: perspective(5000px);
+          transform: perspective(5000px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 3rem auto;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 2rem;
+  z-index: 100;
+  backdrop-filter: blur(2px);
 }
 
 .maincontainer .events .cardcontainer .scardcontainer h4 {
@@ -341,6 +347,8 @@ i {
   text-fill-color: transparent;
   font-size: 3rem;
   font-weight: 400;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
 }
 
 .maincontainer .events .cardcontainer .scardcontainer .btndiv {
@@ -387,6 +395,7 @@ i {
 
 .maincontainer .events .cardcontainer2 .scardcontainer {
   height: 30rem;
+  cursor: pointer;
   width: 28rem;
   background: rgba(255, 255, 255, 0.05);
   margin-top: 3rem;
@@ -980,8 +989,6 @@ i {
     border-radius: 15px;
     padding: 2rem;
     z-index: 100;
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
   }
   .maincontainer .events .cardcontainer .scardcontainer h4 {
     padding: 0 1rem;

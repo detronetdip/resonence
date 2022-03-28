@@ -23,5 +23,8 @@ var swiper = new Swiper(".mySwiper", {
 VanillaTilt.init(document.querySelectorAll(".scardcontainer"), {
   max: 15,
   speed: 400,
+  gyroscope: true, glare: true, 
+  perspective:5000, // if it should have a "glare" effect
+  "max-glare": 0.1,
 });
 //alert(screen.width + "*" + screen.height)
