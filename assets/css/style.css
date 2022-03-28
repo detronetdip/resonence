@@ -320,10 +320,10 @@ i {
 }
 
 .maincontainer .events .cardcontainer .scardcontainer {
-  height: 27rem;
-  width: 29rem;
+  height: 30rem;
+  width: 28rem;
   background: rgba(255, 255, 255, 0.05);
-  margin: 1rem;
+  margin: 3rem auto;
   border-radius: 15px;
   padding: 2rem;
   z-index: 100;
@@ -352,7 +352,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
@@ -384,10 +384,10 @@ i {
 }
 
 .maincontainer .events .cardcontainer2 .scardcontainer {
-  height: 27rem;
-  width: 29rem;
+  height: 30rem;
+  width: 28rem;
   background: rgba(255, 255, 255, 0.05);
-  margin: 1rem;
+  margin-top: 3rem;
   border-radius: 15px;
   padding: 2rem;
   -webkit-backdrop-filter: blur(2px);
@@ -415,7 +415,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
@@ -529,11 +529,54 @@ i {
             justify-content: center;
     margin-top: calc(100vh - 79vh);
   }
-  .maincontainer .about .resonancexi {
-    height: 6rem;
-  }
   .maincontainer .about .resonancexi .bcx {
-    top: -70%;
+    top: -50%;
+    max-width: 40rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 3.4rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.3rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 
@@ -578,11 +621,196 @@ i {
     height: 4rem;
     font-size: 1.4rem;
   }
-  .maincontainer .about .resonancexi {
-    height: 6rem;
-  }
   .maincontainer .about .resonancexi .bcx {
-    top: -60%;
+    top: -30%;
+    max-width: 38rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 3.2rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.3rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2.9rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 29rem;
+    width: 29rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3.5rem;
+    padding: 15rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin-top: -10rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 28rem;
+    width: 26rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 3rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 9rem;
+    width: 9rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 28rem;
+    width: 26rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 9rem;
+    width: 9rem;
   }
 }
 
@@ -630,22 +858,25 @@ i {
     height: 4rem;
     font-size: 1.4rem;
   }
-  .maincontainer .about .resonancexi {
-    height: 6rem;
-  }
   .maincontainer .about .resonancexi .bcx {
-    top: -50%;
-    max-width: 30rem;
+    top: -30%;
+    max-width: 37rem;
+    padding: 1.5rem;
   }
   .maincontainer .about .resonancexi .bcx #rex span {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   .maincontainer .about .resonancexi .bcx #text {
     font-size: 1.2rem;
   }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
   .maincontainer .about .myth {
     width: 100%;
-    margin-top: 25rem;
+    margin-top: 30rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +888,7 @@ i {
             justify-content: center;
   }
   .maincontainer .about .myth p {
-    font-size: 2rem;
+    font-size: 2.7rem;
     width: 60%;
     text-align: center;
     color: #fff;
@@ -675,6 +906,148 @@ i {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 28rem;
+    width: 28rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3rem;
+    padding: 10rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin-top: -5rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 26rem;
+    width: 24rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 2.5rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2.5rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 26rem;
+    width: 24rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
   }
 }
 
@@ -719,6 +1092,197 @@ i {
     height: 4rem;
     font-size: 1.4rem;
   }
+  .maincontainer .about .resonancexi .bcx {
+    top: -30%;
+    max-width: 35rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2.7rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2.4rem;
+    width: 65%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 26rem;
+    width: 26rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3rem;
+    padding: 8rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    margin-top: -2rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 3.1rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.1rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 @media only screen and (max-width: 712px) {
@@ -759,6 +1323,197 @@ i {
     height: 3.8rem;
     font-size: 1.3rem;
   }
+  .maincontainer .about .resonancexi .bcx {
+    top: -20%;
+    max-width: 30rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2.4rem;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 26rem;
+    width: 26rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3rem;
+    padding: 7rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    margin-top: -2rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 3.1rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3.1rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 @media only screen and (max-width: 598px) {
@@ -798,6 +1553,197 @@ i {
     width: 8rem;
     height: 3.3rem;
     font-size: 1.1rem;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -20%;
+    max-width: 30rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1.1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2.4rem;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 3rem;
+    padding: 7rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    margin-top: -2rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 2.2rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2.2rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
   }
 }
 
@@ -901,6 +1847,148 @@ i {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 23rem;
+    width: 23rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.8rem;
+    padding: 4rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-top: 0rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 4rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 27rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 8rem;
+    width: 8rem;
   }
 }
 

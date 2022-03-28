@@ -155,11 +155,11 @@
 
       margin-top: 8rem;
       .scardcontainer {
-        height: 27rem;
-        width: 29rem;
+        height: 30rem;
+        width: 28rem;
         background: rgba(255, 255, 255, 0.05);
 
-        margin: 1rem;
+        margin: 3rem auto;
         border-radius: 15px;
         padding: 2rem;
         z-index: 100;
@@ -172,7 +172,7 @@
         }
         .btndiv {
           @include centerByFlex();
-          margin-top: 3rem;
+          margin-top: 4.5rem;
         }
         .imgdiv {
           @include centerByFlex();
@@ -189,10 +189,10 @@
       grid-template-columns: auto;
       justify-content: center;
       .scardcontainer {
-        height: 27rem;
-        width: 29rem;
+        height: 30rem;
+        width: 28rem;
         background: rgba(255, 255, 255, 0.05);
-        margin: 1rem;
+        margin-top: 3rem;
         border-radius: 15px;
         padding: 2rem;
 
@@ -205,7 +205,7 @@
         }
         .btndiv {
           @include centerByFlex();
-          margin-top: 3rem;
+          margin-top: 4.5rem;
         }
         .imgdiv {
           @include centerByFlex();
@@ -283,12 +283,46 @@
     }
     .about {
       .resonancexi {
-        height: 6rem;
         .bcx {
-          top: -70%;
+          top: -50%;
+          max-width: 40rem; 
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 3.4rem;
+            }
+          }
+          #text {
+            font-size: 1.3rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+          }
+        }
+
+      }
+      .myth {
+        width: 100%;
+        margin-top: 30rem;
+        @include centerByFlex();
+        p {
+          font-size: 3rem;
+          width: 60%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
+          }
         }
       }
+      
     }
+    
   }
 }
 @media only screen and (max-width: 1028px) {
@@ -331,12 +365,132 @@
     }
     .about {
       .resonancexi {
-        height: 6rem;
         .bcx {
-          top: -60%;
+          top: -30%;
+          max-width: 38rem; 
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 3.2rem;
+            }
+          }
+          #text {
+            font-size: 1.3rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+          }
+        }
+
+      }
+      .myth {
+        width: 100%;
+        margin-top: 30rem;
+        @include centerByFlex();
+        p {
+          font-size: 2.9rem;
+          width: 60%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
+          }
+        }
+      }
+      .lgo {
+        margin-top: 15rem;
+        @include centerByFlex();
+        img {
+          height: 29rem;
+          width: 29rem;
         }
       }
     }
+    .events {
+    min-height: 50vh;
+    background: $bg2;
+    position: relative;
+
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 3.5rem;
+      padding: 15rem 5rem;
+      font-weight: 500;
+    }
+    .cardcontainer {
+      grid-template-columns: auto auto auto;
+
+      margin-top: -10rem;
+      .scardcontainer {
+        height: 28rem;
+        width: 26rem;
+        background: rgba(255, 255, 255, 0.05);
+
+        margin: 3rem auto;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.6rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 3.5rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 9rem;
+            width: 9rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2 {
+      grid-template-columns: auto;
+      justify-content: center;
+      margin-top: 3rem;
+      .scardcontainer {
+        height: 28rem;
+        width: 26rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 2rem;
+
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.6rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 3.5rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 9rem;
+            width: 9rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
 @media only screen and (max-width: 911px) {
@@ -380,27 +534,32 @@
     }
     .about {
       .resonancexi {
-        height: 6rem;
         .bcx {
-          top: -50%;
-          max-width: 30rem;
+          top: -30%;
+          max-width: 37rem; 
+          padding: 1.5rem;
           #rex {
             span {
-              font-size: 3rem;
+              font-size: 2.9rem;
             }
           }
           #text {
             font-size: 1.2rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
           }
         }
 
       }
       .myth {
         width: 100%;
-        margin-top: 25rem;
+        margin-top: 30rem;
         @include centerByFlex();
         p {
-          font-size: 2rem;
+          font-size: 2.7rem;
           width: 60%;
           text-align: center;
           color: $white;
@@ -412,7 +571,95 @@
           }
         }
       }
+      .lgo {
+        margin-top: 12rem;
+        @include centerByFlex();
+        img {
+          height: 28rem;
+          width: 28rem;
+        }
+      }
     }
+    .events {
+    min-height: 50vh;
+    background: $bg2;
+    position: relative;
+
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 3rem;
+      padding: 10rem 5rem;
+      font-weight: 500;
+    }
+    .cardcontainer {
+      grid-template-columns: auto auto auto;
+
+      margin-top: -5rem;
+      .scardcontainer {
+        height: 26rem;
+        width: 24rem;
+        background: rgba(255, 255, 255, 0.05);
+
+        margin: 2.5rem auto;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 3.5rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2 {
+      grid-template-columns: auto;
+      justify-content: center;
+      margin-top: 2.5rem;
+      .scardcontainer {
+        height: 26rem;
+        width: 24rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 2rem;
+
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 3.5rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
 @media only screen and (max-width: 798px) {
@@ -453,6 +700,134 @@
         }
       }
     }
+    .about {
+      .resonancexi {
+        .bcx {
+          top: -30%;
+          max-width: 35rem; 
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 2.7rem;
+            }
+          }
+          #text {
+            font-size: 1.2rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
+          }
+        }
+
+      }
+      .myth {
+        width: 100%;
+        margin-top: 25rem;
+        @include centerByFlex();
+        p {
+          font-size: 2.4rem;
+          width: 65%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
+          }
+        }
+      }
+      .lgo {
+        margin-top: 9rem;
+        @include centerByFlex();
+        img {
+          height: 26rem;
+          width: 26rem;
+        }
+      }
+    }
+    .events {
+    min-height: 50vh;
+    background: $bg2;
+    position: relative;
+
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 3rem;
+      padding: 8rem 5rem;
+      font-weight: 500;
+    }
+    .cardcontainer {
+      grid-template-columns: auto auto;
+
+      margin-top: -2rem;
+      .scardcontainer {
+        height: 27rem;
+        width: 25rem;
+        background: rgba(255, 255, 255, 0.05);
+
+        margin: 3.1rem auto;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2 {
+      grid-template-columns: auto;
+      justify-content: center;
+      margin-top: 3.1rem;
+      .scardcontainer {
+        height: 27rem;
+        width: 25rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 2rem;
+
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
 @media only screen and (max-width: 712px) {
@@ -488,6 +863,134 @@
         }
       }
     }
+    .about {
+      .resonancexi {
+        .bcx {
+          top: -20%;
+          max-width: 30rem; 
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 2.5rem;
+            }
+          }
+          #text {
+            font-size: 1.1rem;
+          }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
+          }
+        }
+
+      }
+      .myth {
+        width: 100%;
+        margin-top: 25rem;
+        @include centerByFlex();
+        p {
+          font-size: 2.4rem;
+          width: 70%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
+          }
+        }
+      }
+      .lgo {
+        margin-top: 9rem;
+        @include centerByFlex();
+        img {
+          height: 26rem;
+          width: 26rem;
+        }
+      }
+    }
+    .events {
+    min-height: 50vh;
+    background: $bg2;
+    position: relative;
+
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 3rem;
+      padding: 7rem 5rem;
+      font-weight: 500;
+    }
+    .cardcontainer {
+      grid-template-columns: auto auto;
+
+      margin-top: -2rem;
+      .scardcontainer {
+        height: 27rem;
+        width: 25rem;
+        background: rgba(255, 255, 255, 0.05);
+
+        margin: 3.1rem auto;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+    .cardcontainer2 {
+      grid-template-columns: auto;
+      justify-content: center;
+      margin-top: 3.1rem;
+      .scardcontainer {
+        height: 27rem;
+        width: 25rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 2rem;
+
+        backdrop-filter: blur(2px);
+        h4 {
+          padding: 0 1rem;
+          @include cardTitle();
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .btndiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+        }
+        .imgdiv {
+          @include centerByFlex();
+          margin-top: 4rem;
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
 @media only screen and (max-width: 598px) {
@@ -525,6 +1028,134 @@
         }
       }
     }
+    .about {
+            .resonancexi {
+              .bcx {
+                top: -20%;
+                max-width: 30rem; 
+                padding: 1.5rem;
+                #rex {
+                  span {
+                    font-size: 2.5rem;
+                  }
+                }
+                #text {
+                  font-size: 1.1rem;
+                }
+                #start {
+                  padding-bottom: 1rem;
+                  margin-top: 0.5rem;
+                  font-size: 1.3rem;
+                }
+              }
+      
+            }
+            .myth {
+              width: 100%;
+              margin-top: 25rem;
+              @include centerByFlex();
+              p {
+                font-size: 2.4rem;
+                width: 80%;
+                text-align: center;
+                color: $white;
+                .ty1 {
+                  @include ty1();
+                }
+                .ty2 {
+                  @include ty2();
+                }
+              }
+            }
+            .lgo {
+              margin-top: 9rem;
+              @include centerByFlex();
+              img {
+                height: 25rem;
+                width: 25rem;
+              }
+            }
+          }
+          .events {
+          min-height: 50vh;
+          background: $bg2;
+          position: relative;
+      
+          h4 {
+            text-align: center;
+            @include eor;
+            font-size: 3rem;
+            padding: 7rem 5rem;
+            font-weight: 500;
+          }
+          .cardcontainer {
+            grid-template-columns: auto auto;
+      
+            margin-top: -2rem;
+            .scardcontainer {
+              height: 27rem;
+              width: 25rem;
+              background: rgba(255, 255, 255, 0.05);
+      
+              margin: 2.2rem auto;
+              border-radius: 15px;
+              padding: 2rem;
+              z-index: 100;
+              backdrop-filter: blur(2px);
+              h4 {
+                padding: 0 1rem;
+                @include cardTitle();
+                font-size: 2.4rem;
+                font-weight: 400;
+              }
+              .btndiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+              }
+              .imgdiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+                img {
+                  height: 8rem;
+                  width: 8rem;
+                }
+              }
+            }
+          }
+          .cardcontainer2 {
+            grid-template-columns: auto;
+            justify-content: center;
+            margin-top: 2.2rem;
+            .scardcontainer {
+              height: 27rem;
+              width: 25rem;
+              background: rgba(255, 255, 255, 0.05);
+              margin: 0 auto;
+              border-radius: 15px;
+              padding: 2rem;
+      
+              backdrop-filter: blur(2px);
+              h4 {
+                padding: 0 1rem;
+                @include cardTitle();
+                font-size: 2.4rem;
+                font-weight: 400;
+              }
+              .btndiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+              }
+              .imgdiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+                img {
+                  height: 8rem;
+                  width: 8rem;
+                }
+              }
+            }
+          }
+        }
   }
 }
 @media only screen and (max-width: 495px) {
@@ -605,7 +1236,95 @@
           }
         }
       }
+      .lgo {
+        margin-top: 5rem;
+        @include centerByFlex();
+        img {
+          height: 23rem;
+          width: 23rem;
+        }
+      }
     }
+    .events {
+          min-height: 50vh;
+          background: $bg2;
+          position: relative;
+      
+          h4 {
+            text-align: center;
+            @include eor;
+            font-size: 2.8rem;
+            padding: 4rem 5rem;
+            font-weight: 500;
+          }
+          .cardcontainer {
+            grid-template-columns: auto;
+      
+            margin-top: 0rem;
+            .scardcontainer {
+              height: 27rem;
+              width: 25rem;
+              background: rgba(255, 255, 255, 0.05);
+      
+              margin: 4rem auto;
+              border-radius: 15px;
+              padding: 2rem;
+              z-index: 100;
+              backdrop-filter: blur(2px);
+              h4 {
+                padding: 0 1rem;
+                @include cardTitle();
+                font-size: 2.5rem;
+                font-weight: 400;
+              }
+              .btndiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+              }
+              .imgdiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+                img {
+                  height: 8rem;
+                  width: 8rem;
+                }
+              }
+            }
+          }
+          .cardcontainer2 {
+            grid-template-columns: auto;
+            justify-content: center;
+            margin-top: 4rem;
+            .scardcontainer {
+              height: 27rem;
+              width: 25rem;
+              background: rgba(255, 255, 255, 0.05);
+              margin: 0 auto;
+              border-radius: 15px;
+              padding: 2rem;
+      
+              backdrop-filter: blur(2px);
+              h4 {
+                padding: 0 1rem;
+                @include cardTitle();
+                font-size: 2.5rem;
+                font-weight: 400;
+              }
+              .btndiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+              }
+              .imgdiv {
+                @include centerByFlex();
+                margin-top: 4rem;
+                img {
+                  height: 8rem;
+                  width: 8rem;
+                }
+              }
+            }
+          }
+        }
   }
 }
 // @media only screen and (max-width: 399px) {
