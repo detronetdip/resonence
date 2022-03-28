@@ -23,7 +23,5 @@ var swiper = new Swiper(".mySwiper", {
 VanillaTilt.init(document.querySelectorAll(".scardcontainer"), {
   max: 15,
   speed: 400,
-  glare: true,
-  maxGlare: .5
 });
 //alert(screen.width + "*" + screen.height)
