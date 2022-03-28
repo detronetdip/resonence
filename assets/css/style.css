@@ -381,6 +381,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .maincontainer .events .cardcontainer2 .scardcontainer {
@@ -763,6 +764,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 3rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 28rem;
@@ -811,6 +813,30 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 9rem;
     width: 9rem;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
   }
 }
 
@@ -1000,6 +1026,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 2.5rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 26rem;
@@ -1048,6 +1075,73 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 8rem;
     width: 8rem;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
+  }
+  .maincontainer .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .slider .sliderrow .sliderwindow {
+    height: 33rem;
+    width: 23rem;
+  }
+  .maincontainer .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
   }
 }
 
@@ -1234,6 +1328,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 3.1rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 27rem;
@@ -1282,6 +1377,73 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 8rem;
     width: 8rem;
+  }
+  .maincontainer .events .cardcontainer2 .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .events .cardcontainer2 .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .events .cardcontainer2 .slider .sliderrow .sliderwindow {
+    height: 34rem;
+    width: 24rem;
+  }
+  .maincontainer .events .cardcontainer2 .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .events .cardcontainer2 .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .events .cardcontainer2 .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
   }
 }
 
@@ -1465,6 +1627,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 3.1rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 27rem;
@@ -1513,6 +1676,73 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 8rem;
     width: 8rem;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
+  }
+  .maincontainer .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .slider .sliderrow .sliderwindow {
+    height: 35rem;
+    width: 25rem;
+  }
+  .maincontainer .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
   }
 }
 
@@ -1641,8 +1871,8 @@ i {
     margin-top: -2rem;
   }
   .maincontainer .events .cardcontainer .scardcontainer {
-    height: 27rem;
-    width: 25rem;
+    height: 26rem;
+    width: 24rem;
     background: rgba(255, 255, 255, 0.05);
     margin: 2.2rem auto;
     border-radius: 15px;
@@ -1696,14 +1926,15 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 2.2rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
-    height: 27rem;
-    width: 25rem;
+    height: 26rem;
+    width: 24rem;
     background: rgba(255, 255, 255, 0.05);
     margin: 0 auto;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
   }
@@ -1744,6 +1975,73 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 8rem;
     width: 8rem;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
+  }
+  .maincontainer .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .slider .sliderrow .sliderwindow {
+    height: 33rem;
+    width: 23rem;
+  }
+  .maincontainer .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
   }
 }
 
@@ -1941,6 +2239,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 4rem;
+    padding-bottom: 3rem;
   }
   .maincontainer .events .cardcontainer2 .scardcontainer {
     height: 27rem;
@@ -1989,6 +2288,364 @@ i {
   .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
     height: 8rem;
     width: 8rem;
+  }
+  .maincontainer .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .slider .sliderrow .sliderwindow {
+    height: 32rem;
+    width: 22rem;
+  }
+  .maincontainer .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .maincontainer .home {
+    height: 45vh;
+  }
+  .maincontainer .home .topcover .text h4 {
+    font-size: 2.4rem;
+  }
+  .maincontainer .home .topcover .counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: calc(100vh - 95vh);
+  }
+  .maincontainer .home .topcover .counter .sgbox {
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem 0.3rem;
+    border-radius: 3px;
+  }
+  .maincontainer .home .topcover .counter .sgbox #days,
+  .maincontainer .home .topcover .counter .sgbox #hours,
+  .maincontainer .home .topcover .counter .sgbox #mins,
+  .maincontainer .home .topcover .counter .sgbox #secs {
+    font-size: 0.9rem;
+  }
+  .maincontainer .home .topcover .counter .sgbox .name {
+    font-size: 0.7rem;
+  }
+  .maincontainer .home .topcover .explore {
+    margin-top: 1rem;
+  }
+  .maincontainer .home .topcover .explore button {
+    width: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    border-radius: 4px;
+    height: 2.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .maincontainer .about .resonancexi .bcx {
+    top: -18%;
+    max-width: 28rem;
+    padding: 1.5rem;
+  }
+  .maincontainer .about .resonancexi .bcx #rex span {
+    font-size: 2.4rem;
+  }
+  .maincontainer .about .resonancexi .bcx #text {
+    font-size: 1rem;
+  }
+  .maincontainer .about .resonancexi .bcx #start {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .maincontainer .about .myth {
+    width: 100%;
+    margin-top: 20.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .myth p {
+    font-size: 2rem;
+    width: 75%;
+    text-align: center;
+    color: #fff;
+  }
+  .maincontainer .about .myth p .ty1 {
+    background: linear-gradient(272.56deg, #f751fb 15.04%, rgba(0, 255, 255, 0.89) 60.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .myth p .ty2 {
+    background: linear-gradient(90.19deg, #f751fb 38.34%, #00ffff 76.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .about .lgo {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .about .lgo img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .maincontainer .events {
+    min-height: 50vh;
+    background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+    position: relative;
+  }
+  .maincontainer .events h4 {
+    text-align: center;
+    background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.8rem;
+    padding: 2rem 5rem;
+    font-weight: 500;
+  }
+  .maincontainer .events .cardcontainer {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-top: 1rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer {
+    height: 26rem;
+    width: 23rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 4rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer .scardcontainer .imgdiv img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .maincontainer .events .cardcontainer2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer {
+    height: 26rem;
+    width: 23rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer h4 {
+    padding: 0 1rem;
+    background: linear-gradient(265.95deg, #FB36FF 31.57%, #9299FC 51.75%, rgba(0, 235, 255, 0.96) 98.36%, #00FFFF 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .btndiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .maincontainer .events .cardcontainer2 .scardcontainer .imgdiv img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .maincontainer .ladies {
+    background: conic-gradient(from 250.09deg at 20.55% 56.66%, #130855 -33.64deg, #BC0E6C 48.04deg, #130855 79.59deg, #130855 159.19deg, #130855 326.36deg, #BC0E6C 408.04deg);
+    position: relative;
+    padding-top: 10rem;
+  }
+  .maincontainer .ladies h4 {
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .maincontainer .ladies h4 .asmb {
+    background: linear-gradient(93.31deg, #e939cd 39.76%, rgba(0, 255, 255, 0.89) 73.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .maincontainer .ladies h4 .dsmb {
+    color: #00ffff;
+  }
+  .maincontainer .slider {
+    height: 200vh;
+    padding-top: 10rem;
+    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+  }
+  .maincontainer .slider .sliderrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .maincontainer .slider .sliderrow .sliderwindow {
+    height: 30rem;
+    width: 20rem;
+  }
+  .maincontainer .slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer .slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .maincontainer .slider .swiper-slide {
+    background-image: url(./../images/bg.png);
+    background-size: cover;
   }
 }
 
