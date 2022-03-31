@@ -158,10 +158,13 @@
         height: 30rem;
         width: 28rem;
         background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(2px);transform: perspective(5000px);transform-style: preserve-3d;
+        backdrop-filter: blur(2px);
+        transform: perspective(150rem);
+        transform-style: preserve-3d;
         margin: 3rem auto;
         border-radius: 15px;
         cursor: pointer;
+        overflow: hidden;
         padding: 2rem;
         z-index: 100;
         backdrop-filter: blur(2px);
@@ -170,15 +173,17 @@
           @include cardTitle();
           font-size: 3rem;
           font-weight: 400;
-          transform: translateZ(20px);
+          transform: translateZ(50px);
         }
         .btndiv {
           @include centerByFlex();
           margin-top: 4.5rem;
+          transform: translateZ(50px);
         }
         .imgdiv {
           @include centerByFlex();
           margin-top: 3rem;
+          transform: translateZ(50px);
           img {
             height: 10rem;
             width: 10rem;
@@ -198,8 +203,9 @@
         background: rgba(255, 255, 255, 0.05);
         margin-top: 3rem;
         border-radius: 15px;
+        overflow: hidden;
         padding: 2rem;
-
+        transform-style: preserve-3d;
         backdrop-filter: blur(2px);
         h4 {
           padding-top: 0;
@@ -435,7 +441,7 @@
         height: 28rem;
         width: 26rem;
         background: rgba(255, 255, 255, 0.05);
-
+        overflow: hidden;
         margin: 3rem auto;
         border-radius: 15px;
         padding: 2rem;
@@ -469,6 +475,7 @@
       .scardcontainer {
         height: 28rem;
         width: 26rem;
+        overflow: hidden;
         background: rgba(255, 255, 255, 0.05);
         margin: 0 auto;
         border-radius: 15px;
@@ -662,7 +669,7 @@
         margin: 0 auto;
         border-radius: 15px;
         padding: 2rem;
-
+        overflow: hidden;
         backdrop-filter: blur(2px);
         h4 {
           padding: 0 1rem;
@@ -844,7 +851,7 @@
         height: 27rem;
         width: 25rem;
         background: rgba(255, 255, 255, 0.05);
-
+        overflow: hidden;
         margin: 3.1rem auto;
         border-radius: 15px;
         padding: 2rem;
@@ -878,6 +885,7 @@
       .scardcontainer {
         height: 27rem;
         width: 25rem;
+        overflow: hidden;
         background: rgba(255, 255, 255, 0.05);
         margin: 0 auto;
         border-radius: 15px;
@@ -1059,7 +1067,7 @@
         height: 27rem;
         width: 25rem;
         background: rgba(255, 255, 255, 0.05);
-
+        overflow: hidden;
         margin: 3.1rem auto;
         border-radius: 15px;
         padding: 2rem;
@@ -1097,7 +1105,7 @@
         margin: 0 auto;
         border-radius: 15px;
         padding: 2rem;
-
+        overflow: hidden;
         backdrop-filter: blur(2px);
         h4 {
           padding: 0 1rem;
@@ -1276,7 +1284,7 @@
               height: 26rem;
               width: 24rem;
               background: rgba(255, 255, 255, 0.05);
-      
+              overflow: hidden;
               margin: 2.2rem auto;
               border-radius: 15px;
               padding: 2rem;
@@ -1314,7 +1322,7 @@
               margin: 0 auto;
               border-radius: 15px;
               padding: 2rem 1.5rem;
-      
+              overflow: hidden;
               backdrop-filter: blur(2px);
               h4 {
                 padding: 0 1rem;
@@ -1497,7 +1505,7 @@
               height: 27rem;
               width: 25rem;
               background: rgba(255, 255, 255, 0.05);
-      
+              overflow: hidden;
               margin: 4rem auto;
               border-radius: 15px;
               padding: 2rem;
@@ -1535,7 +1543,7 @@
               margin: 0 auto;
               border-radius: 15px;
               padding: 2rem;
-      
+              overflow: hidden;
               backdrop-filter: blur(2px);
               h4 {
                 padding: 0 1rem;
@@ -1702,7 +1710,7 @@
         height: 26rem;
         width: 23rem;
         background: rgba(255, 255, 255, 0.05);
-
+        overflow: hidden;
         margin: 4rem auto;
         border-radius: 15px;
         padding: 2rem;
@@ -1736,6 +1744,7 @@
       .scardcontainer {
         height: 26rem;
         width: 23rem;
+        overflow: hidden;
         background: rgba(255, 255, 255, 0.05);
         margin: 0 auto;
         border-radius: 15px;
