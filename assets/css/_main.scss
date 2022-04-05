@@ -249,8 +249,8 @@
     }
   }
   .slider {
-    height: 200vh;
     padding-top: 15rem;
+    padding-bottom: 15rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
     .sliderrow {
       @include centerByFlex();
@@ -265,13 +265,49 @@
     }
 
     .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       border-radius: 18px;
       font-size: 22px;
       font-weight: bold;
       color: #fff;
+      overflow: hidden;
+      .mask{
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        .imgbox{
+          @include centerByFlex;
+          padding-top: 2rem;
+          img{
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+          }
+        }
+        .named{
+          @include centerByFlex;
+          flex-direction: column;
+          h4{
+            font-size: 1.3rem;
+            font-weight: 400;
+            padding-top: 1rem;
+          }
+          h1{
+            font-size: 2.7rem;
+            font-weight: 600;
+            padding-top: 0.7rem;
+          }
+        }
+        .speech{
+          @include centerByFlex;
+          padding-top: 3rem;
+          p{
+            text-align: center;
+            font-weight: 200;
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
 
     .swiper-slide {

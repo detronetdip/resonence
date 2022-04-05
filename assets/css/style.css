@@ -484,8 +484,8 @@ i {
 }
 
 .maincontainer .slider {
-  height: 200vh;
   padding-top: 15rem;
+  padding-bottom: 15rem;
   background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
 }
 
@@ -512,6 +512,21 @@ i {
 }
 
 .maincontainer .slider .swiper-slide {
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+}
+
+.maincontainer .slider .swiper-slide .mask {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.maincontainer .slider .swiper-slide .mask .imgbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,10 +536,60 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  padding-top: 2rem;
+}
+
+.maincontainer .slider .swiper-slide .mask .imgbox img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.maincontainer .slider .swiper-slide .mask .named {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.maincontainer .slider .swiper-slide .mask .named h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.maincontainer .slider .swiper-slide .mask .named h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  padding-top: 0.7rem;
+}
+
+.maincontainer .slider .swiper-slide .mask .speech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
+}
+
+.maincontainer .slider .swiper-slide .mask .speech p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.2rem;
 }
 
 .maincontainer .slider .swiper-slide {
