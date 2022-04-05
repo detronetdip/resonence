@@ -4,75 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="box">
-      <div class="container">
+       <div class="maincontainer">
         <form action="">
-          <span><i class="fa-brands fa-gofore"></i></span>
+            <h4 class="text-warning text-center pt-5">Registration</h4> 
         
-              <input
+              <label>
+                <input
                 type="text"
-                placeholder="Enter your first name"
+                placeholder="FIRST NAME"
                 id="name"
               />
+              <div class="line-box">         
+              <div class="line"></div> 
+              </div>
+              </label>
             
 
         
-              <input type="text" placeholder="Enter your last name" id="name" />
+              <label>
+                <input type="text" placeholder="LAST NAME" id="name" />
+                <div class="line-box">         
+                    <div class="line"></div> 
+                    </div>
+              </label>
             
         
-              <input
+              <label>
+                <input
                 type="text"
-                placeholder="Enter your College name"
+                placeholder="ENTER COLLEGE NAME"
                 id="name"
               />
+              <div class="line-box">         
+                <div class="line"></div> 
+                </div>
+              </label>
             
         
-              <input
+              <label>
+                <input
                 type="text"
-                placeholder="Enter your Department name"
+                placeholder="ENTER DEPARTMENT"
                 id="name"
               />
+              <div class="line-box">         
+                <div class="line"></div> 
+                </div>
+              </label>
             
-        <label for="name">Select your gender</label>
+              <label class="spd">
+                <input type="radio" id="male" name="gender" />Male
+                <input type="radio" id="female" name="gender" />Female
+                <input type="radio" id="others" name="gender" />Others
+            </label>
+            <div class="line-box">         
+                <div class="line"></div> 
+                </div>
         
-              <input type="radio" id="male" name="gender" />Male
-              <input type="radio" id="female" name="gender" />Female
-              <input type="radio" id="others" name="gender" />Others
+              <label>
+                <input type="number" placeholder="ENTER MOBILE NUMBER" />
+                <div class="line-box">         
+                    <div class="line"></div> 
+                    </div>
+              </label>
             
         
-              <input type="number" placeholder="Enter your Mobile number" />
+              <label>
+                <input type="email" placeholder="ENTER EMAIL" />
+                <div class="line-box">         
+                    <div class="line"></div> 
+                    </div>
+              </label>
             
         
-              <input type="email" placeholder="Enter a valid Email address" />
-            
-        
-              <input
+              <label>
+                <input
                 type="password"
                 name="password"
                 id=""
-                placeholder="Enter new password"
+                placeholder="PASSWORD"
               />
+              <div class="line-box">         
+                <div class="line"></div> 
+                </div>
+              </label>
             
         
-              <input
+              <label>
+                <input
                 type="password"
                 name="password"
                 id=""
-                placeholder="Enter re-enter password"
+                placeholder="CONFIRM PASSWORD"
               />
+              <div class="line-box">         
+                <div class="line"></div> 
+                </div>
+              </label>
             
             <p>
-              <i class="fa-solid fa-info"></i>Password must be at least 6
-              Character
+              <i class="fa-solid fa-info"></i>Password must be at least 6 Character
             </p>
-
             <button id="submit">Submit</button>
         </form>
-      </div>
-    </div>
+       </div>
   </body>
 </html>
