@@ -27,4 +27,3 @@ VanillaTilt.init(document.querySelectorAll(".scardcontainer"), {
   glare: true,  // if it should have a "glare" effect
   "max-glare": 0.3,
 });
-//alert(screen.width + "*" + screen.height)

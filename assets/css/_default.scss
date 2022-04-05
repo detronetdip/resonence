@@ -8,7 +8,11 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  
+  body{
+    &::-webkit-scrollbar{
+     display: none;
+    }
+  }
   input,
   select {
     border: none;
