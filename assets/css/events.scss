@@ -1,9 +1,22 @@
+@import "color";
+@import "mixins";
+@import "default";
 .maincontainer {
-  background: $bg2;
+  background: linear-gradient(
+    359.99deg,
+    #2d1044 -0.48%,
+    #130855 -0.47%,
+    #030a1b 50.54%
+  );
   .container {
-    background: $bg2;
+    background: linear-gradient(
+      359.99deg,
+      #2d1044 -0.48%,
+      #130855 -0.47%,
+      #030a1b 50.54%
+    );
     width: 100%;
-    position: relative;
+    position: relative; 
     display: grid;
     place-items: center;
   }
@@ -16,7 +29,9 @@
       padding-top: 4rem;
     font-size: 5rem;
     text-align: center;
-    @include reversegradientFont2();
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    @include gradientFontType1();
   }
   .roe {
     display: flex;
