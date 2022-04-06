@@ -1,128 +1,145 @@
+.wrapper {
+  min-height: 100vh;
+  background: $abtBack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inner {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 80rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    display: flex;
+    backdrop-filter: blur(1px);
+    .image-holder {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image {
+        height: 30rem;
+        width: 30rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    form {
+      width: 50%;
+      padding-top: 4rem;
+      padding-left: 0;
+      padding-right: 3rem;
+      display: grid;
+      h3 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 500;
+        //padding-right: 1.5rem;
 
-   .wrapper{
-       min-height: 100vh;
-       background: $abtBack;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       .inner{
-           padding: 2rem;
-           background: rgba(255, 255, 255,.1);
-           max-width: 80rem;
-           margin: auto;
-           border-radius: 1.5rem;
-           display: flex;
-           backdrop-filter: blur(1px);
-        .image-holder{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .image{
-                height: 30rem;
-                width: 30rem;
-                img{
-
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
-       }
-       form{
-           width: 50%;
-           padding-top: 4rem;
-           padding-left: 0;
-           padding-right: 3rem;
-           h3{
-                text-transform: uppercase;
-                font-size: 3rem;
-                text-align: center;
-                font-weight: 500;
-                //padding-right: 1.5rem;
-
-          @include gradientFontType1();
-                margin-bottom: 30px;
-            }
-           .form-group{
-               display: flex;
-               input{
-                   width: 50%;
-                   background-color: transparent;
-               }
-               .form-control{
-                border: none;
-                border-bottom: 1px solid #e71de7;
-                display: block;
-                width: 100%;
-                height: 30px;
-                padding-right: 0;
-                margin-bottom: 25px;
-                
-            }
-           }
-           .form-wrapper{
-               position: relative;
-               input{
-                background-color: transparent;
-            }
-               .form-control{
-                border: none;
-                border-bottom: 1px solid #e71de7;
-                display: block;
-                width: 100%;
-                height: 30px;
-                padding-right: 0;
-                margin-bottom: 25px;
-                
-            }
-            select{
-                cursor: pointer;
-                color: rgb(116, 119, 119);
-                background-color: transparent;
-            }
-            select option[value=""][disabled]{
-                display: none;
-            }
-           }
-           button{
-               position: relative;
-               cursor: pointer;
-           }
-       }
-       }
-   }
-
-.form-group input:first-child{
-    margin-right: 25px;
+        @include gradientFontType1();
+        margin-bottom: 30px;
+      }
+      .form-group {
+        display: flex;
+        input {
+          width: 50%;
+          background-color: transparent;
+        }
+        .form-control {
+          border: none;
+          border-bottom: 1px solid #e71de7;
+          display: block;
+          width: 100%;
+          height: 30px;
+          padding-right: 0;
+          margin-bottom: 25px;
+        }
+      }
+      .form-wrapper {
+        position: relative;
+        input {
+          background-color: transparent;
+        }
+        .form-control {
+          border: none;
+          border-bottom: 1px solid #e71de7;
+          display: block;
+          width: 100%;
+          height: 30px;
+          padding-right: 0;
+          margin-bottom: 25px;
+        }
+        select {
+          cursor: pointer;
+          color: rgb(116, 119, 119);
+          background-color: transparent;
+        }
+        select option[value=""][disabled] {
+          display: none;
+        }
+      }
+      .buttdiv{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          margin-top: 2rem;
+        button {
+            position: relative;
+            cursor: pointer;
+            width: 40%;
+              border-radius: 2rem 0;
+          }
+      }
+    }
+  }
 }
-@media only screen and(max-width: 760px)
-{
-    .wrapper{
-        .inner{
-            display: block;
-            margin: 3rem;
-            .image-holder{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img{
-    
-                    width: 70%;
-                    height: 70%;
-                }
-            form{
-                width: 100%;
-                
-            }
-            button{
-                position: relative;
-                margin-top: 60px;
-                left: 30%;
+
+.form-group input:first-child {
+  margin-right: 25px;
+}
+@media only screen and(max-width: 760px) {
+  .wrapper {
+    .inner {
+      display: block;
+      margin: 3rem;
+      .image-holder {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image {
+          width: 60%;
+          height: 60%;
+        }
+      }
+      form {
+        width: 100%;
+        padding: 1rem;
+        display:grid;
+        h3{
+            padding: 1.5rem;
+        }
+        .form-group{
+            display:inline;
+            
+        }
+        .buttdiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+          button {
+              position: relative;
+              cursor: pointer;
+              width: 40%;
+              border-radius: 2rem 0;
             }
         }
+      }
+      
     }
-
-}
+  }
 }

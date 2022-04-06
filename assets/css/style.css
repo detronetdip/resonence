@@ -3128,6 +3128,8 @@ i {
   padding-top: 4rem;
   padding-left: 0;
   padding-right: 3rem;
+  display: -ms-grid;
+  display: grid;
 }
 
 .wrapper .inner form h3 {
@@ -3191,9 +3193,24 @@ i {
   display: none;
 }
 
-.wrapper .inner form button {
+.wrapper .inner form .buttdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.wrapper .inner form .buttdiv button {
   position: relative;
   cursor: pointer;
+  width: 40%;
+  border-radius: 2rem 0;
 }
 
 .form-group input:first-child {
@@ -3217,17 +3234,39 @@ i {
         -ms-flex-align: center;
             align-items: center;
   }
-  .wrapper .inner .image-holder img {
-    width: 70%;
-    height: 70%;
+  .wrapper .inner .image-holder .image {
+    width: 60%;
+    height: 60%;
   }
-  .wrapper .inner .image-holder form {
+  .wrapper .inner form {
     width: 100%;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
   }
-  .wrapper .inner .image-holder button {
+  .wrapper .inner form h3 {
+    padding: 1.5rem;
+  }
+  .wrapper .inner form .form-group {
+    display: inline;
+  }
+  .wrapper .inner form .buttdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .wrapper .inner form .buttdiv button {
     position: relative;
-    margin-top: 60px;
-    left: 30%;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 2rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
