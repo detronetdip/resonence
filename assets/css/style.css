@@ -39,7 +39,7 @@ button {
   vertical-align: middle;
   padding: 0.7rem 1.2rem;
   font-size: 1.2rem;
-  border-radius: 0.48rem;
+  border-radius: 1.6rem 0;
   background: linear-gradient(113.54deg, #d912dd 34.86%, rgba(91, 26, 134, 0.75) 74.74%);
   color: #fff;
   cursor: pointer;
