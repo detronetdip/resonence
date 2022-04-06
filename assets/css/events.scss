@@ -103,6 +103,16 @@
     width: 90%;
     max-width: 80rem;
     margin-top: 3rem;
+    ol li a{
+      text-decoration: none;
+      margin-left: 0.8rem;
+      color:rgba(122, 122, 122, 0.788);
+    }
+    .single-sub-event{
+      padding: 2rem 0;
+      margin: 3rem 0;
+      border-bottom: 1px solid rgba(0, 174, 255, 0.349);
+    }
   }
   .btnrow_ {
     display: flex;
