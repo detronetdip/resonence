@@ -19,85 +19,44 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="maincontainer">
-      <form action="">
-        <h4 class="text-warning text-center pt-5">Registration</h4>
-
-        <label>
-          <input type="text" placeholder="FIRST NAME" id="name" />
-          <div class="line-box">
-            <div class="line"></div>
+      <div class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+          <div class="inner">
+            <div class="image-holder">
+                <img src="./assets/images/igb2.png" alt="image">
+            </div>
+            <form>
+                <h3>registration</h3>
+                <div class="form-group">
+                  <input type="text" placeholder="First Name" class="form-control">
+                  <input type="text" placeholder="Last Name" class="form-control">
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" placeholder="College Name" class="form-control">
+                </div>
+                <div class="form-wrapper">
+                  <input type="text" placeholder="Department Name" class="form-control">
+              </div>
+              <div class="form-wrapper">
+                  <select name="" id="" class="form-control">
+                      <option value="" disabled selected>Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+              <div class="form-wrapper">
+                  <input type="email" placeholder="Enter Email" class="form-control">
+              </div>
+              <div class="form-wrapper">
+                  <input type="number" placeholder="Enter Mobile Number" class="form-control">
+              </div>
+              <button>Register</button>
+            </form>
           </div>
-        </label>
+      </div>
 
-        <label>
-          <input type="text" placeholder="LAST NAME" id="name" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label>
-          <input type="text" placeholder="ENTER COLLEGE NAME" id="name" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label>
-          <input type="text" placeholder="ENTER DEPARTMENT" id="name" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label class="spd">
-          <input type="radio" id="male" name="gender" />
-          <p>Male</p>
-          <input type="radio" id="female" name="gender" />
-          <p>Female</p>
-          <input type="radio" id="others" name="gender" />
-          <p>Others</p>
-        </label>
-        <div class="line-box">
-          <div class="line"></div>
-        </div>
-
-        <label>
-          <input type="number" placeholder="ENTER MOBILE NUMBER" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label>
-          <input type="email" placeholder="ENTER EMAIL" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label>
-          <input type="password" name="password" id="" placeholder="PASSWORD" />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <label>
-          <input
-            type="password"
-            name="password"
-            id=""
-            placeholder="CONFIRM PASSWORD"
-          />
-          <div class="line-box">
-            <div class="line"></div>
-          </div>
-        </label>
-
-        <button id="submit">Submit</button>
-      </form>
-    </div>
   </body>
 </html>
