@@ -3113,9 +3113,14 @@ i {
           align-items: center;
 }
 
-.wrapper .inner .image-holder img {
-  width: 70%;
-  height: 70%;
+.wrapper .inner .image-holder .image {
+  height: 30rem;
+  width: 30rem;
+}
+
+.wrapper .inner .image-holder .image img {
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper .inner form {
@@ -3218,7 +3223,6 @@ i {
   }
   .wrapper .inner .image-holder form {
     width: 100%;
-    padding: 40px 0 30px;
   }
   .wrapper .inner .image-holder button {
     position: relative;
