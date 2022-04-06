@@ -7,7 +7,7 @@
     #2d1044 -0.48%,
     #130855 -0.47%,
     #030a1b 50.54%
-  ); 
+  );
   .container {
     background: linear-gradient(
       359.99deg,
@@ -16,7 +16,7 @@
       #030a1b 50.54%
     );
     width: 100%;
-    position: relative; 
+    position: relative;
     display: grid;
     place-items: center;
   }
@@ -26,7 +26,7 @@
     color: #fff;
   }
   .overlay h4 {
-      padding-top: 4rem;
+    padding-top: 4rem;
     font-size: 5rem;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -51,6 +51,26 @@
     color: #fff;
     font-size: 1.6rem;
   }
+  .overlay .pt5 {
+    margin-top: 5rem;
+  }
+  .overlay .p1 {
+    padding: 1rem;
+  }
+  .overlay{
+    .pt2{
+      padding-top: 2rem;
+    }
+    .pt1{
+      margin-top: 1rem;
+    }
+    .mt1{
+      margin-top: 2rem;
+    }
+    .fs14{
+      font-size: 1.4rem;
+    }
+  }
   .initheader {
     display: flex;
     align-items: center;
@@ -68,11 +88,11 @@
   }
   code {
     padding: 0.2em 0.4em;
-    margin: 0;
     font-size: 85%;
     background-color: #f3edfa;
     color: #864ad1;
     border-radius: 6px;
+    margin-top: 2rem;
   }
   .changelog {
     display: flex;
@@ -98,13 +118,27 @@
     font-size: 1.6rem;
     font-weight: 900;
     text-decoration: underline;
-    color: #abacab;
+    color: #6c6d6c;
+    position: relative;
   }
   .logcontainer h5 {
     font-size: 2rem;
     font-weight: 900;
     text-decoration: underline;
+    position: relative;
+    color: #dddddd;
+    letter-spacing: 2px;
+    &::before {
+      content: "#";
+      position: absolute;
+      color: rgba(122, 122, 122, 0.788);
+      top: -50%;
+      left: -4%;
+      font-size: 4rem;
+      font-weight: 200;
+    }
   }
+
   .pop {
     background-color: #ffefee;
     color: #ff4c41;
@@ -117,7 +151,7 @@
   }
   ol li {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
   }
   .btnrow {
     display: -webkit-box;

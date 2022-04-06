@@ -129,6 +129,30 @@ i {
   font-size: 1.6rem;
 }
 
+.maincontainer .overlay .pt5 {
+  margin-top: 5rem;
+}
+
+.maincontainer .overlay .p1 {
+  padding: 1rem;
+}
+
+.maincontainer .overlay .pt2 {
+  padding-top: 2rem;
+}
+
+.maincontainer .overlay .pt1 {
+  margin-top: 1rem;
+}
+
+.maincontainer .overlay .mt1 {
+  margin-top: 1rem;
+}
+
+.maincontainer .overlay .fs14 {
+  font-size: 1.4rem;
+}
+
 .maincontainer .initheader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,11 +179,11 @@ i {
 
 .maincontainer code {
   padding: 0.2em 0.4em;
-  margin: 0;
   font-size: 85%;
   background-color: #f3edfa;
   color: #864ad1;
   border-radius: 6px;
+  margin-top: 2rem;
 }
 
 .maincontainer .changelog {
@@ -202,13 +226,27 @@ i {
   font-size: 1.6rem;
   font-weight: 900;
   text-decoration: underline;
-  color: #abacab;
+  color: #6c6d6c;
+  position: relative;
 }
 
 .maincontainer .logcontainer h5 {
   font-size: 2rem;
   font-weight: 900;
   text-decoration: underline;
+  position: relative;
+  color: #dddddd;
+  letter-spacing: 2px;
+}
+
+.maincontainer .logcontainer h5::before {
+  content: "#";
+  position: absolute;
+  color: rgba(122, 122, 122, 0.788);
+  top: -50%;
+  left: -4%;
+  font-size: 4rem;
+  font-weight: 200;
 }
 
 .maincontainer .pop {
@@ -225,7 +263,7 @@ i {
 
 .maincontainer ol li {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .maincontainer .btnrow {
