@@ -254,7 +254,7 @@
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
     .sliderrow {
       @include centerByFlex();
-      .sliderwindow { 
+      .sliderwindow {
         height: 400px;
         width: 350px;
       }
@@ -270,38 +270,38 @@
       font-weight: bold;
       color: #fff;
       overflow: hidden;
-      .mask{
+      .mask {
         padding: 2rem;
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.65);
-        .imgbox{
+        .imgbox {
           @include centerByFlex;
           padding-top: 2rem;
-          img{
+          img {
             height: 6rem;
             width: 6rem;
             border-radius: 50%;
           }
         }
-        .named{
+        .named {
           @include centerByFlex;
           flex-direction: column;
-          h4{
+          h4 {
             font-size: 1.3rem;
             font-weight: 400;
             padding-top: 1rem;
           }
-          h1{
+          h1 {
             font-size: 2.7rem;
             font-weight: 600;
             padding-top: 0.7rem;
           }
         }
-        .speech{
+        .speech {
           @include centerByFlex;
           padding-top: 3rem;
-          p{
+          p {
             text-align: center;
             font-weight: 200;
             font-size: 1.2rem;
@@ -425,7 +425,7 @@
                 border: 1px solid #000;
                 border-radius: 5px;
                 button {
-                  background-color: #000; 
+                  background-color: #000;
                 }
               }
             }
@@ -452,13 +452,13 @@
         }
       }
     }
-  } 
+  }
 }
 @media only screen and (max-width: 1373px) {
   .maincontainer {
     .home {
       height: 100vh;
-      .topcover{
+      .topcover {
         .counter {
           @include centerByFlex();
           margin-top: calc(100vh - 79vh);
@@ -469,7 +469,7 @@
       .resonancexi {
         .bcx {
           top: -50%;
-          max-width: 40rem; 
+          max-width: 40rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -485,7 +485,6 @@
             font-size: 1.5rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -504,9 +503,7 @@
           }
         }
       }
-      
     }
-    
   }
 }
 @media only screen and (max-width: 1028px) {
@@ -551,7 +548,7 @@
       .resonancexi {
         .bcx {
           top: -30%;
-          max-width: 38rem; 
+          max-width: 38rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -567,7 +564,6 @@
             font-size: 1.4rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -596,107 +592,107 @@
       }
     }
     .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 3.5rem;
-      padding: 15rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto auto auto;
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 3.5rem;
+        padding: 15rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto auto auto;
 
-      margin-top: -10rem;
-      .scardcontainer {
-        height: 28rem;
-        width: 26rem;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-        margin: 3rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.6rem;
-          font-weight: 400;
+        margin-top: -10rem;
+        .scardcontainer {
+          height: 28rem;
+          width: 26rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 3rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.6rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 3.5rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 9rem;
+              width: 9rem;
+            }
+          }
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 3.5rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 9rem;
-            width: 9rem;
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 28rem;
+          width: 26rem;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.6rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 3.5rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 9rem;
+              width: 9rem;
+            }
           }
         }
       }
     }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 3rem;
-      padding-bottom: 3rem;
-      .scardcontainer {
-        height: 28rem;
-        width: 26rem;
-        overflow: hidden;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
-
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.6rem;
-          font-weight: 400;
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-size: 4.5rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 3.5rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 9rem;
-            width: 9rem;
-          }
+        .dsmb {
+          color: #00ffff;
         }
       }
     }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 5%;
-      top: 25%;
-      font-size: 4.5rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
-      }
-      .dsmb {
-        color: #00ffff;
-      }
-    }
-  }
   }
 }
 @media only screen and (max-width: 911px) {
@@ -742,7 +738,7 @@
       .resonancexi {
         .bcx {
           top: -30%;
-          max-width: 37rem; 
+          max-width: 37rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -758,7 +754,6 @@
             font-size: 1.4rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -787,135 +782,135 @@
       }
     }
     .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 3rem;
-      padding: 10rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto auto auto;
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 3rem;
+        padding: 10rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto auto auto;
 
-      margin-top: -5rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 24rem;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-        margin: 2.5rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+        margin-top: -5rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 24rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 2.5rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 3.5rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
+          }
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 3.5rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 2.5rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 24rem;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+          overflow: hidden;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 3.5rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
           }
         }
       }
     }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 2.5rem;
-      padding-bottom: 3rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 24rem;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
-        overflow: hidden;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-size: 4rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 3.5rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
-          }
+        .dsmb {
+          color: #00ffff;
         }
       }
     }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 5%;
-      top: 25%;
-      font-size: 4rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
+    .slider {
+      padding-top: 10rem;
+      background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+      .sliderrow {
+        @include centerByFlex();
+        .sliderwindow {
+          height: 40rem;
+          width: 3rem;
+        }
       }
-      .dsmb {
-        color: #00ffff;
+      .swiper {
+        width: 100%;
+        height: 100%;
       }
-    }
-  }
-  .slider {
-    padding-top: 10rem;
-    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-    .sliderrow {
-      @include centerByFlex();
-      .sliderwindow {
-        height: 40rem;
-        width: 3rem;
-      }
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 1.5rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-    }
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
 
-    .swiper-slide {
-      background-image: url(./../images/bg.png);
-      background-size: cover;
+      .swiper-slide {
+        background-image: url(./../images/bg.png);
+        background-size: cover;
+      }
     }
-  }
   }
 }
 @media only screen and (max-width: 798px) {
@@ -960,7 +955,7 @@
       .resonancexi {
         .bcx {
           top: -30%;
-          max-width: 35rem; 
+          max-width: 35rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -976,7 +971,6 @@
             font-size: 1.3rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -1005,137 +999,137 @@
       }
     }
     .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 3rem;
-      padding: 8rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto auto;
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 3rem;
+        padding: 8rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto auto;
 
-      margin-top: -2rem;
-      .scardcontainer {
-        height: 27rem;
-        width: 25rem;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-        margin: 3.1rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+        margin-top: -2rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 3.1rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
+          }
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 3.1rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
+          }
         }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
+        .slider {
+          padding-top: 10rem;
+          background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+          .sliderrow {
+            @include centerByFlex();
+            .sliderwindow {
+              height: 34rem;
+              width: 24rem;
+            }
+          }
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+          }
+
+          .swiper-slide {
+            background-image: url(./../images/bg.png);
+            background-size: cover;
           }
         }
       }
     }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 3.1rem;
-      padding-bottom: 3rem;
-      .scardcontainer {
-        height: 27rem;
-        width: 25rem;
-        overflow: hidden;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
-
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-size: 3.5rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
-          }
-        }
-      }
-      .slider {
-        padding-top: 10rem;
-        background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-        .sliderrow {
-          @include centerByFlex();
-          .sliderwindow {
-            height: 34rem;
-            width: 24rem;
-          }
-        }
-        .swiper {
-          width: 100%;
-          height: 100%;
-        }
-    
-        .swiper-slide {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 1.5rem;
-          font-size: 2rem;
-          font-weight: bold;
-          color: #fff;
-        }
-    
-        .swiper-slide {
-          background-image: url(./../images/bg.png);
-          background-size: cover;
+        .dsmb {
+          color: #00ffff;
         }
       }
     }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 5%;
-      top: 25%;
-      font-size: 3.5rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
-      }
-      .dsmb {
-        color: #00ffff;
-      }
-    }
-  }
   }
 }
 @media only screen and (max-width: 712px) {
@@ -1175,7 +1169,7 @@
       .resonancexi {
         .bcx {
           top: -20%;
-          max-width: 30rem; 
+          max-width: 30rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -1191,7 +1185,6 @@
             font-size: 1.3rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -1220,136 +1213,136 @@
       }
     }
     .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 3rem;
-      padding: 7rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto auto;
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 3rem;
+        padding: 7rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto auto;
 
-      margin-top: -2rem;
-      .scardcontainer {
-        height: 27rem;
-        width: 25rem;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-        margin: 3.1rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+        margin-top: -2rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 3.1rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
+          }
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 3.1rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+          overflow: hidden;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
           }
         }
       }
     }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 3.1rem;
-      padding-bottom: 3rem;
-      .scardcontainer {
-        height: 27rem;
-        width: 25rem;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
-        overflow: hidden;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.4rem;
-          font-weight: 400;
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        font-size: 3rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 8rem;
-            width: 8rem;
-          }
+        .dsmb {
+          color: #00ffff;
         }
       }
     }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 5%;
-      top: 30%;
-      font-size: 3rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
+    .slider {
+      padding-top: 10rem;
+      background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+      .sliderrow {
+        @include centerByFlex();
+        .sliderwindow {
+          height: 35rem;
+          width: 35rem;
+        }
       }
-      .dsmb {
-        color: #00ffff;
+      .swiper {
+        width: 100%;
+        height: 100%;
       }
-    }
-  }
-  .slider {
-    padding-top: 10rem;
-    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-    .sliderrow {
-      @include centerByFlex();
-      .sliderwindow {
-        height: 35rem;
-        width: 35rem;
-      }
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 1.5rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-    }
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
 
-    .swiper-slide {
-      background-image: url(./../images/bg.png);
-      background-size: cover;
+      .swiper-slide {
+        background-image: url(./../images/bg.png);
+        background-size: cover;
+      }
     }
-  }
   }
 }
 @media only screen and (max-width: 598px) {
@@ -1357,9 +1350,9 @@
     .home {
       height: 60vh;
       .topcover {
-        .text{
-          h4{
-            font-size: 3.5rem
+        .text {
+          h4 {
+            font-size: 3.5rem;
           }
         }
         .counter {
@@ -1388,184 +1381,183 @@
       }
     }
     .about {
-            .resonancexi {
-              .bcx {
-                top: -20%;
-                max-width: 30rem; 
-                padding: 1.5rem;
-                #rex {
-                  span {
-                    font-size: 2.5rem;
-                  }
-                }
-                #text {
-                  font-size: 1.1rem;
-                }
-                #start {
-                  padding-bottom: 1rem;
-                  margin-top: 0.5rem;
-                  font-size: 1.3rem;
-                }
-              }
-      
-            }
-            .myth {
-              width: 100%;
-              margin-top: 25rem;
-              @include centerByFlex();
-              p {
-                font-size: 2.4rem;
-                width: 80%;
-                text-align: center;
-                color: $white;
-                .ty1 {
-                  @include ty1();
-                }
-                .ty2 {
-                  @include ty2();
-                }
-              }
-            }
-            .lgo {
-              margin-top: 9rem;
-              @include centerByFlex();
-              img {
-                height: 25rem;
-                width: 25rem;
-              }
+      .resonancexi {
+        .bcx {
+          top: -20%;
+          max-width: 30rem;
+          padding: 1.5rem;
+          #rex {
+            span {
+              font-size: 2.5rem;
             }
           }
-          .events {
-          min-height: 50vh;
-          background: $bg2;
-          position: relative;
-      
-          h4 {
-            text-align: center;
-            @include eor;
-            font-size: 3rem;
-            padding: 7rem 5rem;
-            font-weight: 500;
+          #text {
+            font-size: 1.1rem;
           }
-          .cardcontainer {
-            grid-template-columns: auto auto;
-      
-            margin-top: -2rem;
-            .scardcontainer {
-              height: 26rem;
-              width: 24rem;
-              background: rgba(255, 255, 255, 0.05);
-              overflow: hidden;
-              margin: 2.2rem auto;
-              border-radius: 15px;
-              padding: 2rem;
-              z-index: 100;
-              backdrop-filter: blur(2px);
-              h4 {
-                padding: 0 1rem;
-                @include cardTitle();
-                font-size: 2.4rem;
-                font-weight: 400;
-              }
-              .btndiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-              }
-              .imgdiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-                img {
-                  height: 8rem;
-                  width: 8rem;
-                }
-              }
-            }
-          }
-          .cardcontainer2 {
-            grid-template-columns: auto;
-            justify-content: center;
-            margin-top: 2.2rem;
-            padding-bottom: 3rem;
-            .scardcontainer {
-              height: 26rem;
-              width: 24rem;
-              background: rgba(255, 255, 255, 0.05);
-              margin: 0 auto;
-              border-radius: 15px;
-              padding: 2rem 1.5rem;
-              overflow: hidden;
-              backdrop-filter: blur(2px);
-              h4 {
-                padding: 0 1rem;
-                @include cardTitle();
-                font-size: 2.4rem;
-                font-weight: 400;
-              }
-              .btndiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-              }
-              .imgdiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-                img {
-                  height: 8rem;
-                  width: 8rem;
-                }
-              }
-            }
+          #start {
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
           }
         }
-        .ladies {
-          background: $conic;
-          position: relative;
-          padding-top: 10rem;
-          h4 {
-            position: absolute;
-            right: 5%;
-            top: 30%;
-            font-size: 2.5rem;
-            text-align: center;
-            color: $white;
-            font-weight: 500;
-            .asmb {
-              @include assemble();
-            }
-            .dsmb {
-              color: #00ffff;
-            }
+      }
+      .myth {
+        width: 100%;
+        margin-top: 25rem;
+        @include centerByFlex();
+        p {
+          font-size: 2.4rem;
+          width: 80%;
+          text-align: center;
+          color: $white;
+          .ty1 {
+            @include ty1();
+          }
+          .ty2 {
+            @include ty2();
           }
         }
-        .slider {
-          padding-top: 10rem;
-          background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-          .sliderrow {
+      }
+      .lgo {
+        margin-top: 9rem;
+        @include centerByFlex();
+        img {
+          height: 25rem;
+          width: 25rem;
+        }
+      }
+    }
+    .events {
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
+
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 3rem;
+        padding: 7rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto auto;
+
+        margin-top: -2rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 24rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 2.2rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          .btndiv {
             @include centerByFlex();
-            .sliderwindow {
-              height: 33rem;
-              width: 38rem;
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
             }
           }
-          .swiper {
-            width: 100%;
-            height: 100%;
+        }
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 2.2rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 24rem;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem 1.5rem;
+          overflow: hidden;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.4rem;
+            font-weight: 400;
           }
-      
-          .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 1.5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
           }
-      
-          .swiper-slide {
-            background-image: url(./../images/bg.png);
-            background-size: cover;
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
           }
-        } 
+        }
+      }
+    }
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        font-size: 2.5rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
+        }
+        .dsmb {
+          color: #00ffff;
+        }
+      }
+    }
+    .slider {
+      padding-top: 10rem;
+      background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+      .sliderrow {
+        @include centerByFlex();
+        .sliderwindow {
+          height: 33rem;
+          width: 38rem;
+        }
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .swiper-slide {
+        background-image: url(./../images/bg.png);
+        background-size: cover;
+      }
+    }
   }
 }
 @media only screen and (max-width: 495px) {
@@ -1573,9 +1565,9 @@
     .home {
       height: 50vh;
       .topcover {
-        .text{
-          h4{
-            font-size: 2.8rem
+        .text {
+          h4 {
+            font-size: 2.8rem;
           }
         }
         .counter {
@@ -1611,7 +1603,7 @@
         height: 6rem;
         .bcx {
           top: -50%;
-          max-width: 28rem; 
+          max-width: 28rem;
           padding: 1rem 1.5rem 2rem 1.5rem;
           #rex {
             span {
@@ -1627,7 +1619,6 @@
             font-size: 1.2rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -1656,116 +1647,116 @@
       }
     }
     .events {
-          min-height: 50vh;
-          background: $bg2;
-          position: relative;
-      
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
+
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 2.8rem;
+        padding: 4rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto;
+
+        margin-top: 0rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 4rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
           h4 {
-            text-align: center;
-            @include eor;
-            font-size: 2.8rem;
-            padding: 4rem 5rem;
-            font-weight: 500;
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.5rem;
+            font-weight: 400;
           }
-          .cardcontainer {
-            grid-template-columns: auto;
-      
-            margin-top: 0rem;
-            .scardcontainer {
-              height: 27rem;
-              width: 25rem;
-              background: rgba(255, 255, 255, 0.05);
-              overflow: hidden;
-              margin: 4rem auto;
-              border-radius: 15px;
-              padding: 2rem;
-              z-index: 100;
-              backdrop-filter: blur(2px);
-              h4 {
-                padding: 0 1rem;
-                @include cardTitle();
-                font-size: 2.5rem;
-                font-weight: 400;
-              }
-              .btndiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-              }
-              .imgdiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-                img {
-                  height: 8rem;
-                  width: 8rem;
-                }
-              }
-            }
-          }
-          .cardcontainer2 {
-            grid-template-columns: auto;
-            justify-content: center;
-            margin-top: 4rem;
-            padding-bottom: 3rem;
-            .scardcontainer {
-              height: 27rem;
-              width: 25rem;
-              background: rgba(255, 255, 255, 0.05);
-              margin: 0 auto;
-              border-radius: 15px;
-              padding: 2rem;
-              overflow: hidden;
-              backdrop-filter: blur(2px);
-              h4 {
-                padding: 0 1rem;
-                @include cardTitle();
-                font-size: 2.5rem;
-                font-weight: 400;
-              }
-              .btndiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-              }
-              .imgdiv {
-                @include centerByFlex();
-                margin-top: 4rem;
-                img {
-                  height: 8rem;
-                  width: 8rem;
-                }
-              }
-            }
-          }
-        }
-        .slider {
-          padding-top: 10rem;
-          background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-          .sliderrow {
+          .btndiv {
             @include centerByFlex();
-            .sliderwindow {
-              height: 32rem;
-              width: 22rem;
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
             }
           }
-          .swiper {
-            width: 100%;
-            height: 100%;
+        }
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 4rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 27rem;
+          width: 25rem;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+          overflow: hidden;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.5rem;
+            font-weight: 400;
           }
-      
-          .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 1.5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
           }
-      
-          .swiper-slide {
-            background-image: url(./../images/bg.png);
-            background-size: cover;
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 8rem;
+              width: 8rem;
+            }
           }
         }
+      }
+    }
+    .slider {
+      padding-top: 10rem;
+      background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+      .sliderrow {
+        @include centerByFlex();
+        .sliderwindow {
+          height: 32rem;
+          width: 22rem;
+        }
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .swiper-slide {
+        background-image: url(./../images/bg.png);
+        background-size: cover;
+      }
+    }
   }
 }
 @media only screen and (max-width: 399px) {
@@ -1773,9 +1764,9 @@
     .home {
       height: 45vh;
       .topcover {
-        .text{
-          h4{
-            font-size: 2.4rem
+        .text {
+          h4 {
+            font-size: 2.4rem;
           }
         }
         .counter {
@@ -1792,7 +1783,7 @@
             #secs {
               font-size: 0.9rem;
             }
-            .name{
+            .name {
               font-size: 0.7rem;
             }
           }
@@ -1815,7 +1806,7 @@
       .resonancexi {
         .bcx {
           top: -18%;
-          max-width: 28rem; 
+          max-width: 28rem;
           padding: 1.5rem;
           #rex {
             span {
@@ -1831,7 +1822,6 @@
             font-size: 1.2rem;
           }
         }
-
       }
       .myth {
         width: 100%;
@@ -1860,137 +1850,137 @@
       }
     }
     .events {
-    min-height: 50vh;
-    background: $bg2;
-    position: relative;
+      min-height: 50vh;
+      background: $bg2;
+      position: relative;
 
-    h4 {
-      text-align: center;
-      @include eor;
-      font-size: 2.8rem;
-      padding: 2rem 5rem;
-      font-weight: 500;
-    }
-    .cardcontainer {
-      grid-template-columns: auto;
+      h4 {
+        text-align: center;
+        @include eor;
+        font-size: 2.8rem;
+        padding: 2rem 5rem;
+        font-weight: 500;
+      }
+      .cardcontainer {
+        grid-template-columns: auto;
 
-      margin-top: 1rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 23rem;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-        margin: 4rem auto;
-        border-radius: 15px;
-        padding: 2rem;
-        z-index: 100;
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.2rem;
-          font-weight: 400;
+        margin-top: 1rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 23rem;
+          background: rgba(255, 255, 255, 0.05);
+          overflow: hidden;
+          margin: 4rem auto;
+          border-radius: 15px;
+          padding: 2rem;
+          z-index: 100;
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.2rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 7rem;
+              width: 7rem;
+            }
+          }
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 7rem;
-            width: 7rem;
+      }
+      .cardcontainer2 {
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 4rem;
+        padding-bottom: 3rem;
+        .scardcontainer {
+          height: 26rem;
+          width: 23rem;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.05);
+          margin: 0 auto;
+          border-radius: 15px;
+          padding: 2rem;
+
+          backdrop-filter: blur(2px);
+          h4 {
+            padding: 0 1rem;
+            @include cardTitle();
+            font-size: 2.2rem;
+            font-weight: 400;
+          }
+          .btndiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+          }
+          .imgdiv {
+            @include centerByFlex();
+            margin-top: 4rem;
+            img {
+              height: 7rem;
+              width: 7rem;
+            }
           }
         }
       }
     }
-    .cardcontainer2 {
-      grid-template-columns: auto;
-      justify-content: center;
-      margin-top: 4rem;
-      padding-bottom: 3rem;
-      .scardcontainer {
-        height: 26rem;
-        width: 23rem;
-        overflow: hidden;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 2rem;
-
-        backdrop-filter: blur(2px);
-        h4 {
-          padding: 0 1rem;
-          @include cardTitle();
-          font-size: 2.2rem;
-          font-weight: 400;
+    .ladies {
+      background: $conic;
+      position: relative;
+      padding-top: 10rem;
+      h4 {
+        position: absolute;
+        right: 3%;
+        top: 35%;
+        font-size: 2.2rem;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        .asmb {
+          @include assemble();
         }
-        .btndiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-        }
-        .imgdiv {
-          @include centerByFlex();
-          margin-top: 4rem;
-          img {
-            height: 7rem;
-            width: 7rem;
-          }
+        .dsmb {
+          color: #00ffff;
         }
       }
     }
-  }
-  .ladies {
-    background: $conic;
-    position: relative;
-    padding-top: 10rem;
-    h4 {
-      position: absolute;
-      right: 3%;
-      top: 35%;
-      font-size: 2.2rem;
-      text-align: center;
-      color: $white;
-      font-weight: 500;
-      .asmb {
-        @include assemble();
+    .slider {
+      padding-top: 10rem;
+      background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
+      .sliderrow {
+        @include centerByFlex();
+        .sliderwindow {
+          height: 30rem;
+          width: 20rem;
+        }
       }
-      .dsmb {
-        color: #00ffff;
+      .swiper {
+        width: 100%;
+        height: 100%;
       }
-    }
-  }
-  .slider {
-    padding-top: 10rem;
-    background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
-    .sliderrow {
-      @include centerByFlex();
-      .sliderwindow {
-        height: 30rem;
-        width: 20rem;
-      }
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 1.5rem;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-    }
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
 
-    .swiper-slide {
-      background-image: url(./../images/bg.png);
-      background-size: cover;
+      .swiper-slide {
+        background-image: url(./../images/bg.png);
+        background-size: cover;
+      }
     }
-  }
   }
 }
 @media only screen and (max-width: 481px) {
