@@ -3153,6 +3153,9 @@ i {
 .wrapper .inner form .form-group input {
   width: 50%;
   background-color: transparent;
+  caret-color: #00dafc;
+  color: #00dafc;
+  letter-spacing: 2px;
 }
 
 .wrapper .inner form .form-group .form-control {
@@ -3171,6 +3174,9 @@ i {
 
 .wrapper .inner form .form-wrapper input {
   background-color: transparent;
+  caret-color: #00dafc;
+  color: #00dafc;
+  letter-spacing: 2px;
 }
 
 .wrapper .inner form .form-wrapper .form-control {
@@ -3187,6 +3193,17 @@ i {
   cursor: pointer;
   color: #747777;
   background-color: transparent;
+  letter-spacing: 2px;
+}
+
+.wrapper .inner form .form-wrapper select #male {
+  color: #00dafc;
+  background-color: #272427;
+}
+
+.wrapper .inner form .form-wrapper select #events {
+  color: #00dafc;
+  background-color: #272427;
 }
 
 .wrapper .inner form .form-wrapper select option[value=""][disabled] {
@@ -3207,14 +3224,92 @@ i {
 }
 
 .wrapper .inner form .buttdiv button {
-  position: relative;
-  cursor: pointer;
-  width: 40%;
-  border-radius: 2rem 0;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background: linear-gradient(113.54deg, #d912dd 34.86%, rgba(91, 26, 134, 0.75) 74.74%);
+  color: white;
+  padding: 1rem 1rem;
+  padding-left: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 1.6rem 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapper .inner form .buttdiv button span {
+  display: block;
+  margin-left: 0.3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper .inner form .buttdiv button svg {
+  display: block;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.wrapper .inner form .buttdiv button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.wrapper .inner form .buttdiv button:hover svg {
+  -webkit-transform: translateX(3.5rem) rotate(45deg) scale(1.1);
+          transform: translateX(3.5rem) rotate(45deg) scale(1.1);
+}
+
+.wrapper .inner form .buttdiv button:hover span {
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
+}
+
+.wrapper .inner form .buttdiv button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+  }
+  to {
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+  }
+  to {
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+  }
 }
 
 .form-group input:first-child {
-  margin-right: 25px;
+  margin-right: 2.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -3265,8 +3360,7 @@ i {
   .wrapper .inner form .buttdiv button {
     position: relative;
     cursor: pointer;
-    width: 40%;
-    border-radius: 2rem 0;
+    border-radius: 1.6rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
