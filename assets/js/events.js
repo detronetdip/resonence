@@ -1,4 +1,4 @@
-var allId = ["pkbt"];
+var allId = ["pkbt","aqua","rbrce","rbrce"];
 var parkobot = document.getElementById("pkbt");
 parkobot.style.height = 0;
 function expand(e) {
