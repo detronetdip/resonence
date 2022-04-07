@@ -72,6 +72,7 @@ i {
 .maincontainer .container {
   background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
   width: 100%;
+  min-height: 100vh;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -204,6 +205,11 @@ i {
   margin-top: 3rem;
 }
 
+.maincontainer .logcontainer .colapse {
+  padding: 3rem;
+  overflow-y: hidden;
+}
+
 .maincontainer .logcontainer ol li a {
   text-decoration: none;
   margin-left: 0.8rem;
@@ -240,6 +246,7 @@ i {
   text-decoration: underline;
   color: #6c6d6c;
   position: relative;
+  cursor: pointer;
 }
 
 .maincontainer .logcontainer h5 {

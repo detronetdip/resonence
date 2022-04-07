@@ -16,6 +16,7 @@
       #030a1b 50.54%
     );
     width: 100%;
+    min-height: 100vh;
     position: relative;
     display: grid;
     place-items: center;
@@ -103,6 +104,10 @@
     width: 90%;
     max-width: 80rem;
     margin-top: 3rem;
+    .colapse{
+      padding: 3rem;
+      overflow-y: hidden;
+    }
     ol li a{
       text-decoration: none;
       margin-left: 0.8rem;
@@ -130,6 +135,7 @@
     text-decoration: underline;
     color: #6c6d6c;
     position: relative;
+    cursor: pointer;
   }
   .logcontainer h5 {
     font-size: 2rem;
