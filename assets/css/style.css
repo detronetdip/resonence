@@ -603,7 +603,6 @@ i {
 
 .maincontainer .galary {
   background: linear-gradient(0.94deg, #030a1b 51.2%, #010710 95.7%);
-  padding-bottom: 5rem;
 }
 
 .maincontainer .galary h4 {
@@ -618,7 +617,7 @@ i {
 }
 
 .maincontainer .galary .slideshow-container {
-  max-width: 100%;
+  max-width: 90%;
   height: 50rem;
   position: relative;
   margin: auto;
@@ -632,11 +631,11 @@ i {
 .maincontainer .galary .slideshow-container .prev, .maincontainer .galary .slideshow-container .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   margin-top: -2.2rem;
   padding: 1.6rem;
-  color: white;
+  color: #00eeff;
   font-size: 5rem;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
@@ -684,6 +683,7 @@ i {
 .maincontainer .footer {
   background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
   padding: 0.2rem;
+  padding-top: 10rem;
 }
 
 .maincontainer .footer .footer-row1 {

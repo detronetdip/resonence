@@ -321,7 +321,6 @@
       #030a1b 51.2%,
       #010710 95.7%
     );
-    padding-bottom: 5rem;
     h4{
       text-align: center;
       @include eor;
@@ -329,7 +328,7 @@
       padding-bottom: 8rem;
     }
     .slideshow-container {
-      max-width: 100%;
+      max-width: 90%;
       height: 50rem;
       position: relative;
       margin: auto;
@@ -340,11 +339,11 @@
       .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 45%;
         width: auto;
         margin-top: -2.2rem;
         padding: 1.6rem;
-        color: white;
+        color: rgb(0, 238, 255);
         font-size: 5rem;
         transition: 0.6s ease;
         border-radius: 0 1rem 1rem 0;
@@ -370,6 +369,7 @@
   .footer {
     background: $bg2;
     padding: 0.2rem;
+    padding-top: 10rem;
     .footer-row1 {
       padding: 20px 0;
       .container {
