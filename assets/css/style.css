@@ -817,11 +817,13 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
-  height: 4rem;
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt a {
