@@ -465,9 +465,9 @@
                 padding-bottom: 0.9rem;
               }
               .dbnt {
-                height: 4rem;
+                height: 10rem;
                 display: flex;
-                text-align: left;
+                justify-content: center;
                 a {
                   margin-right: 0;
                 }
@@ -2225,10 +2225,21 @@
           display: flex;
           flex-direction: column;
           justify-content: start;
+          align-items: center;
           .ul1 {
             width: 100%;
             .da {
               display: flex;
+              align-items: center;
+              justify-content: center;
+              .heading{
+                .nmb{
+                  padding: 0;
+                }
+              }
+            }
+            .heading h4{
+              margin-bottom: 0;
             }
           }
         }
