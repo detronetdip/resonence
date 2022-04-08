@@ -94,6 +94,7 @@ i {
 
 .maincontainer .home .topcover .text {
   text-align: center;
+  z-index: 10;
 }
 
 .maincontainer .home .topcover .text h4 {
