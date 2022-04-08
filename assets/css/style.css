@@ -1482,8 +1482,8 @@ i {
             justify-content: center;
   }
   .maincontainer .slider .sliderrow .sliderwindow {
-    height: 40rem;
-    width: 3rem;
+    height: 35rem;
+    width: 30rem;
   }
   .maincontainer .slider .swiper {
     width: 100%;
@@ -1503,6 +1503,71 @@ i {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
+  }
+  .maincontainer .slider .swiper-slide .mask {
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  .maincontainer .slider .swiper-slide .mask .imgbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .imgbox img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+  }
+  .maincontainer .slider .swiper-slide .mask .named {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 0.7rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
   }
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
@@ -1745,11 +1810,11 @@ i {
     height: 8rem;
     width: 8rem;
   }
-  .maincontainer .events .cardcontainer2 .slider {
+  .maincontainer .slider {
     padding-top: 10rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
   }
-  .maincontainer .events .cardcontainer2 .slider .sliderrow {
+  .maincontainer .slider .sliderrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1760,15 +1825,15 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .maincontainer .events .cardcontainer2 .slider .sliderrow .sliderwindow {
+  .maincontainer .slider .sliderrow .sliderwindow {
     height: 34rem;
-    width: 24rem;
+    width: 28rem;
   }
-  .maincontainer .events .cardcontainer2 .slider .swiper {
+  .maincontainer .slider .swiper {
     width: 100%;
     height: 100%;
   }
-  .maincontainer .events .cardcontainer2 .slider .swiper-slide {
+  .maincontainer .slider .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1783,7 +1848,24 @@ i {
     font-weight: bold;
     color: #fff;
   }
-  .maincontainer .events .cardcontainer2 .slider .swiper-slide {
+  .maincontainer .slider .swiper-slide .mask .named h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 0.7rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech {
+    padding-top: 1.2rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+  }
+  .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
     background-size: cover;
   }
@@ -1810,6 +1892,13 @@ i {
   }
   .maincontainer .ladies h4 .dsmb {
     color: #00ffff;
+  }
+  .maincontainer .footer .footer-row2 .container .row {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .maincontainer .footer .footer-row2 .container .row .ul1 {
+    margin-top: 2rem;
   }
 }
 
@@ -2085,8 +2174,8 @@ i {
             justify-content: center;
   }
   .maincontainer .slider .sliderrow .sliderwindow {
-    height: 35rem;
-    width: 35rem;
+    height: 34rem;
+    width: 28rem;
   }
   .maincontainer .slider .swiper {
     width: 100%;
@@ -2107,9 +2196,34 @@ i {
     font-weight: bold;
     color: #fff;
   }
+  .maincontainer .slider .swiper-slide .mask .named h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 0.7rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech {
+    padding-top: 1.2rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+  }
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
     background-size: cover;
+  }
+  .maincontainer .galary .slideshow-container {
+    height: 30rem;
+  }
+  .maincontainer .galary .slideshow-container .prev, .maincontainer .galary .slideshow-container .next {
+    top: 45%;
+    padding: 1rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -2385,8 +2499,8 @@ i {
             justify-content: center;
   }
   .maincontainer .slider .sliderrow .sliderwindow {
-    height: 33rem;
-    width: 38rem;
+    height: 34rem;
+    width: 28rem;
   }
   .maincontainer .slider .swiper {
     width: 100%;
@@ -2406,6 +2520,23 @@ i {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 0.7rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech {
+    padding-top: 1.2rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
   }
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
@@ -3013,9 +3144,34 @@ i {
     font-weight: bold;
     color: #fff;
   }
+  .maincontainer .slider .swiper-slide .mask .named h4 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .maincontainer .slider .swiper-slide .mask .named h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 0.7rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech {
+    padding-top: 1rem;
+  }
+  .maincontainer .slider .swiper-slide .mask .speech p {
+    text-align: center;
+    font-weight: 200;
+    font-size: .8rem;
+  }
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
     background-size: cover;
+  }
+  .maincontainer .galary .slideshow-container {
+    height: 20rem;
+  }
+  .maincontainer .galary .slideshow-container .prev, .maincontainer .galary .slideshow-container .next {
+    top: 50%;
+    padding: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -3025,16 +3181,6 @@ i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 816px) {
-  .maincontainer .footer .footer-row2 .container .row {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .maincontainer .footer .footer-row2 .container .row .ul1 {
-    margin-top: 2rem;
   }
 }
 
