@@ -143,6 +143,8 @@
     text-decoration: underline;
     position: relative;
     color: #dddddd;
+    user-select: none;
+    cursor: pointer;
     letter-spacing: 2px;
     &::before {
       content: "#";

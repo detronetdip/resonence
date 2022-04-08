@@ -255,6 +255,11 @@ i {
   text-decoration: underline;
   position: relative;
   color: #dddddd;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
   letter-spacing: 2px;
 }
 
