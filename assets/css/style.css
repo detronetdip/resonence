@@ -620,7 +620,13 @@ i {
   max-width: 90%;
   height: 50rem;
   position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
   margin: auto;
+  -webkit-box-shadow: 0rem 0rem 5rem rgba(255, 255, 255, 0.25);
+          box-shadow: 0rem 0rem 5rem rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .maincontainer .galary .slideshow-container .mySlides {
