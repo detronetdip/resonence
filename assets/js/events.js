@@ -1,15 +1,5 @@
 var allId = ["pkbt", "aqua", "rbrce", "rbrce", "obs"];
 function expand(e) {
-  // var id = e.getAttribute("refer");
-  // var isOpen = e.getAttribute("isOpen");
-  // console.log(isOpen);
-  // if (isOpen == "false") {
-  //   document.getElementById(id).style.height = "auto";
-  //   e.setAttribute("isOpen", true);
-  // } else {
-  //   document.getElementById(id).style.height = "0";
-  //   e.setAttribute("isOpen", false);
-  // }
   allId.forEach((r) => {
     if (e.nextSibling.nextSibling.id == r) {
       var isOpen = e.getAttribute("isOpen");
