@@ -165,7 +165,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .maincontainer .home .topcover .explore button {
@@ -292,9 +292,10 @@ i {
           justify-content: center;
 }
 
-.maincontainer .about .lgo img {
-  height: 29rem;
-  width: 29rem;
+.maincontainer .about .lgo .img1 {
+  height: 25rem;
+  width: 25rem;
+  margin: 0.1rem 1.2rem;
 }
 
 .maincontainer .events {
@@ -1038,21 +1039,10 @@ i {
     background-clip: text;
     text-fill-color: transparent;
   }
-  .maincontainer .about .lgo {
-    margin-top: 15rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 29rem;
-    width: 29rem;
+  .maincontainer .about .lgo .img1 {
+    height: 20rem;
+    width: 20rem;
+    margin: 0.1rem 1.2rem;
   }
   .maincontainer .events {
     min-height: 50vh;
@@ -1302,21 +1292,10 @@ i {
     background-clip: text;
     text-fill-color: transparent;
   }
-  .maincontainer .about .lgo {
-    margin-top: 12rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 28rem;
-    width: 28rem;
+  .maincontainer .about .lgo .img1 {
+    height: 20rem;
+    width: 20rem;
+    margin: 0.1rem 1.2rem;
   }
   .maincontainer .events {
     min-height: 50vh;
@@ -1668,22 +1647,6 @@ i {
     background-clip: text;
     text-fill-color: transparent;
   }
-  .maincontainer .about .lgo {
-    margin-top: 9rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 26rem;
-    width: 26rem;
-  }
   .maincontainer .events {
     min-height: 50vh;
     background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
@@ -1992,21 +1955,10 @@ i {
     background-clip: text;
     text-fill-color: transparent;
   }
-  .maincontainer .about .lgo {
-    margin-top: 9rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 26rem;
-    width: 26rem;
+  .maincontainer .about .lgo .img1 {
+    height: 20rem;
+    width: 20rem;
+    margin: 0.1rem 1.2rem;
   }
   .maincontainer .events {
     min-height: 50vh;
@@ -2316,22 +2268,6 @@ i {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-  }
-  .maincontainer .about .lgo {
-    margin-top: 9rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 25rem;
-    width: 25rem;
   }
   .maincontainer .events {
     min-height: 50vh;
@@ -2649,20 +2585,15 @@ i {
     text-fill-color: transparent;
   }
   .maincontainer .about .lgo {
-    margin-top: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .maincontainer .about .lgo img {
-    height: 23rem;
-    width: 23rem;
+  .maincontainer .about .lgo .img1 {
+    height: 17rem;
+    width: 17rem;
+    margin: 0.8rem 0;
   }
   .maincontainer .events {
     min-height: 50vh;
@@ -2938,22 +2869,6 @@ i {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-  }
-  .maincontainer .about .lgo {
-    margin-top: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .maincontainer .about .lgo img {
-    height: 20rem;
-    width: 20rem;
   }
   .maincontainer .events {
     min-height: 50vh;

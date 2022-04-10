@@ -56,7 +56,7 @@
       }
       .explore {
         @include centerByFlex();
-        margin-top: 8rem;
+        margin-top: 4rem;
         button {
           width: 14rem;
           height: 4rem;
@@ -132,9 +132,10 @@
     .lgo {
       margin-top: 10rem;
       @include centerByFlex();
-      img {
-        height: 29rem;
-        width: 29rem;
+      .img1 {
+        height: 25rem;
+        width: 25rem;
+        margin: 0.1rem 1.2rem;
       }
     }
   }
@@ -641,12 +642,11 @@
           }
         }
       }
-      .lgo {
-        margin-top: 15rem;
-        @include centerByFlex();
-        img {
-          height: 29rem;
-          width: 29rem;
+      .lgo{
+        .img1 {
+          height: 20rem;
+          width: 20rem;
+          margin: 0.1rem 1.2rem;
         }
       }
     }
@@ -831,12 +831,11 @@
           }
         }
       }
-      .lgo {
-        margin-top: 12rem;
-        @include centerByFlex();
-        img {
-          height: 28rem;
-          width: 28rem;
+      .lgo{
+        .img1 {
+          height: 20rem;
+          width: 20rem;
+          margin: 0.1rem 1.2rem;
         }
       }
     }
@@ -1086,14 +1085,6 @@
           }
         }
       }
-      .lgo {
-        margin-top: 9rem;
-        @include centerByFlex();
-        img {
-          height: 26rem;
-          width: 26rem;
-        }
-      }
     }
     .events {
       min-height: 50vh;
@@ -1333,12 +1324,11 @@
           }
         }
       }
-      .lgo {
-        margin-top: 9rem;
-        @include centerByFlex();
-        img {
-          height: 26rem;
-          width: 26rem;
+      .lgo{
+        .img1 {
+          height: 20rem;
+          width: 20rem;
+          margin: 0.1rem 1.2rem;
         }
       }
     }
@@ -1579,14 +1569,6 @@
           }
         }
       }
-      .lgo {
-        margin-top: 9rem;
-        @include centerByFlex();
-        img {
-          height: 25rem;
-          width: 25rem;
-        }
-      }
     }
     .events {
       min-height: 50vh;
@@ -1819,12 +1801,12 @@
           }
         }
       }
-      .lgo {
-        margin-top: 5rem;
-        @include centerByFlex();
-        img {
-          height: 23rem;
-          width: 23rem;
+      .lgo{
+        flex-direction: column;
+        .img1 {
+          height: 17rem;
+          width: 17rem; 
+          margin: 0.8rem 0;
         }
       }
     }
@@ -2019,14 +2001,6 @@
           .ty2 {
             @include ty2();
           }
-        }
-      }
-      .lgo {
-        margin-top: 5rem;
-        @include centerByFlex();
-        img {
-          height: 20rem;
-          width: 20rem;
         }
       }
     }
