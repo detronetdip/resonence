@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
 }
 
 input,
@@ -223,7 +223,7 @@ a.btn {
 }
 
 .main {
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,7 +240,7 @@ a.btn {
   min-height: 100vh;
   -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
-  background-color: #42389d;
+  background-color: #030a1b;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -340,13 +340,13 @@ a.btn {
 
 .main .left-part .list-nav .nav-list .outer-list:hover a {
   color: #fff;
-  background: #554abe !important;
+  background: #1749c74b !important;
   -webkit-box-shadow: 0 12px 15px 0 #42389d21;
           box-shadow: 0 12px 15px 0 #42389d21;
 }
 
 .main .left-part .copyright {
-  font-size: 14px;
+  font-size: 10px;
   padding: 0 45px;
   margin-top: 40px;
   color: #969ba0;
@@ -492,6 +492,10 @@ a.btn {
 .main .right-part .head .profile .name span {
   font-size: 16px;
   color: #000;
+  max-width: 4rem;
+  overflow: hidden;
+  height: 2rem;
+  text-overflow: ellipsis;
   display: block;
   font-weight: 600;
   text-transform: capitalize;

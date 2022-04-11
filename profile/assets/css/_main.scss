@@ -8,8 +8,8 @@
     flex-basis: 33%;
     min-height: 100vh;
     transition: 0.5s !important;
-    background-color: $main;
-    transform: translateX(0%);
+    background-color: $bg2;
+    transform: translateX(0%); 
     .logo {
       padding: 2.5rem 1.2rem;
       display: flex;
@@ -70,14 +70,14 @@
           }
           &:hover a {
             color: #fff;
-            background: #554abe !important;
+            background: #1749c74b !important;
             box-shadow: 0 12px 15px 0 #42389d21;
           }
         }
       }
     }
     .copyright {
-      font-size: 14px;
+      font-size: 10px;
       padding: 0 45px;
       margin-top: 40px;
       color: #969ba0;
@@ -172,6 +172,10 @@
           span {
             font-size: 16px;
             color: #000;
+            max-width: 4rem;
+            overflow: hidden;
+            height: 2rem;
+            text-overflow: ellipsis;
             display: block;
             font-weight: 600;
             text-transform: capitalize;
