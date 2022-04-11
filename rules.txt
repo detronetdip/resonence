@@ -1,0 +1,37 @@
+Robotics:
+    - robo titans ( heavy weight robo war)(RS 600)
+    - robotron (light weight robo war)(RS 350)
+    - robo premier (robo soccer)(RS 250)
+    - robo flash (robo race)(RS 200)
+    - robo emplacing (parking robot)(RS 230)
+    - wall-e (line follower) (outsiders are not allowed)
+    - the evaders ( obstacle avoider) (outsiders are not allowed)
+    - pirates of sea (aqua bot) (outsiders are not allowed)
+Coding: (outsiders are not allowed)
+    - ode to code
+    - bug buster
+    - web storm (outsiders are allowed)(RS 200)
+Gaming:
+    - bgmi(SQUAD RS 200)
+    - valorant(SQUAD RS 200)
+    - pes(SOLO RS 50)
+Speak up: (outsiders are not allowed)
+    - quizdom
+    - fight of words
+    - spell casters
+    - word scramble
+    - B-shark (outsiders are allowed)(RS 100)
+Project:
+    - project con(RS 200)
+    - product con(RS 350)
+Brain games: (outsiders are not allowed)
+    - digit imbroglio
+    - cube twrill
+    - circofet
+    - weighbridge
+Entertainment: (outsiders are not allowed)
+    - photographia
+    - filmwala
+    - creative canvas
+    - selfiegram
+    - meme-o-pedia
