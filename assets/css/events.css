@@ -216,6 +216,10 @@ i {
   color: rgba(122, 122, 122, 0.788);
 }
 
+.maincontainer .logcontainer ol li a:hover {
+  color: #00ffff;
+}
+
 .maincontainer .logcontainer .single-sub-event {
   padding: 2rem 0;
   margin: 3rem 0;
