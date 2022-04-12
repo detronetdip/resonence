@@ -31,13 +31,13 @@
         <div class="list-nav">
           <ul class="nav-list">
             <li class="outer-list">
-              <a href="index.html">
+              <a href="index.php">
                 <i class="uil uil-estate"></i>
                 <span>Dashbaord</span>
               </a>
             </li>
             <li class="outer-list">
-              <a href="registered_events.html">
+              <a href="registered_events.php">
                 <i class="uil uil-parcel"></i>
                 <span>Registered Events</span>
               </a>
