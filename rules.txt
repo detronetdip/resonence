@@ -1,4 +1,4 @@
-Robotics:
+Robotics: id-1
     - robo titans ( heavy weight robo war)(RS 600)
     - robotron (light weight robo war)(RS 350)
     - robo premier (robo soccer)(RS 250)
@@ -7,21 +7,21 @@ Robotics:
     - wall-e (line follower) (outsiders are not allowed)
     - the evaders ( obstacle avoider) (outsiders are not allowed)
     - pirates of sea (aqua bot) (outsiders are not allowed)
-Coding: (outsiders are not allowed)
+Coding: (outsiders are not allowed)  id-2
     - ode to code
     - bug buster
     - web storm (outsiders are allowed)(RS 200)
-Gaming:
+Gaming:  id-3
     - bgmi(SQUAD RS 200)
     - valorant(SQUAD RS 200)
     - pes(SOLO RS 50)
-Speak up: (outsiders are not allowed)
+Speak up: (outsiders are not allowed)  id-4
     - quizdom
     - fight of words
     - spell casters
     - word scramble
     - B-shark (outsiders are allowed)(RS 100)
-Project:
+Project:  id-5
     - project con(RS 200)
     - product con(RS 350)
 Brain games: (outsiders are not allowed)
@@ -45,3 +45,17 @@ Entertainment: (outsiders are not allowed)
     cvv- 123
     otp- 123456
 
+
+INSERT INTO `sevents` ( `mevent`, `sevname`) VALUES
+(1, 'robo titans'),
+(1, 'Robotron'),
+(1, 'Robo Premier'),
+(1, 'Robo Flash'),
+(1, 'Robo Emplacing'),
+(2, 'Web Storm'),
+(3, 'BGMI'),
+(3, 'Valorant'),
+(3, 'PES'),
+(4, 'B-Shark'),
+(5, 'Project Con'),
+(5, 'Product Con');
