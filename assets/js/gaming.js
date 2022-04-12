@@ -1,18 +1,20 @@
-var allId = ["pkbt", "aqua", "rbrce", "obs", "rtn", "rtit", "wall"];
+var allId = ["bgmi", "val", "pes"];
 function expand(e) {
   allId.forEach((r) => {
     if (e.nextSibling.nextSibling.id == r) {
       var isOpen = e.getAttribute("isOpen");
-      if(isOpen=="false"){
+      if (isOpen == "false") {
         e.nextSibling.nextSibling.style.height = "auto";
         e.setAttribute("isOpen", true);
-      }else{
+      } else {
         e.nextSibling.nextSibling.style.height = 0;
         e.setAttribute("isOpen", false);
       }
     } else {
       document.getElementById(r).style.height = 0;
-      document.getElementById(r).previousSibling.previousSibling.setAttribute("isOpen", false);
+      document
+        .getElementById(r)
+        .previousSibling.previousSibling.setAttribute("isOpen", false);
     }
   });
 }
