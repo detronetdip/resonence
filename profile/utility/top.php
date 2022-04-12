@@ -1,6 +1,6 @@
 <?php
   require('../utility/utility.php');
-  authorise_user();
+  authorise_user("./auth/v2/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
       <div class="left-part" id="lft">
         <div class="logo">
           <a href="javascript:void(0)">
-            <img src="../../assets/images/Project 51_4.png" alt="logo" />
+          <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
           </a>
           <div class="close-left-nav" onclick="close_res_nav()">
             <i class="uil uil-times"></i>
@@ -71,7 +71,7 @@
           </div>
           <div class="profile">
             <a href="javascript:void(0)">
-              <img src="../assets/images/Project 51_4.png" alt="" />
+              <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
             </a>
             <div class="name">
               <span>jhosd dfefen</span>
@@ -80,7 +80,7 @@
             <div class="hover-bot">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="javascript:void(0)" onclick="logout()">
                     <i class="uil uil-sign-out-alt"></i>
                     <span>Logout</span>
                   </a>

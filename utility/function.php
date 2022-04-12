@@ -26,9 +26,9 @@ function get_code(){
 	$code=chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25)).chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25));
 	return $code;
 }
-function authorise_user(){
+function authorise_user($path){
 	if(!isset($_SESSION['USER_LOGIN_RX'])){
-		redirect('auth/v2/');
+		redirect($path);
 	}
 }
 ?>

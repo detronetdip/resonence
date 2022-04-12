@@ -1,6 +1,7 @@
 "use strict";
 const S = "success";
 const W = "warning";
+const HOST="http://localhost/resonence/";
 let control = {
   globalShow: function (e) {
     document.getElementById(e).style.display = "initial";
@@ -52,19 +53,22 @@ let control = {
   get: (e) => {
     return document.getElementById(e);
   },
+  redirect:(e)=>{
+    window.location.href=e;
+  }
 };
 
 function login() {
   var username = control.getInput("email");
   var password = control.getInput("password");
   if (username == "") {
-    control.popup("Enter Username", W);
+    control.popup("Enter Email", W);
   } else if (password == "") {
     control.popup("Enter Password", W);
   } else {
     control.html("button", "wait...");
     $.ajax({
-      url: "../../../backend/auth/validate.php",
+      url: HOST+"/backend/auth/validate.php",
       type: "post",
       data: "username=" + username + "&password=" + password,
       success: function (htl) {
@@ -95,7 +99,7 @@ function register() {
   } else {
     control.html("button", "wait...");
     $.ajax({
-      url: "../../../backend/auth/register.php",
+      url: HOST+"/backend/auth/register.php",
       type: "post",
       data:
         "email=" +
@@ -118,3 +122,54 @@ function register() {
     });
   }
 }
+function logout() {
+  var email = 0;
+  $.ajax({
+    url: HOST+"/backend/auth/logout.php",
+    type: "post",
+    data: "email=" + email,
+    success: function (htl) {
+      control.reload();
+    },
+  });
+}
+function hide() {
+  var left = control.get("lft");
+  var mn = control.get("mn");
+  left.style.overflow = "hidden";
+  left.style.flexBasis = "0%";
+  mn.setAttribute("onclick", "op_en()");
+}
+function op_en() {
+  if (window.innerWidth > 860) {
+    var left = control.get("lft");
+    var mn = control.get("mn");
+    left.style.overflow = "hidden";
+    left.style.flexBasis = "33%";
+    mn.setAttribute("onclick", "hide()");
+  } else {
+    var left = control.get("lft");
+    var mn = control.get("mn");
+    left.style.transform = "translateX(0%)";
+  }
+}
+function op_n() {
+  var left = control.get("lft");
+  var mn = control.get("mn");
+  left.style.transform = "translateX(0%)";
+}
+
+function close_res_nav() {
+  var left = control.get("lft");
+  var mn = control.get("mn");
+  left.style.transform = "translateX(-120%)";
+  mn.setAttribute("onclick", "op_en()");
+}
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 860) {
+    op_en();
+  } else {
+    var left = control.get("lft");
+    left.style.overflow = "visible";
+  }
+});
