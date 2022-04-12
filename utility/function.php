@@ -31,4 +31,17 @@ function authorise_user($path){
 		redirect($path);
 	}
 }
+function getName($con){
+		$uid=$_SESSION['USER_ID'];
+		$sql="SELECT uname FROM users WHERE id='$uid'";
+		$res=mysqli_query($con,$sql);
+		$row=mysqli_fetch_assoc($res);
+		return $row['uname'];
+}
+function getTotalEvents($con){
+	    $sql="SELECT count(*) cnt FROM sevents";
+		$res=mysqli_query($con,$sql);
+		$row=mysqli_fetch_assoc($res);
+		return $row['cnt'];
+}
 ?>

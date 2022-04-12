@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="outer-list">
-              <a href="all_events.html">
+              <a href="all_events.php">
                 <i class="uil uil-voicemail-rectangle"></i>
                 <span>All Events</span>
               </a>
@@ -74,7 +74,7 @@
               <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
             </a>
             <div class="name">
-              <span>jhosd dfefen</span>
+              <span><?php echo getName($con);?></span>
               <small>Team</small>
             </div>
             <div class="hover-bot">
