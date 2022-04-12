@@ -35,3 +35,13 @@ Entertainment: (outsiders are not allowed)
     - creative canvas
     - selfiegram
     - meme-o-pedia
+
+
+
+
+    test card details:- 
+    card no.  4012001037141112
+    exp date- 05/23
+    cvv- 123
+    otp- 123456
+
