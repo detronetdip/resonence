@@ -24,7 +24,7 @@
     $n=mysqli_num_rows($res);
     if($n>0){
         $result['status']=0;
-        $result['msg']="Email is not available";
+        $result['msg']="Email is already in use";
     }else{
             $password=password_hash($password, PASSWORD_DEFAULT);
             $q="INSERT INTO users(uname,upassword,umobile,uemail) VALUES('$name','$password','$mobile','$email')";

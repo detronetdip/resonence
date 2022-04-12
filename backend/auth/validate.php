@@ -1,5 +1,7 @@
 <?php
   require('../../utility/utility.php');
+//   prx($_POST);
+
   $username=get_safe_value($con,$_POST['username']);
   $password=get_safe_value($con,$_POST['password']);
   $q="SELECT * FROM users WHERE uemail='$username'";
@@ -22,7 +24,7 @@
             $rs=$rs2;
         }
         $row=mysqli_fetch_assoc($rs);
-        $dps=$row['password'];
+        $dps=$row['upassword'];
         $verify = password_verify($password, $dps);
         if ($verify) {
             $_SESSION['USER_LOGIN_RX']="YES";

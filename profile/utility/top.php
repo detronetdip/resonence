@@ -1,6 +1,6 @@
 <?php
   require('../utility/utility.php');
-  authorise_user();
+  authorise_user("./auth/v2/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
       <div class="left-part" id="lft">
         <div class="logo">
           <a href="javascript:void(0)">
-            <img src="../../assets/images/Project 51_4.png" alt="logo" />
+          <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
           </a>
           <div class="close-left-nav" onclick="close_res_nav()">
             <i class="uil uil-times"></i>
@@ -31,19 +31,19 @@
         <div class="list-nav">
           <ul class="nav-list">
             <li class="outer-list">
-              <a href="index.html">
+              <a href="index.php">
                 <i class="uil uil-estate"></i>
                 <span>Dashbaord</span>
               </a>
             </li>
             <li class="outer-list">
-              <a href="registered_events.html">
+              <a href="registered_events.php">
                 <i class="uil uil-parcel"></i>
                 <span>Registered Events</span>
               </a>
             </li>
             <li class="outer-list">
-              <a href="all_events.html">
+              <a href="all_events.php">
                 <i class="uil uil-voicemail-rectangle"></i>
                 <span>All Events</span>
               </a>
@@ -71,16 +71,16 @@
           </div>
           <div class="profile">
             <a href="javascript:void(0)">
-              <img src="../assets/images/Project 51_4.png" alt="" />
+              <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
             </a>
             <div class="name">
-              <span>jhosd dfefen</span>
+              <span><?php echo getName($con);?></span>
               <small>Team</small>
             </div>
             <div class="hover-bot">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="javascript:void(0)" onclick="logout()">
                     <i class="uil uil-sign-out-alt"></i>
                     <span>Logout</span>
                   </a>
