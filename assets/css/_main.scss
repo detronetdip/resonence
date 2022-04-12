@@ -209,6 +209,7 @@
         padding: 2rem;
         transform-style: preserve-3d;
         backdrop-filter: blur(2px);
+        z-index: 1;
         h4 {
           padding-top: 0;
           @include cardTitle();
@@ -342,6 +343,7 @@
         .mySlides {
           height: 100%;
           display: none;
+          overflow:hidden ;
         }
         // .swiper-button-prev, .swiper-button-next {
         //   cursor: pointer;
