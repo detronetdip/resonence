@@ -53,70 +53,68 @@ let control = {
     return document.getElementById(e);
   },
 };
-function hide() {
-  var left = control.get("lft");
-  var mn = control.get("mn");
-  left.style.overflow = "hidden";
-  left.style.flexBasis = "0%";
-  mn.setAttribute("onclick", "op_en()");
-}
-function op_en() {
-  if (window.innerWidth > 860) {
-    var left = control.get("lft");
-    var mn = control.get("mn");
-    left.style.overflow = "hidden";
-    left.style.flexBasis = "33%";
-    mn.setAttribute("onclick", "hide()");
-  } else {
-    var left = control.get("lft");
-    var mn = control.get("mn");
-    left.style.transform = "translateX(0%)";
-  }
-}
-function op_n() {
-  var left = control.get("lft");
-  var mn = control.get("mn");
-  left.style.transform = "translateX(0%)";
-}
 
-function close_res_nav() {
-  var left = control.get("lft");
-  var mn = control.get("mn");
-  left.style.transform = "translateX(-120%)";
-  mn.setAttribute("onclick", "op_en()");
-}
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 860) {
-    op_en();
+function login() {
+  var username = control.getInput("email");
+  var password = control.getInput("password");
+  if (username == "") {
+    control.popup("Enter Username", W);
+  } else if (password == "") {
+    control.popup("Enter Password", W);
   } else {
-    var left = control.get("lft");
-    left.style.overflow = "visible";
-  }
-});
-function show_preview(e, f) {
-  if (validatefile(f)) {
-    var reader = new FileReader();
-    reader.onload = function () {
-      var output = document.getElementById(e);
-      output.src = reader.result;
-    };
-    reader.readAsDataURL(event.target.files[0]);
-  } else {
-    swal("File should be in JPEG,JPG or PNG format", "", "warning");
-  }
-}
-function validatefile(e) {
-  var fileInput = document.getElementById(e);
-  var filePath = fileInput.value;
-  var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
-  if (!allowedExtensions.exec(filePath)) {
-    fileInput.value = "";
-    return 0
-  } else {
-    return 1;
+    control.html("button", "wait...");
+    $.ajax({
+      url: "../../../backend/auth/validate.php",
+      type: "post",
+      data: "username=" + username + "&password=" + password,
+      success: function (htl) {
+        var html = JSON.parse(htl);
+        if (html.status != 1) {
+          control.popup(html.msg, W);
+          control.html("button", "Login");
+        } else {
+          control.redirect("../../index.php");
+        }
+      },
+    });
   }
 }
-function view(e) {
-  let div = control.get("mi");
-  div.src = e.src;
+function register() {
+  var email = control.getInput("email");
+  var mobile = control.getInput("mobile");
+  var password = control.getInput("password");
+  var name = control.getInput("name");
+  if (name == "") {
+    control.popup("Enter Name", W);
+  } else if (email == "") {
+    control.popup("Enter Email", W);
+  } else if (password == "") {
+    control.popup("Enter Password", W);
+  } else if (mobile == "") {
+    control.popup("Enter Mobile", W);
+  } else {
+    control.html("button", "wait...");
+    $.ajax({
+      url: "../../../backend/auth/register.php",
+      type: "post",
+      data:
+        "email=" +
+        email +
+        "&password=" +
+        password +
+        "&mobile=" +
+        mobile +
+        "&name=" +
+        name,
+      success: function (htl) {
+        var html = JSON.parse(htl);
+        if (html.status != 1) {
+          control.popup(html.msg, W);
+          control.html("button", "Register");
+        } else {
+          control.redirect("../");
+        }
+      },
+    });
+  }
 }

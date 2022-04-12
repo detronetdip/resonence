@@ -53,29 +53,4 @@ let control = {
       window.location.href = path;
     },
   };
-  
-  function login() {
-    var username = control.getInput("username");
-    var password = control.getInput("password");
-    if (username == "") {
-      control.popup("Enter Username", W);
-    } else if (password == "") {
-      control.popup("Enter Password", W);
-    } else {
-      control.html("lgbtn", "wait...");
-      $.ajax({
-        url: "../../assets/backend/auth/validate.php",
-        type: "post",
-        data: "username=" + username + "&password=" + password,
-        success: function (htl) {
-          var html = JSON.parse(htl);
-          if (html.status != 1) {
-            control.popup(html.msg, W);
-            control.html("lgbtn", "Login");
-          } else {
-            control.redirect("../../index.php");
-          }
-        },
-      });
-    }
-  }
+
