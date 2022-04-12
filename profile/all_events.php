@@ -24,7 +24,6 @@
                     $product_arr[]=$row;
                 }
                 $i=1;
-                // prx($row);
                 foreach($product_arr as $r){
                   ?>
                   <tr>
