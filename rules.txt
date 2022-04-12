@@ -46,16 +46,16 @@ Entertainment: (outsiders are not allowed)
     otp- 123456
 
 
-INSERT INTO `sevents` ( `mevent`, `sevname`) VALUES
-(1, 'robo titans'),
-(1, 'Robotron'),
-(1, 'Robo Premier'),
-(1, 'Robo Flash'),
-(1, 'Robo Emplacing'),
-(2, 'Web Storm'),
-(3, 'BGMI'),
-(3, 'Valorant'),
-(3, 'PES'),
-(4, 'B-Shark'),
-(5, 'Project Con'),
-(5, 'Product Con');
+INSERT INTO `sevents` ( `mevent`, `sevname`,`price`) VALUES
+(1, 'Robo Titans',600),
+(1, 'Robotron',350),
+(1, 'Robo Premier',250),
+(1, 'Robo Flash',200),
+(1, 'Robo Emplacing',230),
+(2, 'Web Storm',200),
+(3, 'BGMI',200),
+(3, 'Valorant',200),
+(3, 'PES',50),
+(4, 'B-Shark',100),
+(5, 'Project Con',200),
+(5, 'Product Con',350);
