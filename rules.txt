@@ -4,7 +4,7 @@ Robotics: id-1
     - robo premier (robo soccer)(RS 250)
     -  robo flash (robo race)(RS 200)
     -  robo emplacing (parking robot)(RS 230)
-    - wall-e (line follower) (outsiders are not allowed)
+    -  wall-e (line follower) (outsiders are not allowed)
     -  the evaders ( obstacle avoider) (outsiders are not allowed)
     -  pirates of sea (aqua bot) (outsiders are not allowed)
 Coding: (outsiders are not allowed)  id-2
