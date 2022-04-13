@@ -1,4 +1,4 @@
-var allId = ["bgmi", "val", "pes"];
+var allId = ["canva", "photo", "meme", "selfi", "film"];
 function expand(e) {
   allId.forEach((r) => {
     if (e.nextSibling.nextSibling.id == r) {

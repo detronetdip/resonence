@@ -1,4 +1,4 @@
-var allId = ["pkbt", "aqua", "rbrce", "obs", "rtn", "rtit", "wall"];
+var allId = ["pkbt", "aqua", "rbrce", "obs", "rtn", "rtit", "wall", "soccer"];
 function expand(e) {
   allId.forEach((r) => {
     if (e.nextSibling.nextSibling.id == r) {
