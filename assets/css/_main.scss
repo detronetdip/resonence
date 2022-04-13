@@ -57,6 +57,13 @@
       .explore {
         @include centerByFlex();
         margin-top: 4rem;
+        .resonance{
+          position: relative;
+          left: -50%;
+        }
+        .spandan{
+          margin-left: 50%;
+        }
         button {
           width: 14rem;
           height: 4rem;

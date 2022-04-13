@@ -321,6 +321,10 @@ i {
   margin: 1.5rem 0;
 }
 
+.maincontainer ol li ul li {
+  margin-left: 2rem;
+}
+
 .maincontainer .btnrow {
   display: -webkit-box;
   display: -ms-flexbox;
