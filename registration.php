@@ -20,14 +20,16 @@ authorise_user("./profile/auth/v2/");
       rel="stylesheet"
       type="text/css"
     />
-    <title>Resonance - Register</title>
+    <script src="./assets/js/sweetalert.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <title>Event Registration</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="inner">
         <div class="image-holder">
           <div class="image">
-            <img src="./assets/images/igb2.png" alt="image" />
+            <img src="./assets/images/Project 51_4.png" alt="image" />
           </div>
         </div>
         <form>
@@ -35,6 +37,13 @@ authorise_user("./profile/auth/v2/");
           <div class="form-group">
             <input type="text" placeholder="First Name" class="form-control" />
             <input type="text" placeholder="Last Name" class="form-control" />
+          </div>
+          <div class="form-wrapper">
+            <input
+              type="text"
+              placeholder="Team Name"
+              class="form-control"
+            />
           </div>
           <div class="form-wrapper">
             <input
@@ -52,38 +61,20 @@ authorise_user("./profile/auth/v2/");
             />
           </div>
           <div class="form-wrapper">
-            <select name="" id="gender" class="form-control">
-              <option value="" disabled selected>Gender</option>
-              <option value="male" id="male">Male</option>
-              <option value="female" id="male">Female</option>
-              <option value="other" id="male">Other</option>
+            <select name="mySelect" class="form-control" onchange="getSubEvents()" id="main-event">
+              <option value="" disabled selected>Select Event</option>
+              <?php
+                  $allEvents=getAllEvents($con);
+                  foreach($allEvents as $r){
+              ?>
+              <option value="<?php echo $r['id']; ?>" id="events"><?php echo $r['evname']; ?></option>
+              <?php } ?>
             </select>
           </div>
           <div class="form-wrapper">
-            <select name="mySelect" class="form-control">
-              <option value="" disabled selected>Select Events</option>
-              <option value="robotics" id="events">Robotics</option>
-              <option value="coding" id="events">Coding</option>
-              <option value="gaming" id="events">Gaming</option>
-              <option value="speak" id="events">Speak Up</option>
-              <option value="project" id="events">Project</option>
-              <option value="brain" id="events">Brain Games</option>
-              <option value="entertainment" id="events">Entertainment</option>
+            <select name="mySelect" class="form-control"  id="sub-event">
+              <option value="" disabled selected id="dmy">Select Sub Event</option>
             </select>
-          </div>
-          <div class="form-wrapper">
-            <input
-              type="email"
-              placeholder="Enter Email"
-              class="form-control"
-            />
-          </div>
-          <div class="form-wrapper">
-            <input
-              type="number"
-              placeholder="Enter Mobile Number"
-              class="form-control"
-            />
           </div>
           <div class="buttdiv">
             <button>
@@ -180,5 +171,6 @@ authorise_user("./profile/auth/v2/");
         </div>
       </section>
     </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

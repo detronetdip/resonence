@@ -44,4 +44,13 @@ function getTotalEvents($con){
 		$row=mysqli_fetch_assoc($res);
 		return $row['cnt'];
 }
+function getAllEvents($con){
+	$sql="SELECT id,evname FROM events";
+	$res=mysqli_query($con,$sql);
+	$product_arr=array();
+	while($row=mysqli_fetch_assoc($res)){	
+		$product_arr[]=$row;
+	}
+	return ($product_arr);
+}
 ?>

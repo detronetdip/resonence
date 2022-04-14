@@ -1,3 +1,7 @@
+"use strict";
+const S = "success";
+const W = "warning";
+const HOST="http://localhost/resonence/";
 let control = {
     globalShow: function (e) {
       document.getElementById(e).style.display = "initial";
@@ -54,3 +58,24 @@ let control = {
     },
   };
 
+function getSubEvents(){
+  var mainEvent=control.getInput("main-event");
+  control.html('dmy',"wait...");
+  $.ajax({
+    url: HOST+"/backend/event/allevent.php",
+    type: "post",
+    data: "mainEvent=" +mainEvent ,
+    success: function (htl) {
+      var html = JSON.parse(htl);
+      if (html.status != 1) {
+        control.popup(html.msg, W);
+        control.html("button", "Login");
+      } else {
+        var template="<option value='' id='dmy' disabled selected>Select Sub Event</option>\n";
+        html.data.forEach(e=>{
+          template+=`<option value="${e.id}" id="events" price="${e.price}">${e.sevname}</option>\n`;
+        })
+      }
+    },
+  });
+}
