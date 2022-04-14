@@ -75,7 +75,14 @@ function getSubEvents(){
         html.data.forEach(e=>{
           template+=`<option value="${e.id}" id="events" price="${e.price}">${e.sevname}</option>\n`;
         })
+        control.html('sub-event',template);
       }
     },
   });
+}
+function getPrice(){
+  var sub=control.get("sub-event");
+  var p=(sub.options[sub.selectedIndex].getAttribute('price'));
+  var templat=`Entry Fee:  &#8377; ${p}`;
+  control.html('ammount',templat);
 }

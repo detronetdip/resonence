@@ -73,9 +73,14 @@ authorise_user("./profile/auth/v2/");
             </select>
           </div>
           <div class="form-wrapper">
-            <select name="mySelect" class="form-control"  id="sub-event">
+            <select name="mySelect" class="form-control"  id="sub-event" onchange="getPrice()" >
               <option value="" disabled selected id="dmy">Select Sub Event</option>
             </select>
+          </div>
+          <div class="form-wrapper">
+           <span style="color: #00ffff; font-size: 1.3rem;" id="ammount">
+                    Entry Fee:  &#8377; 0
+           </span>
           </div>
           <div class="buttdiv">
             <button>
