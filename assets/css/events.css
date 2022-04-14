@@ -285,6 +285,7 @@ i {
   font-weight: 900;
   text-decoration: underline;
   position: relative;
+  text-transform: uppercase;
   color: #dddddd;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -297,7 +298,7 @@ i {
 .maincontainer .logcontainer h5::before {
   content: "#";
   position: absolute;
-  color: rgba(122, 122, 122, 0.788);
+  color: rgba(216, 22, 255, 0.788);
   top: -50%;
   left: -4%;
   font-size: 4rem;
