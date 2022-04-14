@@ -42,11 +42,20 @@
                     <td>
                       <div class="acn">
                         <?php
-                        
-                        
-                        
+                          $href="";
+                          if($r['evname']=="Robotics"){
+                            $href="../robotics.html";
+                          }else if($r['evname']=="Coding"){
+                            $href="../coding.html";
+                          }else if($r['evname']=="Gaming"){
+                            $href="../gaming.html";
+                          }else  if($r['evname']=="Speak Up"){
+                            $href="../speak.html";
+                          }else if($r['evname']=="Project"){
+                            $href="../project.html";
+                          }
                         ?>
-                        <a href="../" class="view">
+                        <a href="<?php echo $href; ?>" class="view">
                           <i class="uil uil-eye"></i>
                         </a>
                       </div>
