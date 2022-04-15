@@ -22,8 +22,8 @@ window.location.href = '<?php echo $path; ?>';
 </script>
 <?php
 }
-function get_code(){
-	$code=chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25)).chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25));
+function get_new_orderid(){
+	$code="RXI".rand(1,99).chr(65+rand(1,25)).rand(1,99).time();
 	return $code;
 }
 function authorise_user($path){

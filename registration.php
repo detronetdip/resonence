@@ -33,14 +33,16 @@ authorise_user("./profile/auth/v2/");
             <img src="./assets/images/Project 51_4.png" alt="image" />
           </div>
         </div>
-        <form>
+        <form id="form" method="POST" action="./process.php">
           <h3>registration</h3>
           <div class="form-group">
-            <input type="text" placeholder="First Name" class="form-control" />
-            <input type="text" placeholder="Last Name" class="form-control" />
+            <input type="text" id="firstName" name="firstName"  placeholder="First Name" class="form-control" />
+            <input type="text" id="lastName"  name="lastName" placeholder="Last Name" class="form-control" />
           </div>
           <div class="form-wrapper">
             <input
+            id="teamName"
+            name="teamName"
               type="text"
               placeholder="Team Name"
               class="form-control"
@@ -48,6 +50,8 @@ authorise_user("./profile/auth/v2/");
           </div>
           <div class="form-wrapper">
             <input
+            id="collegeName"
+            name="collegeName"
               type="text"
               placeholder="College Name"
               class="form-control"
@@ -56,6 +60,8 @@ authorise_user("./profile/auth/v2/");
 
           <div class="form-wrapper">
             <input
+            id="deptName"
+            name="deptName"
               type="text"
               placeholder="Department Name"
               class="form-control"
@@ -73,7 +79,7 @@ authorise_user("./profile/auth/v2/");
             </select>
           </div>
           <div class="form-wrapper">
-            <select name="mySelect" class="form-control"  id="sub-event" onchange="getPrice()" >
+            <select name="mySelect2" class="form-control"  id="sub-event" onchange="getPrice()" >
               <option value="" disabled selected id="dmy">Select Sub Event</option>
             </select>
           </div>
