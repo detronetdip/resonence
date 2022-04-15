@@ -39,12 +39,22 @@
         $uid=$q['uid'];
         mysqli_query($con,"UPDATE rgslog SET payment_status='$placed',reg_status='$placed',payu_status='$status', mihpayid='$pay_id' WHERE txnid='$txnid'");
 ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
     <script src="./assets/js/sweetalert.js"></script>
     <script>
-        swal("Registration done","","success").then(e=>{
+        function s(){
+            swal("Registration done","","success").then(e=>{
             window.location.href="./profile";
         });
+        }
+        window.onload=s;
     </script>
+    </body>
+    </html>
 <?php	
     }
 ?>

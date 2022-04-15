@@ -53,4 +53,17 @@ function getAllEvents($con){
 	}
 	return ($product_arr);
 }
+function getAllRegisteredEvents($con){
+	$sql = "SELECT rgslog.id,tid,evname,sevname,reg_status FROM rgslog,events,sevents WHERE rgslog.eventid=events.id AND rgslog.seventid=sevents.id;";
+	$res=mysqli_query($con,$sql);
+	$product_arr=array();
+	while($row=mysqli_fetch_assoc($res)){	
+		$product_arr[]=$row;
+	}
+	return ($product_arr);
+}
+function countMyEvent($con){
+	$uid=$_SESSION['USER_ID'];
+	return mysqli_fetch_assoc(mysqli_query($con,"SELECT count(*) total FROM rgslog WHERE uid='$uid'"));
+}
 ?>

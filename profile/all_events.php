@@ -1,6 +1,13 @@
 <?php
     require('utility/top.php'); 
 ?>
+      <div class="path">
+          <div class="container">
+            <a href="index.php">Home</a>
+            /
+            <a href="all_events.php">All Events</a>
+          </div>
+        </div>
         <div class="cartrow" id="catrow">
           <div class="gh">
             <div class="heading">

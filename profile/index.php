@@ -8,7 +8,12 @@
               <div class="card-body">
                 <div class="media align-items-center">
                   <div class="media-body mr-3">
-                    <h2 class="num-text text-black font-w700">78</h2>
+                    <h2 class="num-text text-black font-w700">
+                      <?php
+                        $rt=countMyEvent($con);
+                        echo $rt['total'];
+                      ?>
+                    </h2>
                     <span class="fs-14">Total Registered Events</span>
                   </div>
                   <svg
