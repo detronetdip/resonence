@@ -184,3 +184,14 @@ function sentRegistrationMail(mailId,name){
     },
   });
 }
+
+function eventRegistrationMail(mailId,name){
+  $.ajax({
+    url: HOST+"/backend/mail/eventRegistrationMail.php",
+    type: "post",
+    data: "mail=" + mailId + "&name=" + name,
+    success: function (htl) {
+      
+    },
+  });
+}

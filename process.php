@@ -26,7 +26,7 @@ if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['team
 
 <?php
 }else{
-    echo "fuck u";
+    echo "Something went wrong";
 }
 
 ?>
