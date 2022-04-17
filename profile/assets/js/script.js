@@ -116,6 +116,7 @@ function register() {
           control.popup(html.msg, W);
           control.html("button", "Register");
         } else {
+          sentRegistrationMail(email,name);
           control.redirect("../");
         }
       },
@@ -173,3 +174,13 @@ window.addEventListener("resize", () => {
     left.style.overflow = "visible";
   }
 });
+function sentRegistrationMail(mailId,name){
+  $.ajax({
+    url: HOST+"/backend/mail/RegistrationMail.php",
+    type: "post",
+    data: "mail=" + mailId + "&name=" + name,
+    success: function (htl) {
+      
+    },
+  });
+}
