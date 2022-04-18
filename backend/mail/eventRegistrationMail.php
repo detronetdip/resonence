@@ -1,14 +1,9 @@
 <?php 
 include('smtp/PHPMailerAutoload.php');
-require('../../utility/utility.php');
-require('../../mail_template/template.php');
-$mailID=get_safe_value($con,$_POST['mail']);
-$name=get_safe_value($con,$_POST['name']);
-
-echo smtp_mailer($mailID,'Registration Conformation',getEventRegistrationTemplate($name));
+// echo smtp_mailer($mailID,'Registration Conformation',getEventRegistrationTemplate($name));
 function smtp_mailer($to,$subject, $msg){
 	$mail = new PHPMailer(); 
-	$mail->SMTPDebug  = 3;
+	//$mail->SMTPDebug  = 3;
 	$mail->IsSMTP(); 
 	$mail->SMTPAuth = true; 
 	$mail->SMTPSecure = 'tls'; 

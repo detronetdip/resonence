@@ -773,8 +773,7 @@ function getRegistrationTemplate($name){
     ';
     return $registration;
 }
-function getEventRegistrationTemplate($name,$teamId,$eventName){
-    
+function getEventRegistrationTemplate($name,$eventName,$teamId){
     $html='
     <!DOCTYPE html>
     <html>
@@ -1165,5 +1164,6 @@ function getEventRegistrationTemplate($name,$teamId,$eventName){
       </body>
     </html>    
     ';
+    return $html;
 }
 ?>
