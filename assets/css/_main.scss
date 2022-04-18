@@ -397,6 +397,21 @@
       }
     
   }
+  .sponser{
+    background: linear-gradient(
+      0.94deg,
+      #030a1b 51.2%,
+      #010710 95.7%
+    );
+    color: $white;
+    h4{
+      padding-top: 7rem;
+      text-align: center;
+      @include eor;
+      font-size: 4rem;
+      padding-bottom: 8rem;
+    }
+  }
   .footer {
     background: $bg2;
     padding: 0.2rem;
@@ -1944,6 +1959,16 @@
         background-size: cover;
       }
     }
+    .galary{
+      h4{
+        font-size: 2.8rem;
+      }
+    }
+    .sponser{
+      h4{
+        font-size: 2.8rem;
+      }
+    }
   }
 }
 @media only screen and (max-width: 399px) {
@@ -2180,6 +2205,9 @@
       }
     }
     .galary{
+      h4{
+        font-size: 2.8rem;
+      }
       .slideshow-container{
         height: 20rem;
         .prev, .next {
@@ -2188,6 +2216,11 @@
           font-size: 2rem;
         }
       }
+    }
+    .sponser{
+      h4{
+          font-size: 2.8rem;
+        }
     }
   }
 }
