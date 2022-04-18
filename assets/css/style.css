@@ -615,6 +615,7 @@ i {
 
 .maincontainer .galary {
   background: linear-gradient(0.94deg, #030a1b 51.2%, #010710 95.7%);
+  padding-bottom: 2rem;
 }
 
 .maincontainer .galary h4 {
@@ -637,8 +638,6 @@ i {
   margin: auto;
   -webkit-box-shadow: 0rem 0rem 5rem rgba(255, 255, 255, 0.25);
           box-shadow: 0rem 0rem 5rem rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
 }
 
 .maincontainer .galary .slideshow-container .mySlides {
@@ -669,12 +668,12 @@ i {
 }
 
 .maincontainer .sponser {
-  background: linear-gradient(0.94deg, #030a1b 51.2%, #010710 95.7%);
+  background: linear-gradient(0.94deg, #030a1b 51.2%, #030a1b 95.7%);
   color: #fff;
 }
 
 .maincontainer .sponser h4 {
-  padding-top: 7rem;
+  padding-top: 5rem;
   text-align: center;
   background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
   -webkit-background-clip: text;

@@ -331,6 +331,7 @@
       #030a1b 51.2%,
       #010710 95.7%
     );
+    padding-bottom: 2rem;
     h4{
       text-align: center;
       @include eor;
@@ -346,7 +347,6 @@
         overflow: hidden;
         margin: auto;
         box-shadow: 0rem 0rem 5rem rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(2px);
         .mySlides {
           height: 100%;
           display: none;
@@ -379,6 +379,7 @@
           text-align: center;
           font-size: 18px;
           background: #fff;
+          
   
           /* Center slide text vertically */
           display: -webkit-box;
@@ -401,11 +402,11 @@
     background: linear-gradient(
       0.94deg,
       #030a1b 51.2%,
-      #010710 95.7%
+      #030a1b 95.7%
     );
     color: $white;
     h4{
-      padding-top: 7rem;
+      padding-top: 5rem;
       text-align: center;
       @include eor;
       font-size: 4rem;
