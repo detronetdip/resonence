@@ -7,20 +7,9 @@
     $query="SELECT uname,umobile,uemail,price,txnid FROM users,sevents,rgslog WHERE rgslog.uid=users.id AND rgslog.seventid=sevents.id AND rgslog.tid='$order_id'";
     $row=mysqli_fetch_assoc(mysqli_query($con,$query));
  }
- $MERCHANT_KEY = "4RxOLBOS"; 
- $SALT = "osrz8DQdWT";
-//  $name =$row['uname'];
-//  $txnid = $row['txnid'];
-//  $mobile =$row['umobile'];
-//  $email =$row['uemail'];
- echo  $row['price']; 
+ $MERCHANT_KEY = MERCHANT_KEY; 
+ $SALT = MERCHANT_SALT;
  $lead="Registration fee";
-//  echo $txnid;
-// echo $name;
-// echo $mobile;
-// echo $email;
-// echo $amount;
-// die();
  $PAYU_BASE_URL = "https://sandboxsecure.payu.in";		// For Sandbox Mode
  // $PAYU_BASE_URL = "https://secure.payu.in";			// For Production Mode
  

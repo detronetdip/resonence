@@ -2,7 +2,6 @@
 require('./utility/utility.php');
 authorise_user("./profile/auth/v2/");
 if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['teamName']) && isset($_POST['collegeName']) && isset($_POST['deptName']) && isset($_POST['mySelect']) && isset($_POST['mySelect2'])){
-
     $firstName= $_POST['firstName'];
     $lastName= $_POST['lastName'];
     $teamName= $_POST['teamName'];
