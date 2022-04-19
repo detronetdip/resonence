@@ -239,6 +239,8 @@ i {
 
 .maincontainer .logcontainer .colapse h4 {
   font-size: 2rem;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 .maincontainer .logcontainer ol li a {
@@ -328,6 +330,7 @@ i {
 
 .maincontainer ol li ul li {
   margin-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .maincontainer .btnrow {
