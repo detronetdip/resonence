@@ -134,6 +134,9 @@
     .colapse {
       padding: 3rem;
       overflow-y: hidden;
+      h4{
+        font-size: 2rem;
+      }
     }
     ol li a {
       text-decoration: none;
@@ -173,7 +176,7 @@
     font-weight: 900;
     text-decoration: underline;
     position: relative;
-    text-transform: uppercase;
+    text-transform: uppercasecol;
     color: #dddddd;
     user-select: none;
     cursor: pointer;

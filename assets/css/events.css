@@ -237,6 +237,10 @@ i {
   overflow-y: hidden;
 }
 
+.maincontainer .logcontainer .colapse h4 {
+  font-size: 2rem;
+}
+
 .maincontainer .logcontainer ol li a {
   text-decoration: none;
   margin-left: 0.8rem;
@@ -285,7 +289,7 @@ i {
   font-weight: 900;
   text-decoration: underline;
   position: relative;
-  text-transform: uppercase;
+  text-transform: uppercasecol;
   color: #dddddd;
   -webkit-user-select: none;
      -moz-user-select: none;

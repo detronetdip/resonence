@@ -26,7 +26,7 @@ Project:  id-5
     - product con(RS 350)
 Brain games: (outsiders are not allowed)
     - digit imbroglio
-    - cube twrill
+    - colour maze
     - circofet
     - weighbridge
 Entertainment: (outsiders are not allowed)
