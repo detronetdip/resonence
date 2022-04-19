@@ -87,7 +87,7 @@ function login() {
 function logout() {
   var email = 0;
   $.ajax({
-    url: HOST+"/backend/auth/logout.php",
+    url: HOST+"/backend/auth/adminAuth/logout.php",
     type: "post",
     data: "email=" + email,
     success: function (htl) {

@@ -62,7 +62,7 @@
               <img src="<?php echo HOST."/assets/images/Project 51_4.png"; ?>" alt="" />
             </a>
             <div class="name">
-              <span><?php echo getName($con);?></span>
+              <span>Admin</span>
               <small>Team</small>
             </div>
             <div class="hover-bot">
