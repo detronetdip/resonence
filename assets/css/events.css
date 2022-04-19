@@ -289,7 +289,7 @@ i {
   font-weight: 900;
   text-decoration: underline;
   position: relative;
-  text-transform: uppercasecol;
+  text-transform: uppercase;
   color: #dddddd;
   -webkit-user-select: none;
      -moz-user-select: none;

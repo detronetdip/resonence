@@ -290,6 +290,11 @@ i {
 
 .maincontainer .about .lgo {
   margin-top: 10rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.maincontainer .about .lgo .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +306,19 @@ i {
           justify-content: center;
 }
 
-.maincontainer .about .lgo .img1 {
+.maincontainer .about .lgo .first .img1 {
+  height: 25rem;
+  width: 25rem;
+  margin: 0.1rem 1.2rem;
+}
+
+.maincontainer .about .lgo .first .img2 {
+  height: 40rem;
+  width: 40rem;
+  margin: 0.1rem 1.2rem;
+}
+
+.maincontainer .about .lgo .second .img3 {
   height: 25rem;
   width: 25rem;
   margin: 0.1rem 1.2rem;
