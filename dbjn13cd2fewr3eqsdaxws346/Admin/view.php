@@ -34,6 +34,14 @@
                       <h4>Payment</h4>
                       <span><?php echo $rt['payu_status'];  ?></span>
                     </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Txn Id</h4>
+                      <span><?php echo $rt['txnid'];  ?></span>
+                    </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>mihpayid</h4>
+                      <span><?php echo $rt['mihpayid'];  ?></span>
+                    </div>
                   </div>
                 </div>
                 <div class="track-order flex justify-between">
