@@ -307,6 +307,12 @@ i {
   margin: 0.1rem 1.2rem;
 }
 
+.maincontainer .about .lgo .img2 {
+  height: 25rem;
+  width: 25rem;
+  margin: 0.1rem 1.2rem;
+}
+
 .maincontainer .events {
   min-height: 100vh;
   background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
@@ -497,6 +503,29 @@ i {
 
 .maincontainer .ladies h4 .dsmb {
   color: #00ffff;
+}
+
+.maincontainer .spandan {
+  background: linear-gradient(0.84deg, #130855 0.46%, #030214 99.41%);
+}
+
+.maincontainer .spandan .lgo {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maincontainer .spandan .lgo .img1 {
+  height: 40rem;
+  width: 40rem;
+  margin: 0.1rem 1.2rem;
 }
 
 .maincontainer .slider {

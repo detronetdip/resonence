@@ -139,11 +139,16 @@
     .lgo {
       margin-top: 10rem;
       @include centerByFlex();
-      .img1 {
-        height: 25rem;
-        width: 25rem;
-        margin: 0.1rem 1.2rem;
-      }
+        .img1 {
+          height: 25rem;
+          width: 25rem;
+          margin: 0.1rem 1.2rem;
+        }
+        .img2 {
+          height: 25rem;
+          width: 25rem;
+          margin: 0.1rem 1.2rem;
+        }
     }
   }
   .events {
@@ -256,6 +261,18 @@
       .dsmb {
         color: #00ffff;
       }
+    }
+  }
+  .spandan{
+    background: linear-gradient(0.84deg, #130855  0.46%, #030214 99.41%);
+    .lgo {
+      margin-top: 10rem;
+      @include centerByFlex();
+        .img1 {
+          height: 40rem;
+          width: 40rem;
+          margin: 0.1rem 1.2rem;
+        }
     }
   }
   .slider {
