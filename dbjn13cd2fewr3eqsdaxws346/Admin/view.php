@@ -1,97 +1,47 @@
 <?php
     require('utility/top.php');
     $id=$_GET['id'];
-    $sql="SELECT fname,tname,cname,dname,tid,mihpayid,txnid"
+    $sql="SELECT fname,tname,cname,dname,tid,mihpayid,txnid,payu_status,sevname,uname FROM rgslog,sevents,users WHERE rgslog.uid=users.id AND rgslog.seventid=sevents.id AND rgslog.id=$id";
+    $rt=mysqli_fetch_assoc(mysqli_query($con,$sql));
+    // prx($rt);
 ?>
    <div class="cartrow" id="catrow">
           <div class="gh">
             <div class="pdpt-bg">
               <div class="pdpt-title flex justify-between">
-                <h6>Team Id: OD7548DF878</h6>
+                <h6>Team Id: <?php echo $rt['tid'];  ?></h6>
               </div>
               <div class="order-body10">
                 <ul class="order-dtsll">
                   <li>
                     <div class="order-dt47">
-                      <h4>Team Name</h4>
-                      <p>$12</p>
-                      <div class="order-title">Qty 2</div>
+                      <h4><?php echo $rt['tname'];  ?></h4>
+                      <p><?php echo $rt['fname'];  ?></p>
                     </div>
                   </li>
                 </ul>
                 <div class="total-dt">
                   <div class="total-checkout-group">
                     <div class="cart-total-dil">
-                      <h4>Sub Total</h4>
-                      <span>$25</span>
+                      <h4>College Name</h4>
+                      <span><?php echo $rt['cname'];  ?></span>
                     </div>
                     <div class="cart-total-dil pt-3">
-                      <h4>Delivery Charges</h4>
-                      <span>Free</span>
+                      <h4>Depertment</h4>
+                      <span><?php echo $rt['dname'];  ?></span>
                     </div>
-                  </div>
-                  <div class="main-total-cart">
-                    <h2>Total</h2>
-                    <span>$25</span>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Payment</h4>
+                      <span><?php echo $rt['payu_status'];  ?></span>
+                    </div>
                   </div>
                 </div>
                 <div class="track-order flex justify-between">
-                    <span class="badge green"> Assigned </span>
-                    <button>Out for Delivery</button>
-                </div>
-              </div>
-            </div>
-            <div class="pdpt-bg">
-              <div class="pdpt-title flex justify-between">
-                <h4>Delivery Address</h4>
-              </div>
-              <div class="order-body10">
-                <div class="total-dt">
-                  <div class="total-checkout-group bt0">
-                    <div class="cart-total-dil">
-                      <h4>Name</h4>
-                      <span>Ayondip Jana</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Email</h4>
-                      <span>ayondip2001@gmail.com</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Phone</h4>
-                      <span>7407287858</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Address</h4>
-                      <span>gamariya bus stand, <br> anandapur, <br> medinipur,721122</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pdpt-bg">
-              <div class="pdpt-title flex justify-between">
-                <h4>Pickup Address</h4>
-              </div>
-              <div class="order-body10">
-                <div class="total-dt">
-                  <div class="total-checkout-group bt0">
-                    <div class="cart-total-dil">
-                      <h4>Name</h4>
-                      <span>Ayondip Jana</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Email</h4>
-                      <span>ayondip2001@gmail.com</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Phone</h4>
-                      <span>7407287858</span>
-                    </div>
-                    <div class="cart-total-dil pt-3">
-                      <h4>Address</h4>
-                      <span>gamariya bus stand, anandapur, medinipur,721122</span>
-                    </div>
-                  </div>
+                <?php if($rt['payu_status']=='success'){?>
+                      <span class="badge green"> Registered </span>
+                      <?php }else{ ?>
+                        <span class="badge orange"> Not Registered </span>
+                      <?php } ?>
                 </div>
               </div>
             </div>
