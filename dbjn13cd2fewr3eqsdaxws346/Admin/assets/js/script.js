@@ -68,7 +68,7 @@ function login() {
   } else {
     control.html("button", "wait...");
     $.ajax({
-      url: HOST+"/backend/auth/validate.php",
+      url: HOST+"/backend/auth/adminAuth/validate.php",
       type: "post",
       data: "username=" + username + "&password=" + password,
       success: function (htl) {
@@ -83,46 +83,7 @@ function login() {
     });
   }
 }
-function register() {
-  var email = control.getInput("email");
-  var mobile = control.getInput("mobile");
-  var password = control.getInput("password");
-  var name = control.getInput("name");
-  if (name == "") {
-    control.popup("Enter Name", W);
-  } else if (email == "") {
-    control.popup("Enter Email", W);
-  } else if (password == "") {
-    control.popup("Enter Password", W);
-  } else if (mobile == "") {
-    control.popup("Enter Mobile", W);
-  } else {
-    control.html("button", "wait...");
-    $.ajax({
-      url: HOST+"/backend/auth/register.php",
-      type: "post",
-      data:
-        "email=" +
-        email +
-        "&password=" +
-        password +
-        "&mobile=" +
-        mobile +
-        "&name=" +
-        name,
-      success: function (htl) {
-        var html = JSON.parse(htl);
-        if (html.status != 1) {
-          control.popup(html.msg, W);
-          control.html("button", "Register");
-        } else {
-          sentRegistrationMail(email,name);
-          control.redirect("../");
-        }
-      },
-    });
-  }
-}
+
 function logout() {
   var email = 0;
   $.ajax({

@@ -1,6 +1,6 @@
 <?php
   require('../../utility/utility.php');
-  authorise_user("./auth/v2/");
+  authorise_admin("./auth/v2/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
