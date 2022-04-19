@@ -36,18 +36,6 @@
                 <span>Dashbaord</span>
               </a>
             </li>
-            <li class="outer-list">
-              <a href="registered_events.php">
-                <i class="uil uil-parcel"></i>
-                <span>Registered Events</span>
-              </a>
-            </li>
-            <li class="outer-list">
-              <a href="all_events.php">
-                <i class="uil uil-voicemail-rectangle"></i>
-                <span>All Events</span>
-              </a>
-            </li>
           </ul>
         </div>
         <div class="copyright">
