@@ -1,6 +1,6 @@
 <?php
   require('../../utility/utility.php');
-  authorise_user("./auth/v2/");
+  authorise_admin("./auth/v2/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,18 +34,6 @@
               <a href="index.php">
                 <i class="uil uil-estate"></i>
                 <span>Dashbaord</span>
-              </a>
-            </li>
-            <li class="outer-list">
-              <a href="registered_events.php">
-                <i class="uil uil-parcel"></i>
-                <span>Registered Events</span>
-              </a>
-            </li>
-            <li class="outer-list">
-              <a href="all_events.php">
-                <i class="uil uil-voicemail-rectangle"></i>
-                <span>All Events</span>
               </a>
             </li>
           </ul>

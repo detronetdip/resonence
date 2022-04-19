@@ -31,6 +31,11 @@ function authorise_user($path){
 		redirect($path);
 	}
 }
+function authorise_admin($path){
+	if(!isset($_SESSION['ADMIN_LOGIN_RX'])){
+		redirect($path);
+	}
+}
 function getName($con){
 		$uid=$_SESSION['USER_ID'];
 		$sql="SELECT uname FROM users WHERE id='$uid'";
