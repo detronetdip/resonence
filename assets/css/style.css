@@ -101,7 +101,7 @@ i {
   margin-top: 4rem;
   font-size: 6rem;
   font-weight: 500;
-  background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background: linear-gradient(89.06deg, #f400f8 35.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -224,7 +224,7 @@ i {
 
 .maincontainer .about .resonancexi .bcx #rex span {
   font-size: 3.5rem;
-  background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background: linear-gradient(89.06deg, #f400f8 35.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -302,12 +302,6 @@ i {
 }
 
 .maincontainer .about .lgo .img1 {
-  height: 25rem;
-  width: 25rem;
-  margin: 0.1rem 1.2rem;
-}
-
-.maincontainer .about .lgo .img2 {
   height: 25rem;
   width: 25rem;
   margin: 0.1rem 1.2rem;
@@ -506,11 +500,12 @@ i {
 }
 
 .maincontainer .spandan {
-  background: linear-gradient(0.84deg, #130855 0.46%, #030214 99.41%);
+  background: linear-gradient(0.84deg, #130855 0.46%, #130855 99.41%);
+  width: 100%;
 }
 
 .maincontainer .spandan .lgo {
-  margin-top: 10rem;
+  padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2138,6 +2133,11 @@ i {
   .maincontainer .ladies h4 .dsmb {
     color: #00ffff;
   }
+  .maincontainer .spandan .lgo .img1 {
+    height: 20rem;
+    width: 20rem;
+    margin: 0.1rem 1.2rem;
+  }
   .maincontainer .slider {
     padding-top: 10rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -2749,6 +2749,17 @@ i {
     height: 8rem;
     width: 8rem;
   }
+  .maincontainer .spandan .lgo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maincontainer .spandan .lgo .img1 {
+    height: 17rem;
+    width: 17rem;
+    margin: 0.8rem 0;
+  }
   .maincontainer .slider {
     padding-top: 10rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -3197,7 +3208,7 @@ i {
 #stars:after {
   content: " ";
   position: absolute;
-  top: 2300px;
+  top: 3000px;
   width: 1px;
   height: 1px;
   border-radius: 50%;
@@ -3220,7 +3231,7 @@ i {
 #stars2:after {
   content: " ";
   position: absolute;
-  top: 2300px;
+  top: 3000px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -3243,7 +3254,7 @@ i {
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 2300px;
+  top: 3000px;
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -3340,7 +3351,7 @@ i {
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
-  background: linear-gradient(89.06deg, #f400f8 28.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background: linear-gradient(89.06deg, #f400f8 35.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

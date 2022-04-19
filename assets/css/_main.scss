@@ -144,11 +144,6 @@
           width: 25rem;
           margin: 0.1rem 1.2rem;
         }
-        .img2 {
-          height: 25rem;
-          width: 25rem;
-          margin: 0.1rem 1.2rem;
-        }
     }
   }
   .events {
@@ -264,9 +259,10 @@
     }
   }
   .spandan{
-    background: linear-gradient(0.84deg, #130855  0.46%, #030214 99.41%);
+    background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
+    width: 100%;
     .lgo {
-      margin-top: 10rem;
+      padding-top: 5rem;
       @include centerByFlex();
         .img1 {
           height: 40rem;
@@ -1489,6 +1485,15 @@
         }
       }
     }
+    .spandan{
+      .lgo{
+        .img1 {
+          height: 20rem;
+          width: 20rem;
+          margin: 0.1rem 1.2rem;
+        }
+      }
+    }
     .slider {
       padding-top: 10rem;
       background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -1944,6 +1949,16 @@
               width: 8rem;
             }
           }
+        }
+      }
+    }
+    .spandan{
+      .lgo{
+        flex-direction: column;
+        .img1 {
+          height: 17rem;
+          width: 17rem; 
+          margin: 0.8rem 0;
         }
       }
     }
