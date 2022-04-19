@@ -290,11 +290,6 @@ i {
 
 .maincontainer .about .lgo {
   margin-top: 10rem;
-  display: -ms-grid;
-  display: grid;
-}
-
-.maincontainer .about .lgo .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,19 +301,13 @@ i {
           justify-content: center;
 }
 
-.maincontainer .about .lgo .first .img1 {
+.maincontainer .about .lgo .img1 {
   height: 25rem;
   width: 25rem;
   margin: 0.1rem 1.2rem;
 }
 
-.maincontainer .about .lgo .first .img2 {
-  height: 40rem;
-  width: 40rem;
-  margin: 0.1rem 1.2rem;
-}
-
-.maincontainer .about .lgo .second .img3 {
+.maincontainer .about .lgo .img2 {
   height: 25rem;
   width: 25rem;
   margin: 0.1rem 1.2rem;
@@ -514,6 +503,29 @@ i {
 
 .maincontainer .ladies h4 .dsmb {
   color: #00ffff;
+}
+
+.maincontainer .spandan {
+  background: linear-gradient(0.84deg, #130855 0.46%, #030214 99.41%);
+}
+
+.maincontainer .spandan .lgo {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maincontainer .spandan .lgo .img1 {
+  height: 40rem;
+  width: 40rem;
+  margin: 0.1rem 1.2rem;
 }
 
 .maincontainer .slider {
