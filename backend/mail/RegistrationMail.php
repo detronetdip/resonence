@@ -16,9 +16,9 @@ function smtp_mailer($to,$subject, $msg){
 	$mail->Port = 587; 
 	$mail->IsHTML(true);
 	$mail->CharSet = 'UTF-8';
-	$mail->Username = "bhukta.sukhendu789@gmail.com";
-	$mail->Password = "SB652001";
-	$mail->SetFrom("bhukta.sukhendu789@gmail.com");
+	$mail->Username = "support@cemkfest.in";
+	$mail->Password = "12345678QWERTYUI!@#$%^&*qwertyui";
+	$mail->SetFrom("support@cemkfest.in");
 	$mail->Subject = $subject;
 	$mail->Body =$msg;
 	$mail->AddAddress($to);
