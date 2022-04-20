@@ -360,6 +360,7 @@
     );
     padding-bottom: 2rem;
     h4{
+      padding-top: 8rem;
       text-align: center;
       @include eor;
       font-size: 4rem;
@@ -1746,6 +1747,11 @@
         }
       }
     }
+    .spandan {
+      h1, .spandan-lower {
+        font-size: 2rem;
+      }
+    }
     .slider {
       padding-top: 10rem;
       background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -2008,6 +2014,7 @@
     }
     .galary{
       h4{
+        padding-top: 4rem;
         font-size: 2.8rem;
       }
     }
@@ -2201,6 +2208,11 @@
         }
       }
     }
+    .spandan {
+      h1, .spandan-lower {
+        font-size: 1.2rem;
+      }
+    }
     .slider {
       padding-top: 10rem;
       background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -2253,6 +2265,7 @@
     }
     .galary{
       h4{
+        padding-top: 4rem;
         font-size: 2.8rem;
       }
       .slideshow-container{
