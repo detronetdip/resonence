@@ -85,6 +85,10 @@ i {
   color: #fff;
 }
 
+.maincontainer .container .overlay h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .maincontainer .container .login {
   position: relative;
   width: 100%;

@@ -218,20 +218,9 @@ i {
   background: linear-gradient(180deg, #23144e 0%, #1f153c 100%);
 }
 
-.maincontainer .about .resonancexi .bcx #rex {
-  text-align: center;
-}
-
-.maincontainer .about .resonancexi .bcx #rex span {
-  font-size: 3.5rem;
-  background: linear-gradient(89.06deg, #f400f8 35.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background: linear-gradient(92.17deg, #f716e0 12.4%, rgba(0, 224, 255, 0.99) 98.77%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+.maincontainer .about .resonancexi .bcx .rlogo img {
+  height: 100%;
+  width: 100%;
 }
 
 .maincontainer .about .resonancexi .bcx #start {

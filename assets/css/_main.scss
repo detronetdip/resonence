@@ -91,16 +91,12 @@
         border-radius: 10px;
         padding: 2rem 1.5rem;
         background: $resonanceCard;
-        #rex {
-          text-align: center;
-          span {
-            font-size: 3.5rem;
-            @include gradientFontType1();
-            background: $resonance;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+        .rlogo{
+          img{
+            height: 100%;
+            width: 100%;
           }
+        }
         }
         #start {
           padding-bottom: 2rem;
