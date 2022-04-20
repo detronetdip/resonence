@@ -181,7 +181,7 @@ function sentRegistrationMail(mailId,name){
     type: "post",
     data: "mail=" + mailId + "&name=" + name,
     success: function (htl) {
-      
+      console.log(htl);
     },
   });
 }
