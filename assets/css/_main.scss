@@ -57,6 +57,9 @@
       .explore {
         @include centerByFlex();
         margin-top: 4rem;
+        a {
+          margin: 0 2rem;
+        }
         .resonance{
           position: relative;
           left: -50%;
@@ -67,7 +70,7 @@
         button {
           width: 14rem;
           height: 4rem;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -257,6 +260,14 @@
   .spandan{
     background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
     width: 100%;
+    position: relative;
+    h1 {
+      @include eor;
+      font-size: 4rem;
+      width: 100%;
+      padding-top: 5rem;
+      text-align: center;
+    }
     .lgo {
       padding-top: 5rem;
       @include centerByFlex();
@@ -265,6 +276,13 @@
           width: 80rem;
           margin: 0.1rem 1.2rem;
         }
+    }
+    .spandan-lower {
+      position: relative;
+      bottom: 3.4rem;
+      text-align: center;
+      font-size: 3rem;
+      color: white;
     }
   }
   .slider {
@@ -347,7 +365,7 @@
       font-size: 4rem;
       padding-bottom: 8rem;
     }
-    
+
       .slideshow-container {
         max-width: 90%;
         height: 50rem;
@@ -383,13 +401,13 @@
           width: 100%;
           height: 100%;
         }
-  
+
         .swiper-slide {
           text-align: center;
           font-size: 18px;
           background: #fff;
-          
-  
+
+
           /* Center slide text vertically */
           display: -webkit-box;
           display: -ms-flexbox;
@@ -405,7 +423,7 @@
           align-items: center;
         }
       }
-    
+
   }
   .sponser{
     background: linear-gradient(
@@ -551,7 +569,7 @@
       flex-direction: column;
       justify-content: center;
       span {
-        font-size: 1rem; 
+        font-size: 1rem;
         color: #ffffff;
         text-align: center;
         a {
@@ -836,7 +854,7 @@
           button {
             width: 13rem;
             height: 4rem;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -1090,7 +1108,7 @@
           button {
             width: 11rem;
             height: 4rem;
-            font-size: 1.4rem;
+            font-size: 1rem;
           }
         }
       }
@@ -1862,7 +1880,7 @@
         flex-direction: column;
         .img1 {
           height: 17rem;
-          width: 17rem; 
+          width: 17rem;
           margin: 0.8rem 0;
         }
       }
@@ -1953,7 +1971,7 @@
         flex-direction: column;
         .img2 {
           height: 25rem;
-          width: 25rem; 
+          width: 25rem;
           margin: 0.8rem 0;
         }
       }
