@@ -3,4 +3,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
-Sitemap: https://collegeiconic.com/sitemap.xml
+Sitemap: https://cemkfest.in/sitemap.xml
