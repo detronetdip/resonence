@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Sitemap: https://collegeiconic.com/sitemap.xml
