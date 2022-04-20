@@ -243,6 +243,24 @@ i {
   text-align: center;
 }
 
+.maincontainer .about .resonancexi .bcx #tag {
+  font-size: 1.5rem;
+  background: linear-gradient(89.06deg, #f400f8 35.83%, #00ffff 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background: linear-gradient(92.17deg, #f716e0 12.4%, rgba(0, 224, 255, 0.99) 98.77%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .maincontainer .about .resonancexi .bcx #text {
   font-size: 1.3rem;
   color: #fff;
@@ -518,8 +536,8 @@ i {
 }
 
 .maincontainer .spandan .lgo .img2 {
-  height: 50rem;
-  width: 50rem;
+  height: 80rem;
+  width: 80rem;
   margin: 0.1rem 1.2rem;
 }
 

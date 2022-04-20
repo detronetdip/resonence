@@ -110,6 +110,16 @@
           color: $lightblue;
           text-align: center;
         }
+        #tag{
+          font-size: 1.5rem;
+            @include gradientFontType1();
+            background: $resonance;
+            display: flex;
+            justify-content: center;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
         #text {
           font-size: 1.3rem;
           color: $white;
@@ -265,8 +275,8 @@
       padding-top: 5rem;
       @include centerByFlex();
         .img2 {
-          height: 50rem;
-          width: 50rem;
+          height: 80rem;
+          width: 80rem;
           margin: 0.1rem 1.2rem;
         }
     }
