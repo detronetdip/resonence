@@ -517,9 +517,9 @@ i {
           justify-content: center;
 }
 
-.maincontainer .spandan .lgo .img1 {
-  height: 40rem;
-  width: 40rem;
+.maincontainer .spandan .lgo .img2 {
+  height: 50rem;
+  width: 50rem;
   margin: 0.1rem 1.2rem;
 }
 
@@ -2755,9 +2755,9 @@ i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .maincontainer .spandan .lgo .img1 {
-    height: 17rem;
-    width: 17rem;
+  .maincontainer .spandan .lgo .img2 {
+    height: 25rem;
+    width: 25rem;
     margin: 0.8rem 0;
   }
   .maincontainer .slider {

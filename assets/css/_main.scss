@@ -264,9 +264,9 @@
     .lgo {
       padding-top: 5rem;
       @include centerByFlex();
-        .img1 {
-          height: 40rem;
-          width: 40rem;
+        .img2 {
+          height: 50rem;
+          width: 50rem;
           margin: 0.1rem 1.2rem;
         }
     }
@@ -1955,9 +1955,9 @@
     .spandan{
       .lgo{
         flex-direction: column;
-        .img1 {
-          height: 17rem;
-          width: 17rem; 
+        .img2 {
+          height: 25rem;
+          width: 25rem; 
           margin: 0.8rem 0;
         }
       }

@@ -324,6 +324,12 @@ i {
   padding: 1rem;
 }
 
+.maincontainer ul li {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .maincontainer ol li {
   font-size: 1.5rem;
   margin: 1.5rem 0;
@@ -643,6 +649,9 @@ i {
     left: -3%;
     font-size: 3rem;
   }
+  .maincontainer .logcontainer .colapse h4 {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 798px) {
@@ -668,6 +677,12 @@ i {
   .maincontainer .footer .footer-row2 .containerq .row {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+  .maincontainer .container .overlay h4 {
+    font-size: 3.5rem;
+  }
+  .maincontainer .logcontainer .colapse h4 {
+    font-size: 1.3rem;
   }
 }
 
