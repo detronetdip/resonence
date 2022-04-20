@@ -10,8 +10,8 @@
  $MERCHANT_KEY = MERCHANT_KEY; 
  $SALT = MERCHANT_SALT;
  $lead="Registration fee";
- //$PAYU_BASE_URL = "https://sandboxsecure.payu.in";		// For Sandbox Mode
- $PAYU_BASE_URL = "https://secure.payu.in";			// For Production Mode
+ $PAYU_BASE_URL = "https://sandboxsecure.payu.in";		// For Sandbox Mode
+ // $PAYU_BASE_URL = "https://secure.payu.in";			// For Production Mode
  
  $action = '';
  
