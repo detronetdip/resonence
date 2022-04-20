@@ -1,7 +1,8 @@
 "use strict";
 const S = "success";
 const W = "warning";
-const HOST="http://localhost/resonence/";
+// const HOST="http://localhost/resonence/";
+const HOST="https://cemkfest.in/";
 let control = {
   globalShow: function (e) {
     document.getElementById(e).style.display = "initial";
