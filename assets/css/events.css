@@ -171,6 +171,7 @@ i {
 
 .maincontainer .overlay .pt1 {
   margin-top: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .maincontainer .overlay .mt1 {
@@ -326,11 +327,13 @@ i {
 .maincontainer ol li {
   font-size: 1.5rem;
   margin: 1.5rem 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .maincontainer ol li ul li {
   margin-left: 2rem;
   font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .maincontainer .btnrow {
