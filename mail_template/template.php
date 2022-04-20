@@ -695,7 +695,7 @@ function getRegistrationTemplate($name){
                           <td>
                             <p>Hi '.$name.',</p>
                             <p>
-                              You registration is successfull. Please login to proceed.
+                              Your registration is successfull. Please <a href="https://cemkfest.in/profile/auth/v2/">login</a> to proceed.
                             </p>
                             <table
                               role="presentation"
