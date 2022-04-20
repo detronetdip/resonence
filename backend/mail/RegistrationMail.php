@@ -13,7 +13,7 @@ function smtp_mailer($to,$subject, $msg){
 	$mail->SMTPAuth = true; 
 	$mail->SMTPSecure = 'tls'; 
 	$mail->Host = "smtp.hostinger.com";
-	$mail->Port = 465; 
+	$mail->Port = 587; 
 	$mail->IsHTML(true);
 	$mail->CharSet = 'UTF-8';
 	$mail->Username = "support@cemkfest.in";
