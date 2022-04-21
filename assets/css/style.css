@@ -651,6 +651,7 @@ i {
 .maincontainer .galary {
   background: linear-gradient(0.84deg, #130855 0.46%, #130855 99.41%);
   padding-bottom: 2rem;
+  padding-top: 3rem;
 }
 
 .maincontainer .galary h4 {
