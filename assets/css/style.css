@@ -168,6 +168,10 @@ i {
   margin-top: 4rem;
 }
 
+.maincontainer .home .topcover .explore a {
+  margin: 0 2rem;
+}
+
 .maincontainer .home .topcover .explore .resonance {
   position: relative;
   left: -50%;
@@ -180,7 +184,7 @@ i {
 .maincontainer .home .topcover .explore button {
   width: 14rem;
   height: 4rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .maincontainer .about {
@@ -495,6 +499,19 @@ i {
 .maincontainer .spandan {
   background: linear-gradient(0.84deg, #130855 0.46%, #130855 99.41%);
   width: 100%;
+  position: relative;
+}
+
+.maincontainer .spandan h1 {
+  background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 4rem;
+  width: 100%;
+  padding-top: 5rem;
+  text-align: center;
 }
 
 .maincontainer .spandan .lgo {
@@ -514,6 +531,14 @@ i {
   height: 80rem;
   width: 80rem;
   margin: 0.1rem 1.2rem;
+}
+
+.maincontainer .spandan .spandan-lower {
+  position: relative;
+  bottom: 3.4rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
 }
 
 .maincontainer .slider {
@@ -636,6 +661,7 @@ i {
 }
 
 .maincontainer .galary h4 {
+  padding-top: 8rem;
   text-align: center;
   background: linear-gradient(265.95deg, #fb00ff 31.57%, #00ffff 98.37%, rgba(0, 96, 239, 0.84) 98.38%, rgba(255, 255, 255, 0) 98.38%);
   -webkit-background-clip: text;
@@ -1259,7 +1285,7 @@ i {
   .maincontainer .home .topcover .explore button {
     width: 13rem;
     height: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .maincontainer .about .resonancexi .bcx {
     top: -30%;
@@ -1614,7 +1640,7 @@ i {
   .maincontainer .home .topcover .explore button {
     width: 11rem;
     height: 4rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .maincontainer .about .resonancexi .bcx {
     top: -30%;
@@ -2445,6 +2471,9 @@ i {
   .maincontainer .ladies h4 .dsmb {
     color: #00ffff;
   }
+  .maincontainer .spandan h1, .maincontainer .spandan .spandan-lower {
+    font-size: 2rem;
+  }
   .maincontainer .slider {
     padding-top: 10rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -2801,6 +2830,7 @@ i {
     background-size: cover;
   }
   .maincontainer .galary h4 {
+    padding-top: 4rem;
     font-size: 2.8rem;
   }
   .maincontainer .sponser h4 {
@@ -3063,6 +3093,9 @@ i {
   .maincontainer .ladies h4 .dsmb {
     color: #00ffff;
   }
+  .maincontainer .spandan h1, .maincontainer .spandan .spandan-lower {
+    font-size: 1.2rem;
+  }
   .maincontainer .slider {
     padding-top: 10rem;
     background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -3123,6 +3156,7 @@ i {
     background-size: cover;
   }
   .maincontainer .galary h4 {
+    padding-top: 4rem;
     font-size: 2.8rem;
   }
   .maincontainer .galary .slideshow-container {
