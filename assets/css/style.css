@@ -631,7 +631,7 @@ i {
 }
 
 .maincontainer .galary {
-  background: linear-gradient(0.94deg, #030a1b 51.2%, #010710 95.7%);
+  background: linear-gradient(0.94deg, #130855 51.2%, #130855 95.7%);
   padding-bottom: 2rem;
 }
 
@@ -702,7 +702,7 @@ i {
 }
 
 .maincontainer .footer {
-  background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+  background: linear-gradient(359.99deg, #2d1044 -0.48%, #030a1b -0.47%, #130855 50.54%);
   padding: 0.2rem;
   padding-top: 10rem;
 }
@@ -829,6 +829,11 @@ i {
   position: relative;
   left: 0;
   padding-bottom: 0.9rem;
+}
+
+.maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
