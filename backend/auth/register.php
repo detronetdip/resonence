@@ -21,7 +21,6 @@
   } else {
     $query="SELECT * FROM users WHERE uemail='$email'";
     echo $query;
-    die();
     $res=mysqli_query($con,$query);
     $n=mysqli_num_rows($res);
     if($n>0){
