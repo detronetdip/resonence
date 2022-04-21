@@ -103,3 +103,30 @@ element.addEventListener('submit', e => {
     control.get('form').submit();
   }
 });
+function forgetPassword(){
+  control.html('button',"wait...");
+  var mainEvent = control.getInput("fgtemail");
+  $.ajax({
+    url: HOST + "/backend/auth/forget.php",
+    type: "post",
+    data: "mainEvent=" + mainEvent,
+    success: function (htl) {
+      var html = JSON.parse(htl);
+      control.html('button',"wait...");
+      forgetMail(html.mail,html.name,html.link);
+    },
+  });
+}
+function forgetMail(mail,name,link){
+  control.html('button',"Sending mail....");
+  $.ajax({
+    url: HOST + "/backend/mail/fgt.php",
+    type: "post",
+    data: "mail=" + mail +"&name="+name+"&link="+link,
+    success: function (htl) {
+      swal("Mail sent").then(()=>{
+        control.redirect(HOST);
+      })
+    },
+  });
+}

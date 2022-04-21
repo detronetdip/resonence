@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Fasto - Saas Admin Dashboard</title>
+    <title>Forget password</title>
     <link href="../lgcss/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,12 +69,13 @@
                       />
                     </div>
                     <h4 class="text-center mb-4">Forget Password</h4>
-                    <form action="#">
+                    <form  id="fgtrm">
                       <div class="form-group">
                         <input
                           type="text"
                           class="form-control"
                           placeholder="Email"
+                          id="fgtemail"
                           style="
                             background-color: transparent;
                             caret-color: #00dafc;
@@ -98,7 +99,7 @@
                           outline: none;
                           border: 0;
                         "
-                        onclick="register()"
+                        onclick="forgetPassword()"
                       >
                         Submit
                       </button>
@@ -118,5 +119,8 @@
         </div>
       </div>
     </div>
+    <script src="../../../assets/js/jquery.js"></script>
+    <script src="../../../assets/js/sweetalert.js"></script>
+    <script src="../../../assets/js/main.js"></script>
   </body>
 </html>
