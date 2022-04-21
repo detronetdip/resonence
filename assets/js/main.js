@@ -103,3 +103,15 @@ element.addEventListener('submit', e => {
     control.get('form').submit();
   }
 });
+function forgetPassword(){
+  var mainEvent = control.getInput("fgtemail");
+  $.ajax({
+    url: HOST + "/backend/auth/forget.php",
+    type: "post",
+    data: "mainEvent=" + mainEvent,
+    success: function (htl) {
+      var html = JSON.parse(htl);
+      console.log(html);
+    },
+  });
+}
