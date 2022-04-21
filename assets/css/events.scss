@@ -183,7 +183,7 @@
         color: #50a5f1;
         background-color: rgba(80, 165, 241, 0.18);
         margin: 0.5rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
       }
     }
     ol li a {
@@ -658,7 +658,8 @@
     .logcontainer{
       .colapse{
         h4{
-          font-size: 1.2rem;
+          font-size: 1.1rem;
+          
         }
       }
     }
@@ -704,6 +705,15 @@
   }
   .maincontainer{
     .container{
+      .login{
+        right: 1rem;
+    padding-top: 1rem;
+        button{
+          font-size: 1.3rem;
+          border-radius: 1.5rem;
+          padding: 0.5rem;
+        }
+      }
       .overlay{
         h4{
           font-size: 3.5rem;
@@ -713,7 +723,8 @@
     .logcontainer{
       .colapse{
         h4{
-          font-size: 1.3rem;
+          font-size: 1.25rem;
+          padding-right: 3rem;
         }
       }
     }

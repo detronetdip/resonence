@@ -297,7 +297,7 @@ i {
   color: #50a5f1;
   background-color: rgba(80, 165, 241, 0.18);
   margin: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .maincontainer .logcontainer ol li a {
@@ -876,7 +876,7 @@ i {
     font-size: 3rem;
   }
   .maincontainer .logcontainer .colapse h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -904,11 +904,21 @@ i {
     padding-left: 0rem;
     padding-right: 0rem;
   }
+  .maincontainer .container .login {
+    right: 1rem;
+    padding-top: 1rem;
+  }
+  .maincontainer .container .login button {
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+  }
   .maincontainer .container .overlay h4 {
     font-size: 3.5rem;
   }
   .maincontainer .logcontainer .colapse h4 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    padding-right: 3rem;
   }
 }
 
