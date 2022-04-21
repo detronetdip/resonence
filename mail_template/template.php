@@ -1145,6 +1145,4 @@ function getFGTTemplate($name,$link){
   return $html;
 }
  
-echo getFGTTemplate("Ayondip Jana","https://cemkfest.in/backend/auth/change_password/index.php?i=I45YX97I&ip=$2y$10$1dwwFlCGY3MrtiSTECnxtOqQuXrNIYMltvp9cMAPXmBBJrO5jQ5tW");
-
 ?>
