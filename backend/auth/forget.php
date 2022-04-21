@@ -1,5 +1,5 @@
 <?php
-  include('../smtp/PHPMailerAutoload.php');
+  //include('../smtp/PHPMailerAutoload.php');
   require('../../utility/utility.php');
   require('../../mail_template/template.php');
   $email=get_safe_value($con,$_POST['mainEvent']);
@@ -43,6 +43,6 @@
       return 'Sent';
     }
   }
-  smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$result['link']));
+ // smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$result['link']));
    echo json_encode($result);
 ?>
