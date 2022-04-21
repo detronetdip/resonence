@@ -510,7 +510,7 @@ i {
 
 .maincontainer .spandan h3 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
   padding: 4rem;
 }
@@ -832,7 +832,9 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading .nmb {
+  font-size: 1.2rem;
   margin-left: 1rem;
+  color: grey;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub {
@@ -3180,7 +3182,7 @@ i {
     font-size: 2.5rem;
   }
   .maincontainer .spandan h3 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
   .maincontainer .spandan .lgo .img2 {
     height: 30rem;

@@ -558,6 +558,8 @@ i {
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading .nmb {
   margin-left: 1rem;
+  font-size: 1.2rem;
+  color: grey;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub {
@@ -581,6 +583,7 @@ i {
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
   height: 10rem;
+  width: 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,6 +802,7 @@ i {
   }
   .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
     height: 10rem;
+    width: 13rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
