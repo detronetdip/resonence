@@ -831,6 +831,10 @@ i {
   padding-bottom: 0.9rem;
 }
 
+.maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub li a {
+  color: grey;
+}
+
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
   height: 10rem;
   display: -webkit-box;
