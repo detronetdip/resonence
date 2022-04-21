@@ -9,6 +9,10 @@
  	print_r($arr);
  	die();
  }
+ function get_code(){
+	$code=chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25)).chr(64+rand(1,25)).rand(11,99).chr(64+rand(1,25));
+	return $code;
+}
  function get_safe_value($con,$str){
 	if($str!=''){
 		$str=trim($str);
