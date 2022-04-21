@@ -313,9 +313,9 @@ function getRegistrationTemplate($name){
                                         <tr>
                                           <td>
                                             <a
-                                              href="http://htmlemail.io"
+                                              href="https://cemkfest.in/profile/auth/v2/"
                                               target="_blank"
-                                              >Call To Action</a
+                                              >Login</a
                                             >
                                           </td>
                                         </tr>
