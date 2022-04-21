@@ -117,8 +117,8 @@ function register() {
           control.popup(html.msg, W);
           control.html("button", "Register");
         } else {
-          //sentRegistrationMail(email,name);
-          //control.redirect("../");
+          sentRegistrationMail(email,name);
+          control.redirect("../");
         }
       },
     });
