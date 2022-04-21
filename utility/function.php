@@ -59,7 +59,8 @@ function getAllEvents($con){
 	return ($product_arr);
 }
 function getAllRegisteredEvents($con){
-	$sql = "SELECT rgslog.id,tid,evname,sevname,reg_status FROM rgslog,events,sevents WHERE rgslog.eventid=events.id AND rgslog.seventid=sevents.id;";
+	$uid=$_SESSION['USER_ID'];
+	$sql = "SELECT rgslog.id,tid,evname,sevname,reg_status FROM rgslog,events,sevents WHERE rgslog.eventid=events.id AND rgslog.seventid=sevents.id AND rgslog.uid='$uid';";
 	$res=mysqli_query($con,$sql);
 	$product_arr=array();
 	while($row=mysqli_fetch_assoc($res)){	
