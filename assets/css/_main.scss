@@ -1,13 +1,13 @@
 .maincontainer {
   .home {
-    height: 110vh;
+    height: 110vh; 
     width: 100%;
     position: relative;
-    overflow: hidden;
-    .bgv {
+    overflow: hidden;  
+    .bgv { 
       width: 100%;
       height: 100%;
-      max-height: 100%;
+      max-height: 100%; 
       object-fit: initial;
     }
     .topcover {
@@ -257,6 +257,18 @@
   .spandan{
     background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
     width: 100%;
+    h4 {
+      text-align: center;
+      @include eor;
+      font-size: 4rem;
+      padding-top: 7rem;
+    }
+    h3{
+      text-align: center;
+      font-size: 4rem;
+      color: #fff;
+      padding: 4rem;
+    }
     .lgo {
       padding-top: 5rem;
       @include centerByFlex();
@@ -335,11 +347,12 @@
     }
   }
   .galary{
-    background: linear-gradient(
-      0.94deg,
-      #030a1b 51.2%,
-      #010710 95.7%
-    );
+    // background: linear-gradient(
+    //   0.94deg,
+    //   #030a1b 51.2%,
+    //   #010710 95.7%
+    // );
+    background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
     padding-bottom: 2rem;
     h4{
       text-align: center;
@@ -423,7 +436,13 @@
     }
   }
   .footer {
-    background: $bg2;
+    //background: $bg2;
+    background: linear-gradient(
+      359.99deg,
+      #2d1044 -0.48%,
+      #030a1b -0.47%,
+       #130855 50.54%
+    );;
     padding: 0.2rem;
     padding-top: 10rem;
     .footer-row1 {
@@ -1731,6 +1750,35 @@
         }
       }
     }
+    .spandan{
+      h4 {
+        font-size: 2.5rem;
+      }
+      h3{
+        font-size: 2rem;
+      }
+      .lgo {
+          .img2 {
+            height: 50rem;
+            width: 50rem;
+          }
+      }
+    }
+    .sponser{
+      background: linear-gradient(
+        0.94deg,
+        #030a1b 51.2%,
+        #030a1b 95.7%
+      );
+      color: $white;
+      h4{
+        padding-top: 5rem;
+        text-align: center;
+        @include eor;
+        font-size: 4rem;
+        padding-bottom: 8rem;
+      }
+    }
     .slider {
       padding-top: 10rem;
       background: linear-gradient(0.84deg, #030214 0.46%, #130855 99.41%);
@@ -2249,10 +2297,19 @@
         }
       }
     }
-    .sponser{
-      h4{
-          font-size: 2.8rem;
-        }
+    .spandan{
+      h4 {
+        font-size: 2.5rem;
+      }
+      h3{
+        font-size: 1.4rem;
+      }
+      .lgo {
+          .img2 {
+            height: 30rem;
+            width: 30rem;
+          }
+      }
     }
   }
 }
