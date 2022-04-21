@@ -6,7 +6,7 @@
     $result=array();
     if($i==$precode){
         unset($_SESSION['FGT_CU_STORE']);
-        $verify = password_verify($password, $ip);
+        $verify = password_verify($i, $ip);
         if($verify){
             echo "DONE";
 ?>
