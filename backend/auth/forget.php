@@ -11,7 +11,7 @@
     $result['msg']="No account is registered with this email id";
   }else{
     $code=get_code();
-    $result['link']="https://cemkfest.in/profile/auth/change_password/index.php?i=".$code.password_hash($code, PASSWORD_DEFAULT);
+    $result['link']="https://cemkfest.in/profile/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT);
   }
     echo json_encode($result);
 ?>
