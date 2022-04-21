@@ -11,6 +11,7 @@
     $result['msg']="No account is registered with this email id";
   }else{
     $code=get_code();
+    $_SESSION['FGT_CU_STORE']=$code;
     $result['link']="https://cemkfest.in/profile/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT);
   }
     echo json_encode($result);
