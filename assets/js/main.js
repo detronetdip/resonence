@@ -124,7 +124,9 @@ function forgetMail(mail,name,link){
     type: "post",
     data: "mail=" + mail +"&name="+name+"&link="+link,
     success: function (htl) {
-      swal("Mail sent")
+      swal("Mail sent").then(()=>{
+        control.redirect(HOST);
+      })
     },
   });
 }
