@@ -18,7 +18,7 @@
   }
   function smtp_mailer($to,$subject, $msg){
     $mail = new PHPMailer(); 
-    $mail->SMTPDebug  = 3;
+    //$mail->SMTPDebug  = 3;
     $mail->IsSMTP(); 
     $mail->SMTPAuth = true; 
     $mail->SMTPSecure = 'tls'; 
@@ -43,6 +43,6 @@
       return 'Sent';
     }
   }
- // smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$result['link']));
+  smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$result['link']));
    echo json_encode($result);
 ?>
