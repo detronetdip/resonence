@@ -114,7 +114,7 @@ function forgetPassword(){
       var html = JSON.parse(htl);
       console.log(html);
       control.html('button',"wait...");
-      //forgetMail(html.mail,html.name,html.link);
+      forgetMail(html.mail,html.name,html.link);
     },
   });
 }
