@@ -54,9 +54,9 @@ let control = {
   get: (e) => {
     return document.getElementById(e);
   },
-  redirect:(e)=>{
-    window.location.href=e;
-  }
+  redirect: (e) => {
+    window.location.href = e;
+  },
 };
 
 function login() {
@@ -69,7 +69,7 @@ function login() {
   } else {
     control.html("button", "wait...");
     $.ajax({
-      url: HOST+"/backend/auth/validate.php",
+      url: HOST + "/backend/auth/validate.php",
       type: "post",
       data: "username=" + username + "&password=" + password,
       success: function (htl) {
@@ -89,7 +89,12 @@ function register() {
   var mobile = control.getInput("mobile");
   var password = control.getInput("password");
   var name = control.getInput("name");
-  if (name == "") {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (mobile.length > 10) {
+    control.popup("Please Enter a Valid Mobile Number", W);
+  } else if (!email.match(mailformat)) {
+    control.popup("Please Enter a Valid Email", W);
+  } else if (name == "") {
     control.popup("Enter Name", W);
   } else if (email == "") {
     control.popup("Enter Email", W);
@@ -100,7 +105,7 @@ function register() {
   } else {
     control.html("button", "wait...");
     $.ajax({
-      url: HOST+"/backend/auth/register.php",
+      url: HOST + "/backend/auth/register.php",
       type: "post",
       data:
         "email=" +
@@ -117,7 +122,7 @@ function register() {
           control.popup(html.msg, W);
           control.html("button", "Register");
         } else {
-          sentRegistrationMail(email,name);
+          sentRegistrationMail(email, name);
           control.redirect("../");
         }
       },
@@ -127,7 +132,7 @@ function register() {
 function logout() {
   var email = 0;
   $.ajax({
-    url: HOST+"/backend/auth/logout.php",
+    url: HOST + "/backend/auth/logout.php",
     type: "post",
     data: "email=" + email,
     success: function (htl) {
@@ -175,9 +180,9 @@ window.addEventListener("resize", () => {
     left.style.overflow = "visible";
   }
 });
-function sentRegistrationMail(mailId,name){
+function sentRegistrationMail(mailId, name) {
   $.ajax({
-    url: HOST+"/backend/mail/RegistrationMail.php",
+    url: HOST + "/backend/mail/RegistrationMail.php",
     type: "post",
     data: "mail=" + mailId + "&name=" + name,
     success: function (htl) {
@@ -186,13 +191,11 @@ function sentRegistrationMail(mailId,name){
   });
 }
 
-function eventRegistrationMail(mailId,name){
+function eventRegistrationMail(mailId, name) {
   $.ajax({
-    url: HOST+"/backend/mail/eventRegistrationMail.php",
+    url: HOST + "/backend/mail/eventRegistrationMail.php",
     type: "post",
     data: "mail=" + mailId + "&name=" + name,
-    success: function (htl) {
-      
-    },
+    success: function (htl) {},
   });
 }
