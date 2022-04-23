@@ -5,7 +5,8 @@ require('../../mail_template/template.php');
 $mailID=get_safe_value($con,$_POST['mail']);
 $name=get_safe_value($con,$_POST['name']);
 $link=get_safe_value($con,$_POST['link']);
-
+echo $link;
+die();
 echo smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$link));
 function smtp_mailer($to,$subject, $msg){
 	$mail = new PHPMailer(); 
