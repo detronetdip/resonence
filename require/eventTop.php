@@ -1,3 +1,6 @@
+<?php
+  require('utility/utility.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
