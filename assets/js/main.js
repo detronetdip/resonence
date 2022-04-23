@@ -114,21 +114,7 @@ function forgetPassword(){
       var html = JSON.parse(htl);
       console.log(html);
       control.html('button',"wait...");
-      forgetMail(html.mail,html.name,html.link);
-    },
-  });
-}
-function forgetMail(mail,name,link){
-  control.html('button',"Sending mail....");
-  $.ajax({
-    url: HOST + "/backend/mail/fgt.php",
-    type: "post",
-    data: "mail=" + mail +"&name="+name+"&link="+link,
-    success: function (htl) {
-      console.log(htl,link);
-      swal("Mail sent").then(()=>{
-        //control.redirect(HOST);
-      })
+      control.redirect(HOST);
     },
   });
 }
