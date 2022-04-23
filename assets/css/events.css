@@ -73,7 +73,6 @@ i {
 .maincontainer .container {
   background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
   width: 100%;
-  min-height: 100vh;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -443,7 +442,7 @@ i {
 }
 
 .maincontainer .footer {
-  background: linear-gradient(359.99deg, #2d1044 -0.48%, #130855 -0.47%, #030a1b 50.54%);
+  background: linear-gradient(359.99deg, #2d1044 -0.48%, #030a1b -0.47%, #110748 50.54%);
   padding: 0.2rem;
   padding-top: 10rem;
 }
@@ -549,7 +548,7 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading h4 {
-  color: #2b2f4c;
+  color: grey;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
@@ -559,7 +558,7 @@ i {
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading .nmb {
   margin-left: -6rem;
   font-size: 1.2rem;
-  color: grey;
+  color: #fff;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub {
@@ -578,7 +577,7 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub li a {
-  color: grey;
+  color: #fff;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {

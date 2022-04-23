@@ -824,7 +824,7 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading h4 {
-  color: #2b2f4c;
+  color: grey;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
@@ -834,7 +834,7 @@ i {
 .maincontainer .footer .footer-row2 .container .row .ul1 .heading .nmb {
   font-size: 1.2rem;
   margin-left: 1rem;
-  color: grey;
+  color: #fff;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub {
@@ -853,7 +853,7 @@ i {
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub li a {
-  color: grey;
+  color: #fff;
 }
 
 .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
