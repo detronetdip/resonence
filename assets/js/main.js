@@ -127,8 +127,9 @@ function changePassword(ud){
     data: "mainEvent=" + mainEvent + "&id="+ud,
     success: function (htl) {
       var html = JSON.parse(htl);
+      console.log(html);
       swal(html.msg).then(e=>{
-        control.redirect(HOST)
+        control.redirect(HOST);
       })
     },
   });
