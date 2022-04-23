@@ -30,6 +30,7 @@
         <div class="login">
           <?php if(!isset($_SESSION['USER_LOGIN_RX'])){ 
              echo "not logged in";
+             pre($_SESSION);
             ?>
             <a href="./profile/auth/v2/index.html">
               <button>Login</button>
