@@ -61,7 +61,7 @@ let control = {
 
 function getSubEvents() {
   var mainEvent = control.getInput("main-event");
-  control.html('dmy', "wait...");
+  control.html("dmy", "wait...");
   $.ajax({
     url: HOST + "/backend/event/allevent.php",
     type: "post",
@@ -72,39 +72,48 @@ function getSubEvents() {
         control.popup(html.msg, W);
         control.html("button", "Login");
       } else {
-        var template = "<option value='' id='dmy' disabled selected>Select Sub Event</option>\n";
-        html.data.forEach(e => {
+        var template =
+          "<option value='' id='dmy' disabled selected>Select Sub Event</option>\n";
+        html.data.forEach((e) => {
           template += `<option value="${e.id}" id="events" price="${e.price}">${e.sevname}</option>\n`;
-        })
-        control.html('sub-event', template);
+        });
+        control.html("sub-event", template);
       }
     },
   });
 }
 function getPrice() {
   var sub = control.get("sub-event");
-  var p = (sub.options[sub.selectedIndex].getAttribute('price'));
+  var p = sub.options[sub.selectedIndex].getAttribute("price");
   var templat = `Entry Fee:  &#8377; ${p}`;
-  control.html('ammount', templat);
+  control.html("ammount", templat);
 }
-const element = document.querySelector('form');
-element.addEventListener('submit', e => {
+const element = document.querySelector("form");
+element.addEventListener("submit", (e) => {
   e.preventDefault();
-  var firstName = control.getInput('firstName')
-  var lastName = control.getInput('lastName')
-  var teamName = control.getInput('teamName')
-  var collegeName = control.getInput('collegeName')
-  var deptName = control.getInput('deptName')
-  var mainEventName = control.getInput('main-event')
-  var subEventName = control.getInput('sub-event')
-  if (!firstName || !lastName || !teamName || !collegeName || !deptName || !mainEventName || !subEventName) {
-    control.popup("All fields are mandatory","warning")
-  }else{
-    control.get('form').submit();
+  var firstName = control.getInput("firstName");
+  var lastName = control.getInput("lastName");
+  var teamName = control.getInput("teamName");
+  var collegeName = control.getInput("collegeName");
+  var deptName = control.getInput("deptName");
+  var mainEventName = control.getInput("main-event");
+  var subEventName = control.getInput("sub-event");
+  if (
+    !firstName ||
+    !lastName ||
+    !teamName ||
+    !collegeName ||
+    !deptName ||
+    !mainEventName ||
+    !subEventName
+  ) {
+    control.popup("All fields are mandatory", "warning");
+  } else {
+    control.get("form").submit();
   }
 });
-function forgetPassword(){
-  control.html('button',"wait...");
+function forgetPassword() {
+  control.html("button", "wait...");
   var mainEvent = control.getInput("fgtemail");
   $.ajax({
     url: HOST + "/backend/auth/forget.php",
@@ -112,25 +121,26 @@ function forgetPassword(){
     data: "mainEvent=" + mainEvent,
     success: function (htl) {
       var html = JSON.parse(htl);
-      console.log(html);
-      control.html('button',"wait...");
-      control.redirect(HOST);
+      swal("Mail sent.").then((e) => {
+        control.html("button", "wait...");
+        control.redirect(HOST);
+      });
     },
   });
 }
-function changePassword(ud){
-  control.html('button',"wait...");
+function changePassword(ud) {
+  control.html("button", "wait...");
   var mainEvent = control.getInput("fgtemail");
   $.ajax({
     url: HOST + "/backend/auth/change.php",
     type: "post",
-    data: "mainEvent=" + mainEvent + "&id="+ud,
+    data: "mainEvent=" + mainEvent + "&id=" + ud,
     success: function (htl) {
       var html = JSON.parse(htl);
       console.log(html);
-      swal(html.msg).then(e=>{
+      swal(html.msg).then((e) => {
         control.redirect(HOST);
-      })
+      });
     },
   });
 }
