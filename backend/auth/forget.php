@@ -21,7 +21,7 @@
     $result['name']=$ni['uname'];
     $result['mail']=$email;
   }
-  smtp_mailer($mailID,'Forget Password',getFGTTemplate($name,$link));
+  smtp_mailer($email,'Forget Password',getFGTTemplate($ni['uname'],$result['link']));
   function smtp_mailer($to,$subject, $msg){
     $mail = new PHPMailer(); 
     //$mail->SMTPDebug  = 3;
