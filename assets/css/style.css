@@ -2848,6 +2848,16 @@ i {
   .maincontainer .galary h4 {
     font-size: 2.8rem;
   }
+  .maincontainer .spandan h4 {
+    font-size: 2.5rem;
+  }
+  .maincontainer .spandan h3 {
+    font-size: 1.7rem;
+  }
+  .maincontainer .spandan .lgo .img2 {
+    height: 30rem;
+    width: 30rem;
+  }
   .maincontainer .sponser h4 {
     font-size: 2.8rem;
   }
@@ -3203,6 +3213,23 @@ i {
   .maincontainer .footer .footer-row2 .container .row {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .maincontainer .footer .footer-row1 .container .ul1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maincontainer .footer .footer-row2 .container .row .ul1 .ul-sub .dbnt {
+    height: 8rem;
+    width: 11rem;
+    padding-left: 0;
+  }
+  .maincontainer .footer .footer-row2 .container .row .ul1 .heading .nmb {
+    margin-left: 0rem;
   }
 }
 

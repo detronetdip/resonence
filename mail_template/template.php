@@ -295,7 +295,7 @@ function getRegistrationTemplate($name){
                           <b>Hello '.$name.'!</b>
                         </p>
                         <p>
-                          Wellcome to CEMK fest! Your registration is
+                          Wellcome to CEMK technical festival! Your registration is
                           successfull. Explore your talent by your innovative
                           idea.
                         </p>

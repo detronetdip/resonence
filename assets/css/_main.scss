@@ -2047,6 +2047,20 @@
         font-size: 2.8rem;
       }
     }
+    .spandan{
+      h4 {
+        font-size: 2.5rem;
+      }
+      h3{
+        font-size: 1.7rem;
+      }
+      .lgo {
+          .img2 {
+            height: 30rem;
+            width: 30rem;
+          }
+      }
+    }
     .sponser{
       h4{
         font-size: 2.8rem;
@@ -2334,6 +2348,38 @@
         .row {
           padding-left: 0rem;
           padding-right: 0rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 399px) {
+  .maincontainer .footer {
+    .footer-row1 {
+      .container {
+        .ul1 {
+          flex-direction: column;
+        }
+      }
+    }
+    .footer-row2{
+      .container{
+        .row{
+          .ul1{
+            .ul-sub{
+              .dbnt{
+                height: 8rem;
+                width: 11rem;
+                padding-left: 0;
+              }
+            }
+            
+            .heading{
+              .nmb{
+                margin-left: 0rem;
+              }
+            }
+          }
         }
       }
     }
