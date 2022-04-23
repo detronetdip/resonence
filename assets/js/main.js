@@ -122,14 +122,14 @@ function changePassword(ud){
   control.html('button',"wait...");
   var mainEvent = control.getInput("fgtemail");
   $.ajax({
-    url: HOST + "/backend/auth/forget.php",
+    url: HOST + "/backend/auth/change.php",
     type: "post",
     data: "mainEvent=" + mainEvent + "&id="+ud,
     success: function (htl) {
       var html = JSON.parse(htl);
-      console.log(html);
-      control.html('button',"wait...");
-      control.redirect(HOST);
+      swal(html.msg).then(e=>{
+        control.redirect(HOST)
+      })
     },
   });
 }
