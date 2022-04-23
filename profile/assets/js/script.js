@@ -90,7 +90,7 @@ function register() {
   var password = control.getInput("password");
   var name = control.getInput("name");
   var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  if (mobile.length > 10) {
+  if (mobile.length > 10 || mobile.length < 10) {
     control.popup("Please Enter a Valid Mobile Number", W);
   } else if (!email.match(mailformat)) {
     control.popup("Please Enter a Valid Email", W);
