@@ -125,7 +125,7 @@ function forgetMail(mail,name,link){
     type: "post",
     data: "mail=" + mail +"&name="+name+"&link="+link,
     success: function (htl) {
-      console.log(htl);
+      console.log(htl,link);
       swal("Mail sent").then(()=>{
         //control.redirect(HOST);
       })
