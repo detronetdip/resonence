@@ -77,7 +77,7 @@
                     <div class="text-center mb-3">
                       <img
                         style="height: 5rem"
-                        src="../../assets/images/Project 51_4.png"
+                        src="Project 51_4.png"
                         alt=""
                       />
                     </div>
