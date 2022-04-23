@@ -12,8 +12,10 @@
     $result['msg']="No account is registered with this email id";
   }else{
     $code=get_code();
-    $_SESSION['FGT_CU_STORE']=$code;
-    $result['link']="https://cemkfest.in/backend/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT);
+    $uid=$ni['id'];
+    $ql="INSERT INTO fgtp (`u_id`, `fcode`) VALUES ('$uid','$code')";
+    mysqli_query($con,$ql);
+    $result['link']="https://cemkfest.in/backend/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT)."&ud=".$uid;
     $result['name']=$ni['uname'];
     $result['mail']=$email;
   }
