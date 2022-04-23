@@ -62,6 +62,3 @@
         </div>
       </section>
     </div>
-    <script src="assets/js/brain.js"></script>
-  </body>
-</html>

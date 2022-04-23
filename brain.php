@@ -292,3 +292,6 @@
   require('require/eventEnd.php');
 ?>
 
+<script src="assets/js/brain.js"></script>
+  </body>
+</html>

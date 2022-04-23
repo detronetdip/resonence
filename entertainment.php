@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ResonanceXI</title>
-    <link rel="stylesheet" href="assets/css/events.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" 
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
-  </head>
+<?php
+  require('require/eventTop.php');
+?>
 
-  <body>
-    <div class="maincontainer">
-      <div class="container">
-        <div class="login">
-          <a href="./profile/auth/v2/index.html">
-            <button>Login</button>
-          </a>
-        </div>
         <div class="overlay">
           <h4>Entertainment</h4>
           <div class="row2">
@@ -182,16 +152,16 @@
                 <!-- <span class="highlight2 pt5 p1">TASK</span>
               <p class="pt1 fs14">
                 Design a robot either wired or wireless within the specified dimensions that can operated manually
-and can travel through all turns of the track .The fastest and steady robot will be the winner.
+          and can travel through all turns of the track .The fastest and steady robot will be the winner.
 
-              </p> 
-              
-               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
-              <p class="pt1 fs14">
-                <ol style="margin-top: 0; padding-top: 0;">
-                  <li>There will be two match for outsider students to qualify.</li>
-                  <li>
-                    College students directly qualified.
+                        </p> 
+                        
+                        <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
+                        <p class="pt1 fs14">
+                          <ol style="margin-top: 0; padding-top: 0;">
+                            <li>There will be two match for outsider students to qualify.</li>
+                            <li>
+                              College students directly qualified.
                   </li>
                   <li>
                     Matches will be decided according to the participation.
@@ -370,70 +340,11 @@ and can travel through all turns of the track .The fastest and steady robot will
           </div>
           <br /><br /><br /><br /><br /><br /><br />
         </div>
-      </div>
-      <section class="defaultPadding mt4 footer">
-        
-        <div class="footer-row2">
-          <div class="container">
-            <div class="row">
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Our Team</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="">Resonance Team</a></li>
-                  <li><a href="">Spandan Team</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Spandan Social Links</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="https://www.facebook.com/span22dan/">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/cemkfest_2k22/?igshid=YmMyMTA2M2Y=">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4DNhiDyMvraWMZc63gwzaw">Youtube</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Resonance Social Links</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="https://www.facebook.com/resoXInance22/">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/cemkfest_2k22/?igshid=YmMyMTA2M2Y=">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4DNhiDyMvraWMZc63gwzaw">Youtube</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <ul class="ul-sub da">
-                  <li class="dbnt">
-                    <a href="">
-                      <img src="assets/images/clg_logo.png" alt="" />
-                    </a>
-                  </li>
-                  <li class="heading">
-                    <h4 class="nmb">College of Engineering & Management, Kolaghat<br>
-                      Kolaghat, East Medinipur, West Bengal, 721171
-                    </h4>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-3">
-          <span> Copyright 2022 Resonance. All rights reserved </span>
-          <br />
-          <span
-            >Developed by
-            <a href="mailto: ayondip2001@gmail.com"
-              >Ayondip Jana & Sukhendu Bhukta</a
-            ></span
-          >
-        </div>
-      </section>
-    </div>
+
+
+<?php
+  require('require/eventEnd.php');
+?>
     <script src="assets/js/entertainment.js"></script>
   </body>
 </html>

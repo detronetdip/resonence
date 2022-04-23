@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ResonanceXI</title>
-    <link rel="stylesheet" href="assets/css/events.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
-  </head>
+<?php
+  require('require/eventTop.php');
+?>
 
-  <body>
-    <div class="maincontainer">
-      <div class="container">
-        <div class="login">
-          <a href="./profile/auth/v2/index.html">
-            <button>Login</button>
-          </a>
-        </div>
         <div class="overlay">
           <h4>Robotics</h4>
           <div class="row2">
@@ -55,14 +25,14 @@
                   </li>
                   <li>
                     The weight of the machine should not exceed 15 Kgs. All batteries should be on board.
-The weight of the remote controller will not be counted.
+          The weight of the remote controller will not be counted.
 
-                  </li>
-                  
-                </ol>
+                            </li>
+                            
+                          </ol>
 
-              </p>
-              <span class="highlight2 pt5 p1">MOBILITY</span>
+                        </p>
+                        <span class="highlight2 pt5 p1">MOBILITY</span>
               <p class="pt1 fs14">
                 <ol style="margin-top: 0; padding-top: 0;">
                   <p>Mobility methods that are NOT allowed:</p>
@@ -80,17 +50,17 @@ The weight of the remote controller will not be counted.
                   <li>The robot can be controlled by wired or wireless.</li>
                   <li>
                     Control must be exhibited over all of its functions and positions. Although
-autonomous functions within the bot are acceptable, the controller must be able to
-remotely disable or override these functions at any time. Note that any damage due to this
-function is the responsibility of the team, and there must compulsorily be a manual
-emergency stop (E-stop) function that can be controlled from the radio controller to
-manually override this autonomous function in case of emergency.
-                  </li>
-                  <li>
-                    If a team has two bots in a same category separate driving system and separate operator
-should be there.
-                  </li>
-                </ol>
+            autonomous functions within the bot are acceptable, the controller must be able to
+            remotely disable or override these functions at any time. Note that any damage due to this
+            function is the responsibility of the team, and there must compulsorily be a manual
+            emergency stop (E-stop) function that can be controlled from the radio controller to
+            manually override this autonomous function in case of emergency.
+                              </li>
+                              <li>
+                                If a team has two bots in a same category separate driving system and separate operator
+            should be there.
+                              </li>
+                            </ol>
               </p>
               <span class="highlight2 pt5 p1">BATTERY AND POWER</span>
               <p class="pt1 fs14">
@@ -101,19 +71,19 @@ should be there.
                     </li>
                   <li>
                     The electric voltage between any 2 points on the machine should not exceed 24V DC at
-any point in time. Participants will have to bring their own converters for standard power
-supply according to Indian standards. 
-                  </li>
-                  <li>
-                    The participants will be provided standard 220V-60Hz AC supply.
-                  </li>
-                </ol>
-              </p>
-              <span class="highlight2 pt5 p1">WEAPON SYSTEMS</span>
-              <p class="pt1 fs14">
-                <ol style="margin-top: 0; padding-top: 0;">
-                  <li>Bots should be designed only with wedge or lifter mechanism.</li>
-                  <li>
+                    any point in time. Participants will have to bring their own converters for standard power
+                    supply according to Indian standards. 
+                                      </li>
+                                      <li>
+                                        The participants will be provided standard 220V-60Hz AC supply.
+                                      </li>
+                                    </ol>
+                                  </p>
+                                  <span class="highlight2 pt5 p1">WEAPON SYSTEMS</span>
+                                  <p class="pt1 fs14">
+                                    <ol style="margin-top: 0; padding-top: 0;">
+                                      <li>Bots should be designed only with wedge or lifter mechanism.</li>
+                                      <li>
                     No spinner/ cutter/ hammer/ drummer/ Disc should be used.
                   </li>
                 </ol>
@@ -239,17 +209,17 @@ supply according to Indian standards.
                   <li>The robot can be controlled by wired or wireless.</li>
                   <li>
                     Control must be exhibited over all of its functions and positions. Although
-autonomous functions within the bot are acceptable, the controller must be able to
-remotely disable or override these functions at any time. Note that any damage due to this
-function is the responsibility of the team, and there must compulsorily be a manual
-emergency stop (E-stop) function that can be controlled from the radio controller to
-manually override this autonomous function in case of emergency.
-                  </li>
-                  <li>
-                    If a team has two bots in a same category separate driving system and separate operator
-should be there.
-                  </li>
-                </ol>
+          autonomous functions within the bot are acceptable, the controller must be able to
+          remotely disable or override these functions at any time. Note that any damage due to this
+          function is the responsibility of the team, and there must compulsorily be a manual
+          emergency stop (E-stop) function that can be controlled from the radio controller to
+          manually override this autonomous function in case of emergency.
+                            </li>
+                            <li>
+                              If a team has two bots in a same category separate driving system and separate operator
+          should be there.
+                            </li>
+                          </ol>
               </p>
               <span class="highlight2 pt5 p1">BATTERY AND POWER</span>
               <p class="pt1 fs14">
@@ -260,20 +230,20 @@ should be there.
                     </li>
                   <li>
                     The electric voltage between any 2 points on the machine should not exceed 24V DC at
-any point in time. Participants will have to bring their own converters for standard power
-supply according to Indian standards. 
-                  </li>
-                  <li>
-                    The participants will be provided standard 220V-60Hz AC supply.
-                  </li>
-                </ol>
-              </p>
-              <span class="highlight2 pt5 p1">WEAPON SYSTEMS</span>
-              <p class="pt1 fs14">
-                <ol style="margin-top: 0; padding-top: 0;">
-                  <li>Bots should be designed only with wedge or lifter mechanism.</li>
-                  <li>
-                    No spinner/cutter/hammer/drummer/disc should be used.
+          any point in time. Participants will have to bring their own converters for standard power
+          supply according to Indian standards. 
+                            </li>
+                            <li>
+                              The participants will be provided standard 220V-60Hz AC supply.
+                            </li>
+                          </ol>
+                        </p>
+                        <span class="highlight2 pt5 p1">WEAPON SYSTEMS</span>
+                        <p class="pt1 fs14">
+                          <ol style="margin-top: 0; padding-top: 0;">
+                            <li>Bots should be designed only with wedge or lifter mechanism.</li>
+                            <li>
+                              No spinner/cutter/hammer/drummer/disc should be used.
                   </li>
                 </ol>
               </p>
@@ -527,18 +497,18 @@ supply according to Indian standards.
                 <span class="highlight2 pt5 p1">INTRODUCTION</span>
               <p class="pt1 fs14">
                 Design a robot either wired or wireless within the specified dimensions that can operated manually
-and can travel through all the obstacle of the track within minimum time duration.
+            and can travel through all the obstacle of the track within minimum time duration.
 
-              </p>
-              <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
-              <p class="pt1 fs14">
-                <ol style="margin-top: 0; padding-top: 0;">
-                  <li>The maximum dimension of the robot can be 25 cm x 25cm x20 cm (l x b x h).(2% tolerance)</li>
-                  <li>
-                    Maximum weight must not exceed 3 kg.(2% tolerance)
-                  </li>
-                  <li>
-                    The maximum allowable operating voltage should not exceed 12 volts.
+                          </p>
+                          <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
+                          <p class="pt1 fs14">
+                            <ol style="margin-top: 0; padding-top: 0;">
+                              <li>The maximum dimension of the robot can be 25 cm x 25cm x20 cm (l x b x h).(2% tolerance)</li>
+                              <li>
+                                Maximum weight must not exceed 3 kg.(2% tolerance)
+                              </li>
+                              <li>
+                                The maximum allowable operating voltage should not exceed 12 volts.
                   </li>
                   <li>
                     The machine must not be made from Lego parts, or any ready-made kit, if we find such machine it will be disqualified.
@@ -585,19 +555,19 @@ and can travel through all the obstacle of the track within minimum time duratio
 
                   <li>
                   There will be time break for 1 minute to fix the robot. For 1&2 round only one time break will be given and two time break
-for final round.
+          for final round.
 
-                  </li>
-                  <li>
-                    If time break will over but participants still fix their robot then points will be deducted.
-                  </li>
-                  <li>
-                    For wired robot the participants can not pull their robot by wire to avoid the obstacles. If anyone found then the team will
-be disqualify.
-                  </li>
-                </ol>
-              </p>
-              <span class="highlight2 pt5 p1">COMPETITION ROUNDS</span>
+                            </li>
+                            <li>
+                              If time break will over but participants still fix their robot then points will be deducted.
+                            </li>
+                            <li>
+                              For wired robot the participants can not pull their robot by wire to avoid the obstacles. If anyone found then the team will
+          be disqualify.
+                            </li>
+                          </ol>
+                        </p>
+                        <span class="highlight2 pt5 p1">COMPETITION ROUNDS</span>
               <p class="fs14" style="margin-top: 2rem;">
                 <code class="p1" style="font-size: 1rem;">Round 1</code> 
                 <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
@@ -610,21 +580,21 @@ be disqualify.
                 <ol style="margin-top: 0; padding-top: 2rem;">
                   <li>
                     This is a knockout round, bots will be judge according to their individual time to cover the track and top performers of this round
-will get into next round.
-                  </li>
-                 
-                </ol>
+          will get into next round.
+                            </li>
+                          
+                          </ol>
 
-                <code class="p1" style="font-size: 1rem;">Round 3</code> 
-                <ol style="margin-top: 0; padding-top: 2rem;">
-                  <li>
-                  The top teams from round-2 makes it to the final round on basis of time and points above number of obstacle cleared.
-                  </li>
-                 
-                </ol>
-              </p>
-              <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
-                Or any kind of misbehavior will lead to disqualification.</h3><br>
+                          <code class="p1" style="font-size: 1rem;">Round 3</code> 
+                          <ol style="margin-top: 0; padding-top: 2rem;">
+                            <li>
+                            The top teams from round-2 makes it to the final round on basis of time and points above number of obstacle cleared.
+                            </li>
+                          
+                          </ol>
+                        </p>
+                        <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
+                          Or any kind of misbehavior will lead to disqualification.</h3><br>
                 <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
               <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 200 per Team</h3>
               <br><br>
@@ -696,10 +666,10 @@ will get into next round.
                                   </li>
                                   <li>
                                     Each team will have to defend the goal on its side as well as score the goal on the opposite
-side. 
-                                  </li>
-                                  <li>
-                                    The minimum participants allowed in a team must be 2 & the maximum number of participants
+          side. 
+                                              </li>
+                                    <li>
+                                      The minimum participants allowed in a team must be 2 & the maximum number of participants
                                     allowed per team is 5.
                                   </li>
                                   <li>
@@ -742,20 +712,20 @@ side.
                                   </li>
                                   <li>
                                     All team members must carry an id proof showing their name and college name.Team
-Representation (Leader) at the time of registration.  
-                                  </li>
-                                </ol>
-                              </p>
-                              <span class="highlight2 pt5 p1">BOT SPECIFICATION</span>
-                              <p class="pt1 fs14">
-                                <ol style="margin-top: 0; padding-top: 0;">
-                                  <li>The size of the bot must not exceed 30 cm*30 cm*30 cm. Individual parameters to be
-                                    measured with a tolerance of 2%.</li>
-                                  <li>
-                                    The machine must be manually controlled (wire 30 meters). 
-                                  </li>
-                                  <li>Maximum weight of each bot should be 5kg. 
-                                  </li>
+            Representation (Leader) at the time of registration.  
+                                              </li>
+                                            </ol>
+                                          </p>
+                                          <span class="highlight2 pt5 p1">BOT SPECIFICATION</span>
+                                          <p class="pt1 fs14">
+                                            <ol style="margin-top: 0; padding-top: 0;">
+                                              <li>The size of the bot must not exceed 30 cm*30 cm*30 cm. Individual parameters to be
+                                                measured with a tolerance of 2%.</li>
+                                              <li>
+                                                The machine must be manually controlled (wire 30 meters). 
+                                              </li>
+                                              <li>Maximum weight of each bot should be 5kg. 
+                                              </li>
                                   <li>
                                     Touching the robot during the competition is strictly prohibited. 
                                   </li>
@@ -824,19 +794,19 @@ Representation (Leader) at the time of registration.
                 <span class="highlight2 pt5 p1">INTRODUCTION</span>
               <p class="pt1 fs14">
                 A manually controlled robots is to be build that can run in water. Get your
-robot to the Arena consisting of water, and transport the cargo (balls) from the
-water zone to a cargo/ball deposite box. This task have to be done within a
-given period of time.
-              </p>
-              <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
-              <p class="pt1 fs14">
-                <ol style="margin-top: 0; padding-top: 0;">
-                  <li>The maximum dimension of the bot must not exceed 30 cm x 30 cm x 30cm. (including mechanical arm)</li>
-                  <li>
-                    Wired bots must have enough wire length for easy operation and to avoid entanglement with opponent's wires during the course of match. Wires should remain slack during the whole match.
-                  </li>
-                  <li>
-                    Bot will have only one net holder to pick up the balls from the water arena.
+                robot to the Arena consisting of water, and transport the cargo (balls) from the
+                water zone to a cargo/ball deposite box. This task have to be done within a
+                given period of time.
+                              </p>
+                              <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
+                              <p class="pt1 fs14">
+                                <ol style="margin-top: 0; padding-top: 0;">
+                                  <li>The maximum dimension of the bot must not exceed 30 cm x 30 cm x 30cm. (including mechanical arm)</li>
+                                  <li>
+                                    Wired bots must have enough wire length for easy operation and to avoid entanglement with opponent's wires during the course of match. Wires should remain slack during the whole match.
+                                  </li>
+                                  <li>
+                                    Bot will have only one net holder to pick up the balls from the water arena.
                   </li>
                 </ol>
               </p>
@@ -858,21 +828,21 @@ given period of time.
                   <li>A bot will be declared disqualified, if there is no movement for 30 seconds during the course of the match.</li>
                   <li>A bot will also be declared disqualified, if any team try to harm the arena.</li>                  
 
-<li>Negative points will be awarded if you need to touch your boat for any reason during the match.</li>
-<li>No negative points shall be awarded for a throw of ball to the outside of the arena.</li>
-<li>Organizers will not be responsible for any loss due to power fluctuations.</li>
-<li>The Judges will have the final say and the participants will have to abide by the decisions taken by them.</li>
-                </ol>
-              </p>
-              <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
-                Or any kind of misbehavior will lead to disqualification.</h3><br>
-                <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
-              <br><br>
+                      <li>Negative points will be awarded if you need to touch your boat for any reason during the match.</li>
+                      <li>No negative points shall be awarded for a throw of ball to the outside of the arena.</li>
+                      <li>Organizers will not be responsible for any loss due to power fluctuations.</li>
+                      <li>The Judges will have the final say and the participants will have to abide by the decisions taken by them.</li>
+                                      </ol>
+                                    </p>
+                                    <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
+                                      Or any kind of misbehavior will lead to disqualification.</h3><br>
+                                      <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
+                                    <br><br>
 
-              <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
-              <p class="fs14" style="margin-top: 1rem;">
-                <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
-                  <li>
+                                    <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
+                                    <p class="fs14" style="margin-top: 1rem;">
+                                      <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
+                                        <li>
                     Sudip Saha
                      <ol style="list-style-type: none;padding: 0;">
                        <li style="display: flex;">
@@ -930,11 +900,11 @@ given period of time.
                   <span class="highlight2 pt5 p1">INTRODUCTION</span>
                 <p class="pt1 fs14">
                   To build an automated robot which
-  follows a line on its given path.
-  
-                </p>
-                <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
-                <p class="pt1 fs14">
+                        follows a line on its given path.
+                        
+                                      </p>
+                                      <span class="highlight2 pt5 p1">BOT SPECIFICATIONS</span>
+                                      <p class="pt1 fs14">
                   <ol style="margin-top: 0; padding-top: 0;">
                     <li>.The robot must fit within a 20cm*20cm*20cm</li>
                     <li>
@@ -960,16 +930,16 @@ given period of time.
                       Bots have to follow the black path only.</li>
                     <li>
                       The track will have right and acute angles,
-  junctions, curves and circles.
-                    </li>
-                    <li>
-                      Width of the black line is 3-5cm.
-                    </li>
-                    <li>
-                      The track will be placed appropriately with
-  ambient lighting. 
-                    </li>
-                  </ol>
+                junctions, curves and circles.
+                                  </li>
+                                  <li>
+                                    Width of the black line is 3-5cm.
+                                  </li>
+                                  <li>
+                                    The track will be placed appropriately with
+                ambient lighting. 
+                                  </li>
+                                </ol>
                 </p>
                 <span class="highlight2 pt5 p1">MARKING SCHEME</span>
                 <p class="pt1 fs14">
@@ -978,16 +948,16 @@ given period of time.
                       obtained with a difference of 100 divided by numbers of teams.</li>
                     <li>
                       <span>OBJECTIVE:</span> Marks will be deduced on the number of times the bot goes of track(2
-  seconds for each instant) and number of human touches required(5 seconds for each
-  instant)after the timer has been started with a limitation of 5 touches. 
-                    </li>
-                    <li>
-                      <span>INNOVATION AND DESIGN:</span> Maximum of 5 marks for each innovation and designs
-  will be awarded by the jury. The decision of the jury will be irrefutable. 
-                    </li>
-                    <li>
-                      <span>POWER CONSUMPION:</span> Maximum of 2 marks for power consumption will be awarded by
-  the jury. The decision of the jury will be irrefutable.
+                          seconds for each instant) and number of human touches required(5 seconds for each
+                          instant)after the timer has been started with a limitation of 5 touches. 
+                                            </li>
+                                            <li>
+                                              <span>INNOVATION AND DESIGN:</span> Maximum of 5 marks for each innovation and designs
+                          will be awarded by the jury. The decision of the jury will be irrefutable. 
+                                            </li>
+                                            <li>
+                                              <span>POWER CONSUMPION:</span> Maximum of 2 marks for power consumption will be awarded by
+                          the jury. The decision of the jury will be irrefutable.
                     </li>
                   </ol>
                 </p>
@@ -1011,20 +981,20 @@ given period of time.
                     </li>
                     <li>
                       The same bot cannot be used by more than one teams and the same team cannot
-  play again with any other name and bot.
-                    </li>
-                    <li>
-                      Unethical behaviour could lead to disqualification.
-  
-                    </li>
-                    <li>
-                      In case of a tie the decision of the event heads will be finalized.
-  
-                    </li>
-                    <li>
-                      Event head and co-ordinators have all right to take final decision for any matter
-  during the event
-  
+                play again with any other name and bot.
+                                  </li>
+                                  <li>
+                                    Unethical behaviour could lead to disqualification.
+                
+                                  </li>
+                                  <li>
+                                    In case of a tie the decision of the event heads will be finalized.
+                
+                                  </li>
+                                  <li>
+                                    Event head and co-ordinators have all right to take final decision for any matter
+                during the event
+                
                     </li>
                   </ol>
                 </p>
@@ -1034,21 +1004,21 @@ given period of time.
                   <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
                     <li>
                       This is an elimination round and the teams will run their bots on the
-  given track respective to their alloted sequence.
-                    </li>
-                    <li>
-                      The teams will be ranked in accordance to the score they are awarded
-  by the jury.
-                    </li>
-                    <li>
-                      Top 4 teams will proceed to the next round.
-                    </li>
-                  </ol>
-                  <code class="p1" style="font-size: 1rem;">Round 2</code> 
-                  <ol style="margin-top: 0; padding-top: 2rem;">
-                    <li>
-                      This is a knock out round and the teams will be grouped with 2 teams
-  in each group.
+                    given track respective to their alloted sequence.
+                                      </li>
+                                      <li>
+                                        The teams will be ranked in accordance to the score they are awarded
+                    by the jury.
+                                      </li>
+                                      <li>
+                                        Top 4 teams will proceed to the next round.
+                                      </li>
+                                    </ol>
+                                    <code class="p1" style="font-size: 1rem;">Round 2</code> 
+                                    <ol style="margin-top: 0; padding-top: 2rem;">
+                                      <li>
+                                        This is a knock out round and the teams will be grouped with 2 teams
+                    in each group.
                     </li>
                     <li>
                       The best of each group will compete between each other.
@@ -1180,15 +1150,15 @@ given period of time.
                   </li>
                   <li>
                     The top team from round-2 makes it to the final round on basis of time and number of
-obstacle cleared.
+            obstacle cleared.
 
-                  </li>
-                </ol>
-              </p> -->
-              <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
-                Or any kind of misbehavior will lead to disqualification.</h3><br>
-                <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
-              <br><br>
+                              </li>
+                            </ol>
+                          </p> -->
+                          <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
+                            Or any kind of misbehavior will lead to disqualification.</h3><br>
+                            <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
+                          <br><br>
 
               <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
               <p class="fs14" style="margin-top: 1rem;">
@@ -1231,71 +1201,12 @@ obstacle cleared.
           </div>
           <br /><br /><br /><br /><br /><br /><br />
         </div>
-      </div>
-      <section class="defaultPadding mt4 footer">
-        
-        <div class="footer-row2">
-          <div class="container">
-            <div class="row">
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Our Team</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="">Resonance Team</a></li>
-                  <li><a href="">Spandan Team</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Spandan Social Links</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="https://www.facebook.com/span22dan/">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/cemkfest_2k22/?igshid=YmMyMTA2M2Y=">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4DNhiDyMvraWMZc63gwzaw">Youtube</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <li class="heading">
-                  <h4>Resonance Social Links</h4>
-                </li>
-                <ul class="ul-sub">
-                  <li><a href="https://www.facebook.com/resoXInance22/">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/cemkfest_2k22/?igshid=YmMyMTA2M2Y=">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4DNhiDyMvraWMZc63gwzaw">Youtube</a></li>
-                </ul>
-              </ul>
-              <ul class="ul1">
-                <ul class="ul-sub da">
-                  <li class="dbnt">
-                    <a href="">
-                      <img src="assets/images/clg_logo.png" alt="" />
-                    </a>
-                  </li>
-                  <li class="heading">
-                    <h4 class="nmb">College of Engineering & Management, Kolaghat<br>
-                      Kolaghat, East Medinipur, West Bengal, 721171
-                    </h4>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-3">
-          <span> Copyright 2022 Resonance. All rights reserved </span>
-          <br />
-          <span
-            >Developed by
-            <a href="mailto: ayondip2001@gmail.com"
-              >Ayondip Jana & Sukhendu Bhukta</a
-            ></span
-          >
-        </div>
-      </section>
-    </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+<?php
+  require('require/eventEnd.php');
+?>      
     <script src="assets/js/events.js"></script>
   </body>
 </html>
