@@ -1068,7 +1068,7 @@ function getFGTTemplate($name,$link){
                             You have requested to change your password.
                           </p>
                           <p>Click the button below to change your password.</p>
-                          <p style="color:red;">This link is valid for only time.</p>
+                          <p style="color:red;">This link is valid for only one time.</p>
                           <table
                             class="btn btn-primary"
                           >
