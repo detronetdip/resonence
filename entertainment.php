@@ -282,6 +282,9 @@
                       The photo submitted must be the original work of the participant. By participating you are stating that you are the owner and the copyright holder of the photographs submitted.
                     </li>
                     <li>
+                      Participants will have to provide a caption for each photo that they are going to submit.
+                    </li>
+                    <li>
                       Each participant is restricted to only one submission, per event. So it is suggested to select your theme carefully.
                     </li>
                     <li>
@@ -323,7 +326,19 @@
                         </li>
                        </ol>
                     </li>
-                    
+                    <li>
+                      Sreejita Sarkar
+                       <ol style="list-style-type: none;padding: 0;">
+                         <li style="display: flex;">
+                          <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                          <a href="tel:8777380423">+91-8777380423</a>
+                        </li>
+                        <li style="display: flex;">
+                          <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                          <a href="mailto:cse19078@cemk.ac.in">cse19078@cemk.ac.in </a>
+                        </li>
+                       </ol>
+                    </li>
                   </ol>
                 </p>
                 </div>
