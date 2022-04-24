@@ -208,11 +208,10 @@
 
                   </li>
                   <li>
-                    Only water color, brashes are allowed.No other drawing equipments (scale, board, compas, color pencils, crayons etc.) are allowed.
+                    Only water color, brashes are allowed.No other drawing equipments are allowed.
                   </li>
                   <li>
-                    Each participants will be given two colors choice & type of drawing (landscape or portrait).
-
+                    Each participants will be given two colors choice & type of drawing (landscape or portrait).
                   </li>
                   <li>
                     Participants can change their choice of color & type of drawing but points will be deducted.
