@@ -1439,9 +1439,22 @@ function getFGTTemplate($name,$link){
                           <b>Hello '.$name.'!</b>
                         </p>
                         <p>
-                            Wellcome to CEMK technical festival! Your registration is
-                          successfull.
-                          <p style="color: red;">You are requested to fill your team details.</p>
+                            Wellcome to CEMK technical festival!
+                          <p>
+                              You have successfully registered for the event
+                              '.$eventName.'. your team id is
+                              <span
+                                style="
+                                  padding: 5px;
+                                  color: #50a5f1;
+                                  border-radius: 5px;
+                                  background-color: rgba(80, 165, 241, 0.18);
+                                "
+                              >
+                                <b>'.$teamId.'</b>
+                              </span>
+                            </p>
+                          <p style="color: red;margin-top:20px;">You are requested to fill your team details.</p>
                         </p>
                         <p>Click the button below to fill the form.</p>
                         <table
@@ -1518,7 +1531,7 @@ function getFGTTemplate($name,$link){
    ';
    return $html;
  }
- function pesTemplate($name){
+ function pesTemplate($name,$eventName,$teamId){
   $html='
   <!DOCTYPE html>
    <html>
@@ -1812,9 +1825,22 @@ function getFGTTemplate($name,$link){
                          <b>Hello '.$name.'!</b>
                        </p>
                        <p>
-                           Wellcome to CEMK technical festival! Your registration is
-                         successfull.
-                         <p style="color: red;">You are requested to fill your game details.</p>
+                           Wellcome to CEMK technical festival!
+                         <p>
+                              You have successfully registered for the event
+                              '.$eventName.'. your team id is
+                              <span
+                                style="
+                                  padding: 5px;
+                                  color: #50a5f1;
+                                  border-radius: 5px;
+                                  background-color: rgba(80, 165, 241, 0.18);
+                                "
+                              >
+                                <b>'.$teamId.'</b>
+                              </span>
+                            </p>
+                         <p style="color: red;margin-top:20px;">You are requested to fill your game details.</p>
                        </p>
                        <p>Click the button below to fill the form.</p>
                        <table
@@ -1891,7 +1917,7 @@ function getFGTTemplate($name,$link){
   ';
   return $html;
 }
-function bgmiTemplate($name){
+function bgmiTemplate($name,$eventName,$teamId){
   $html='
   <!DOCTYPE html>
    <html>
@@ -2185,9 +2211,22 @@ function bgmiTemplate($name){
                          <b>Hello '.$name.'!</b>
                        </p>
                        <p>
-                           Wellcome to CEMK technical festival! Your registration is
-                         successfull.
-                         <p style="color: red;">You are requested to fill your team details.</p>
+                           Wellcome to CEMK technical festival!
+                         <p>
+                              You have successfully registered for the event
+                              '.$eventName.'. your team id is
+                              <span
+                                style="
+                                  padding: 5px;
+                                  color: #50a5f1;
+                                  border-radius: 5px;
+                                  background-color: rgba(80, 165, 241, 0.18);
+                                "
+                              >
+                                <b>'.$teamId.'</b>
+                              </span>
+                            </p>
+                         <p style="color: red;margin-top:20px;">You are requested to fill your team details.</p>
                        </p>
                        <p>Click the button below to fill the form.</p>
                        <table

@@ -41,8 +41,15 @@
         $_SESSION['USER_ID']=$q['uid'];
         $uid=$q['uid'];
         mysqli_query($con,"UPDATE rgslog SET payment_status='$placed',reg_status='$placed',payu_status='$status', mihpayid='$pay_id' WHERE txnid='$txnid'");
-        echo getEventRegistrationTemplate($q['fname'],$q['sevname'],$q['tid']);
-        smtp_mailer($q['uemail'],'Event Registration Conformation',getEventRegistrationTemplate($q['fname'],$q['sevname'],$q['tid']));
+        if($q['sevname']=="BGMI"){
+            smtp_mailer($q['uemail'],'Event Registration Conformation',bgmiTemplate($q['fname'],$q['sevname'],$q['tid']));
+        }else if($q['sevname']=="Valorant"){
+            smtp_mailer($q['uemail'],'Event Registration Conformation',valorantTemplate($q['fname'],$q['sevname'],$q['tid']));
+        }else if($q['sevname']=="PES"){
+            smtp_mailer($q['uemail'],'Event Registration Conformation',pesTemplate($q['fname'],$q['sevname'],$q['tid']));
+        }else {
+            smtp_mailer($q['uemail'],'Event Registration Conformation',getEventRegistrationTemplate($q['fname'],$q['sevname'],$q['tid']));
+        }
 ?>
 <!DOCTYPE html>
 <html lang="en">
