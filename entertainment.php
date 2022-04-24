@@ -292,6 +292,9 @@
                     </li>
                     <li>A photo without meta-data will be disqualified i.e The photo should contain its date of creation, device name with which the photo was clicked and the other details in the meta-data.
                     </li>
+                    <li>
+                      Only the photos submitted through google form will be accepted foe the competition.
+                    </li>
                     <li>Photos that portray or otherwise include inappropriate and/or offensive content, including provocative nudity, violence, human rights and/or environmental violation, and/or any other contents deemed to be contrary to the law, religious, cultural & moral traditions and practices of India, are strictly prohibited and will be immediately discarded.</li>
                     <li>The photo submissions of the photohike and fotolumi will be combined and evaluated.The photo which will be the best among the combined submissions (both photohike and fotolumi) will be awarded the first prize.In a similar way the second prize will be awarded to the deserving participants.
                     </li>
