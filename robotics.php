@@ -432,7 +432,7 @@
                 <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
                   Or any kind of misbehavior will lead to disqualification.</h3><br>
                   <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
-                <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 230 per Team</h3>
+                <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 300 per Team</h3>
               <br><br>
 
                 <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
@@ -596,7 +596,7 @@
                         <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
                           Or any kind of misbehavior will lead to disqualification.</h3><br>
                 <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
-              <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 200 per Team</h3>
+              <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 300 per Team</h3>
               <br><br>
 
               <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
@@ -739,7 +739,7 @@
                               <h3 style="color: #00ffff; font-size: 1.3rem;">* Damaging tracks, college property
                                 Or any kind of misbehavior will lead to disqualification.</h3><br>
                                 <h3 style="color: #00ffff; font-size: 1.3rem;">* CO-ODINATOR MAY SUBJECTED TO CHANGE ANY RULES IF REQUIRED.</h3><br>
-                              <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 250 per Team</h3>
+                              <h3 style="color: #00ffff; font-size: 1.3rem;">* registration fees - Rs. 300 per Team</h3>
               <br><br>
 
                               <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
