@@ -224,7 +224,7 @@
                   <li>Participants will have to finish their drawing within one and half hours.
 
                   </li>
-                  <li> Participants will have to finish their drawing within one and half hours.
+                  <li> Event head and coordinators have all rights to take final decision for any matter during the event.
 
                   </li>
                 </ol>
