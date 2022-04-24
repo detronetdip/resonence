@@ -208,9 +208,7 @@
 
                   </li>
                   <li>
-                    Only water color, drawing lead pencils, eraser, sharpener is allowed, other drawing equipment (scale, board, compas, color pencils, crayons etc.) are not allowed. 
-
-
+                    Only water color, brashes are allowed.No other drawing equipments (scale, board, compas, color pencils, crayons etc.) are allowed.
                   </li>
                   <li>
                     Each participants will be given two colors choice & type of drawing (landscape or portrait).
