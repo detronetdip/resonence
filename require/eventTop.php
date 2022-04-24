@@ -32,12 +32,11 @@
       <div class="container">
         <div class="login">
           <?php if(!isset($_SESSION['USER_LOGIN_RX'])){ 
-             echo "not logged in";
             ?>
             <a href="./profile/auth/v2/index.html">
               <button>Login</button>
             </a>
-          <?php }else{ echo " logged in"; ?>
+          <?php }else{ ?>
             <a href="./profile/auth/v2/logout.php">
               <button>Logout</button>
             </a>
