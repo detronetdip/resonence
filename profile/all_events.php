@@ -51,15 +51,15 @@
                         <?php
                           $href="";
                           if($r['evname']=="Robotics"){
-                            $href="../robotics.html";
+                            $href="../robotics.php";
                           }else if($r['evname']=="Coding"){
-                            $href="../coding.html";
+                            $href="../coding.php";
                           }else if($r['evname']=="Gaming"){
-                            $href="../gaming.html";
+                            $href="../gaming.php";
                           }else  if($r['evname']=="Speak Up"){
-                            $href="../speak.html";
+                            $href="../speak.php";
                           }else if($r['evname']=="Project"){
-                            $href="../project.html";
+                            $href="../project.php";
                           }
                         ?>
                         <a href="<?php echo $href; ?>" class="view">
