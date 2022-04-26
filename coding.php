@@ -161,6 +161,19 @@
                      </ol>
                   </li>
                   <li>
+                    SOUMYA MONDAL
+                     <ol style="list-style-type: none;padding: 0;">
+                       <li style="display: flex;">
+                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                        <a href="tel:8159992645">+91-8159992645</a>
+                      </li>
+                      <li style="display: flex;">
+                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                        <a href="mailto:cse19049@cemk.ac.in">cse19049@cemk.ac.in</a>
+                      </li>
+                     </ol>
+                  </li>
+                  <li>
                     TITLI BERA
                      <ol style="list-style-type: none;padding: 0;">
                        <li style="display: flex;">
