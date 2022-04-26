@@ -36,6 +36,12 @@
                 <span>Dashbaord</span>
               </a>
             </li>
+            <li class="outer-list">
+              <a href="Users.php">
+                <i class="uil uil-estate"></i>
+                <span>Users</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="copyright">

@@ -67,7 +67,7 @@
                     There will be pounce and system. <br><br>
                     <span>Pounce:</span> There is a pounce process in quiz. Where the question will be to a team except that team, any team will answer the questions under a limited time if the answer will wrong there will be negetive as per question marks.
                   </li>
-                  <li>Based on the performance Winner team,1st Runner-up team,2nd Runner-up team will be decided and attractive prizes will be provided.</li>
+                  <li>Based on the performance Winner team,1st Runner-up team will be decided and attractive prizes will be provided.</li>
                 </ol>
               </p>
               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
