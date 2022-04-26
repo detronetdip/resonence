@@ -24,7 +24,7 @@
               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
               <p class="pt1 fs14">
                 <ol style="margin-top: 0; padding-top: 0;">
-                  <li>All the members should be students studying in a college.</li>
+                  <li>All the members should be students studying in our college.</li>
                   <li>
                     Only selective languages will be allowed Java, Python, C, C++.
                   </li>
@@ -70,6 +70,19 @@
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
                         <a href="mailto:cse19065@cemk.ac.in ">cse19065@cemk.ac.in </a>
+                      </li>
+                     </ol>
+                  </li>
+                  <li>
+                    SOURAV SANTRA
+                     <ol style="list-style-type: none;padding: 0;">
+                       <li style="display: flex;">
+                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                        <a href="tel:8436931883">+91-8436931883</a>
+                      </li>
+                      <li style="display: flex;">
+                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                        <a href="mailto:cse19057@cemk.ac.in ">cse19057@cemk.ac.in </a>
                       </li>
                      </ol>
                   </li>
@@ -313,19 +326,6 @@
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
                         <a href="mailto:cse19089@cemk.ac.in">cse19089@cemk.ac.in</a>
-                      </li>
-                     </ol>
-                  </li>
-                  <li>
-                    Aayak Mukherjee
-                     <ol style="list-style-type: none;padding: 0;">
-                       <li style="display: flex;">
-                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                        <a href="tel:9330411932">+91-9330411932</a>
-                      </li>
-                      <li style="display: flex;">
-                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:cse19061@cemk.ac.in">cse19061@cemk.ac.in</a>
                       </li>
                      </ol>
                   </li>
