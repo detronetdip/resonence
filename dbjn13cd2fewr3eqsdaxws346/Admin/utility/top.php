@@ -38,7 +38,7 @@
             </li>
             <li class="outer-list">
               <a href="Users.php">
-                <i class="uil uil-estate"></i>
+              <i class="uil uil-user"></i>
                 <span>Users</span>
               </a>
             </li>
