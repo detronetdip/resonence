@@ -265,6 +265,7 @@
               <div class="single-sub-event">
                 <h5 onclick="expand(this)" refer="photo" isOpen="false">photographia</h5>
                 <div class="colapse" id="photo">
+                <h4>"Transmute You Imagination Into Reality."</h4>
                   <span class="highlight2 pt5 p1">EVENTS</span>
                 <p class="pt1 fs14">
                 <ol>
