@@ -33,15 +33,17 @@ var swiper = new Swiper(".mySwiper2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
 });
 
-const hideLoader=()=>{
-  var loaderDiv=document.getElementById("loader");
-  loaderDiv.style.display="none";
-}
+const hideLoader = () => {
+  setTimeout(() => {
+    var loaderDiv = document.getElementById("loader");
+    loaderDiv.style.display = "none";
+  }, 2000);
+};
 window.onload=hideLoader;
