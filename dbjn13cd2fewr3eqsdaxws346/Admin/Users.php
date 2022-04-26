@@ -10,15 +10,13 @@
               <table class="wishlist">
                 <thead>
                   <th>#</th>
-                  <th>Team Id</th>
-                  <th>Event</th>
-                  <th>Team Name</th>
-                  <th>Status</th>
-                  <th>View</th>
+                  <th>Name</th>
+                  <th>Mobile</th>
+                  <th>Email</th>
                 </thead>
                 <tbody>
                 <?php
-                $sql="SELECT rgslog.id,tid,tname,payu_status,sevname FROM rgslog,sevents WHERE rgslog.seventid=sevents.id";
+                $sql="SELECT * FROM users";
                 $res=mysqli_query($con,$sql);
                 $product_arr=array();
                 while($row=mysqli_fetch_assoc($res)){	
@@ -34,27 +32,13 @@
                       <?php echo $i;$i++; ?>
                     </td>
                     <td>
-                    <?php echo $r['tid']; ?>
+                    <?php echo $r['uname']; ?>
                     </td>
                     <td>
-                    <?php echo $r['sevname']; ?>
+                    <?php echo $r['umobile']; ?>
                     </td>
                     <td>
-                    <?php echo $r['tname']; ?>
-                    </td>
-                    <td>
-                    <?php if($r['payu_status']=='success'){?>
-                      <span class="badge green"> Registered </span>
-                      <?php }else{ ?>
-                        <span class="badge orange"> Not Registered </span>
-                      <?php } ?>
-                    </td>
-                    <td>
-                      <div class="acn">
-                        <a href="view.php?id=<?php echo $r['id']; ?>" class="view">
-                              <i class="uil uil-eye"></i>
-                            </a>
-                      </div>
+                    <?php echo $r['uemail']; ?>
                     </td>
                   </tr>
                   <?php } ?>
