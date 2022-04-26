@@ -74,7 +74,7 @@
                      </ol>
                   </li>
                   <li>
-                    SOURAV SANTRA
+                    Sourav Santra
                      <ol style="list-style-type: none;padding: 0;">
                        <li style="display: flex;">
                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
@@ -174,7 +174,7 @@
                      </ol>
                   </li>
                   <li>
-                    SOUMYA MONDAL
+                    Soumya Mondal
                      <ol style="list-style-type: none;padding: 0;">
                        <li style="display: flex;">
                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
