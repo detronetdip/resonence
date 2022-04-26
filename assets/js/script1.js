@@ -39,3 +39,9 @@ var swiper = new Swiper(".mySwiper2", {
     disableOnInteraction: false,
   },
 });
+
+const hideLoader=()=>{
+  var loaderDiv=document.getElementById("loader");
+  loaderDiv.style.display="none";
+}
+window.onload=hideLoader;
