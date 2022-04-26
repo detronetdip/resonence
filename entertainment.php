@@ -14,6 +14,7 @@
              <div class="single-sub-event">
               <h5 onclick="expand(this)" refer="film" isOpen="false">FILMWALA</h5>
               <div class="colapse" id="film">
+              <h4>"Cerebrate, Create, Cinematize"</h4>
                 <!-- <span class="highlight2 pt5 p1">INTRODUCTION</span>
               <p class="pt1 fs14">
                 Design a robot either wired or wireless within the specified dimensions that can operated
