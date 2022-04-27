@@ -20,8 +20,8 @@
     $result['link']="https://cemkfest.in/backend/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT)."&ud=".$uid;
     $result['name']=$ni['uname'];
     $result['mail']=$email;
+    smtp_mailer($email,'Forget Password',getFGTTemplate($ni['uname'],$result['link']));
   }
-  smtp_mailer($email,'Forget Password',getFGTTemplate($ni['uname'],$result['link']));
   function smtp_mailer($to,$subject, $msg){
     $mail = new PHPMailer(); 
     //$mail->SMTPDebug  = 3;
