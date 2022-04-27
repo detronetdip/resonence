@@ -121,11 +121,16 @@ function forgetPassword() {
     data: "mainEvent=" + mainEvent,
     success: function (htl) {
       var html = JSON.parse(htl);
-      console.log(html);
-      swal("Mail sent.").then((e) => {
-        control.html("button", "wait...");
-        control.redirect(HOST);
-      });
+      if(html.status!=0){
+        swal("Mail sent.").then((e) => {
+          control.html("button", "Submit");
+          control.redirect(HOST);
+        });
+      }else{
+        swal(html.msg).then((e) => {
+          control.reload();
+        });
+      }
     },
   });
 }
