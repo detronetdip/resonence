@@ -85,9 +85,9 @@
                     <form  id="fgtrm">
                       <div class="form-group">
                         <input
-                          type="text"
+                          type="password"
                           class="form-control"
-                          placeholder="Email"
+                          placeholder="password"
                           id="fgtemail"
                           style="
                             background-color: transparent;
