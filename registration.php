@@ -183,6 +183,6 @@ authorise_user("./profile/auth/v2/");
         </div>
       </section>
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main1.js"></script>
   </body>
 </html>
