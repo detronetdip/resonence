@@ -10,6 +10,7 @@
   $n=mysqli_num_rows($res);
   $ni=mysqli_fetch_assoc($res);
   echo $n;
+  die();
   if($n=0){
     $result['status']=0;
     $result['msg']="No account is registered with this email id";
