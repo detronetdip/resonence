@@ -121,6 +121,7 @@ function forgetPassword() {
     data: "mainEvent=" + mainEvent,
     success: function (htl) {
       var html = JSON.parse(htl);
+      console.log(html);
       swal("Mail sent.").then((e) => {
         control.html("button", "wait...");
         control.redirect(HOST);
