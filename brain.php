@@ -3,7 +3,7 @@
 ?>
 
         <div class="overlay">
-          <h4>Project</h4>
+          <h4>Brain Games</h4>
           <div class="row2">
             <span class="highlight2">List of Events</span>
           </div>

@@ -666,7 +666,7 @@
                                   </li>
                                   <li>
                                     Each team will have to defend the goal on its side as well as score the goal on the opposite
-          side. 
+                                                                                                      side. 
                                               </li>
                                     <li>
                                       The minimum participants allowed in a team must be 2 & the maximum number of participants
@@ -700,9 +700,6 @@
                               <span class="highlight2 pt5 p1">TEAM SPECIFICATIONS</span>
                               <p class="pt1 fs14">
                                 <ol style="margin-top: 0; padding-top: 0;">
-                                  <li>A pvc flex sheet of white color with a
-                                    designed black path is used for the arena.
-                                    Bots have to follow the black path only.</li>
                                   <li>
                                     Every TEAM must have a specific name.
                                   </li>
