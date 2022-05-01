@@ -192,7 +192,7 @@
                                 </li>
                                 <li style="display: flex;">
                                   <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                  <a href="mailto:ece1909@cemk.ac.in">ece1909@cemk.ac.in</a>
+                                  <a href="mailto:ece199@cemk.ac.in">ece199@cemk.ac.in</a>
                                 </li>
                               </ol>
                             </li>

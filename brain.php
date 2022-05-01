@@ -148,7 +148,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:ece1906@cemk.ac.in">ece1906@cemk.ac.in</a>
+                          <a href="mailto:ece196@cemk.ac.in">ece196@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>
