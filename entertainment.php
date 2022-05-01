@@ -89,6 +89,7 @@
              <div class="single-sub-event">
               <h5 onclick="expand(this)" refer="meme" isOpen="false">MEME O PEDIA</h5>
               <div class="colapse" id="meme">
+              <h4>"Why so serious?"</h4>
                 <span class="highlight2 pt5 p1">INTRODUCTION</span>
                <p class="pt1 fs14">
                 Do you have what it takes to bring meme creation to the next level? Cos <b>“It's The Meme Fizz That Does The Bizz”</b> right so .... it's time to make it happen.
@@ -141,67 +142,13 @@
 
               <!-- single event end -->
 
-             <!-- single event start -->
-
-             <div class="single-sub-event">
-              <h5 onclick="expand(this)" refer="selfi" isOpen="false">selfiegram</h5>
-              <div class="colapse" id="selfi">
-                <span class="highlight2 pt5 p1">TASK</span>
-              <p class="pt1 fs14">
-                Coming Soon . . .
-              </p> 
-                <!-- <span class="highlight2 pt5 p1">TASK</span>
-              <p class="pt1 fs14">
-                Design a robot either wired or wireless within the specified dimensions that can operated manually
-                            and can travel through all turns of the track .The fastest and steady robot will be the winner.
-
-                        </p> 
-                        
-                        <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
-                        <p class="pt1 fs14">
-                          <ol style="margin-top: 0; padding-top: 0;">
-                            <li>There will be two match for outsider students to qualify.</li>
-                            <li>
-                              College students directly qualified.
-                  </li>
-                  <li>
-                    Matches will be decided according to the participation.
-                  </li>
-                  <li>
-                    Matches will be played in group stages .
-                  </li>
-                </ol>
-              </p>
-              <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
-              <p class="fs14" style="margin-top: 1rem;">
-                <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
-                  <li>
-                    Yash Agarwal
-                     <ol style="list-style-type: none;padding: 0;">
-                       <li style="display: flex;">
-                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                        <a href="tel:9123441767">+91-9123441767</a>
-                      </li>
-                      <li style="display: flex;">
-                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:cse19087@cemk.ac.in">cse19087@cemk.ac.in</a>
-                      </li>
-                     </ol>
-                  </li>
-                  
-                </ol>
-              </p>  -->
-              </div>
-             </div>
-
-              <!-- single event end -->
 
              <!-- single event start -->
 
              <div class="single-sub-event">
               <h5 onclick="expand(this)" refer="canva" isOpen="false">creative canvas</h5>
               <div class="colapse" id="canva">
-              
+              <h4>"Draw the canvas of life."</h4>
               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
               <p class="pt1 fs14">
                 <ol style="margin-top: 0; padding-top: 0;">
