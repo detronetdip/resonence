@@ -1,5 +1,8 @@
 <?php
     session_start();
+        header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+        header('Access-Control-Allow-Credentials: true');
+        header('Access-Control-Max-Age: 86400'); 
     $con= mysqli_connect('localhost','u364601224_rootxiresonanc','K4=bD=Nb[p');
     mysqli_select_db($con,'u364601224_resonancexi');
     $result=array();
