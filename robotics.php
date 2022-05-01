@@ -750,11 +750,11 @@
                                      <ol style="list-style-type: none;padding: 0;">
                                        <li style="display: flex;">
                                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                                        <a href="tel:7908304748">+91-7908304748</a>
+                                        <a href="tel:6295154331">+91-6295154331</a>
                                       </li>
                                       <li style="display: flex;">
                                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                        <a href="mailto:-it1913@cemk.ac.in">it1913@cemk.ac.in</a>
+                                        <a href="mailto:it1913@cemk.ac.in">it1913@cemk.ac.in</a>
                                       </li>
                                      </ol>
                                   </li>
@@ -767,7 +767,7 @@
                                       </li>
                                       <li style="display: flex;">
                                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                        <a href="mailto:-ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
+                                        <a href="mailto:ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
                                       </li>
                                      </ol>
                                   </li>
@@ -1047,7 +1047,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:-ece1953@cemk.ac.in">ece1953@cemk.ac.in</a>
+                          <a href="mailto:ece1953@cemk.ac.in">ece1953@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>
@@ -1060,7 +1060,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:-ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
+                          <a href="mailto:ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>
