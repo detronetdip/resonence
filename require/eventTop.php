@@ -36,6 +36,9 @@
             <a href="./profile/auth/v2/index.html">
               <button>Login</button>
             </a>
+            <a href="./profile/auth/v2/index.html">
+              <button>Dashbord</button>
+            </a>
           <?php }else{ ?>
             <a href="./profile/auth/v2/logout.php">
               <button>Logout</button>
