@@ -307,6 +307,6 @@
 <?php
   require('require/eventEnd.php');
 ?>
-    <script src="assets/js/entertainment.js"></script>
+    <script src="assets/js/entertainment1.js"></script>
   </body>
 </html>
