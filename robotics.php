@@ -759,15 +759,15 @@
                                      </ol>
                                   </li>
                                   <li>
-                                    HRITAM SARKAR
+                                    Shuvham Basak
                                      <ol style="list-style-type: none;padding: 0;">
                                        <li style="display: flex;">
                                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                                        <a href="tel:9330474473">+91-9330474473</a>
+                                        <a href="tel:7319083838">+91-7319083838</a>
                                       </li>
                                       <li style="display: flex;">
                                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                        <a href="mailto:ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
+                                        <a href="mailto:me1928@cemk.ac.in">me1928@cemk.ac.in</a>
                                       </li>
                                      </ol>
                                   </li>
