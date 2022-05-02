@@ -37,7 +37,7 @@
                         $result['msg']="Successfull";
                         $result['name']=$row['name'];
                     } else {
-                        $result['status']=403;
+                        $result['status']=0;
                         $result['msg']="Invalid Credentials";
                     }
                 }
