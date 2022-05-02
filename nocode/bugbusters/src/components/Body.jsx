@@ -1,6 +1,7 @@
-import axiox from "axios";
 import { useContext, useState, useEffect } from "react";
 import { ContextStore } from "../App";
+import { set, ref, onValue } from "firebase/database";
+import { firebaseDatabase } from "../util/config";
 function Body() {
   const store = useContext(ContextStore);
   const [allData, setAllData] = useState({});
@@ -14,7 +15,19 @@ function Body() {
   const handelSubmit = (e) => {
     e.preventDefault();
     console.table(allData);
+    set(
+      ref(firebaseDatabase, "answers/" + store.mainStore.userName),
+      allData
+    ).then((e) => {
+      store.setMainStore((e) => {
+        var s = {
+          timeOut: true,
+        };
+        return { ...e, ...s };
+      });
+    });
   };
+
 
   return (
     <div className="bodycontainer">
@@ -238,7 +251,9 @@ function Body() {
           <div className="questionwrapper">
             <p>
               <h1>Timeout</h1>
-              <h4>Thanks for attending this contest, your response has been recorder successfully.</h4>
+              <h4>
+                Thanks for attending this contest, your response has been recorded successfully.
+              </h4>
             </p>
           </div>
         </form>
