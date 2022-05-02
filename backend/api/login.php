@@ -22,7 +22,7 @@
             $rs=mysqli_query($con,$q);
             $nor=mysqli_num_rows($rs);
             if($nor==0){
-                $result['status']=0;
+                $result['code']=0;
                 $result['msg']="Invalid Credentials";
             }else{
                 $row=mysqli_fetch_assoc($rs);
@@ -33,11 +33,11 @@
                     $dps=$row['password'];
                     $verify = password_verify($pas, $dps);
                     if ($verify) {
-                        $result['status']=200;
+                        $result['code']=200;
                         $result['msg']="Successfull";
                         $result['name']=$row['name'];
                     } else {
-                        $result['status']=0;
+                        $result['code']=0;
                         $result['msg']="Invalid Credentials";
                     }
                 }
