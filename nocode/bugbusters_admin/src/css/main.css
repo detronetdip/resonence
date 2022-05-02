@@ -43,27 +43,6 @@ header .write {
   font-family: "Karla", sans-serif;
 }
 
-header .count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-header .count .sgbox {
-  margin: 0 1rem;
-  border: 1px solid #007fff;
-  padding: 0.8rem;
-  border-radius: 8px;
-}
-
-header .count .sgbox:nth-child(2), header .count .sgbox:nth-child(4) {
-  border: none;
-  padding: 0.8rem 0;
-  margin: 0;
-}
-
 header .name {
   color: #fff;
   font-size: 1.5rem;
@@ -174,5 +153,48 @@ header .name {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.row1 button {
+  border: 0;
+  outline: 0;
+  padding: 0.8rem;
+  background-color: #007fff;
+  margin: 0 1rem;
+  border-radius: 6px;
+  color: #f0ebf8;
+  cursor: pointer;
+}
+
+.row1 .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  color: #007fff;
+}
+
+.row1 .timer .sgbox {
+  margin: 0 1rem;
+  border: 1px solid #007fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.row1 .timer .sgbox:nth-child(2), .row1 .timer .sgbox:nth-child(4) {
+  border: none;
+  padding: 0.8rem 0;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

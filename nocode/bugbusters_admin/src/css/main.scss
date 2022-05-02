@@ -37,23 +37,7 @@ header {
     font-size: 2.6rem;
     font-family: "Karla", sans-serif;
   }
-  .count {
-    display: flex;
-    font-size: 1.5rem;
-    color: #fff;
-    .sgbox {
-      margin: 0 1rem;
-      border: 1px solid #007fff;
-      padding: 0.8rem;
-      border-radius: 8px;
-      &:nth-child(2),
-      &:nth-child(4) {
-        border: none;
-        padding: 0.8rem 0;
-        margin: 0;
-      }
-    }
-  }
+ 
   .name {
     color: #fff;
     font-size: 1.5rem;
@@ -127,4 +111,37 @@ header {
     100%{
         transform: rotate(360deg);
     }
+}
+.row1{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  button{
+    border: 0;
+    outline: 0;
+    padding: 0.8rem;
+    background-color: #007fff;
+    margin: 0 1rem;
+    border-radius: 6px;
+    color: #f0ebf8;
+    cursor: pointer;
+  }
+  .timer {
+    display: flex;
+    font-size: 1.5rem;
+    color: #007fff;
+    .sgbox {
+      margin: 0 1rem;
+      border: 1px solid #007fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      &:nth-child(2),
+      &:nth-child(4) {
+        border: none;
+        padding: 0.8rem 0;
+        margin: 0;
+      }
+    }
+  }
 }

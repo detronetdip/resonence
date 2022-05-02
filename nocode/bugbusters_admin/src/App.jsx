@@ -7,7 +7,7 @@ import "./css/main.css";
 const ContextStore = createContext();
 function App() {
   const [mainStore, setMainStore] = useState({
-    isLogin: false,
+    isLogin: true,
     userName: "",
     timeOut: false,
   });
