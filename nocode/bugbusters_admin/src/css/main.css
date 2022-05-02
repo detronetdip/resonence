@@ -1,0 +1,245 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #071a2f;
+  border-bottom: 1px solid #122d49;
+}
+
+header .write {
+  background: linear-gradient(59.06deg, #00ffff 30.83%, #f400f8 94.43%, rgba(0, 96, 239, 0.84) 94.44%, rgba(255, 255, 255, 0) 94.45%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 2.6rem;
+  font-family: "Karla", sans-serif;
+}
+
+header .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header .count .sgbox {
+  margin: 0 1rem;
+  border: 1px solid #007fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+header .count .sgbox:nth-child(2), header .count .sgbox:nth-child(4) {
+  border: none;
+  padding: 0.8rem 0;
+  margin: 0;
+}
+
+header .name {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.bodycontainer {
+  padding-top: 9rem;
+  background-color: #f0ebf8;
+}
+
+.bodycontainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodycontainer form .questionwrapper {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border: 1px solid #dadce0;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.bodycontainer form .questionwrapper p {
+  font-size: 1.4rem;
+}
+
+.bodycontainer form .questionwrapper pre {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.bodycontainer form .questionwrapper textarea {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  height: 10rem;
+  resize: vertical;
+  outline: none;
+}
+
+.bodycontainer form .questionwrapper .oplav {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodycontainer form .questionwrapper .oplav input {
+  cursor: pointer;
+}
+
+.bodycontainer form .questionwrapper .oplav span {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.bodycontainer form .submit {
+  padding: 1rem 3rem;
+  border: 0;
+  outline: 0;
+  background-color: #071a2f;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.logcntainer {
+  height: 100vh;
+  background-color: #071a2f;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.logcntainer .logincon {
+  padding: 1.5rem;
+  width: 40rem;
+  border-radius: 8px;
+  border: 1px solid #007fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logcntainer .logincon .row1 {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logcntainer .logincon .row1 .imgbx {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.logcntainer .logincon input {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #007fff;
+  caret-color: #007fff;
+  color: #007fff;
+  outline: none;
+}
+
+.logcntainer .logincon button {
+  margin: 2rem 0;
+  border-radius: 8px;
+  outline: none;
+  padding: 1rem;
+  background-color: #007fff;
+  border: 1px solid #007fff;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.logcntainer .logincon button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.spin {
+  font-size: 1.4rem;
+  -webkit-animation: anim 1s linear infinite;
+          animation: anim 1s linear infinite;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
