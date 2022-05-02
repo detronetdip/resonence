@@ -1,25 +1,41 @@
 import React, { useContext, useRef, useState } from "react";
-// import { toast } from "react-toastify";
-// import axios from "axios";
+import { toast } from "react-toastify";
+import axios from "axios";
 import { ContextStore } from "../App";
-// import { ImSpinner6 } from "react-icons/im";
-const LOGIN_API = "https://cemkfest.in/backend/api/login.php";
+import { ImSpinner6 } from "react-icons/im";
+const LOGIN_API = "https://cemkfest.in/backend/api/adminValidation.php";
 function Login() {
   const store = useContext(ContextStore);
   const [spin, setSpin] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
   const handelLogin = () => {
-    // setSpin(!spin);
+    setSpin(!spin);
     const userMail = emailRef.current.value;
     const userPass = passwordRef.current.value;
-    
-    store.setMainStore((e) => {
-      var s = {
-        isLogin: true,
-      };
-      return { ...e, ...s };
-    });
+    if (!userMail || !userPass) {
+      toast.warn("All fields are mandatory.");
+      setSpin(false);
+    } else {
+      axios
+        .post(LOGIN_API, {
+          email: userMail,
+          password: userPass,
+        })
+        .then((response) => {
+          if (response.data.code != 200) {
+            toast.error(response.data.msg);
+            setSpin(false);
+          } else {
+            store.setMainStore((e) => {
+              var s = {
+                isLogin: true,
+              };
+              return { ...e, ...s };
+            });
+          }
+        });
+    }
   };
   return (
     <div className="logcntainer">
@@ -33,7 +49,13 @@ function Login() {
           placeholder="Enter your password"
           ref={passwordRef}
         />
-        <button onClick={handelLogin}>Login</button>
+        {spin ? (
+          <button>
+            <ImSpinner6 size={20} className="spin" />
+          </button>
+        ) : (
+          <button onClick={handelLogin}>Login</button>
+        )}
       </div>
     </div>
   );
