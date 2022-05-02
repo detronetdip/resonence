@@ -8,6 +8,7 @@ const ContextStore = createContext();
 function App() {
   const [mainStore, setMainStore] = useState({
     isLogin: true,
+    isStartingTest:false,
     userName: "",
     timeOut: false,
   });

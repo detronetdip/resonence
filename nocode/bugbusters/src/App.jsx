@@ -11,6 +11,7 @@ import imageCoding from "./images/coding.jpg";
 function App() {
   const [mainStore, setMainStore] = useState({
     isLoginEnable: false,
+    isStartingTest:false,
     isLogin: false,
     userName: "",
     timeOut: false,

@@ -1,9 +1,16 @@
-import React,{useState} from "react";
+import React, { useState, useContext } from "react";
 import { firebaseDatabase } from "../../util/config";
-import { set, ref } from "firebase/database";
+import { set, ref, onValue } from "firebase/database";
+import { ContextStore } from "../App";
 function Home() {
+  const store = useContext(ContextStore);
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
+      startingNow: true,
+    });
+  };
+  const startTest = () => {
+    set(ref(firebaseDatabase, "startTest"), {
       startingNow: true,
     });
   };
@@ -41,15 +48,21 @@ function Home() {
         });
       } else {
         clearInterval(x);
-        store.setMainStore((e) => {
-          var s = {
-            timeOut: true,
-          };
-          return { ...e, ...s };
-        });
       }
     }, 1000);
   }
+  onValue(ref(firebaseDatabase, "startTest/"), (snapshot) => {
+    const data = snapshot.val();
+    if (store.mainStore.isStartingTest != data.startingNow) {
+      statTimer();
+      store.setMainStore((e) => {
+        var t = {
+          isStartingTest: data.startingNow,
+        };
+        return { ...e, ...t };
+      });
+    }
+  });
   return (
     <div className="homeontainer">
       <header>
@@ -59,7 +72,7 @@ function Home() {
       </header>
       <div className="restcontainer">
         <div className="row1">
-        <div className="timer">
+          <div className="timer">
             <div className="sgbox">
               <span id="hours">{timer.hours}</span>
             </div>
@@ -74,9 +87,8 @@ function Home() {
           </div>
           <div className="btndiv">
             <button onClick={enblLogin}>Enable Login</button>
-            <button>Start Test</button>
+            <button onClick={startTest}>Start Test</button>
           </div>
-          
         </div>
       </div>
     </div>

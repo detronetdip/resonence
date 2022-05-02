@@ -1,6 +1,9 @@
 import "../css/main.css";
 import { useContext, useState, useEffect } from "react";
 import { ContextStore } from "../App";
+import {ref, onValue} from 'firebase/database'
+import { firebaseDatabase } from "../util/config";
+
 function Header() {
   const store = useContext(ContextStore);
   const [timer, setTimer] = useState({
@@ -46,7 +49,18 @@ function Header() {
       }
     }, 1000);
   }
-
+  onValue(ref(firebaseDatabase, "startTest/"), (snapshot) => {
+    const data = snapshot.val();
+    if (store.mainStore.isStartingTest != data.startingNow) {
+      statTimer();
+      store.setMainStore((e) => {
+        var t = {
+          isStartingTest: data.startingNow,
+        };
+        return { ...e, ...t };
+      });
+    }
+  });
   return (
     <header>
       <div className="write">
