@@ -17,7 +17,6 @@ html {
 }
 header {
   width: 100%;
-  position: fixed;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -26,7 +25,7 @@ header {
   border-bottom: 1px solid #122d49;
   .write {
     background: linear-gradient(
-      59.06deg,
+      40.06deg,
       #00ffff 30.83%,
       #f400f8 94.43%,
       rgba(0, 96, 239, 0.84) 94.44%,
@@ -61,58 +60,11 @@ header {
     font-weight: 300;
   }
 }
-.bodycontainer {
-  padding-top: 9rem;
+.homeontainer {
+  min-height: 100vh;
   background-color: #f0ebf8;
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .questionwrapper {
-      background-color: #fff;
-      margin: 1rem 0;
-      padding: 2rem;
-      border: 1px solid #dadce0;
-      width: 70%;
-      border-radius: 5px;
-      p {
-        font-size: 1.4rem;
-      }
-      pre {
-        margin: 1rem 0;
-        font-size: 1.4rem;
-      }
-      textarea {
-        margin-top: 2rem;
-        padding: 1rem;
-        width: 100%;
-        height: 10rem;
-        resize: vertical;
-        outline: none;
-      }
-      .oplav {
-        margin: 0.5rem 0;
-        display: flex;
-        align-items: center;
-        input {
-          cursor: pointer;
-        }
-        span {
-          margin-left: 1rem;
-          font-size: 1.4rem;
-        }
-      }
-    }
-    .submit {
-      padding: 1rem 3rem;
-      border: 0;
-      outline: 0;
-      background-color: #071a2f;
-      color: #fff;
-      border-radius: 8px;
-      font-size: 1.4rem;
-      cursor: pointer;
-    }
+  .restcontainer{
+    padding: 3rem;
   }
 }
 .logcntainer {

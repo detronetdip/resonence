@@ -242,4 +242,8 @@ header .name {
             transform: rotate(360deg);
   }
 }
+
+.video {
+  height: 100vh;
+}
 /*# sourceMappingURL=main.css.map */
