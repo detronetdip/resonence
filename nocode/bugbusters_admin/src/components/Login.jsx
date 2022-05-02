@@ -13,6 +13,7 @@ function Login() {
     // setSpin(!spin);
     const userMail = emailRef.current.value;
     const userPass = passwordRef.current.value;
+    
     store.setMainStore((e) => {
       var s = {
         isLogin: true,
@@ -24,7 +25,7 @@ function Login() {
     <div className="logcntainer">
       <div className="logincon">
         <div className="row1">
-          <div className="imgbx">Participant Login</div>
+          <div className="imgbx">Admin Login</div>
         </div>
         <input type="email" placeholder="Enter your email" ref={emailRef} />
         <input
