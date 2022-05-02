@@ -70,7 +70,6 @@ function Header() {
           Welcome, <span>{store.mainStore.userName}</span>
         </h5>
       </div>
-      <button onClick={statTimer}>start</button>
     </header>
   );
 }

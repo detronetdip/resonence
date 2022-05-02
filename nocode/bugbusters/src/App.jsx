@@ -6,8 +6,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const ContextStore = createContext();
 import { firebaseDatabase } from "./util/config";
-import { ref, onValue} from "firebase/database";
-import imageCoding from './images/coding.jpg'
+import { ref, onValue } from "firebase/database";
+import imageCoding from "./images/coding.jpg";
 function App() {
   const [mainStore, setMainStore] = useState({
     isLoginEnable: false,
@@ -16,22 +16,22 @@ function App() {
     timeOut: false,
   });
   console.log(mainStore);
-  onValue(ref(firebaseDatabase, 'start/'), (snapshot) => {
+  onValue(ref(firebaseDatabase, "start/"), (snapshot) => {
     const data = snapshot.val();
-    if(mainStore.isLoginEnable!=data.startingNow){
-      setMainStore(e=>{
-        var t={
-          isLoginEnable:data.startingNow
-        }
-        return {...e, ...t}
-      })
+    if (mainStore.isLoginEnable != data.startingNow) {
+      setMainStore((e) => {
+        var t = {
+          isLoginEnable: data.startingNow,
+        };
+        return { ...e, ...t };
+      });
     }
   });
   return (
     <ContextStore.Provider value={{ mainStore, setMainStore }}>
       <div className="container">
         {!mainStore.isLoginEnable ? (
-         <Video/>
+          <Video />
         ) : !mainStore.isLogin ? (
           <Login />
         ) : (
@@ -45,14 +45,14 @@ function App() {
     </ContextStore.Provider>
   );
 }
-const Video=()=>{
+const Video = () => {
   return (
     <>
       <div className="video">
-     <img src={imageCoding} alt="" />
+        <img src={imageCoding} alt="" />
       </div>
     </>
-  )
-}
+  );
+};
 export { ContextStore };
 export default App;
