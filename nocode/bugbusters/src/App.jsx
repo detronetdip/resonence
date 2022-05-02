@@ -9,12 +9,16 @@ import { firebaseDatabase } from "./util/config";
 import { ref, onValue } from "firebase/database";
 import imageCoding from "./images/coding.jpg";
 function App() {
+  const submitData = (data) => {
+    console.log(data);
+  };
   const [mainStore, setMainStore] = useState({
     isLoginEnable: false,
-    isStartingTest:false,
+    isStartingTest: false,
     isLogin: false,
     userName: "",
     timeOut: false,
+    submitData,
   });
   console.log(mainStore);
   onValue(ref(firebaseDatabase, "start/"), (snapshot) => {
