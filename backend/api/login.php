@@ -20,20 +20,26 @@
             $pas=$req['password'];
             $q="SELECT * FROM bb_d WHERE email='$eml'";
             $rs=mysqli_query($con,$q);
-            $row=mysqli_fetch_assoc($rs);
-            if($row['has_sub']==1){
-                $result['code']=403;
-                $result['msg']="You have already submitted this test";
+            $nor=mysqli_num_rows($rs);
+            if($nor==0){
+                $result['status']=0;
+                $result['msg']="Invalid Credentials";
             }else{
-                $dps=$row['password'];
-                $verify = password_verify($pas, $dps);
-                if ($verify) {
-                    $result['status']=200;
-                    $result['msg']="Successfull";
-                    $result['name']=$row['name'];
-                } else {
-                    $result['status']=403;
-                    $result['msg']="Wrong password";
+                $row=mysqli_fetch_assoc($rs);
+                if($row['has_sub']==1){
+                    $result['code']=403;
+                    $result['msg']="You have already submitted this test";
+                }else{
+                    $dps=$row['password'];
+                    $verify = password_verify($pas, $dps);
+                    if ($verify) {
+                        $result['status']=200;
+                        $result['msg']="Successfull";
+                        $result['name']=$row['name'];
+                    } else {
+                        $result['status']=403;
+                        $result['msg']="Invalid Credentials";
+                    }
                 }
             }
         }
