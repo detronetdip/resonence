@@ -9,32 +9,33 @@
     $result=array();
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $req=(json_decode(file_get_contents('php://input'), true));
-        if(!isset($req['name'])){
-            $result['code']=400;
-            $result['msg']="Name Required";
-        }else if(!isset($req['email'])){
+        if(!isset($req['email'])){
             $result['code']=400;
             $result['msg']="Email Required";
+        }else if(!isset($req['password'])){
+            $result['code']=400;
+            $result['msg']="Password Required";
         }else{
-            // $name=mysqli_real_escape_string($con,$req['name']);
-            // $email=mysqli_real_escape_string($con,$req['email']);
-            // $password=mysqli_real_escape_string($con,$req['password']);
-            // $mobile=mysqli_real_escape_string($con,$req['mobile']);
-            // $query="SELECT * FROM users WHERE email='$email'";
-            // $nor=mysqli_num_rows(mysqli_query($con,$query));
-            // if($nor>0){
-            //     $result['code']=350;
-            //     $result['msg']="User Alredy Present";
-            // }else{
-            //     $q="INSERT INTO users (name,email,mobile,password) VALUES('$name','$email','$mobile','$password')";
-            //     if(mysqli_query($con,$q)){
-            //         $result['code']=200;
-            //         $result['msg']="Registration successfull";
-            //     }else{
-            //         $result['code']=500;
-            //         $result['msg']="Something went wrong";
-            //     }
-            // }
+            $eml=$req['email'];
+            $pas=$req['password'];
+            $q="SELECT * FROM bb_d WHERE email='$eml'";
+            $rs=mysqli_query($con,$q);
+            $row=mysqli_fetch_assoc($rs);
+            if($row['has_sub']==1){
+                $result['code']=403;
+                $result['msg']="You have already submitted this test";
+            }else{
+                $dps=$row['password'];
+                $verify = password_verify($pas, $dps);
+                if ($verify) {
+                    $result['status']=200;
+                    $result['msg']="Successfull";
+                    $result['name']=$row['name'];
+                } else {
+                    $result['status']=403;
+                    $result['msg']="Wrong password";
+                }
+            }
         }
     }else{
         $result['code']=404;
