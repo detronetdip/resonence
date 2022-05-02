@@ -3,7 +3,7 @@
 ?>
 
         <div class="overlay">
-          <h4>Project</h4>
+          <h4>Brain Games</h4>
           <div class="row2">
             <span class="highlight2">List of Events</span>
           </div>
@@ -148,7 +148,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:ece1906@cemk.ac.in">ece1906@cemk.ac.in</a>
+                          <a href="mailto:ece196@cemk.ac.in">ece196@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>

@@ -85,9 +85,9 @@
                     <form  id="fgtrm">
                       <div class="form-group">
                         <input
-                          type="text"
+                          type="password"
                           class="form-control"
-                          placeholder="Email"
+                          placeholder="password"
                           id="fgtemail"
                           style="
                             background-color: transparent;
@@ -128,7 +128,7 @@
     </div>
     <script src="../../../assets/js/jquery.js"></script>
     <script src="../../../assets/js/sweetalert.js"></script>
-    <script src="../../../assets/js/main.js"></script>
+    <script src="../../../assets/js/main1.js"></script>
   </body>
 </html>
 <?php

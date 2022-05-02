@@ -131,7 +131,7 @@
                       </li>
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:ece1907@cemk.ac.in">ece19013@cemk.ac.in</a>
+                        <a href="mailto:ece197@cemk.ac.in">ece1913@cemk.ac.in</a>
                       </li>
                     </ol>
                   </li>
@@ -157,7 +157,7 @@
                       </li>
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:ece1907@cemk.ac.in">ece1948@cemk.ac.in</a>
+                        <a href="mailto:ece197@cemk.ac.in">ece1948@cemk.ac.in</a>
                       </li>
                     </ol>
                   </li>
@@ -290,7 +290,7 @@
                       </li>
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:ece1907@cemk.ac.in">ece19013@cemk.ac.in</a>
+                        <a href="mailto:ece197@cemk.ac.in">ece1913@cemk.ac.in</a>
                       </li>
                     </ol>
                   </li>
@@ -316,7 +316,7 @@
                       </li>
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:ece1907@cemk.ac.in">ece1948@cemk.ac.in</a>
+                        <a href="mailto:ece197@cemk.ac.in">ece1948@cemk.ac.in</a>
                       </li>
                     </ol>
                   </li>
@@ -666,7 +666,7 @@
                                   </li>
                                   <li>
                                     Each team will have to defend the goal on its side as well as score the goal on the opposite
-          side. 
+                                                                                                      side. 
                                               </li>
                                     <li>
                                       The minimum participants allowed in a team must be 2 & the maximum number of participants
@@ -700,9 +700,6 @@
                               <span class="highlight2 pt5 p1">TEAM SPECIFICATIONS</span>
                               <p class="pt1 fs14">
                                 <ol style="margin-top: 0; padding-top: 0;">
-                                  <li>A pvc flex sheet of white color with a
-                                    designed black path is used for the arena.
-                                    Bots have to follow the black path only.</li>
                                   <li>
                                     Every TEAM must have a specific name.
                                   </li>
@@ -746,28 +743,28 @@
                               <p class="fs14" style="margin-top: 1rem;">
                                 <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
                                   <li>
-                                    TANIA CHAKRABORTY
+                                    Sreyajit Mondal
                                      <ol style="list-style-type: none;padding: 0;">
                                        <li style="display: flex;">
                                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                                        <a href="tel:7908304748">+91-7908304748</a>
+                                        <a href="tel:6295154331">+91-6295154331</a>
                                       </li>
                                       <li style="display: flex;">
                                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                        <a href="mailto:-ece1953@cemk.ac.in">ece1953@cemk.ac.in</a>
+                                        <a href="mailto:it1933@cemk.ac.in">it1933@cemk.ac.in</a>
                                       </li>
                                      </ol>
                                   </li>
                                   <li>
-                                    HRITAM SARKAR
+                                    Shuvham Basak
                                      <ol style="list-style-type: none;padding: 0;">
                                        <li style="display: flex;">
                                         <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                                        <a href="tel:9330474473">+91-9330474473</a>
+                                        <a href="tel:7319083838">+91-7319083838</a>
                                       </li>
                                       <li style="display: flex;">
                                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                                        <a href="mailto:-ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
+                                        <a href="mailto:me1928@cemk.ac.in">me1928@cemk.ac.in</a>
                                       </li>
                                      </ol>
                                   </li>
@@ -1047,7 +1044,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:-ece1953@cemk.ac.in">ece1953@cemk.ac.in</a>
+                          <a href="mailto:ece1953@cemk.ac.in">ece1953@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>
@@ -1060,7 +1057,7 @@
                         </li>
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:-ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
+                          <a href="mailto:ece1933@cemk.ac.in">ece1933@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>
@@ -1172,7 +1169,7 @@
                       </li>
                       <li style="display: flex;">
                         <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                        <a href="mailto:ece1907@cemk.ac.in">ece1907@cemk.ac.in</a>
+                        <a href="mailto:ece197@cemk.ac.in">ece197@cemk.ac.in</a>
                       </li>
                      </ol>
                   </li>

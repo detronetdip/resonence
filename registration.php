@@ -9,7 +9,7 @@ authorise_user("./profile/auth/v2/");
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -183,6 +183,6 @@ authorise_user("./profile/auth/v2/");
         </div>
       </section>
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main1.js"></script>
   </body>
 </html>

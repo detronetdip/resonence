@@ -9,7 +9,7 @@
   $res=mysqli_query($con,$q);
   $n=mysqli_num_rows($res);
   $ni=mysqli_fetch_assoc($res);
-  if($n=0){
+  if($n==0){
     $result['status']=0;
     $result['msg']="No account is registered with this email id";
   }else{
@@ -20,8 +20,8 @@
     $result['link']="https://cemkfest.in/backend/auth/change_password/index.php?i=".$code."&ip=".password_hash($code, PASSWORD_DEFAULT)."&ud=".$uid;
     $result['name']=$ni['uname'];
     $result['mail']=$email;
+    smtp_mailer($email,'Forget Password',getFGTTemplate($ni['uname'],$result['link']));
   }
-  smtp_mailer($email,'Forget Password',getFGTTemplate($ni['uname'],$result['link']));
   function smtp_mailer($to,$subject, $msg){
     $mail = new PHPMailer(); 
     //$mail->SMTPDebug  = 3;

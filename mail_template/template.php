@@ -1145,7 +1145,7 @@ function getFGTTemplate($name,$link){
   ';
   return $html;
 }
- function valorantTemplate($name){
+ function valorantTemplate($name,$eventName,$teamId){
    $html='
    <!DOCTYPE html>
     <html>
