@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ContextStore = createContext();
 import { firebaseDatabase } from "./util/config";
 import { ref, onValue} from "firebase/database";
+import imageCoding from './images/coding.jpg'
 function App() {
   const [mainStore, setMainStore] = useState({
     isLoginEnable: false,
@@ -48,7 +49,7 @@ const Video=()=>{
   return (
     <>
       <div className="video">
-     <img src="./src/images/coding.jpg" alt="" />
+     <img src={imageCoding} alt="" />
       </div>
     </>
   )
