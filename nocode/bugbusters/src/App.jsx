@@ -17,6 +17,7 @@ function App() {
     isStartingTest: false,
     isLogin: false,
     userName: "",
+    roll:"",
     timeOut: false,
     submitData,
   });

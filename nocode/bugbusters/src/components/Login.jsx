@@ -6,10 +6,11 @@ import { ImSpinner6 } from "react-icons/im";
 const LOGIN_API = "https://cemkfest.in/backend/api/login.php";
 function Login() {
   const store = useContext(ContextStore);
-  const setLoginTrue = (name) => {
+  const setLoginTrue = (name,roll) => {
     store.setMainStore((e) => {
         var s={
             userName:name,
+            roll:roll,
             isLogin: true
         }
       return { ...e, ...s };
@@ -36,7 +37,7 @@ function Login() {
             toast.error(response.data.msg);
             setSpin(false);
           } else {
-            setLoginTrue(response.data.name);
+            setLoginTrue(response.data.name,response.data.roll);
           }
         });
     }
