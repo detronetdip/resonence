@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { ContextStore } from "../App";
 import { set, ref, onValue } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
+import axios from "axios";
 function Body() {
   const store = useContext(ContextStore);
   const [allData, setAllData] = useState({});
@@ -19,11 +20,13 @@ function Body() {
       ref(firebaseDatabase, "answers/" + store.mainStore.userName+" "+ store.mainStore.roll),
       allData
     ).then((e) => {
-      store.setMainStore((e) => {
-        var s = {
-          timeOut: true,
-        };
-        return { ...e, ...s };
+      axios.post().then(df=>{
+        store.setMainStore((e) => {
+          var s = {
+            timeOut: true,
+          };
+          return { ...e, ...s };
+        });
       });
     });
   };

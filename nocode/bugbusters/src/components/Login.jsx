@@ -6,13 +6,14 @@ import { ImSpinner6 } from "react-icons/im";
 const LOGIN_API = "https://cemkfest.in/backend/api/login.php";
 function Login() {
   const store = useContext(ContextStore);
-  const setLoginTrue = (name,roll) => {
+  const setLoginTrue = (name, roll, mail) => {
     store.setMainStore((e) => {
-        var s={
-            userName:name,
-            roll:roll,
-            isLogin: true
-        }
+      var s = {
+        userName: name,
+        roll: roll,
+        mail: mail,
+        isLogin: true,
+      };
       return { ...e, ...s };
     });
   };
@@ -37,7 +38,11 @@ function Login() {
             toast.error(response.data.msg);
             setSpin(false);
           } else {
-            setLoginTrue(response.data.name,response.data.roll);
+            setLoginTrue(
+              response.data.name,
+              response.data.roll,
+              response.data.mail
+            );
           }
         });
     }

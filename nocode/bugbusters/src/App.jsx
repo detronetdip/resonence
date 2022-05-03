@@ -18,6 +18,7 @@ function App() {
     isLogin: false,
     userName: "",
     roll:"",
+    mail:"",
     timeOut: false,
     submitData,
   });
