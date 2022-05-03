@@ -5,15 +5,7 @@ import { ContextStore } from "../App";
 function Home() {
   const store = useContext(ContextStore);
   const [responce, setResponce] = useState([
-    {
-      name: "Ayondip",
-      q1: '#include <stdio.h>\n     void main() {  \n        int a[1];\n        for(int i=0;i<2;i++){\n          printf("Give the element ");\n          scanf("%d",&a[i]);\n          int sum+=a[i];\n        }\n        printf("%d",sum);\n        return 0;\n     }',
-      q2: '#include <stdio.h>\n     void main() {  \n        int a[1];\n        for(int i=0;i<2;i++){\n          printf("Give the element ");\n          scanf("%d",&a[i]);\n          int sum+=a[i];\n        }\n        printf("%d",sum);\n        return 0;\n     }',
-      q3: "Warning",
-      q4: "All of the above",
-      q5: "Hello is printed 5 times",
-      q6: "Yes",
-    },
+    
   ]);
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {

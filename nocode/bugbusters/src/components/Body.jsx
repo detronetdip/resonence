@@ -16,7 +16,7 @@ function Body() {
     e.preventDefault();
     console.table(allData);
     set(
-      ref(firebaseDatabase, "answers/" + store.mainStore.userName),
+      ref(firebaseDatabase, "answers/" + store.mainStore.userName+" "+ store.mainStore.roll),
       allData
     ).then((e) => {
       store.setMainStore((e) => {
