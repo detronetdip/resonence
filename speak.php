@@ -165,18 +165,26 @@
                         <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
                         <p class="pt1 fs14">
                           <ol style="margin-top: 0; padding-top: 0;">
+                            <li>Only English language is allowed.</li>
                             <li>There will be two groups-one for the motion and one against the motion.</li>
-                            <li>Participants will be asked to come in pairs.</li>
                             <li>
-                              There will be two rounds. For every round spot topics will be given with a time limit for preparing the topic.
+                            There will be two rounds-pre and final.
                             </li>
-                            <li>After the first round, participants will be chosen for second round based on their performance.</li>
+                            <li>The selection of the two teams (for and against) will be based on lottery.</li>
                             <li>
-                              Members aren't allowed to use ready-made templates. Members have to create the entire task themselves.
+                            Topic will be given prior (1-2 days earlier) to the candidates for preparation. Spot topic will not be given.
                             </li>
-                            <li>Only one prize will be for the wining team.</li>
-                              <li>Unethical behavior could lead to disqualification.</li>
-                              <li>Judges and co-ordinators have all right to take final decision for any matter during the event.</li>
+                            <li>Each debating event has not pre and final but First round of 4 mins each
+and 2nd or rebuttal round of 1 min each.
+</li>
+                              <li>Dress must be formal, language must be formal. </li>
+                              <li>Should maintain decency of house and avoid controversy.</li>
+                              <li>Decision of judges in all matters is final.</li>
+                              <li>You must try to speak on your own and not read from paper.</li>
+                              <li>The said timing is very important. Everyone must maintain the said timing.</li>
+                              <li>The students who will perform well in the pre will get selected for the final round.</li>
+                              <li>Two cash prizes will be given to the winner of both the teams (for and against the motion).</li>
+                              <li>Participation certificates will be given to the participants.</li>
                           </ol>
                           
                         </p>
