@@ -18,7 +18,7 @@
         }else{
             $eml=$req['email'];
             $pas=$req['password'];
-            $q="SELECT * FROM bb_d WHERE email='$eml'";
+            $q="SELECT * FROM admin WHERE username='$eml'";
             $rs=mysqli_query($con,$q);
             $nor=mysqli_num_rows($rs);
             if($nor==0){
@@ -26,23 +26,16 @@
                 $result['msg']="Invalid Credentials";
             }else{
                 $row=mysqli_fetch_assoc($rs);
-                if($row['has_sub']==1){
-                    $result['code']=403;
-                    $result['msg']="You have already submitted this test";
-                }else{
-                    $dps=$row['password'];
-                    $verify = password_verify($pas, $dps);
-                    if ($verify) {
-                        $result['code']=200;
-                        $result['msg']="Successfull";
-                        $result['name']=$row['name'];
-                        $result['mail']=$row['email'];
-                        $result['roll']=$row['roll'];
-                    } else {
-                        $result['code']=0;
-                        $result['msg']="Invalid Credentials";
-                    }
+                $dps=$row['password'];
+                $verify = password_verify($pas, $dps);
+                if ($verify) {
+                    $result['code']=200;
+                    $result['msg']="Successfull";
+                } else {
+                    $result['code']=0;
+                    $result['msg']="Invalid Credentials";
                 }
+                
             }
         }
     }else{
