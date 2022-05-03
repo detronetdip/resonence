@@ -197,4 +197,36 @@ header .name {
   padding: 0.8rem 0;
   margin: 0;
 }
+
+.submissions {
+  margin-top: 2rem;
+}
+
+.submissions h4 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.submissions .onesub {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.submissions .onesub .name {
+  font-size: 2.3rem;
+  color: #007fff;
+  font-weight: 500;
+}
+
+.submissions .onesub p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.submissions .onesub p code {
+  font-weight: 300;
+}
 /*# sourceMappingURL=main.css.map */

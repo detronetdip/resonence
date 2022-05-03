@@ -4,7 +4,17 @@ import { set, ref, onValue } from "firebase/database";
 import { ContextStore } from "../App";
 function Home() {
   const store = useContext(ContextStore);
-  const [responce, setResponce] = useState([])
+  const [responce, setResponce] = useState([
+    {
+      name: "Ayondip",
+      q1: '#include <stdio.h>\n     void main() {  \n        int a[1];\n        for(int i=0;i<2;i++){\n          printf("Give the element ");\n          scanf("%d",&a[i]);\n          int sum+=a[i];\n        }\n        printf("%d",sum);\n        return 0;\n     }',
+      q2: '#include <stdio.h>\n     void main() {  \n        int a[1];\n        for(int i=0;i<2;i++){\n          printf("Give the element ");\n          scanf("%d",&a[i]);\n          int sum+=a[i];\n        }\n        printf("%d",sum);\n        return 0;\n     }',
+      q3: "Warning",
+      q4: "All of the above",
+      q5: "Hello is printed 5 times",
+      q6: "Yes",
+    },
+  ]);
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
       startingNow: true,
@@ -64,21 +74,21 @@ function Home() {
       });
     }
   });
-  var prevObj={};
+  var prevObj = {};
   onValue(ref(firebaseDatabase, "answers/"), (snapshot) => {
     const data = snapshot.val();
-    if(prevObj!==data){
-      var a=[];
-      var keys=Object.keys(data);
+    if (prevObj !== data) {
+      var a = [];
+      var keys = Object.keys(data);
       for (let index = 0; index < keys.length; index++) {
-        data[keys[index]]["name"]=keys[index]
+        data[keys[index]]["name"] = keys[index];
         a.push(data[keys[index]]);
       }
-      if(a.length!=responce.length){
-        setResponce(a)
+      if (a.length != responce.length) {
+        setResponce(a);
       }
-      
-      prevObj=data
+
+      prevObj = data;
     }
   });
   return (
@@ -108,18 +118,46 @@ function Home() {
             <button onClick={startTest}>Start Test</button>
           </div>
         </div>
-        {
-          responce.map(e=> <>
-          <div>
-            {e.name}
-            <p>
-              <pre>
-              Question1: {e.q1}
-              </pre>
-            </p>
-          </div>
-          </>)
-        }
+        {responce.map((e) => (
+          <>
+            <div className="submissions">
+              <h4>All submissions</h4>
+              <div className="onesub">
+                <span className="name">{e.name}</span>
+                <p>
+                  <pre>
+                    Question1: <code>{e.q1}</code>
+                  </pre>
+                </p>
+                <p>
+                  <pre>
+                    Question2: <code>{e.q2}</code>
+                  </pre>
+                </p>
+                <p>
+                  <pre>
+                    Question3: <code>{e.q3}</code>
+                  </pre>
+                </p>
+                <p>
+                  <pre>
+                    Question4: <code>{e.q4}</code>
+                  </pre>
+                </p>
+                <p>
+                  <pre>
+                    Question 5: <code>{e.q5}</code>
+                  </pre>
+                </p>
+                <p>
+                  <pre>
+                    Question 6: <code>{e.q6}</code>
+                  </pre>
+                </p>
+              </div>
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );

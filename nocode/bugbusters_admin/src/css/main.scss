@@ -145,3 +145,29 @@ header {
     }
   }
 }
+.submissions{
+  margin-top: 2rem;
+  h4{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+  .onesub{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    .name{
+      font-size: 2.3rem;
+      color: #007fff;
+      font-weight: 500;
+    }
+    p{
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      code{
+        font-weight: 300;
+      }
+    }
+  }
+}
