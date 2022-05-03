@@ -126,22 +126,22 @@ function Home() {
                 <span className="name">{e.name}</span>
                 <p>
                   <pre>
-                    Question1: <code>{e.q1}</code>
+                    Question 1: <code>{e.q1}</code>
                   </pre>
                 </p>
                 <p>
                   <pre>
-                    Question2: <code>{e.q2}</code>
+                    Question 2: <code>{e.q2}</code>
                   </pre>
                 </p>
                 <p>
                   <pre>
-                    Question3: <code>{e.q3}</code>
+                    Question 3: <code>{e.q3}</code>
                   </pre>
                 </p>
                 <p>
                   <pre>
-                    Question4: <code>{e.q4}</code>
+                    Question 4: <code>{e.q4}</code>
                   </pre>
                 </p>
                 <p>
