@@ -274,7 +274,7 @@ function Body() {
         <form>
           <div className="questionwrapper">
             <p>
-              <h1>Timeout</h1>
+              <h1>Contest End</h1>
               <h4>
                 Thanks for attending this contest, your response has been
                 recorded successfully.
