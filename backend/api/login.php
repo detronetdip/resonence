@@ -36,7 +36,7 @@
                         $result['code']=200;
                         $result['msg']="Successfull";
                         $result['name']=$row['name'];
-                        $result['mail']=$row['mail'];
+                        $result['mail']=$row['email'];
                         $result['roll']=$row['roll'];
                     } else {
                         $result['code']=0;
