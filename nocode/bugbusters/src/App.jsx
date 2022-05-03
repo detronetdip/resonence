@@ -13,8 +13,8 @@ function App() {
     console.log(data);
   };
   const [mainStore, setMainStore] = useState({
-    isLoginEnable: true,
-    isStartingTest: true,
+    isLoginEnable: false,
+    isStartingTest: false,
     isLogin: false,
     userName: "",
     timeOut: false,
