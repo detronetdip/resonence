@@ -36,7 +36,7 @@
                         $result['code']=200;
                         $result['msg']="Successfull";
                         $result['name']=$row['name'];
-                        $result['name']=$row['roll'];
+                        $result['roll']=$row['roll'];
                     } else {
                         $result['code']=0;
                         $result['msg']="Invalid Credentials";
