@@ -3,6 +3,7 @@ import { ContextStore } from "../App";
 import { set, ref, onValue } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
 import axios from "axios";
+const SUBMIT_API = "https://cemkfest.in/backend/api/submitted.php";
 function Body() {
   const store = useContext(ContextStore);
   const [allData, setAllData] = useState({});
@@ -17,17 +18,24 @@ function Body() {
     e.preventDefault();
     console.table(allData);
     set(
-      ref(firebaseDatabase, "answers/" + store.mainStore.userName+" "+ store.mainStore.roll),
+      ref(
+        firebaseDatabase,
+        "answers/" + store.mainStore.userName + " " + store.mainStore.roll
+      ),
       allData
     ).then((e) => {
-      axios.post().then(df=>{
-        store.setMainStore((e) => {
-          var s = {
-            timeOut: true,
-          };
-          return { ...e, ...s };
+      axios
+        .post(SUBMIT_API, {
+          mail: store.mainStore.mail,
+        })
+        .then((df) => {
+          store.setMainStore((e) => {
+            var s = {
+              timeOut: true,
+            };
+            return { ...e, ...s };
+          });
         });
-      });
     });
   };
 
@@ -262,15 +270,13 @@ function Body() {
             </>
           ) : (
             <form>
-            <div className="questionwrapper">
-              <p>
-                <h1>Wait...</h1>
-                <h4>
-                  Your question will apear soon.
-                </h4>
-              </p>
-            </div>
-          </form>
+              <div className="questionwrapper">
+                <p>
+                  <h1>Wait...</h1>
+                  <h4>Your question will apear soon.</h4>
+                </p>
+              </div>
+            </form>
           )}
         </>
       ) : (
