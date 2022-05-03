@@ -4,6 +4,7 @@ import { set, ref, onValue } from "firebase/database";
 import { ContextStore } from "../App";
 function Home() {
   const store = useContext(ContextStore);
+  const [responce, setResponce] = useState([])
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
       startingNow: true,
@@ -67,7 +68,16 @@ function Home() {
   onValue(ref(firebaseDatabase, "answers/"), (snapshot) => {
     const data = snapshot.val();
     if(prevObj!==data){
-      console.log(data);
+      var a=[];
+      var keys=Object.keys(data);
+      for (let index = 0; index < keys.length; index++) {
+        data[keys[index]]["name"]=keys[index]
+        a.push(data[keys[index]]);
+      }
+      if(a.length!=responce.length){
+        setResponce(a)
+      }
+      
       prevObj=data
     }
   });
@@ -98,6 +108,18 @@ function Home() {
             <button onClick={startTest}>Start Test</button>
           </div>
         </div>
+        {
+          responce.map(e=> <>
+          <div>
+            {e.name}
+            <p>
+              <pre>
+              Question1: {e.q1}
+              </pre>
+            </p>
+          </div>
+          </>)
+        }
       </div>
     </div>
   );
