@@ -6,18 +6,15 @@ import { firebaseDatabase } from "../util/config";
 
 function Header() {
   const store = useContext(ContextStore);
-  const [timer, setTimer] = useState({
-    hours: "00",
-    mins: "00",
-    secs: "00",
-  });
   function statTimer() {
     var date = new Date();
     var h = date.getHours();
     var m = date.getMinutes();
     var s = date.getSeconds();
+    var d=date.getDate();
     m += 10;
-    var str = "May 3, 2022 " + h + ":" + m + ":" + s;
+    var str = "May "+d+", 2022 " + h + ":" + m + ":" + s;
+    console.log(str);
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -29,13 +26,13 @@ function Header() {
         );
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        setTimer((e) => {
+        store.setTimer((e) => {
           return { ...e, hours: hours };
         });
-        setTimer((e) => {
+        store.setTimer((e) => {
           return { ...e, mins: minutes };
         });
-        setTimer((e) => {
+        store.setTimer((e) => {
           return { ...e, secs: seconds };
         });
       } else {
@@ -68,15 +65,15 @@ function Header() {
       </div>
       <div className="count">
         <div className="sgbox">
-          <span id="hours">{timer.hours}</span>
+          <span id="hours">{store.timer.hours}</span>
         </div>
         <div className="sgbox">:</div>
         <div class="sgbox">
-          <span id="mins">{timer.mins}</span>
+          <span id="mins">{store.timer.mins}</span>
         </div>
         <div className="sgbox">:</div>
         <div className="sgbox">
-          <span id="secs">{timer.secs}</span>
+          <span id="secs">{store.timer.secs}</span>
         </div>
       </div>
       <div className="name">

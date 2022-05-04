@@ -12,6 +12,11 @@ function App() {
   const submitData = (data) => {
     console.log(data);
   };
+  const [timer, setTimer] = useState({
+    hours: "00",
+    mins: "00",
+    secs: "00",
+  });
   const [mainStore, setMainStore] = useState({
     isLoginEnable: false,
     isStartingTest: false,
@@ -35,7 +40,7 @@ function App() {
     }
   });
   return (
-    <ContextStore.Provider value={{ mainStore, setMainStore }}>
+    <ContextStore.Provider value={{ mainStore, setMainStore, timer, setTimer }}>
       <div className="container">
         {!mainStore.isLoginEnable ? (
           <Video />

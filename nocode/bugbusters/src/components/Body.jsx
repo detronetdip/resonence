@@ -13,10 +13,11 @@ function Body() {
     setAllData((e) => {
       return { ...e, [nam]: val };
     });
+    console.log(allData);
   };
   const handelSubmit = (e) => {
     e.preventDefault();
-    console.table(allData);
+    allData.TimeLeft=store.timer;
     set(
       ref(
         firebaseDatabase,
@@ -35,6 +36,15 @@ function Body() {
             };
             return { ...e, ...s };
           });
+        }).then(e=>{
+          setTimeout(() => {
+            store.setMainStore((e) => {
+              var s = {
+                isLogin: false,
+              };
+              return { ...e, ...s };
+            });
+          }, 3000);
         });
     });
   };

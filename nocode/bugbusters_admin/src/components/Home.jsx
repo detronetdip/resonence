@@ -27,8 +27,9 @@ function Home() {
     var h = date.getHours();
     var m = date.getMinutes();
     var s = date.getSeconds();
-    m += 1;
-    var str = "May 3, 2022 " + h + ":" + m + ":" + s;
+    var d=date.getDate();
+    m += 10;
+    var str = "May "+d+", 2022 " + h + ":" + m + ":" + s;
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
