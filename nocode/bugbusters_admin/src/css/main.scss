@@ -156,6 +156,7 @@ header {
     background-color: #fff;
     padding: 1rem;
     border-radius: 5px;
+    margin: 1rem 0;
     .name{
       font-size: 2.3rem;
       color: #007fff;
@@ -169,5 +170,43 @@ header {
         font-weight: 300;
       }
     }
+  }
+}
+.topc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .submittedT{
+    display: flex;
+    font-size: 1.5rem;
+    color: #007fff;
+    .sgbox {
+      margin: 0 1rem;
+      border: 1px solid #007fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      &:nth-child(2),
+      &:nth-child(4) {
+        border: none;
+        padding: 0.8rem 0;
+        margin: 0;
+      }
+    }
+  }
+}
+.exp{
+  display: flex;
+  align-items: center;
+  button{
+    margin-left: 2rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    background-color: #007fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
   }
 }

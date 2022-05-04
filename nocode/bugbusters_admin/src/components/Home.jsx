@@ -2,11 +2,10 @@ import React, { useState, useContext } from "react";
 import { firebaseDatabase } from "../../util/config";
 import { set, ref, onValue } from "firebase/database";
 import { ContextStore } from "../App";
+import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
 function Home() {
   const store = useContext(ContextStore);
-  const [responce, setResponce] = useState([
-    
-  ]);
+  const [responce, setResponce] = useState([]);
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
       startingNow: true,
@@ -27,9 +26,9 @@ function Home() {
     var h = date.getHours();
     var m = date.getMinutes();
     var s = date.getSeconds();
-    var d=date.getDate();
+    var d = date.getDate();
     m += 10;
-    var str = "May "+d+", 2022 " + h + ":" + m + ":" + s;
+    var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -111,48 +110,98 @@ function Home() {
             <button onClick={startTest}>Start Test</button>
           </div>
         </div>
-        {responce.map((e) => (
-          <>
-            <div className="submissions">
-              <h4>All submissions</h4>
-              <div className="onesub">
-                <span className="name">{e.name}</span>
-                <p>
-                  <pre>
-                    Question 1: <code>{e.q1}</code>
-                  </pre>
-                </p>
-                <p>
-                  <pre>
-                    Question 2: <code>{e.q2}</code>
-                  </pre>
-                </p>
-                <p>
-                  <pre>
-                    Question 3: <code>{e.q3}</code>
-                  </pre>
-                </p>
-                <p>
-                  <pre>
-                    Question 4: <code>{e.q4}</code>
-                  </pre>
-                </p>
-                <p>
-                  <pre>
-                    Question 5: <code>{e.q5}</code>
-                  </pre>
-                </p>
-                <p>
-                  <pre>
-                    Question 6: <code>{e.q6}</code>
-                  </pre>
-                </p>
-              </div>
-            </div>
-          </>
-        ))}
+        <div className="submissions">
+          <h4>All submissions</h4>
+          {responce.map((e) => (
+            <>
+              <Submissions e={e} />
+            </>
+          ))}
+        </div>
       </div>
     </div>
+  );
+}
+
+function Submissions({ e }) {
+  const [expand, setExpand] = useState(false);
+  const expandTHIS = () => {
+    setExpand(!expand);
+  };
+  return (
+    <>
+      <div className="onesub">
+        <div className="topc">
+          <span className="name">{e.name}</span>
+          <div className="exp">
+            <div className="submittedT">
+              <div className="sgbox">
+                <span id="hours">{e.TimeLeft.hours}</span>
+              </div>
+              <div className="sgbox">:</div>
+              <div class="sgbox">
+                <span id="mins">{e.TimeLeft.mins}</span>
+              </div>
+              <div className="sgbox">:</div>
+              <div className="sgbox">
+                <span id="secs">{e.TimeLeft.secs}</span>
+              </div>
+            </div>
+            {expand ? (
+              <>
+                <button onClick={expandTHIS}>
+                  <BsChevronDoubleUp color="#fff" />
+                </button>
+              </>
+            ) : (
+              <>
+                <button onClick={expandTHIS}>
+                  <BsChevronDoubleDown color="#fff" />
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+        {expand ? (
+          <>
+            <div className="expand">
+              <p>
+                <pre>
+                  Question 1: <code>{e.q1}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 2: <code>{e.q2}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 3: <code>{e.q3}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 4: <code>{e.q4}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 5: <code>{e.q5}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 6: <code>{e.q6}</code>
+                </pre>
+              </p>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
+      </div>
+    </>
   );
 }
 
