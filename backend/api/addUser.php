@@ -12,7 +12,8 @@
         $name=$req['name'];
         $roll=$req['roll'];
         $mail=$req['mail'];
-        $pass=$req['pass'];
+        $pass=password_hash($req['pass'], PASSWORD_DEFAULT);
+
         $q="INSERT INTO `bb_d`(`email`, `name`, `roll`, `password`, `has_sub`) VALUES ('$mail','$name','$roll','$pass','0')";
         $rs=mysqli_query($con,$q);
         $result['code']=200;
