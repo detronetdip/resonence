@@ -2,24 +2,39 @@ import React, { useState, useContext, useRef } from "react";
 import { firebaseDatabase } from "../../util/config";
 import { set, ref, onValue } from "firebase/database";
 import { ContextStore } from "../App";
+import { ImSpinner6 } from "react-icons/im";
 import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
+import { toast } from "react-toastify";
 import axios from "axios";
-
+const USER_ADD_API = "https://cemkfest.in/backend/api/addUser.php";
 function Home() {
   const store = useContext(ContextStore);
   const [responce, setResponce] = useState([]);
+  const [spin, setSpin] = useState(false);
   const [adduser, setadduser] = useState(false);
-  const nameRef=useRef();
-  const emailRef=useRef();
-  const rollRef=useRef();
-  const passwordRef=useRef();
-  const handelAddUser=()=>{
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const rollRef = useRef();
+  const passwordRef = useRef();
+  const handelAddUser = () => {
     const userName = nameRef.current.value;
     const userPass = passwordRef.current.value;
     const userMail = emailRef.current.value;
     const userRoll = rollRef.current.value;
-    
-  }
+    setSpin(true);
+    axios
+      .post(USER_ADD_API, {
+        name: userName,
+        roll: userRoll,
+        mail: userMail,
+        pass: userPass,
+      })
+      .then((e) => {
+        toast("Added Successfully");
+        setSpin(false);
+        setadduser(!adduser);
+      });
+  };
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
       startingNow: true,
@@ -120,7 +135,7 @@ function Home() {
             </div>
           </div>
           <div className="btndiv">
-            <button onClick={()=>setadduser(!adduser)}>Add User</button>
+            <button onClick={() => setadduser(!adduser)}>Add User</button>
             <button onClick={enblLogin}>Enable Login</button>
             <button onClick={startTest}>Start Test</button>
           </div>
@@ -128,16 +143,37 @@ function Home() {
         {adduser ? (
           <>
             <div className="adduser">
-              <input type="text" placeholder="Enter Name" autocomplete="off" ref={nameRef} />
-              <input type="text" placeholder="Enter Email" autocomplete="off" ref={emailRef} />
-              <input type="text" placeholder="Enter Roll" autocomplete="off" ref={rollRef} />
+              <input
+                type="text"
+                placeholder="Enter Name"
+                autocomplete="off"
+                ref={nameRef}
+              />
+              <input
+                type="text"
+                placeholder="Enter Email"
+                autocomplete="off"
+                ref={emailRef}
+              />
+              <input
+                type="text"
+                placeholder="Enter Roll"
+                autocomplete="off"
+                ref={rollRef}
+              />
               <input
                 type="password"
                 placeholder="Enter Password"
                 autocomplete="off"
                 ref={passwordRef}
               />
-              <button onClick={handelAddUser}>Add</button>
+              {spin ? (
+                <button>
+                  <ImSpinner6 size={20} className="spin" />
+                </button>
+              ) : (
+                <button onClick={handelAddUser}>Add</button>
+              )}
             </div>
           </>
         ) : (
