@@ -135,7 +135,7 @@
                     Task will be provided during the event .
                   </li>
                 </ol>
-                <h4>Prize money upto Rs - 2500.</h4>
+                <!-- <h4>Prize money upto Rs - 2500.</h4> -->
               </p>
               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
               <p class="pt1 fs14">
@@ -240,7 +240,7 @@
                     number correct answers first, second and third will be declared.</li>
                   <li>Tasks will be provided during the event.</li>
                 </ul>
-                  <h4>Prize money upto Rs - 1500.</h4>
+                  <!-- <h4>Prize money upto Rs - 1500.</h4> -->
               </p>
               
               <span class="highlight2 pt5 p1">RULES AND REGULATION</span>

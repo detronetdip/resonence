@@ -212,7 +212,7 @@
   
                 </p>
                 <br>
-                <h4>* Prize money upto &#8377;4000</h4>
+                <!-- <h4>* Prize money upto &#8377;4000</h4> -->
                 <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
                 <p class="pt1 fs14">
                   <ol style="margin-top: 0; padding-top: 0;">
