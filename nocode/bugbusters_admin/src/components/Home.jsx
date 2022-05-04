@@ -1,11 +1,25 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useRef } from "react";
 import { firebaseDatabase } from "../../util/config";
 import { set, ref, onValue } from "firebase/database";
 import { ContextStore } from "../App";
 import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
+import axios from "axios";
+
 function Home() {
   const store = useContext(ContextStore);
   const [responce, setResponce] = useState([]);
+  const [adduser, setadduser] = useState(false);
+  const nameRef=useRef();
+  const emailRef=useRef();
+  const rollRef=useRef();
+  const passwordRef=useRef();
+  const handelAddUser=()=>{
+    const userName = nameRef.current.value;
+    const userPass = passwordRef.current.value;
+    const userMail = emailRef.current.value;
+    const userRoll = rollRef.current.value;
+    
+  }
   const enblLogin = () => {
     set(ref(firebaseDatabase, "start"), {
       startingNow: true,
@@ -106,10 +120,29 @@ function Home() {
             </div>
           </div>
           <div className="btndiv">
+            <button onClick={()=>setadduser(!adduser)}>Add User</button>
             <button onClick={enblLogin}>Enable Login</button>
             <button onClick={startTest}>Start Test</button>
           </div>
         </div>
+        {adduser ? (
+          <>
+            <div className="adduser">
+              <input type="text" placeholder="Enter Name" autocomplete="off" ref={nameRef} />
+              <input type="text" placeholder="Enter Email" autocomplete="off" ref={emailRef} />
+              <input type="text" placeholder="Enter Roll" autocomplete="off" ref={rollRef} />
+              <input
+                type="password"
+                placeholder="Enter Password"
+                autocomplete="off"
+                ref={passwordRef}
+              />
+              <button onClick={handelAddUser}>Add</button>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
         <div className="submissions">
           <h4>All submissions</h4>
           {responce.map((e) => (
