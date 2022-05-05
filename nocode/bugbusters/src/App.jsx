@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ContextStore = createContext();
 import { firebaseDatabase } from "./util/config";
 import { ref, onValue } from "firebase/database";
-import imageCoding from "./images/coding.jpg";
+import imageCoding from "./images/coding.png";
 function App() {
   const submitData = (data) => {
     console.log(data);
