@@ -12,7 +12,7 @@ function Header() {
     var m = date.getMinutes();
     var s = date.getSeconds();
     var d=date.getDate();
-    m += 10;
+    h += 1;
     var str = "May "+d+", 2022 " + h + ":" + m + ":" + s;
     console.log(str);
     var countDownDate = new Date(str).getTime();
@@ -78,7 +78,7 @@ function Header() {
       </div>
       <div className="name">
         <h5>
-          Welcome, <span>{store.mainStore.userName}</span>
+          Welcome, <span>{store.mainStore.userName.split(' ')[0]}</span>
         </h5>
       </div>
     </header>
