@@ -56,7 +56,7 @@ function Home() {
     var m = date.getMinutes();
     var s = date.getSeconds();
     var d = date.getDate();
-    m += 10;
+    h += 1;
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
