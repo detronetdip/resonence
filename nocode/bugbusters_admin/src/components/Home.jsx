@@ -264,6 +264,36 @@ function Submissions({ e }) {
                   Question 6: <code>{e.q6}</code>
                 </pre>
               </p>
+              <p>
+                <pre>
+                  Question 7: <code>{e.q7}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 8: <code>{e.q8}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 9: <code>{e.q9}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 10: <code>{e.q10}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 11: <code>{e.q11}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 12: <code>{e.q12}</code>
+                </pre>
+              </p>
             </div>
           </>
         ) : (
