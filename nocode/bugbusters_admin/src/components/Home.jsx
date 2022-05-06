@@ -41,16 +41,6 @@ function Home() {
     });
   };
   const startTest = () => {
-    set(ref(firebaseDatabase, "startTest"), {
-      startingNow: true,
-    });
-  };
-  const [timer, setTimer] = useState({
-    hours: "00",
-    mins: "00",
-    secs: "00",
-  });
-  function statTimer() {
     var date = new Date();
     var h = date.getHours();
     var m = date.getMinutes();
@@ -58,9 +48,21 @@ function Home() {
     var d = date.getDate();
     h += 1;
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
+    set(ref(firebaseDatabase, "startTest"), {
+      startingNow: true,
+      time:str
+    });
+  };
+  const [timer, setTimer] = useState({
+    hours: "00",
+    mins: "00",
+    secs: "00",
+  });
+  function statTimer(str) {
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
+      // console.log(str,countDownDate,now);
       if (countDownDate > now) {
         var distance = countDownDate - now;
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -86,7 +88,7 @@ function Home() {
   onValue(ref(firebaseDatabase, "startTest/"), (snapshot) => {
     const data = snapshot.val();
     if (store.mainStore.isStartingTest !== data.startingNow) {
-      statTimer();
+      statTimer(data.time);
       store.setMainStore((e) => {
         var t = {
           isStartingTest: data.startingNow,

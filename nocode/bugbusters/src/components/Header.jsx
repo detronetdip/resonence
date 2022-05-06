@@ -6,15 +6,7 @@ import { firebaseDatabase } from "../util/config";
 
 function Header() {
   const store = useContext(ContextStore);
-  function statTimer() {
-    var date = new Date();
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
-    var d=date.getDate();
-    h += 1;
-    var str = "May "+d+", 2022 " + h + ":" + m + ":" + s;
-    console.log(str);
+  function statTimer(str) {
     var countDownDate = new Date(str).getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -49,7 +41,7 @@ function Header() {
   onValue(ref(firebaseDatabase, "startTest/"), (snapshot) => {
     const data = snapshot.val();
     if (store.mainStore.isStartingTest != data.startingNow) {
-      statTimer();
+      statTimer(data.time);
       store.setMainStore((e) => {
         var t = {
           isStartingTest: data.startingNow,
