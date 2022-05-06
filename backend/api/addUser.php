@@ -12,9 +12,10 @@
         $name=$req['name'];
         $roll=$req['roll'];
         $mail=$req['mail'];
+        $mobile=$req['mobile'];
         $pass=password_hash($req['pass'], PASSWORD_DEFAULT);
 
-        $q="INSERT INTO `bb_d`(`email`, `name`, `roll`, `password`, `has_sub`) VALUES ('$mail','$name','$roll','$pass','0')";
+        $q="INSERT INTO `bb_d`(`email`, `name`, `roll`,`mobile`, `password`, `has_sub`) VALUES ('$mail','$name','$roll','$mobile','$pass','0')";
         $rs=mysqli_query($con,$q);
         $result['code']=200;
         $result['msg']="Added successfully";
