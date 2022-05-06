@@ -16,6 +16,7 @@ function Home() {
   const emailRef = useRef();
   const rollRef = useRef();
   const passwordRef = useRef();
+  const mobileRef = useRef();
   const handelAddUser = () => {
     const userName = nameRef.current.value;
     const userPass = passwordRef.current.value;
@@ -28,6 +29,7 @@ function Home() {
         roll: userRoll,
         mail: userMail,
         pass: userPass,
+        mobile:mobileRef
       })
       .then((e) => {
         toast("Added Successfully");
@@ -50,7 +52,7 @@ function Home() {
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
     set(ref(firebaseDatabase, "startTest"), {
       startingNow: true,
-      time:str
+      time: str,
     });
   };
   const [timer, setTimer] = useState({
@@ -156,6 +158,12 @@ function Home() {
                 placeholder="Enter Email"
                 autocomplete="off"
                 ref={emailRef}
+              />
+              <input
+                type="number"
+                placeholder="Enter mobile"
+                autocomplete="off"
+                ref={mobileRef}
               />
               <input
                 type="text"
