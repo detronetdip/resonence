@@ -418,9 +418,7 @@ function Body() {
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>
-                    9. What will be the output of the below code ?
-                  </p>
+                  <p>9. What will be the output of the below code ?</p>
                   <pre>
                     <code>{`
 1     #include<stdio.h> 
@@ -436,47 +434,25 @@ function Body() {
                   <br />
                   <div className="q6w" onChange={handelChange}>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q9"
-                        id=""
-                        value="10 11 21"
-                      />
+                      <input type="radio" name="q9" id="" value="10 11 21" />
                       <span>10 11 21</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q9"
-                        id=""
-                        value="11 10 21"
-                      />
+                      <input type="radio" name="q9" id="" value="11 10 21" />
                       <span>11 10 21</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q9"
-                        id=""
-                        value="11 11 22"
-                      />
+                      <input type="radio" name="q9" id="" value="11 11 22" />
                       <span>11 11 22</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q9"
-                        id=""
-                        value="11 11 21"
-                      />
+                      <input type="radio" name="q9" id="" value="11 11 21" />
                       <span>11 11 21</span>
                     </div>
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>
-                    10. What will be the output of the C program?
-                  </p>
+                  <p>10. What will be the output of the C program?</p>
                   <pre>
                     <code>{`
 1    #include<stdio.h> 
@@ -495,39 +471,19 @@ function Body() {
                   <br />
                   <div className="q6w" onChange={handelChange}>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q10"
-                        id=""
-                        value="40"
-                      />
+                      <input type="radio" name="q10" id="" value="40" />
                       <span>40</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q10"
-                        id=""
-                        value="20"
-                      />
+                      <input type="radio" name="q10" id="" value="20" />
                       <span>20</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q10"
-                        id=""
-                        value="4"
-                      />
+                      <input type="radio" name="q10" id="" value="4" />
                       <span>4</span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q10"
-                        id=""
-                        value="80"
-                      />
+                      <input type="radio" name="q10" id="" value="80" />
                       <span>80</span>
                     </div>
                   </div>
