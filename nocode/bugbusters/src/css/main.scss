@@ -81,6 +81,13 @@ header {
       pre {
         margin: 1rem 0;
         font-size: 1.4rem;
+        code{
+          font-family: 'Source Code Pro', monospace;
+          user-select: none;
+        }
+        .ns{
+          user-select: auto;
+        }
       }
       textarea {
         margin-top: 2rem;

@@ -58,81 +58,17 @@ function Body() {
             <>
               <form method="POST" onSubmit={handelSubmit}>
                 <div className="questionwrapper">
-                  <p>1. What will be the output of the code?</p>
+                  <p>1. Will the below code generate error ?</p>
                   <pre>
                     <code>{`
   #include<stdio.h>
   int main(){
-    int i;
-    i=10000000101;
-    printf("%d",i);
-  }   
-`}</code>
-                  </pre>
-                  <br />
-                  <div className="q6w" onChange={handelChange}>
-                    <div className="oplav">
-                      <input type="radio" name="q1" id="" value="100000101" />
-                      <span>100000101</span>
-                    </div>
-                    <div className="oplav">
-                      <input type="radio" name="q1" id="" value="10000000101" />
-                      <span>10000000101</span>
-                    </div>
-                    <div className="oplav">
-                      <input type="radio" name="q1" id="" value="Warning" />
-                      <span>Warning</span>
-                    </div>
-                    <div className="oplav">
-                      <input type="radio" name="q1" id="" value="141006589" />
-                      <span>141006589</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="questionwrapper">
-                  <p>2. What are the ways to declare pointer variables ?</p>
-                  <br />
-                  <div className="q6w" onChange={handelChange}>
-                    <div className="oplav">
-                      <input type="radio" name="q2" id="" value="Int* Point;" />
-                      <span>Int* Point;</span>
-                    </div>
-                    <div className="oplav">
-                      <input type="radio" name="q2" id="" value="int *Point;" />
-                      <span>int *Point;</span>
-                    </div>
-                    <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q2"
-                        id=""
-                        value="int  Point *;"
-                      />
-                      <span>int Point *;</span>
-                    </div>
-                    <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q2"
-                        id=""
-                        value="All of the above"
-                      />
-                      <span>All of the above</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="questionwrapper">
-                  <p>3. What is the output of below program ?</p>
-                  <pre>
-                    <code>{`
-  int main(){
-   int i;
-   for(i = 0,i<5,i++){
-     printf("Hello");
-   }
-   return 0;
-  }
-   
+    display();
+    return 0;
+  } 
+  void display(){ 
+    printf("CEMK");
+  } 
 `}</code>
                   </pre>
                   <br />
@@ -140,123 +76,207 @@ function Body() {
                     <div className="oplav">
                       <input
                         type="radio"
-                        name="q3"
+                        name="q1"
                         id=""
-                        value="Hello is printed 5 times"
+                        value="Yes (implicit declaration of function ‘display’)"
                       />
-                      <span>Hello is printed 5 times</span>
+                      <span>
+                        Yes (implicit declaration of function ‘display’){" "}
+                      </span>
                     </div>
                     <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q3"
-                        id=""
-                        value="Compilation Error"
-                      />
-                      <span>Compilation Error</span>
-                    </div>
-                    <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q3"
-                        id=""
-                        value="Runtime Error"
-                      />
-                      <span>Runtime Error</span>
-                    </div>
-                    <div className="oplav">
-                      <input
-                        type="radio"
-                        name="q3"
-                        id=""
-                        value="Hello is printed 4 times"
-                      />
-                      <span>Hello is printed 4 times</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="questionwrapper">
-                  <p>4. Will the code generate error ?</p>
-                  <pre>
-                    <code>{`
-  #include<stdio.h>                                                                                                                                                 
-  void main(){
-   int i;
-   int arr[4]={2,3,4,8,6};
-   for(i=0 ; i<4,i++) {
-      printf("%d\\t",arr[i]);
-   }
-  }  
-`}</code>
-                  </pre>
-                  <br />
-                  <div className="q6w" onChange={handelChange}>
-                    <div className="oplav">
-                      <input type="radio" name="q4" id="" value="Yes" />
-                      <span>Yes</span>
-                    </div>
-                    <div className="oplav">
-                      <input type="radio" name="q4" id="" value="No" />
+                      <input type="radio" name="q1" id="" value="No" />
                       <span>No</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q1"
+                        id=""
+                        value="Depends on the compiler"
+                      />
+                      <span>Depends on the compiler</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q1"
+                        id=""
+                        value="Yes(explicit declaration of function ‘display’)"
+                      />
+                      <span>
+                        Yes(explicit declaration of function ‘display’)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="questionwrapper">
+                  <p>2. Will the below code generate error ?</p>
+                  <pre>
+                    <code>{`
+1   #include<stdio.h> 
+2   void main(){
+3     int i;
+4     int arr[4]={2,3,4,8,6};
+5     for(i=0 ; i<4,i++) {
+6        printf("%d\\t",arr[i]);
+7     }
+8   }
+`}</code>
+                  </pre>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q2"
+                        id=""
+                        value="Yes (Error in line 4)"
+                      />
+                      <span>Yes (Error in line 4)</span>
+                    </div>
+                    <div className="oplav">
+                      <input type="radio" name="q2" id="" value="No" />
+                      <span>No</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q2"
+                        id=""
+                        value="Warning will be generated but no error"
+                      />
+                      <span>Warning will be generated but no error</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q2"
+                        id=""
+                        value="Yes(Error in line 4 and line 5)"
+                      />
+                      <span>Yes(Error in line 4 and line 5)</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="questionwrapper">
+                  <p>3. Find the line which may generate the error .</p>
+                  <pre>
+                    <code>{`
+1    #include<stdio.h> 
+2    void main(){ 
+3       int a,b,c=9;  
+4       a=2; 
+5       b=3;  
+6       c=1;  
+7       a+b=c; 
+8       printf(c); 
+9       return 0;  
+10   } 
+
+`}</code>
+                  </pre>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q3"
+                        id=""
+                        value="Line 2 and Line 1"
+                      />
+                      <span>Line 2 and Line 1</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q3"
+                        id=""
+                        value="Line 8 and Line 2"
+                      />
+                      <span>Line 8 and Line 2</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q3"
+                        id=""
+                        value="Line 8 and Line 6"
+                      />
+                      <span>Line 8 and Line 6</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q3"
+                        id=""
+                        value="Line 6 and Line 2"
+                      />
+                      <span>Line 6 and Line 2</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="questionwrapper">
+                  <p>4. Syntax errors are also known as the compilation errors ?</p>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input type="radio" name="q4" id="" value="True" />
+                      <span>True</span>
+                    </div>
+                    <div className="oplav">
+                      <input type="radio" name="q4" id="" value="False" />
+                      <span>False</span>
                     </div>
                   </div>
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    5. What would be the output after performing the following
-                    operations in a Deque?
+                    5. What is the meaning of below line?
                   </p>
                   <pre>
                     <code>{`
-  Insertfront(10);  
-  Insertfront(20);  
-  Insertrear(30);  
-  Insertrear(40);  
-  Deletefront();  
-  Deleterear();
-  Insertfront(50);  
-  Deleterear();  
-  Display();
+void sum (int, int); 
 `}</code>
                   </pre>
                   <br />
                   <div className="q6w" onChange={handelChange}>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="10, 20, 30" />
-                      <span>10, 20, 30</span>
+                      <input type="radio" name="q5" id="" value="sum is function which takes int arguments" />
+                      <span>sum is function which takes int arguments</span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="50, 10, 30" />
-                      <span>50, 10, 30</span>
+                      <input type="radio" name="q5" id="" value="sum is a function which takes two int arguments and returns void" />
+                      <span>sum is a function which takes two int arguments and returns void</span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="40, 20, 30" />
-                      <span>40, 20, 30</span>
+                      <input type="radio" name="q5" id="" value="sum is a function which takes two int arguments and may or may not return values." />
+                      <span>sum is a function which takes two int arguments and may or may not return values.</span>
                     </div>
                     <div className="oplav">
                       <input
                         type="radio"
                         name="q5"
                         id=""
-                        value="None of the above"
+                        value="Can't comment"
                       />
-                      <span>None of the above</span>
+                      <span>Can't comment</span>
                     </div>
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>6. consider the sorting operation: </p>
+                  <p>6. Will the following C code compile without any error?</p>
                   <pre>
                     <code>{`
-  for (int i = 0; i < length-1; i++) {     
-    for (int j = i+1; j < length; j++) {     
-       if(arr[i] > arr[j]) {    
-           temp = arr[i];    
-           arr[i] = arr[j];    
-           arr[j] = temp;    
-       }     
-    }     
-  }    
+ #include <stdio.h>
+ int main() 
+ { 
+ int k; 
+ { 
+ int k; 
+ for (k = 0; k < 10; k++); 
+ } 
+ }   
 `}</code>
                   </pre>
                   <br />
@@ -403,8 +423,8 @@ Output : The biggest Number is: 15
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    10. Read the following code and write the correct code in the
-                    answer field.
+                    10. Read the following code and write the correct code in
+                    the answer field.
                   </p>
                   <pre>
                     <code>{`
@@ -439,8 +459,8 @@ Output : The biggest Number is: 15
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    11. Read the following code and write the correct code in the
-                    answer field.
+                    11. Read the following code and write the correct code in
+                    the answer field.
                   </p>
                   <pre>
                     <code>{`
@@ -487,8 +507,8 @@ Output: 1 2 3
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    12. Read the following code and write the correct code in the
-                    answer field.
+                    12. Read the following code and write the correct code in
+                    the answer field.
                   </p>
                   <pre>
                     <code>{`

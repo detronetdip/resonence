@@ -18,9 +18,9 @@ function App() {
     secs: "00",
   });
   const [mainStore, setMainStore] = useState({
-    isLoginEnable: false,
-    isStartingTest: false,
-    isLogin: false,
+    isLoginEnable: true,
+    isStartingTest: true,
+    isLogin: true,
     userName: "",
     roll:"",
     mail:"",

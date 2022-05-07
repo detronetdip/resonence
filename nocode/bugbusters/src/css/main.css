@@ -107,6 +107,21 @@ header .name {
   font-size: 1.4rem;
 }
 
+.bodycontainer form .questionwrapper pre code {
+  font-family: 'Source Code Pro', monospace;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bodycontainer form .questionwrapper pre .ns {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+
 .bodycontainer form .questionwrapper textarea {
   margin-top: 2rem;
   padding: 1rem;
