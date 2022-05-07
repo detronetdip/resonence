@@ -13,41 +13,41 @@ function Body() {
     setAllData((e) => {
       return { ...e, [nam]: val };
     });
-    console.log(allData);
   };
   const handelSubmit = (e) => {
     e.preventDefault();
     allData.TimeLeft = store.timer;
-    set(
-      ref(
-        firebaseDatabase,
-        "answers/" + store.mainStore.userName + " " + store.mainStore.roll
-      ),
-      allData
-    ).then((e) => {
-      axios
-        .post(SUBMIT_API, {
-          mail: store.mainStore.mail,
-        })
-        .then((df) => {
-          store.setMainStore((e) => {
-            var s = {
-              timeOut: true,
-            };
-            return { ...e, ...s };
-          });
-        })
-        .then((e) => {
-          setTimeout(() => {
-            store.setMainStore((e) => {
-              var s = {
-                isLogin: false,
-              };
-              return { ...e, ...s };
-            });
-          }, 3000);
-        });
-    });
+    // set(
+    //   ref(
+    //     firebaseDatabase,
+    //     "answers/" + store.mainStore.userName + " " + store.mainStore.roll
+    //   ),
+    //   allData
+    // ).then((e) => {
+    //   axios
+    //     .post(SUBMIT_API, {
+    //       mail: store.mainStore.mail,
+    //     })
+    //     .then((df) => {
+    //       store.setMainStore((e) => {
+    //         var s = {
+    //           timeOut: true,
+    //         };
+    //         return { ...e, ...s };
+    //       });
+    //     })
+    //     .then((e) => {
+    //       setTimeout(() => {
+    //         store.setMainStore((e) => {
+    //           var s = {
+    //             isLogin: false,
+    //           };
+    //           return { ...e, ...s };
+    //         });
+    //       }, 3000);
+    //     });
+    // });
+    console.table(allData);
   };
 
   return (
