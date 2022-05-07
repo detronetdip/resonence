@@ -218,7 +218,7 @@
                 <ol>
                   <li>PHOTOHIKE (THEME: COLLEGE CAMPUS)</li>
                     <li>FOTOLUMI (THEME: OPEN THEME)</li>
-                    <li>PHOTO ECHELEON (THE PHOTO EXHIBITION)</li>
+                    <li>PHOTO ECHELON (THE PHOTO EXHIBITION)</li>
                 </ol>
                 </p>
                 
