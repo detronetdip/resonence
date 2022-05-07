@@ -438,6 +438,19 @@
                 <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
                 <p class="fs14" style="margin-top: 1rem;">
                   <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
+                  <li>
+                      Abhijit Das
+                       <ol style="list-style-type: none;padding: 0;">
+                         <li style="display: flex;">
+                          <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                          <a href="tel:9007366471">+91-9007366471</a>
+                        </li>
+                        <li style="display: flex;">
+                          <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                          <a href="mailto:ece1915@cemk.ac.in">ece1915@cemk.ac.in</a>
+                        </li>
+                       </ol>
+                    </li>
                     <li>
                       Perona Banarjee
                        <ol style="list-style-type: none;padding: 0;">
@@ -461,19 +474,6 @@
                         <li style="display: flex;">
                           <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
                           <a href="mailto:ece1931@cemk.ac.in">ece1931@cemk.ac.in</a>
-                        </li>
-                       </ol>
-                    </li>
-                    <li>
-                      Abhijit Das
-                       <ol style="list-style-type: none;padding: 0;">
-                         <li style="display: flex;">
-                          <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
-                          <a href="tel:9007366471">+91-9007366471</a>
-                        </li>
-                        <li style="display: flex;">
-                          <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
-                          <a href="mailto:ece1915@cemk.ac.in">ece1915@cemk.ac.in</a>
                         </li>
                        </ol>
                     </li>

@@ -225,7 +225,7 @@
                 <span class="highlight2 pt5 p1">RULES AND REGULATION</span>
                 <p class="pt1 fs14">
                   <ol style="margin-top: 0; padding-top: 0;">
-                    <li>The photo must be clicked within a given time frame i.e. from 12:00 AM on 25/04/2022. 
+                    <li>The photo can be of any given time frame. 
                     </li>
                     <li>
                       The photo submitted must be the original work of the participant. By participating you are stating that you are the owner and the copyright holder of the photographs submitted.
