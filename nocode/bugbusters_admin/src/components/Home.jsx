@@ -22,6 +22,7 @@ function Home() {
     const userPass = passwordRef.current.value;
     const userMail = emailRef.current.value;
     const userRoll = rollRef.current.value;
+    const userMobile = mobileRef.current.value;
     setSpin(true);
     axios
       .post(USER_ADD_API, {
@@ -29,7 +30,7 @@ function Home() {
         roll: userRoll,
         mail: userMail,
         pass: userPass,
-        mobile:mobileRef
+        mobile:userMobile
       })
       .then((e) => {
         toast("Added Successfully");
@@ -48,7 +49,7 @@ function Home() {
     var m = date.getMinutes();
     var s = date.getSeconds();
     var d = date.getDate();
-    h += 1;
+    m += 2;
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
     set(ref(firebaseDatabase, "startTest"), {
       startingNow: true,
