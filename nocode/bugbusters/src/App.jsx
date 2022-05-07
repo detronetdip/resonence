@@ -22,8 +22,8 @@ function App() {
     isStartingTest: true,
     isLogin: true,
     userName: "",
-    roll:"",
-    mail:"",
+    roll: "",
+    mail: "",
     timeOut: false,
     submitData,
   });

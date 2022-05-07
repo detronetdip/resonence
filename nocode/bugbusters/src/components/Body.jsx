@@ -61,14 +61,14 @@ function Body() {
                   <p>1. Will the below code generate error ?</p>
                   <pre>
                     <code>{`
-  #include<stdio.h>
-  int main(){
-    display();
-    return 0;
-  } 
-  void display(){ 
-    printf("CEMK");
-  } 
+1   #include<stdio.h>
+2   int main(){
+3     display();
+4     return 0;
+5   } 
+6   void display(){ 
+7     printf("CEMK");
+8   } 
 `}</code>
                   </pre>
                   <br />
@@ -217,7 +217,9 @@ function Body() {
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>4. Syntax errors are also known as the compilation errors ?</p>
+                  <p>
+                    4. Syntax errors are also known as the compilation errors ?
+                  </p>
                   <br />
                   <div className="q6w" onChange={handelChange}>
                     <div className="oplav">
@@ -231,27 +233,46 @@ function Body() {
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>
-                    5. What is the meaning of below line?
-                  </p>
+                  <p>5. What is the meaning of below line?</p>
                   <pre>
                     <code>{`
-void sum (int, int); 
+1   void sum (int, int); 
 `}</code>
                   </pre>
                   <br />
                   <div className="q6w" onChange={handelChange}>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="sum is function which takes int arguments" />
+                      <input
+                        type="radio"
+                        name="q5"
+                        id=""
+                        value="sum is function which takes int arguments"
+                      />
                       <span>sum is function which takes int arguments</span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="sum is a function which takes two int arguments and returns void" />
-                      <span>sum is a function which takes two int arguments and returns void</span>
+                      <input
+                        type="radio"
+                        name="q5"
+                        id=""
+                        value="sum is a function which takes two int arguments and returns void"
+                      />
+                      <span>
+                        sum is a function which takes two int arguments and
+                        returns void
+                      </span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q5" id="" value="sum is a function which takes two int arguments and may or may not return values." />
-                      <span>sum is a function which takes two int arguments and may or may not return values.</span>
+                      <input
+                        type="radio"
+                        name="q5"
+                        id=""
+                        value="sum is a function which takes two int arguments and may or may not return values."
+                      />
+                      <span>
+                        sum is a function which takes two int arguments and may
+                        or may not return values.
+                      </span>
                     </div>
                     <div className="oplav">
                       <input
@@ -268,15 +289,14 @@ void sum (int, int);
                   <p>6. Will the following C code compile without any error?</p>
                   <pre>
                     <code>{`
- #include <stdio.h>
- int main() 
- { 
- int k; 
- { 
- int k; 
- for (k = 0; k < 10; k++); 
- } 
- }   
+1    #include <stdio.h>
+2    int main(){ 
+3     int k; 
+4     { 
+5       int k; 
+6       for (k = 0; k < 10; k++); 
+7     } 
+8    }   
 `}</code>
                   </pre>
                   <br />
@@ -286,27 +306,54 @@ void sum (int, int);
                         type="radio"
                         name="q6"
                         id=""
-                        value="Through ArrayIndexOutOfBoundsException"
+                        value="Depends on the compiler"
                       />
-                      <span>Through ArrayIndexOutOfBoundsException</span>
+                      <span>Depends on the compiler</span>
                     </div>
                     <div className="oplav">
                       <input
                         type="radio"
                         name="q6"
                         id=""
-                        value="compilation error"
+                        value="Depends on the C standard implemented by compilers"
                       />
-                      <span>compilation error</span>
+                      <span>
+                        Depends on the C standard implemented by compilers
+                      </span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q6" id="" value="40, 20, 30" />
-                      <span>run time error</span>
+                      <input type="radio" name="q6" id="" value="No" />
+                      <span>No</span>
+                    </div>
+                    <div className="oplav">
+                      <input type="radio" name="q6" id="" value="Yes" />
+                      <span>Yes</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="questionwrapper">
+                  <p>
+                    7. If the elements '1', '2', '3' and '4' are added in a
+                    stack, so what would be the order for the removal?
+                  </p>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input type="radio" name="q7" id="" value="1,2,3,4" />
+                      <span>1,2,3,4</span>
+                    </div>
+                    <div className="oplav">
+                      <input type="radio" name="q7" id="" value="2,1,3,4" />
+                      <span>2,1,3,4</span>
+                    </div>
+                    <div className="oplav">
+                      <input type="radio" name="q7" id="" value="4,3,2,1" />
+                      <span>4,3,2,1</span>
                     </div>
                     <div className="oplav">
                       <input
                         type="radio"
-                        name="q6"
+                        name="q7"
                         id=""
                         value="None of the above"
                       />
@@ -315,147 +362,175 @@ void sum (int, int);
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>
-                    7. Read the following code and write the correct code in the
-                    answer field.
-                  </p>
+                  <p>8. Cosider the sorting operation:-</p>
                   <pre>
                     <code>{`
-     #include <stdio.h>
-     void main() {  
-        int a[1];
-        for(int i=0;i<2;i++){
-          printf("Give the element ");
-          scanf("%d",&a[i]);
-          int sum+=a[i];                       
-        }
-       printf("%d",sum);
-       return 0;
-    }
-     
----------------------------
-Input : Give the element 5
-        Give the element 6
-
-Expected output : 11
+1     for (int i = 0; i < length; i++) {  
+2       for (int j = i+1; j < length; j--) {  
+3         if(arr[i] > arr[j]) {  
+4           temp = arr[i];  
+5           arr[i] = arr[j];  
+6           arr[j] = temp; 
+7         }  
+8       }  
+9     }       
 `}</code>
                   </pre>
-                  <textarea
-                    name="q7"
-                    id=""
-                    placeholder="Enter the correct code here"
-                    onChange={handelChange}
-                  ></textarea>
+
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q8"
+                        id=""
+                        value="Through ArrayIndexOutOfBoundsException"
+                      />
+                      <span>Through ArrayIndexOutOfBoundsException</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q8"
+                        id=""
+                        value="compilation error"
+                      />
+                      <span>compilation error</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q8"
+                        id=""
+                        value="run time error"
+                      />
+                      <span>run time error</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q8"
+                        id=""
+                        value=" None of the above"
+                      />
+                      <span> None of the above</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    8. Read the following code and write the correct code in the
-                    answer field.
+                    9. What will be the output of the below code ?
                   </p>
                   <pre>
                     <code>{`
-     #include <stdio.h>
-     int search(int array[], int n, int x) {
-       // Going through array sequentially 
-       for (i = 0; i < n; i++)                    
-         if (array[i] = x)                          
-           return i;
-       return -1;
-     }
-     
-     int main() {
-       int array[3] = {2, 4, 0, 1, 9};             
-       int x = 1;                                              
-       int n = sizeof(array) / sizeof(array[0]);
-       int result = search(array, n, x);
-       if(result == -1) 
-        printf("Element found at %dth position", result);      
-       else
-        printf("Element not found");             
-     }
+1     #include<stdio.h> 
+2     int main() 
+3     { 
+4       int a=10, b=10,c; 
+5       c= a++ + ++b; 
+6       printf("%d %d %d",a,b,c); 
+7       return 0; 
+8     }    
 `}</code>
                   </pre>
-                  <textarea
-                    name="q8"
-                    id=""
-                    placeholder="Enter the correct code here"
-                    onChange={handelChange}
-                  ></textarea>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q9"
+                        id=""
+                        value="10 11 21"
+                      />
+                      <span>10 11 21</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q9"
+                        id=""
+                        value="11 10 21"
+                      />
+                      <span>11 10 21</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q9"
+                        id=""
+                        value="11 11 22"
+                      />
+                      <span>11 11 22</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q9"
+                        id=""
+                        value="11 11 21"
+                      />
+                      <span>11 11 21</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="questionwrapper">
                   <p>
-                    9. Read the following code and write the correct code in the
-                    answer field.
+                    10. What will be the output of the C program?
                   </p>
                   <pre>
                     <code>{`
-    include<stdio.h>
-    int main (void){
-        int array[] = {9,6,15,1};
-        int length = sizeof array / sizeof array[0];
-        int max;
-        min=max=array[0];
-        for (int i = 1; i < length; i++){
-            if(array[i]<max){
-                max=array[i];
-            }
-            if(array[i]<min){
-                min=array[i];
-            }
-        }
-        printf("The biggest Number is:\\t%d\\n",max);
-        printf("The smallest Number is:\\t%d\\n",min);
-        return 0;
-    }
-
-
-----------------------------------
-Output : The biggest Number is: 15
-         The smallest Number is: 1
+1    #include<stdio.h> 
+2    #include<stdlib.h> 
+3    int main() 
+4    {
+5       int *p; 
+6       p = (int *)malloc(20); 
+7       printf("%d\\n", sizeof(p)); 
+8       free(p); 
+9       return 0; 
+10   } 
+  
 `}</code>
                   </pre>
-                  <textarea
-                    name="q9"
-                    id=""
-                    placeholder="Enter the correct code here"
-                    onChange={handelChange}
-                  ></textarea>
-                </div>
-                <div className="questionwrapper">
-                  <p>
-                    10. Read the following code and write the correct code in
-                    the answer field.
-                  </p>
-                  <pre>
-                    <code>{`
-    #include <stdio.h>
-    int main(){
-      int pc, c;
-      c = 22;
-      printf("Address of c: %p\\n", wec);
-      printf("Value of c: %d\\n\\n", c);    // 22
-      
-      pc = &c;
-      printf("Address of pointer pc: %d\\n", pc);
-      printf("Content of pointer pc: %p\\n\\n", *pc);   // 22
-      
-      c = 11;
-      printf("Address of pointer pc: %p\\n", pc);
-      printf("Content of pointer pc: %p\\n\\n", *pc);   // 11
-      
-      *pc = 2;
-      printf("Address of c: %p\\n", &c);
-      printf("Value of c: %d\\n\\n", &c);   // 2
-      return 0;
-    }
-`}</code>
-                  </pre>
-                  <textarea
-                    name="q10"
-                    id=""
-                    placeholder="Enter the correct code here"
-                    onChange={handelChange}
-                  ></textarea>
+                  <br />
+                  <div className="q6w" onChange={handelChange}>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q10"
+                        id=""
+                        value="40"
+                      />
+                      <span>40</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q10"
+                        id=""
+                        value="20"
+                      />
+                      <span>20</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q10"
+                        id=""
+                        value="4"
+                      />
+                      <span>4</span>
+                    </div>
+                    <div className="oplav">
+                      <input
+                        type="radio"
+                        name="q10"
+                        id=""
+                        value="80"
+                      />
+                      <span>80</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="questionwrapper">
                   <p>
@@ -464,38 +539,24 @@ Output : The biggest Number is: 15
                   </p>
                   <pre>
                     <code>{`
-    #include <stdlib.h>
-    struct Node {
-      int data;
-      struct Node* next;
-    };
-    
-    void printList(struct Node* n){
-        while (n == NULL) {
-            printf(" %d ", n->data);
-            n = n->next;
-        }
-    }
+1      #include<stdio.h> 
+2      void value(); 
+3      int main (){ 
+4         sum=value(); 
+5         print("%f",sum);  
+6      } 
+7      void value(void){ 
+8         int year=1,period=5,sum=0,amount=5000;   //This line should not be changed 
+9         float rate=0.12;                         //This line should not be changed 
+10        float sums=0;                            //This line should not be changed 
+11        sum=(amount*(rate*period))+amount;       //This line should not be changed
+12        sums=sum+(amount*5);  
+13        return(sum); 
+14     } 
 
-    int main()
-    {
-      struct Node* head = NULL;
-      struct Node* second = 1;
-      struct Node* third = NULL;
-      head = (struct Node*)malloc(sizeof(struct Node));
-      second = (struct Node*)malloc(sizeof(struct Node));
-      third= (struct Node*)malloc(sizeof(struct Node));
-      head->data = 1; 
-      head->next = second;
-      second->data = 2;
-      second->next = NULL;
-      third->data = 3;
-      printList(second);
-      return 0;
-    }
-
------------------------
-Output: 1 2 3
+-------------------------------------------------
+EXPECTED OUTPUT: 8000
+   
 `}</code>
                   </pre>
                   <textarea
@@ -511,27 +572,91 @@ Output: 1 2 3
                     the answer field.
                   </p>
                   <pre>
-                    <code>{`
-    #include<stdio.h>
-    long void  multiplyNumbers(int n);
-    int main() {
-        int n1;
-        printf("Enter a positive integer: ");
-        scanf("%d",&n);
-        printf("Factorial of %d = %ld", n, multiplyNumber(n));
-        return 0;
-    }
-    
-    long int multiplyNumbers(int n) {
-        if (n>=1)
-            return n*multiplyNumbers(n-1);
-        else
-            return 1;
-    }
+                    <code className="ns">{`
+1     #include<stdio.h> 
+2     void main() 
+3     { 
+4       int a=1, b=1, n=9,c=0; 
+5       printf("Fibonacci Series upto 9 elements:"); 
+6       for(int i=0 ; i<n ; i++) 
+7       { 
+8         if(i <= 1) 
+9         { 
+10          c=i; 
+11        } 
+12        else 
+13        { 
+14          c=a + b; 
+15          a=b; 
+16          b=a; 
+17        } 
+18        printf("%d",c); 
+19      } 
+20      return 0; 
+21    } 
+
+----------------------------------------------------------------------
+EXPECTED OUTPUT: Fibonacci Series upto 9 elements: 0 1 1 2 3 5 8 13 21
 `}</code>
                   </pre>
                   <textarea
                     name="q12"
+                    id=""
+                    placeholder="Enter the correct code here"
+                    onChange={handelChange}
+                  ></textarea>
+                </div>
+                <div className="questionwrapper">
+                  <p>
+                    13. Read the following code and write the correct code in
+                    the answer field.
+                  </p>
+                  <pre>
+                    <code className="ns">{`
+1      #include <stdlib.h> 
+2      struct Node {
+3         int data; 
+4         struct Node* next; 
+5      }; 
+6      void printList(struct Node* n) 
+7      { 
+8         while (n == NULL) { 
+9             printf(" %d ", n->data); 
+10            n = n->next; 
+11        } 
+12     } 
+13     int main() 
+14     { 
+15        struct Node* head = NULL; 
+16        struct Node* second = NULL; 
+17        struct Node* third = NULL; 
+18     
+19        // allocate 5 nodes in the heap 
+21        head = (struct Node*)malloc(sizeof(struct Node)); 
+22        second = (struct Node*)malloc(sizeof(struct Node)); 
+23        third = (struct Node*)malloc(sizeof(struct Node));  
+24        fourth =(struct Node*)malloc(sizeof(struct Node)); 
+25    
+26        head->data = 1;  
+27        head->next = third; 
+28        second->data = 2; 
+29        second->next = third;
+30        third->data = 3;  
+31        third->next = NULL; 
+32        fourth->data=5; 
+33        fourth->next=fifth; 
+34        fifth->data=4; 
+35        printList(third); 
+36        return 0; 
+37      } 
+
+-------------------------------------
+Expected Output : 1 2 3 4 5
+
+`}</code>
+                  </pre>
+                  <textarea
+                    name="q13"
                     id=""
                     placeholder="Enter the correct code here"
                     onChange={handelChange}
