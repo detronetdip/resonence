@@ -167,6 +167,21 @@ header .name {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: relative;
+}
+
+.logcntainer .cpr {
+  position: absolute;
+  color: #fff;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.4rem;
+}
+
+.logcntainer .cpr span {
+  font-weight: 800;
 }
 
 .logcntainer .logincon {
@@ -260,5 +275,30 @@ header .name {
 
 .video {
   height: 100vh;
+  background-color: blue;
+  position: relative;
+}
+
+.video .cpr {
+  position: absolute;
+  color: #fff;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.4rem;
+}
+
+.video .cpr span {
+  font-weight: 800;
+}
+
+.credit {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.credit span {
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

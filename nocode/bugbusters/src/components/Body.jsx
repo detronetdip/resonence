@@ -1,6 +1,6 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { ContextStore } from "../App";
-import { set, ref, onValue } from "firebase/database";
+import { set, ref } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
 import { ImSpinner6 } from "react-icons/im";
 import axios from "axios";
@@ -627,9 +627,7 @@ Expected Output : 1 2 3 4 5
                     <ImSpinner6 size={20} className="spin" />
                   </button>
                 ) : (
-                  <button className="submit">
-                    Submit
-                  </button>
+                  <button className="submit">Submit</button>
                 )}
                 <br />
                 <br />
@@ -660,6 +658,9 @@ Expected Output : 1 2 3 4 5
           </div>
         </form>
       )}
+      <p className="credit">
+        Developed By <span>Ayondip Jana</span>
+      </p>
     </div>
   );
 }

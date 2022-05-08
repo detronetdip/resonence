@@ -1,8 +1,8 @@
-import "../css/main.css";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { ContextStore } from "../App";
-import {ref, onValue} from 'firebase/database'
+import { ref, onValue } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
+import "../css/main.css";
 
 function Header() {
   const store = useContext(ContextStore);
@@ -70,7 +70,7 @@ function Header() {
       </div>
       <div className="name">
         <h5>
-          Welcome, <span>{store.mainStore.userName.split(' ')[0]}</span>
+          Welcome, <span>{store.mainStore.userName.split(" ")[0]}</span>
         </h5>
       </div>
     </header>

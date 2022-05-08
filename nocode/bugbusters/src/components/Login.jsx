@@ -1,8 +1,8 @@
 import React, { useContext, useRef, useState } from "react";
 import { toast } from "react-toastify";
-import axios from "axios";
 import { ContextStore } from "../App";
 import { ImSpinner6 } from "react-icons/im";
+import axios from "axios";
 const LOGIN_API = "https://cemkfest.in/backend/api/login.php";
 function Login() {
   const store = useContext(ContextStore);
@@ -67,6 +67,9 @@ function Login() {
           <button onClick={handelLogin}>Login</button>
         )}
       </div>
+      <div className="cpr">
+          Developed By <span>Ayondip Jana</span>
+        </div>
     </div>
   );
 }

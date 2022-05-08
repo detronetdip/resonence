@@ -1,13 +1,13 @@
+import { createContext, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import { ref, onValue } from "firebase/database";
+import { firebaseDatabase } from "./util/config";
 import Body from "./components/Body";
 import Header from "./components/Header";
-import { createContext, useState } from "react";
 import Login from "./components/Login";
-import { ToastContainer } from "react-toastify";
+import imageCoding from "./images/coding.png";
 import "react-toastify/dist/ReactToastify.css";
 const ContextStore = createContext();
-import { firebaseDatabase } from "./util/config";
-import { ref, onValue } from "firebase/database";
-import imageCoding from "./images/coding.png";
 function App() {
   const submitData = (data) => {
     console.log(data);
@@ -62,6 +62,9 @@ const Video = () => {
     <>
       <div className="video">
         <img src={imageCoding} alt="" />
+        <div className="cpr">
+          Developed By <span>Ayondip Jana</span>
+        </div>
       </div>
     </>
   );

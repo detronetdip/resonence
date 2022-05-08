@@ -127,6 +127,18 @@ header {
   background-color: #071a2f;
   display: grid;
   place-items: center;
+  position: relative;
+  .cpr{
+    position: absolute;
+    color: #fff;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    span{
+      font-weight: 800;
+    } 
+  }
   .logincon {
     padding: 1.5rem;
     width: 40rem;
@@ -185,5 +197,24 @@ header {
 }
 .video {
   height: 100vh;
-  
+  background-color: blue;
+  position: relative;
+  .cpr{
+    position: absolute;
+    color: #fff;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    span{
+      font-weight: 800;
+    } 
+  }
+}
+.credit{
+  text-align: center;
+  font-size: 1.4rem;
+  span{
+    font-weight: 700;
+  }
 }
