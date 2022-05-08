@@ -17,37 +17,36 @@ function Body() {
   const handelSubmit = (e) => {
     e.preventDefault();
     allData.TimeLeft = store.timer;
-    // set(
-    //   ref(
-    //     firebaseDatabase,
-    //     "answers/" + store.mainStore.userName + " " + store.mainStore.roll
-    //   ),
-    //   allData
-    // ).then((e) => {
-    //   axios
-    //     .post(SUBMIT_API, {
-    //       mail: store.mainStore.mail,
-    //     })
-    //     .then((df) => {
-    //       store.setMainStore((e) => {
-    //         var s = {
-    //           timeOut: true,
-    //         };
-    //         return { ...e, ...s };
-    //       });
-    //     })
-    //     .then((e) => {
-    //       setTimeout(() => {
-    //         store.setMainStore((e) => {
-    //           var s = {
-    //             isLogin: false,
-    //           };
-    //           return { ...e, ...s };
-    //         });
-    //       }, 3000);
-    //     });
-    // });
-    console.table(allData);
+    set(
+      ref(
+        firebaseDatabase,
+        "answers/" + store.mainStore.userName + " " + store.mainStore.roll
+      ),
+      allData
+    ).then((e) => {
+      axios
+        .post(SUBMIT_API, {
+          mail: store.mainStore.mail,
+        })
+        .then((df) => {
+          store.setMainStore((e) => {
+            var s = {
+              timeOut: true,
+            };
+            return { ...e, ...s };
+          });
+        })
+        .then((e) => {
+          setTimeout(() => {
+            store.setMainStore((e) => {
+              var s = {
+                isLogin: false,
+              };
+              return { ...e, ...s };
+            });
+          }, 3000);
+        });
+    });
   };
 
   return (
@@ -494,21 +493,21 @@ function Body() {
                     the answer field.
                   </p>
                   <pre>
-                    <code>{`
-1      #include<stdio.h> 
-2      void value(); 
-3      int main (){ 
-4         sum=value(); 
-5         print("%f",sum);  
-6      } 
-7      void value(void){ 
-8         int year=1,period=5,sum=0,amount=5000;   //This line should not be changed 
-9         float rate=0.12;                         //This line should not be changed 
-10        float sums=0;                            //This line should not be changed 
-11        sum=(amount*(rate*period))+amount;       //This line should not be changed
-12        sums=sum+(amount*5);  
-13        return(sum); 
-14     } 
+                    <code className="ns">{`
+     #include<stdio.h> 
+     void value(); 
+     int main (){ 
+        sum=value(); 
+        print("%f",sum);  
+     } 
+     void value(void){ 
+        int year=1,period=5,sum=0,amount=5000;   //This line should not be changed 
+        float rate=0.12;                         //This line should not be changed 
+        float sums=0;                            //This line should not be changed 
+        sum=(amount*(rate*period))+amount;       //This line should not be changed
+        sums=sum+(amount*5);  
+        return(sum); 
+     } 
 
 -------------------------------------------------
 EXPECTED OUTPUT: 8000
@@ -529,27 +528,27 @@ EXPECTED OUTPUT: 8000
                   </p>
                   <pre>
                     <code className="ns">{`
-1     #include<stdio.h> 
-2     void main() 
-3     { 
-4       int a=1, b=1, n=9,c=0; 
-5       printf("Fibonacci Series upto 9 elements:"); 
-6       for(int i=0 ; i<n ; i++) 
-7       { 
-8         if(i <= 1) 
-9         { 
-10          c=i; 
-11        } 
-12        else 
-13        { 
-14          c=a + b; 
-15          a=b; 
-16          b=a; 
-17        } 
-18        printf("%d",c); 
-19      } 
-20      return 0; 
-21    } 
+    #include<stdio.h> 
+    void main() 
+    { 
+      int a=1, b=1, n=9,c=0; 
+      printf("Fibonacci Series upto 9 elements:"); 
+      for(int i=0 ; i<n ; i++) 
+      { 
+        if(i <= 1) 
+        { 
+          c=i; 
+        } 
+        else 
+        { 
+          c=a + b; 
+          a=b; 
+          b=a; 
+        } 
+        printf("%d",c); 
+      } 
+      return 0; 
+    } 
 
 ----------------------------------------------------------------------
 EXPECTED OUTPUT: Fibonacci Series upto 9 elements: 0 1 1 2 3 5 8 13 21
@@ -569,42 +568,42 @@ EXPECTED OUTPUT: Fibonacci Series upto 9 elements: 0 1 1 2 3 5 8 13 21
                   </p>
                   <pre>
                     <code className="ns">{`
-1      #include <stdlib.h> 
-2      struct Node {
-3         int data; 
-4         struct Node* next; 
-5      }; 
-6      void printList(struct Node* n) 
-7      { 
-8         while (n == NULL) { 
-9             printf(" %d ", n->data); 
-10            n = n->next; 
-11        } 
-12     } 
-13     int main() 
-14     { 
-15        struct Node* head = NULL; 
-16        struct Node* second = NULL; 
-17        struct Node* third = NULL; 
-18     
-19        // allocate 5 nodes in the heap 
-21        head = (struct Node*)malloc(sizeof(struct Node)); 
-22        second = (struct Node*)malloc(sizeof(struct Node)); 
-23        third = (struct Node*)malloc(sizeof(struct Node));  
-24        fourth =(struct Node*)malloc(sizeof(struct Node)); 
-25    
-26        head->data = 1;  
-27        head->next = third; 
-28        second->data = 2; 
-29        second->next = third;
-30        third->data = 3;  
-31        third->next = NULL; 
-32        fourth->data=5; 
-33        fourth->next=fifth; 
-34        fifth->data=4; 
-35        printList(third); 
-36        return 0; 
-37      } 
+     #include <stdlib.h> 
+     struct Node {
+        int data; 
+        struct Node* next; 
+     }; 
+     void printList(struct Node* n) 
+     { 
+        while (n == NULL) { 
+            printf(" %d ", n->data); 
+           n = n->next; 
+        } 
+     } 
+     int main() 
+     { 
+        struct Node* head = NULL; 
+        struct Node* second = NULL; 
+        struct Node* third = NULL; 
+     
+        // allocate 5 nodes in the heap 
+        head = (struct Node*)malloc(sizeof(struct Node)); 
+        second = (struct Node*)malloc(sizeof(struct Node)); 
+        third = (struct Node*)malloc(sizeof(struct Node));  
+        fourth =(struct Node*)malloc(sizeof(struct Node)); 
+    
+        head->data = 1;  
+        head->next = third; 
+        second->data = 2; 
+        second->next = third;
+        third->data = 3;  
+        third->next = NULL; 
+        fourth->data=5; 
+        fourth->next=fifth; 
+        fifth->data=4; 
+        printList(third); 
+        return 0; 
+      } 
 
 -------------------------------------
 Expected Output : 1 2 3 4 5
