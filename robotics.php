@@ -787,7 +787,7 @@
              <div class="single-sub-event">
               <h5 onclick="expand(this)" refer="aqua" isOpen="false">The PIRATES</h5>
               <div class="colapse" id="aqua">
-                <h4>"Be sparow of your pearl."</h4>
+                <h4>"Be sparrow of your pearl."</h4>
                 <span class="highlight2 pt5 p1">INTRODUCTION</span>
               <p class="pt1 fs14">
                 A manually controlled robots is to be build that can run in water. Get your
