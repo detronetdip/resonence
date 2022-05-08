@@ -2,10 +2,12 @@ import { useContext, useState, useEffect } from "react";
 import { ContextStore } from "../App";
 import { set, ref, onValue } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
+import { ImSpinner6 } from "react-icons/im";
 import axios from "axios";
 const SUBMIT_API = "https://cemkfest.in/backend/api/submitted.php";
 function Body() {
   const store = useContext(ContextStore);
+  const [spin, setSpin] = useState(false);
   const [allData, setAllData] = useState({});
   const handelChange = (event) => {
     const nam = event.target.name;
@@ -16,6 +18,7 @@ function Body() {
   };
   const handelSubmit = (e) => {
     e.preventDefault();
+    setSpin(!spin);
     allData.TimeLeft = store.timer;
     set(
       ref(
@@ -619,7 +622,15 @@ Expected Output : 1 2 3 4 5
                 </div>
                 <br />
                 <br />
-                <button className="submit">Submit</button>
+                {spin ? (
+                  <button className="submit">
+                    <ImSpinner6 size={20} className="spin" />
+                  </button>
+                ) : (
+                  <button className="submit">
+                    Submit
+                  </button>
+                )}
                 <br />
                 <br />
                 <br />
