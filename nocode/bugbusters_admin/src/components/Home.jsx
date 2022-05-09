@@ -49,7 +49,12 @@ function Home() {
     var m = date.getMinutes();
     var s = date.getSeconds();
     var d = date.getDate();
-    m += 2;
+    m += 45;
+    if(m>60){
+      var df=m-60;
+      h+=1;
+      m=df;
+    }
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;
     set(ref(firebaseDatabase, "startTest"), {
       startingNow: true,
