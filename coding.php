@@ -112,6 +112,19 @@
                       </li>
                      </ol>
                   </li>
+                  <li>
+                    Soumen Mallick
+                     <ol style="list-style-type: none;padding: 0;">
+                       <li style="display: flex;">
+                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                        <a href="tel:9732388937">+91-9732388937</a>
+                      </li>
+                      <li style="display: flex;">
+                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                        <a href="mailto:cse19021@cemk.ac.in">cse19021@cemk.ac.in</a>
+                      </li>
+                     </ol>
+                  </li>
                 </ol>
               </p>
               </div>
