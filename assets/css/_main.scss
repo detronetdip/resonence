@@ -47,6 +47,7 @@
           #mins,
           #secs {
             font-size: 2.8rem;
+
           }
           .name {
             font-size: 1.3rem;
@@ -347,12 +348,12 @@
     }
   }
   .galary{
-    // background: linear-gradient(
-    //   0.94deg,
-    //   #030a1b 51.2%,
-    //   #010710 95.7%
-    // );
-    background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
+    background: linear-gradient(
+      0.94deg,
+      #030a1b 51.2%,
+      #130855 95.7%
+    );
+    // background: linear-gradient(0.84deg, #130855  0.46%, #130855 99.41%);
     padding-bottom: 2rem;
     padding-top: 3rem;
     h4{
@@ -427,13 +428,27 @@
       #030a1b 51.2%,
       #030a1b 95.7%
     );
-    color: $white;
     h4{
       padding-top: 5rem;
       text-align: center;
       @include eor;
       font-size: 4rem;
       padding-bottom: 8rem;
+    }
+    .pic{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: space-evenly;
+      .spn{
+        height: 15rem;
+        width: 30rem;
+        margin-bottom: 5rem;
+      }
+      .spn2{
+        height: 30rem;
+        width: 30rem;
+        margin-bottom: 5rem;
+      }
     }
   }
   .footer {
@@ -1078,6 +1093,28 @@
       .swiper-slide {
         background-image: url(./../images/bg.png);
         background-size: cover;
+      }
+    }
+    .sponser{
+      h4{
+        padding-top: 5rem;
+        font-size: 4rem;
+        padding-bottom: 8rem;
+      }
+      .pic{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        .spn{
+          height: 10rem;
+          width: 20rem;
+          margin-bottom: 5rem;
+        }
+        .spn2{
+          height: 15rem;
+          width: 15rem;
+          margin-bottom: 5rem;
+        }
       }
     }
   }
@@ -2326,6 +2363,28 @@
             height: 30rem;
             width: 30rem;
           }
+      }
+    }
+    .sponser{
+      h4{
+        padding-top: 5rem;
+        font-size: 4rem;
+        padding-bottom: 8rem;
+      }
+      .pic{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        .spn{
+          height: 5rem;
+          width: 10rem;
+          margin-bottom: 5rem;
+        }
+        .spn2{
+          height: 10rem;
+          width: 10rem;
+          margin-bottom: 5rem;
+        }
       }
     }
   }
