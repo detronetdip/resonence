@@ -482,8 +482,8 @@ function Body() {
                       <span>20</span>
                     </div>
                     <div className="oplav">
-                      <input type="radio" name="q10" id="" value="4" />
-                      <span>4</span>
+                      <input type="radio" name="q10" id="" value="8" />
+                      <span>8</span>
                     </div>
                     <div className="oplav">
                       <input type="radio" name="q10" id="" value="80" />
