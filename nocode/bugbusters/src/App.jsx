@@ -6,6 +6,7 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import Login from "./components/Login";
 import imageCoding from "./images/coding.png";
+import imageCoding2 from "./images/44.png";
 import "react-toastify/dist/ReactToastify.css";
 const ContextStore = createContext();
 function App() {
@@ -62,6 +63,7 @@ const Video = () => {
     <>
       <div className="video">
         <img src={imageCoding} alt="" />
+        <img src={imageCoding2} alt="" className="fgh" />
         <div className="cpr">
           Developed By <span>Ayondip Jana</span>
         </div>

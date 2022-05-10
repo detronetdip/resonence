@@ -64,6 +64,7 @@ header {
 .bodycontainer {
   padding-top: 9rem;
   background-color: #f0ebf8;
+  min-height: 100vh;
   form {
     display: flex;
     flex-direction: column;
@@ -75,6 +76,21 @@ header {
       border: 1px solid #dadce0;
       width: 70%;
       border-radius: 5px;
+      h1,h4{
+        text-align: center;
+        color: #595f64;
+      }
+      .cpr{
+        height: 10rem;
+        width: 28rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+      }
+      .pp{
+        min-height: 40vh;
+      }
       p {
         font-size: 1.4rem;
       }
@@ -210,6 +226,15 @@ header {
       font-weight: 800;
     } 
   }
+  .fgh{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    height: 8rem;
+    width: 20rem;
+
+  }
 }
 .credit{
   text-align: center;
@@ -217,4 +242,13 @@ header {
   span{
     font-weight: 700;
   }
+}
+.cpr2{
+  position: absolute;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    height: 8rem;
+    width: 20rem;
+
 }

@@ -74,6 +74,7 @@ header .name {
 .bodycontainer {
   padding-top: 9rem;
   background-color: #f0ebf8;
+  min-height: 100vh;
 }
 
 .bodycontainer form {
@@ -96,6 +97,30 @@ header .name {
   border: 1px solid #dadce0;
   width: 70%;
   border-radius: 5px;
+}
+
+.bodycontainer form .questionwrapper h1, .bodycontainer form .questionwrapper h4 {
+  text-align: center;
+  color: #595f64;
+}
+
+.bodycontainer form .questionwrapper .cpr {
+  height: 10rem;
+  width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto;
+}
+
+.bodycontainer form .questionwrapper .pp {
+  min-height: 40vh;
 }
 
 .bodycontainer form .questionwrapper p {
@@ -293,6 +318,15 @@ header .name {
   font-weight: 800;
 }
 
+.video .fgh {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  z-index: 999;
+  height: 8rem;
+  width: 20rem;
+}
+
 .credit {
   text-align: center;
   font-size: 1.4rem;
@@ -300,5 +334,14 @@ header .name {
 
 .credit span {
   font-weight: 700;
+}
+
+.cpr2 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  z-index: 999;
+  height: 8rem;
+  width: 20rem;
 }
 /*# sourceMappingURL=main.css.map */

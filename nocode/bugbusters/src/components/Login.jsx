@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import { toast } from "react-toastify";
 import { ContextStore } from "../App";
 import { ImSpinner6 } from "react-icons/im";
+import imageCoding from "../images/44.png";
 import axios from "axios";
 const LOGIN_API = "https://cemkfest.in/backend/api/login.php";
 function Login() {
@@ -68,8 +69,11 @@ function Login() {
         )}
       </div>
       <div className="cpr">
-          Developed By <span>Ayondip Jana</span>
-        </div>
+        Developed By <span>Ayondip Jana</span>
+      </div>
+      <div className="cpr2">
+        <img src={imageCoding} alt="" />
+      </div>
     </div>
   );
 }

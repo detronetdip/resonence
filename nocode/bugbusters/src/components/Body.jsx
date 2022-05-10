@@ -3,6 +3,7 @@ import { ContextStore } from "../App";
 import { set, ref } from "firebase/database";
 import { firebaseDatabase } from "../util/config";
 import { ImSpinner6 } from "react-icons/im";
+import imageCoding from "../images/44.png";
 import axios from "axios";
 const SUBMIT_API = "https://cemkfest.in/backend/api/submitted.php";
 function Body() {
@@ -637,7 +638,10 @@ Expected Output : 1 2 3 4 5
           ) : (
             <form>
               <div className="questionwrapper">
-                <p>
+                <img src={imageCoding} className="cpr" alt="" />
+                <br /><br /><br />
+                <br /><br /><br />
+                <p className="pp">
                   <h1>Wait...</h1>
                   <h4>Your question will apear soon.</h4>
                 </p>
