@@ -24,7 +24,7 @@ function Body() {
     set(
       ref(
         firebaseDatabase,
-        "answers/final" + store.mainStore.userName + " " + store.mainStore.roll
+        "answers/final/" + store.mainStore.userName + " " + store.mainStore.roll
       ),
       allData
     ).then((e) => {
@@ -379,7 +379,7 @@ function Body() {
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>8. Consider the following stack implemented.</p>
+                  <p>8. Consider the following stack implemented. What would be the maximum value of the top that does not cause the overflow of the stack?</p>
                   <pre>
                     <code>{`
     #define SIZE 11
@@ -475,7 +475,7 @@ function Body() {
   {
     int a=10, b=10,c;
     c= a+++++b;
-    printf("%d %d %d",a,c,b);
+    printf("%d %d %d",c,a,b);
     return 0;
   }
 `}</code>
@@ -572,7 +572,7 @@ function Body() {
                   </div>
                 </div>
                 <div className="questionwrapper">
-                  <p>13. What will be the output of the C program?</p>
+                  <p>13. Will the code generate error?</p>
                   <pre>
                     <code>{`
   #include<stdio.h>

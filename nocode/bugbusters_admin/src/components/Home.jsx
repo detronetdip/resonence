@@ -50,8 +50,8 @@ function Home() {
     var s = date.getSeconds();
     var d = date.getDate();
     h += 1;
-    if(h>12){
-      var df=h-12;
+    if(h>24){
+      var df=h-24;
       h=df;
     }
     var str = "May " + d + ", 2022 " + h + ":" + m + ":" + s;

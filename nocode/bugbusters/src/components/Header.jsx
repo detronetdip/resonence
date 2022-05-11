@@ -28,6 +28,7 @@ function Header() {
           return { ...e, secs: seconds };
         });
       } else {
+        console.log(countDownDate,now);
         clearInterval(x);
         store.setMainStore((e) => {
           var s = {
