@@ -165,7 +165,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 4rem;
+  margin-top: 35rem;
 }
 
 .maincontainer .home .topcover .explore .resonance {
@@ -649,7 +649,7 @@ i {
 }
 
 .maincontainer .galary {
-  background: linear-gradient(0.84deg, #130855 0.46%, #130855 99.41%);
+  background: linear-gradient(0.94deg, #030a1b 51.2%, #130855 95.7%);
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
@@ -705,7 +705,6 @@ i {
 
 .maincontainer .sponser {
   background: linear-gradient(0.94deg, #030a1b 51.2%, #030a1b 95.7%);
-  color: #fff;
 }
 
 .maincontainer .sponser h4 {
@@ -718,6 +717,28 @@ i {
   text-fill-color: transparent;
   font-size: 4rem;
   padding-bottom: 8rem;
+}
+
+.maincontainer .sponser .pic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.maincontainer .sponser .pic .spn {
+  height: 15rem;
+  width: 30rem;
+  margin-bottom: 5rem;
+}
+
+.maincontainer .sponser .pic .spn2 {
+  height: 30rem;
+  width: 30rem;
+  margin-bottom: 5rem;
 }
 
 .maincontainer .footer {
@@ -1592,6 +1613,30 @@ i {
   .maincontainer .slider .swiper-slide {
     background-image: url(./../images/bg.png);
     background-size: cover;
+  }
+  .maincontainer .sponser h4 {
+    padding-top: 5rem;
+    font-size: 4rem;
+    padding-bottom: 8rem;
+  }
+  .maincontainer .sponser .pic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .maincontainer .sponser .pic .spn {
+    height: 10rem;
+    width: 20rem;
+    margin-bottom: 5rem;
+  }
+  .maincontainer .sponser .pic .spn2 {
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -3197,6 +3242,30 @@ i {
   .maincontainer .spandan .lgo .img2 {
     height: 30rem;
     width: 30rem;
+  }
+  .maincontainer .sponser h4 {
+    padding-top: 5rem;
+    font-size: 4rem;
+    padding-bottom: 8rem;
+  }
+  .maincontainer .sponser .pic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .maincontainer .sponser .pic .spn {
+    height: 5rem;
+    width: 10rem;
+    margin-bottom: 5rem;
+  }
+  .maincontainer .sponser .pic .spn2 {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 5rem;
   }
 }
 

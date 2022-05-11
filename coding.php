@@ -112,6 +112,19 @@
                       </li>
                      </ol>
                   </li>
+                  <li>
+                    Soumen Mallick
+                     <ol style="list-style-type: none;padding: 0;">
+                       <li style="display: flex;">
+                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                        <a href="tel:9732388937">+91-9732388937</a>
+                      </li>
+                      <li style="display: flex;">
+                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                        <a href="mailto:cse19021@cemk.ac.in">cse19021@cemk.ac.in</a>
+                      </li>
+                     </ol>
+                  </li>
                 </ol>
               </p>
               </div>
@@ -290,7 +303,20 @@
               <span class="highlight2 pt5 p1">CO-ORDINATORS</span>
               <p class="fs14" style="margin-top: 1rem;">
                 <ol style="margin-top: 0; padding-top: 2rem; padding-bottom: 2rem;">
-                  <li>
+                <li>
+                    Ayondip Jana 
+                     <ol style="list-style-type: none;padding: 0;">
+                       <li style="display: flex;">
+                        <img src="./assets/images/mobile.svg" alt="" style="height:20px;width:20px">
+                        <a href="tel:7407287858">+91-7407287858</a>
+                      </li>
+                      <li style="display: flex;">
+                        <img src="./assets/images/mail.svg" alt="" style="height:20px;width:20px">
+                        <a href="mailto:cse19101@cemk.ac.in">cse19101@cemk.ac.in</a>
+                      </li>
+                     </ol>
+                  </li>  
+                <li>
                     Pallavi Kumari 
                      <ol style="list-style-type: none;padding: 0;">
                        <li style="display: flex;">
