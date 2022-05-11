@@ -144,6 +144,11 @@ function Submissions({ e }) {
                   Question 12: <code>{e.q12}</code>
                 </pre>
               </p>
+              <p>
+                <pre>
+                  Question 13: <code>{e.q13}</code>
+                </pre>
+              </p>
             </div>
           </>
         ) : (
