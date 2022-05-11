@@ -24,7 +24,7 @@ function Body() {
     set(
       ref(
         firebaseDatabase,
-        "answers/" + store.mainStore.userName + " " + store.mainStore.roll
+        "answers/final" + store.mainStore.userName + " " + store.mainStore.roll
       ),
       allData
     ).then((e) => {

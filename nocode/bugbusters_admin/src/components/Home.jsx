@@ -105,7 +105,7 @@ function Home() {
     }
   });
   var prevObj = {};
-  onValue(ref(firebaseDatabase, "answers/"), (snapshot) => {
+  onValue(ref(firebaseDatabase, "answers/final"), (snapshot) => {
     const data = snapshot.val();
     if (prevObj !== data) {
       var a = [];
