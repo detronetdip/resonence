@@ -5,7 +5,7 @@ import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
 function Home() {
   const [responce, setResponce] = useState([]);
   var prevObj = {};
-  onValue(ref(firebaseDatabase, "answers/"), (snapshot) => {
+  onValue(ref(firebaseDatabase, "answers/final/"), (snapshot) => {
     const data = snapshot.val();
     if (prevObj !== data) {
       var a = [];
@@ -147,6 +147,31 @@ function Submissions({ e }) {
               <p>
                 <pre>
                   Question 13: <code>{e.q13}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 14: <code>{e.q14}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 15: <code>{e.q15}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 16: <code>{e.q16}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 17: <code>{e.q17}</code>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  Question 18: <code>{e.q18}</code>
                 </pre>
               </p>
             </div>
